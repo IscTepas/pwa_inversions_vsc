@@ -2,7 +2,8 @@
 
 > Aplicación Progressive Web App para detección de señales de compra/venta en mercado de opciones de la bolsa EU.
 
-**Estado Proyecto**: 🟡 FASE 2.1 - Pre-Gates Obligatorios  
+**Estado Proyecto**: 🟡 FASE 2.2 - Setup del Proyecto (COMPLETADA ✅)  
+**Fase Actual**: 2.3 - Investigación ⏳  
 **Fecha Inicio**: 2026-03-17  
 **Equipo**: Equipo 5 (IA + Desarrollo)
 
@@ -91,28 +92,46 @@ projects/pwa/pwa_inversions_team5/
 | Componente | Estado | Última Actualización |
 |-----------|--------|----------------------|
 | **Estructura de carpetas** | ✅ Creada | 2026-03-17 |
-| **SPECIFICATION.md** | 🚧 Pendiente | - |
-| **DATABASE_SELECTION** | ⏳ En gate | 2026-03-17 |
-| **DATABASE_MODEL** | ⏳ En gate | - |
-| **Conocimiento** | 🚧 No iniciado | - |
-| **Tickets internos** | 🚧 No iniciados | - |
+| **workflow_agents.yaml** | ✅ Creado | 2026-03-17 |
+| **SPECIFICATION.md (template)** | ✅ Creado | 2026-03-17 |
+| **README.md (development)** | ✅ Creado | 2026-03-17 |
+| **README.md (docs/specs)** | ✅ Creado | 2026-03-17 |
+| **README.md (knowledge/local)** | ✅ Creado | 2026-03-17 |
+| **README.md (knowledge/remote)** | ✅ Creado | 2026-03-17 |
+| **README.md (tickets)** | ✅ Creado | 2026-03-17 |
+| **DATABASE_CONFIG.yaml** | ✅ Creado | 2026-03-17 |
+| **Investigación (FASE 2.3)** | ⏳ Pendiente | - |
+| **Tickets internos (FASE 2.4)** | ⏳ Pendiente | - |
 
 ---
 
 ## 🚀 Cómo Usar Este Proyecto (Próximas Fases)
 
-### FASE 2: Setup + Investigación
-1. Completar SPECIFICATION.md con requisitos
-2. Ejecutar gates de selección de BD
-3. MEMO investiga APIs y arquitectura
-4. BANDA diseña persistencia
-5. Se generan 8-12 tickets para FASE 3
+### FASE 2.2: Setup del Proyecto (✅ COMPLETADA)
+1. ✅ workflow_agents.yaml generado (42 tareas, dependencies)
+2. ✅ SPECIFICATION.md template creado (15 secciones)
+3. ✅ Estructura de investigación (FASE 2.3) - 5 docs pendientes
+4. ✅ Estructura de tickets (FASE 2.4) - 8-12 tickets pendientes
+5. ✅ README en all ai_work_flow/ subdirectories
+
+### FASE 2.3: Investigación (🚧 PRÓXIMA)
+1. Usuario completa SPECIFICATION.md con datos específicos
+2. MEMO investiga APIs, indicadores, estrategias (5 documentos)
+3. BANDA valida/propone schemas Supabase + MongoDB
+4. Ver documentación: [development/README.md](ai_work_flow/development/README.md)
+
+### FASE 2.4: Diseño
+1. BANDA genera .env.example (ambos motores)
+2. MEMO diseña arquitectura (diagrama + specs técnicos)
+3. MEMO genera 8-12 tickets TKT-INVT5-###
+4. Usuario proporciona credenciales reales .env
 
 ### FASE 3: Implementación
-1. BERNA implementa módulos
-2. OVER optimiza y audita seguridad
-3. MEPU crea tests exhaustivos
-4. Código se valida y aprueba
+1. BERNA implementa módulos React + servicios
+2. BANDA implementa modelos + migraciones + endpoints
+3. OVER optimiza performance y audita seguridad
+4. MEPU crea tests exhaustivos (unitarios + E2E)
+5. Código integrado y aprobado
 
 ---
 
