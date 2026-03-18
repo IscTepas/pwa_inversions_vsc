@@ -3,7 +3,7 @@
 
 **Versión**: 2.2  
 **Fecha**: 11 de Marzo 2026  
-**Autor**: Dr. Francisco Ibarra Carlos  
+**Autor**: Equipo 5  
 **Nota**: v2.2 - Soporte multi-base de datos, gates obligatorios de selección/modelado y separación formal PWA vs REST API
 
 ---
@@ -28,10 +28,11 @@ ai_skill_dev1/
 |   ├── AI_SKILL_DEVELOPMENT_METHODOLOGY.md # Este documento
 │   ├── agents/                             # 🤖 Agentes de IA de Desarrollo
 │   │   ├── README.md
-│   │   ├── fic_picoro_agent_orchestrator.md
-│   │   ├── fic_goku_agent_dev1.md
-│   │   ├── fic_vegeta_agent_dev2.md
-│   │   └── fic_bulma_agent_tester1.md
+│   │   ├── team5_memo_agent_orchestrator.md
+│   │   ├── team5_berna_agent_dev1.md
+│   │   ├── team5_over_agent_dev2.md
+│   │   └── team5_mepu_agent_tester1.md
+│   │   └── team5_banda_agent_db.md
 │   │
 │   ├── skills/                      # 🎯 Skills de IA (documentación)
 │   │   ├── README.md                # 🛠️ Índice de skills (habilidades)
@@ -72,7 +73,7 @@ ai_skill_dev1/
 |
 └── projects/                              # Proyectos organizados por categoría
     ├── pwa/                               # Proyectos PWA
-    │   ├── pwa_inversions_drfic/          # Proyecto: Plataforma de Inversiones IA
+    │   ├── pwa_inversions_team5/          # Proyecto: Plataforma de Inversiones IA
     │   │   ├── public/
     │   │   ├── data/                # Contratos/modelos de referencia por base de datos
     │   │   │   ├── supabase/
@@ -86,7 +87,7 @@ ai_skill_dev1/
     │   │   │   └── ...
     │   │   ├── ai_work_flow/         # ✅ Estructura metodológica del proyecto (fuera de src)
     │   │   │   ├── development/      # Instrucciones para agentes
-    │   │   │   │   ├── workflow_agents.yaml  # Tareas de Picoro/Goku/Vegeta/Bulma
+    │   │   │   │   ├── workflow_agents.yaml  # Tareas de MEMO/BERNA/OVER/MEPU
     │   │   │   │   └── README.md
     │   │   │   ├── docs/             # Documentación funcional/técnica
     │   │   │   │   ├── specs/
@@ -100,8 +101,8 @@ ai_skill_dev1/
     │   │   │   │   └── local/
     │   │   │   └── tickets/          # Tickets internos de desarrollo
     │   │   │       ├── README.md
-    │   │   │       ├── TKT-INVRFIC-001.md
-    │   │   │       ├── TKT-INVRFIC-002.md
+    │   │   │       ├── TKT-INVT5-001.md
+    │   │   │       ├── TKT-INVT5-002.md
     │   │   │       └── ...
     │   │   ├── src/                   # Código ejecutable de la PWA
     │   │   │   ├── assets/          # Recursos estáticos (imágenes, fuentes, estilos globales)
@@ -141,7 +142,7 @@ ai_skill_dev1/
     │   │   └── vite.config.ts
     │
     └── api/                               # Proyectos backend / APIs REST
-      └── rest_api_inversions_drfic/     # Persistencia real y exposición de endpoints
+      └── rest_api_inversions_team5/     # Persistencia real y exposición de endpoints
         ├── src/
         │   ├── routes/
         │   ├── controllers/
@@ -162,9 +163,9 @@ ai_skill_dev1/
   - `packages/ui-library/src/...`
   - `packages/utils/src/...`
   - `packages/types/src/...`
-  - `projects/pwa/pwa_inversions_drfic/ai_work_flow/...`
-  - `projects/pwa/pwa_inversions_drfic/src/...`
-  - `projects/api/rest_api_inversions_drfic/src/...`
+  - `projects/pwa/pwa_inversions_team5/ai_work_flow/...`
+  - `projects/pwa/pwa_inversions_team5/src/...`
+  - `projects/api/rest_api_inversions_team5/src/...`
 - `config.yaml` y `README.md` por componente son opcionales (modo Full), no obligatorios para ejecutar.
 - Estandar operativo: todo nuevo desarrollo debe seguir la estructura oficial definida en esta metodologia.
 
@@ -178,8 +179,8 @@ ai_skill_dev1/
 
 **Ubicación**:
 - Globales: `ai_skill_dev1/ai_global/agents/`
-- Proyecto específico (workflow): `ai_skill_dev1/projects/pwa/pwa_inversions_drfic/ai_work_flow/development/`
-- Proyecto específico (código ejecutable): `ai_skill_dev1/projects/pwa/pwa_inversions_drfic/src/`
+- Proyecto específico (workflow): `ai_skill_dev1/projects/pwa/pwa_inversions_team5/ai_work_flow/development/`
+- Proyecto específico (código ejecutable): `ai_skill_dev1/projects/pwa/pwa_inversions_team5/src/`
 
 **Ejemplo de configuración de módulo de inversiones**:
 ```yaml
@@ -205,13 +206,13 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
 **Ubicación**: `ai_skill_dev1/ai_global/agents/` (archivos.md)
 
 ```
-🧠 fic_picoro_agent_orchestrator
+🧠 team5_memo_agent_orchestrator
 - Rol: Analista/Arquitecto/Orquestador
 - Skills: ticket_analyzer, architecture_designer, requirement_validator, knowledge_synthesizer
 - CUÁNDO: FASE 2.3 (Investigación) y FASE 2.4 (Diseño)
 - Función: Analiza SPECIFICATION.md, diseña arquitectura financiera, genera config.yaml
 
-👨‍💻 fic_goku_agent_dev1
+👨‍💻 team5_berna_agent_dev1
 - Rol: Programador Senior #1
 - Skills: react_code_generator, typescript_code_generator, vite_code_generator,
           tradingview_widgets_integrator, broker_api_integrator, documentation_writer,
@@ -219,30 +220,30 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
 - CUÁNDO: FASE 2.4 (Estructura) y FASE 3 (Implementación)
 - Función: Implementa código Vite, React, TypeScript; servicios de brokers,
            indicadores técnicos, módulos de señales, integración con APIs financieras
-- Estándar de documentación: comentarios inline con prefijo FIC en inglés y español
+- Estándar de documentación: comentarios inline con prefijo TEAM5 en inglés y español
 
-🥷 fic_vegeta_agent_dev2
+🥷 team5_over_agent_dev2
 - Rol: Optimizador/Desarrollador Senior #2
 - Skills: code_optimizer, performance_analyzer, security_auditor, pattern_refactorer
-- CUÁNDO: FASE 3 (durante/después de Goku)
+- CUÁNDO: FASE 3 (durante/después de BERNA)
 - Función: Optimiza latencia en feeds de datos de mercado, audita seguridad de
            credenciales de broker, refactoriza patrones de gestión de riesgo
 
-🧪 fic_bulma_agent_tester1
+🧪 team5_mepu_agent_tester1
 - Rol: QA Tester/Guardiana de Calidad
 - Skills: test_case_generator, bug_detector, quality_validator, regression_tester
-- CUÁNDO: FASE 3 (después de Goku/Vegeta)
+- CUÁNDO: FASE 3 (después de BERNA/OVER)
 - Función: Crea tests para estrategias de trading, valida cálculos de indicadores,
            verifica precisión de señales de compra/venta
 ```
 
 ```
-🗄️ fic_krillin_agent_db
+🗄️ team5_banda_agent_db
 - Rol: Especialista en Base de Datos
 - Skills: database_schema_designer, database_migrator, database_connector
-- CUÁNDO: FASE 2.4 (Diseño de BD) y FASE 3 (Implementación de datos, paralelo a Goku)
+- CUÁNDO: FASE 2.4 (Diseño de BD) y FASE 3 (Implementación de datos, paralelo a BERNA)
 - Función: Diseña o valida el modelo de datos, traduce contratos de datos del proyecto PWA
-           a persistencia real en `rest_api_inversions_drfic`, ejecuta migraciones versionadas,
+           a persistencia real en `rest_api_inversions_team5`, ejecuta migraciones versionadas,
            implementa capa de servicio de datos y gestiona credenciales de forma segura
 - Motores: Supabase, MongoDB, PostgreSQL, MySQL, SQLite, Firebase
 - Regla crítica: NUNCA credenciales en código — solo variables de entorno
@@ -252,19 +253,19 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
 
 ```
 ┌─ FASE 2.3 (Investigación) ─────────────────────┐
-│ Picoro: Investiga APIs financieras, brokers,   │
+│ MEMO: Investiga APIs financieras, brokers,   │
 │         estrategias a implementar              │
 │ Deliverable: Arquitectura documentada          │
 └────────────────────────────────────────────────┘
                         ↓
 ┌─ FASE 2.4 (Estructura) ────────────────────────┐
-│ Goku: Crea estructura base, skeletons de       │
+│ BERNA: Crea estructura base, skeletons de       │
 │       features de inversión                   │
 │ Deliverable: Proyecto estructurado             │
 └────────────────────────────────────────────────┘
                         ↓
 ┌─ FASE 3.1 (Implementación) ────────────────────┐
-│ Goku: Implementa servicios/módulos:            │
+│ BERNA: Implementa servicios/módulos:            │
 │  - broker_connector, market_data               │
 │  - technical_indicators, signal_detector       │
 │  - options_chain, backtesting_engine           │
@@ -273,7 +274,7 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
                         ↓
         ┌───────────────┬──────────────┐
         ↓               ↓
-    ┌─ VEGETA ──────┐  ┌─ BULMA ──────┐
+    ┌─ OVER ──────┐  ┌─ MEPU ──────┐
     │ Optimiza      │  │ Crea tests   │
     │ latencia feeds│  │ Valida       │
     │ Seguridad API │  │ cálculos     │
@@ -292,15 +293,15 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
     [MÓDULO LISTO]
 ```
 
-**Regla de Oro**: Orden es **Picoro → Goku → (Vegeta ∥ Bulma) → Aprobación** ✅
+**Regla de Oro**: Orden es **MEMO → BERNA → (OVER ∥ MEPU) → Aprobación** ✅
 
-**Regla de Oro (con Base de Datos)**: **Picoro → (Krillin ∥ Goku) → (Vegeta ∥ Bulma) → Aprobación** ✅
+**Regla de Oro (con Base de Datos)**: **MEMO → (Banda ∥ BERNA) → (OVER ∥ MEPU) → Aprobación** ✅
 
-**Nota**: Krillin trabaja en paralelo a Goku desde FASE 2.4. Goku integra los servicios de datos de Krillin en sus features.
+**Nota**: Banda trabaja en paralelo a BERNA desde FASE 2.4. BERNA integra los servicios de datos de Banda en sus features.
 
 **Regla de Documentación Inline (Obligatoria)**:
-- Todo archivo TypeScript/React implementado en FASE 3 debe incluir comentarios con prefijo `FIC`.
-- Los comentarios `FIC` deben escribirse en inglés y español (EN/ES).
+- Todo archivo TypeScript/React implementado en FASE 3 debe incluir comentarios con prefijo `TEAM5`.
+- Los comentarios `Equipo 5` deben escribirse en inglés y español (EN/ES).
 - Mínimo requerido: módulo, clases, hooks públicos, servicios de broker y bloques de lógica crítica de señales.
 - La ausencia de este estándar bloquea el cierre del ticket hasta corregirse.
 
@@ -335,7 +336,7 @@ Se muestra al **inicio** de cada bloque de trabajo de un agente:
 
 ```
 ---
-🧠 @picoro · Analista/Arquitecto · FASE 2.3
+🧠 @memo · Analista/Arquitecto · FASE 2.3
 🎯 skill: knowledge_synthesizer
 📋 tarea: Generar knowledge base de dominio de persistencia desde SPEC
 ---
@@ -343,7 +344,7 @@ Se muestra al **inicio** de cada bloque de trabajo de un agente:
 
 ```
 ---
-🗄️ @krillin · Especialista BD · FASE 2.4
+🗄️ @banda · Especialista BD · FASE 2.4
 🎯 skill: database_schema_designer
 📋 tarea: Diseñar schema SQL para Supabase cubriendo entidades de estrategias
 ---
@@ -351,7 +352,7 @@ Se muestra al **inicio** de cada bloque de trabajo de un agente:
 
 ```
 ---
-👨‍💻 @goku · Dev Senior · FASE 3
+👨‍💻 @berna · Dev Senior · FASE 3
 🎯 skill: react_code_generator
 📋 tarea: Implementar componente WatchlistPanel con datos de Supabase
 ---
@@ -367,7 +368,7 @@ Se muestra al **final** de cada bloque de trabajo completado:
 
 **Ejemplo**:
 ```
-✅ @picoro completó · knowledge_synthesizer · output: knowledge/local/01_persistence_domain_research.md
+✅ @memo completó · knowledge_synthesizer · output: knowledge/local/01_persistence_domain_research.md
 ```
 
 #### Formato de transicion entre agentes (AGENT TRANSITION)
@@ -386,7 +387,7 @@ Se muestra cuando el control pasa de un agente a otro:
 ```
 ---
 ➡️ Transicion de agente
-   @picoro ──→ @krillin · FASE 2.4
+   @memo ──→ @banda · FASE 2.4
    Contexto pasado: knowledge base + trazabilidad SPEC->datos + gaps documentados
 ---
 ```
@@ -399,17 +400,17 @@ Se muestra cuando el control pasa de un agente a otro:
 | Agente termina un bloque de trabajo | Mostrar COMPLETION LINE |
 | Control pasa de un agente a otro | Mostrar AGENT TRANSITION |
 | Agente ejecuta un gate (pre-gate review o preguntas) | Incluir en AGENT HEADER el gate activo en lugar de skill |
-| Tarea muy corta (una sola linea de respuesta) | Basta con la primera linea del header: `🧠 @picoro · ...` |
+| Tarea muy corta (una sola linea de respuesta) | Basta con la primera linea del header: `🧠 @memo · ...` |
 
 #### Cabeceras rapidas por agente (referencia)
 
 | Agente | Primera linea | Emoji |
 |--------|---------------|-------|
-| `@picoro` | `🧠 @picoro · Analista/Arquitecto · FASE X.X` | 🧠 |
-| `@krillin` | `🗄️ @krillin · Especialista BD · FASE X.X` | 🗄️ |
-| `@goku` | `👨‍💻 @goku · Dev Senior · FASE X.X` | 👨‍💻 |
-| `@vegeta` | `🥷 @vegeta · Optimizador/Seguridad · FASE X.X` | 🥷 |
-| `@bulma` | `🧪 @bulma · QA Tester · FASE X.X` | 🧪 |
+| `@memo` | `🧠 @memo · Analista/Arquitecto · FASE X.X` | 🧠 |
+| `@banda` | `🗄️ @banda · Especialista BD · FASE X.X` | 🗄️ |
+| `@berna` | `👨‍💻 @berna · Dev Senior · FASE X.X` | 👨‍💻 |
+| `@over` | `🥷 @over · Optimizador/Seguridad · FASE X.X` | 🥷 |
+| `@mepu` | `🧪 @mepu · QA Tester · FASE X.X` | 🧪 |
 
 ---
 
@@ -418,10 +419,10 @@ Se muestra cuando el control pasa de un agente a otro:
 **Definición**: Capacidades específicas de los agentes de IA para ejecutar tareas en el desarrollo.
 
 **Skills de cada Agente**:
-- **Picoro**: ticket_analyzer, architecture_designer, requirement_validator, knowledge_synthesizer
-- **Goku**: react_code_generator, typescript_code_generator, vite_code_generator, tradingview_widgets_integrator, broker_api_integrator, documentation_writer, dependency_manager, code_structure_organizer
-- **Vegeta**: code_optimizer, performance_analyzer, security_auditor, pattern_refactorer
-- **Bulma**: test_case_generator, bug_detector, quality_validator, regression_tester
+- **MEMO**: ticket_analyzer, architecture_designer, requirement_validator, knowledge_synthesizer
+- **BERNA**: react_code_generator, typescript_code_generator, vite_code_generator, tradingview_widgets_integrator, broker_api_integrator, documentation_writer, dependency_manager, code_structure_organizer
+- **OVER**: code_optimizer, performance_analyzer, security_auditor, pattern_refactorer
+- **MEPU**: test_case_generator, bug_detector, quality_validator, regression_tester
 
 **NO confundir con**:
 - **assets**: Recursos estáticos (logos brokers, íconos de instrumentos financieros) → `assets/<asset_name>.*`
@@ -473,9 +474,9 @@ Se muestra cuando el control pasa de un agente a otro:
 **Regla de oro**: Los skills nuevos se detectan por necesidad del proyecto durante FASE 2 y se formalizan antes de que el agente que los necesita empiece a ejecutar tickets de implementación.
 
 **Secuencia obligatoria**:
-1. **FASE 2.3 - Picoro detecta gaps**:
+1. **FASE 2.3 - MEMO detecta gaps**:
   - al analizar la SPEC, las bases de datos seleccionadas y las APIs externas requeridas,
-  - identifica skills faltantes para Picoro, Krillin, Goku u otros agentes.
+  - identifica skills faltantes para MEMO, Banda, BERNA u otros agentes.
 2. **Registro global del skill**:
   - crear o actualizar `ai_global/skills/<nuevo_skill>.md`
 3. **Asignación metodológica del skill**:
@@ -486,9 +487,9 @@ Se muestra cuando el control pasa de un agente a otro:
   - el agente usa formalmente ese skill en FASE 2.4 o FASE 3
 
 **Ejemplo típico**:
-- Picoro detecta que el proyecto requiere consumir una API nueva de noticias
+- MEMO detecta que el proyecto requiere consumir una API nueva de noticias
 - se crea `ai_global/skills/news_api_integrator.md`
-- se asigna a Goku o Picoro según corresponda
+- se asigna a BERNA o MEMO según corresponda
 - se agrega en `workflow_agents.yaml`
 - luego se crean tickets que ya dependen de ese skill
 
@@ -506,7 +507,7 @@ Se muestra cuando el control pasa de un agente a otro:
 
 **Regla de Oro (Knowledge Base)**:
 1. **Siempre** se consulta primero la base de conocimiento **GLOBAL** (`ai_global/knowledge/`).
-2. **Luego** se aplica la base de conocimiento **DEL PROYECTO** (`projects/pwa/pwa_inversions_drfic/ai_work_flow/knowledge/`).
+2. **Luego** se aplica la base de conocimiento **DEL PROYECTO** (`projects/pwa/pwa_inversions_team5/ai_work_flow/knowledge/`).
 3. El conocimiento del proyecto **especializa** al global, no lo reemplaza.
 
 ---
@@ -525,7 +526,7 @@ Se muestra cuando el control pasa de un agente a otro:
 
 **Ubicación**:
 - Global: `ai_skill_dev1/ai_global/knowledge/local/`
-- Proyecto: `ai_skill_dev1/projects/pwa/pwa_inversions_drfic/knowledge/local/`
+- Proyecto: `ai_skill_dev1/projects/pwa/pwa_inversions_team5/knowledge/local/`
 
 **Convención de Nombres**:
 ```
@@ -569,7 +570,7 @@ El conocimiento local puede incluir código de tres formas:
 
 **Fecha**: 2026-03-03
 **Investigador**: Claude AI (IA)
-**Contexto**: Proyecto pwa_inversions_drfic
+**Contexto**: Proyecto pwa_inversions_team5
 
 ### Objetivo
 Determinar el mejor método para conectar la aplicación a brokers certificados
@@ -619,7 +620,7 @@ ib.connect();
 
 **Aplicación**:
 - Usar en servicio: `broker_connector`
-- Implementar en: TKT-INVRFIC-001, TKT-INVRFIC-002
+- Implementar en: TKT-INVT5-001, TKT-INVT5-002
 
 ### Referencias
 - [IBKR API Docs](knowledge/remote/ibkr_api_reference.md)
@@ -632,7 +633,7 @@ ib.connect();
 ## Lección: Latencia en Streaming de Cadena de Opciones
 
 **Fecha**: 2026-03-10
-**Contexto**: Durante desarrollo de TKT-INVRFIC-007
+**Contexto**: Durante desarrollo de TKT-INVT5-007
 **Problema**: Suscribir a todos los strikes de la cadena de opciones generaba
               demasiado tráfico y la UI se congelaba
 
@@ -642,8 +643,8 @@ y expiraciones del SPY, se recibían >500 mensajes/seg saturando el estado de Re
 
 ### Solución Encontrada
 ```typescript
-// FIC: Throttle updates to max 2/sec per strike (EN)
-// FIC: Limitar actualizaciones a máx 2/seg por strike (ES)
+// TEAM5: Throttle updates to max 2/sec per strike (EN)
+// TEAM5: Limitar actualizaciones a máx 2/seg por strike (ES)
 const throttledUpdate = useMemo(() =>
   throttle((data: OptionQuote) => dispatch(updateOptionQuote(data)), 500),
   [dispatch]
@@ -652,7 +653,7 @@ const throttledUpdate = useMemo(() =>
 
 ### Aplicación
 - Patrón reutilizable en: todos los streams de datos de mercado
-- Documentado en: TKT-INVRFIC-007
+- Documentado en: TKT-INVT5-007
 ```
 
 ---
@@ -672,7 +673,7 @@ const throttledUpdate = useMemo(() =>
 
 **Ubicación**:
 - Global: `ai_skill_dev1/ai_global/knowledge/remote/`
-- Proyecto: `ai_skill_dev1/projects/pwa/pwa_inversions_drfic/knowledge/remote/`
+- Proyecto: `ai_skill_dev1/projects/pwa/pwa_inversions_team5/knowledge/remote/`
 
 **Estructura de Archivo Remote**:
 ```markdown
@@ -694,11 +695,11 @@ const throttledUpdate = useMemo(() =>
 - Limitaciones o rate limits relevantes
 
 ### Aplicación en Proyecto
-[Cómo se aplica en pwa_inversions_drfic]
+[Cómo se aplica en pwa_inversions_team5]
 
 ### Relacionado con
 - Knowledge local: 01_topic_research.md
-- Tickets: TKT-INVRFIC-001, TKT-INVRFIC-005
+- Tickets: TKT-INVT5-001, TKT-INVT5-005
 ```
 
 **Ejemplo — Documentación Oficial IBKR**:
@@ -725,11 +726,11 @@ de mercado en tiempo real y ejecución de órdenes programáticas.
 
 ### Aplicación en Proyecto
 Base técnica para implementación del servicio `broker_connector`
-y el módulo `options_chain` en pwa_inversions_drfic.
+y el módulo `options_chain` en pwa_inversions_team5.
 
 ### Relacionado con
 - Knowledge local: 01_broker_api_research.md
-- Tickets: TKT-INVRFIC-001 (Broker Connection), TKT-INVRFIC-007 (Options Chain)
+- Tickets: TKT-INVT5-001 (Broker Connection), TKT-INVT5-007 (Options Chain)
 ```
 
 **Ejemplo — TradingView Widgets**:
@@ -756,23 +757,23 @@ rendimiento en aplicaciones web: velas japonesas, líneas, indicadores superpues
 
 ### Aplicación en Proyecto
 Principal librería de visualización para el módulo `market-scanner`
-y las páginas de detalle de símbolo en pwa_inversions_drfic.
+y las páginas de detalle de símbolo en pwa_inversions_team5.
 
 ### Relacionado con
 - Knowledge local: 02_charting_patterns.md
-- Tickets: TKT-INVRFIC-003 (Charting Module)
+- Tickets: TKT-INVT5-003 (Charting Module)
 ```
 
 **Ejemplo — NotebookLM**:
 ```markdown
 # notebooklm_main_research.md
-## NotebookLM: Investigación Profunda Proyecto pwa_inversions_drfic
+## NotebookLM: Investigación Profunda Proyecto pwa_inversions_team5
 
 **Tipo**: NotebookLM (Google AI)
 **URL**: https://notebooklm.google.com/notebook/<id_del_notebook>
 **Fecha creación**: 2026-03-03
 **Última actualización**: 2026-03-03
-**Acceso**: Requiere cuenta de Google (fibarrac@elnayar.com)
+**Acceso**: Requiere cuenta de Google (equipo5@gmail.com)
 
 ### Descripción
 Notebook de investigación con análisis profundo de todos los documentos del
@@ -812,7 +813,7 @@ proyecto de inversiones usando IA de Google.
 4. Actualizar con nuevo conocimiento generado durante el desarrollo
 
 ### Relacionado con
-- Proyecto: pwa_inversions_drfic
+- Proyecto: pwa_inversions_team5
 - Knowledge local: todos los archivos 01_*.md a 05_*.md
 - Todos los tickets (contexto general)
 ```
@@ -882,7 +883,7 @@ proyecto de inversiones usando IA de Google.
                         ↓
          Cada ticket referencia conocimiento necesario:
          
-         # TKT-INVRFIC-001: Implementar Broker Connector
+         # TKT-INVT5-001: Implementar Broker Connector
          ## Conocimiento Requerido
          - 📄 knowledge/local/01_broker_api_research.md
          - 🔗 knowledge/remote/ibkr_api_reference.md
@@ -989,7 +990,7 @@ proyecto de inversiones usando IA de Google.
 
 **Convención de Nombres**:
 - Global: `TKT-GLOBAL-###`
-- Proyecto Inversiones: `TKT-INVRFIC-###`
+- Proyecto Inversiones: `TKT-INVT5-###`
 
 **Estados**: Open → In Progress → Review → Closed
 
@@ -1002,13 +1003,13 @@ proyecto de inversiones usando IA de Google.
 
 **Estructura Mínima**:
 ```markdown
-# TKT-INVRFIC-003: Implementar módulo de indicadores técnicos
+# TKT-INVT5-003: Implementar módulo de indicadores técnicos
 
 ## Metadata
 - Tipo: Feature
 - Prioridad: Alta
 - Estado: In Progress
-- Proyecto: pwa_inversions_drfic
+- Proyecto: pwa_inversions_team5
 
 ## Descripción
 Implementar cálculo de RSI(14), MACD(12,26,9) y Bollinger Bands(20,2)
@@ -1029,11 +1030,11 @@ sobre datos OHLCV en tiempo real.
 ## 4. FASE 0: Configuración Inicial del Sistema (Setup Único)
 ## 3.5 🗄️ Base de Datos (Database Configuration)
 
-**Definición**: La arquitectura de datos se divide en dos capas obligatorias. La PWA documenta contratos y estructuras de referencia; la persistencia real, migraciones y acceso a base de datos viven en el proyecto backend `rest_api_inversions_drfic`.
+**Definición**: La arquitectura de datos se divide en dos capas obligatorias. La PWA documenta contratos y estructuras de referencia; la persistencia real, migraciones y acceso a base de datos viven en el proyecto backend `rest_api_inversions_team5`.
 
-**Agente responsable**: `@krillin` — `ai_global/agents/fic_krillin_agent_db.md`
+**Agente responsable**: `@banda` — `ai_global/agents/team5_banda_agent_db.md`
 
-**Archivo de configuración por proyecto backend**: `DATABASE_CONFIG.yaml` en `projects/api/rest_api_inversions_drfic/`  
+**Archivo de configuración por proyecto backend**: `DATABASE_CONFIG.yaml` en `projects/api/rest_api_inversions_team5/`  
 **Template base**: `ai_global/templates/DATABASE_CONFIG_TEMPLATE.yaml`
 
 ---
@@ -1062,8 +1063,8 @@ La metodología asume desde el inicio que un proyecto puede trabajar con **una o
 
 | Capa | Proyecto | Responsabilidad |
 |------|----------|-----------------|
-| Contrato de datos | `projects/pwa/pwa_inversions_drfic/` | Documentar modelos de referencia, schema y datos seed de apoyo |
-| Persistencia real | `projects/api/rest_api_inversions_drfic/` | Conectar a BD real, ejecutar migraciones, exponer endpoints REST |
+| Contrato de datos | `projects/pwa/pwa_inversions_team5/` | Documentar modelos de referencia, schema y datos seed de apoyo |
+| Persistencia real | `projects/api/rest_api_inversions_team5/` | Conectar a BD real, ejecutar migraciones, exponer endpoints REST |
 
 **En la PWA sí existe**:
 - `data/<alias_db>/models/` para contratos de datos
@@ -1075,7 +1076,7 @@ La metodología asume desde el inicio que un proyecto puede trabajar con **una o
 - migraciones ejecutables contra producción/desarrollo
 - credenciales de base de datos
 
-**En `rest_api_inversions_drfic` sí existe**:
+**En `rest_api_inversions_team5` sí existe**:
 - models reales de ORM/ODM
 - migrations
 - controllers, routes y services
@@ -1085,9 +1086,9 @@ La metodología asume desde el inicio que un proyecto puede trabajar con **una o
 ```
 PWA data/* = contrato y referencia
           ↓
-Krillin traduce ese contrato
+Banda traduce ese contrato
           ↓
-rest_api_inversions_drfic = implementación real de persistencia y REST API
+rest_api_inversions_team5 = implementación real de persistencia y REST API
 ```
 
 ---
@@ -1131,7 +1132,7 @@ Indica exactamente cuáles usarás.
 
 ### 3.5.4 DATABASE MODEL GATE
 
-> **Regla de oro**: Después de seleccionar las bases de datos y antes de que Krillin construya persistencia real, la IA debe preguntar quién definirá el modelo de datos de cada motor seleccionado.
+> **Regla de oro**: Después de seleccionar las bases de datos y antes de que Banda construya persistencia real, la IA debe preguntar quién definirá el modelo de datos de cada motor seleccionado.
 
 **Pregunta obligatoria al responsable humano**:
 ```
@@ -1145,21 +1146,21 @@ Para cada una, indica una de estas dos opciones:
 
 **Si el usuario responde que entregará los modelos**:
 - Debe colocarlos en la PWA como contrato de referencia:
-  - `projects/pwa/pwa_inversions_drfic/data/supabase/models/`
-  - `projects/pwa/pwa_inversions_drfic/data/supabase/schema/`
-  - `projects/pwa/pwa_inversions_drfic/data/supabase/data/`
-  - `projects/pwa/pwa_inversions_drfic/data/mongodb/models/`
-  - `projects/pwa/pwa_inversions_drfic/data/mongodb/schema/`
-  - `projects/pwa/pwa_inversions_drfic/data/mongodb/data/`
+  - `projects/pwa/pwa_inversions_team5/data/supabase/models/`
+  - `projects/pwa/pwa_inversions_team5/data/supabase/schema/`
+  - `projects/pwa/pwa_inversions_team5/data/supabase/data/`
+  - `projects/pwa/pwa_inversions_team5/data/mongodb/models/`
+  - `projects/pwa/pwa_inversions_team5/data/mongodb/schema/`
+  - `projects/pwa/pwa_inversions_team5/data/mongodb/data/`
 
 **Si el usuario responde que la IA debe crearlos**:
-- `@picoro` define la propuesta conceptual desde la SPEC
-- `@krillin` la aterriza a cada motor seleccionado
+- `@memo` define la propuesta conceptual desde la SPEC
+- `@banda` la aterriza a cada motor seleccionado
 - No se ejecuta ninguna migración sin aprobación explícita del responsable
 
 **Reglas**:
 - La decisión puede ser distinta por cada base de datos seleccionada.
-- Los modelos en `data/` son contrato documental; la implementación real se crea en `rest_api_inversions_drfic`.
+- Los modelos en `data/` son contrato documental; la implementación real se crea en `rest_api_inversions_team5`.
 
 ### 3.5.4.1 MODEL MATURITY GATE (Draft -> Candidate -> Approved)
 
@@ -1220,8 +1221,8 @@ Confirma los atributos de conexión no secretos para <motor>:
 ```yaml
 account:
   provider: "supabase.com"
-  owner_email: "fibarrac@elnayar.com"
-  project_name: "rest-api-inversions-drfic"
+  owner_email: "equipo5@gmail.com"
+  project_name: "rest-api-inversions-team5"
   project_ref: "abcdefghijklmnop"
   region: "us-east-1"
   environment: "development"
@@ -1239,12 +1240,12 @@ account:
   Repositorio git
 ```
 
-**Krillin solo genera `.env.example`** dentro de `projects/api/rest_api_inversions_drfic/`. El responsable del proyecto llena el `.env` real localmente con las credenciales de la cuenta/cluster indicada en `DATABASE_CONFIG.yaml`.
+**Banda solo genera `.env.example`** dentro de `projects/api/rest_api_inversions_team5/`. El responsable del proyecto llena el `.env` real localmente con las credenciales de la cuenta/cluster indicada en `DATABASE_CONFIG.yaml`.
 
 **Momento en que la IA pide secretos reales**:
-- Al inicio de FASE 2.4, cuando Krillin ya generó o completó `.env.example` para los motores habilitados.
+- Al inicio de FASE 2.4, cuando Banda ya generó o completó `.env.example` para los motores habilitados.
 - La solicitud se hace **por cada base de datos habilitada** y solo para las variables declaradas en `env_variables`.
-- Si falta alguna variable real, Krillin **debe pausar** antes de conectar, validar vía MCP o ejecutar migraciones.
+- Si falta alguna variable real, Banda **debe pausar** antes de conectar, validar vía MCP o ejecutar migraciones.
 
 **Ejemplos de lo que sí se solicita en este momento**:
 - Supabase: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_DB_PASSWORD`
@@ -1284,7 +1285,7 @@ Nota: en esta fase NO se solicitan passwords, tokens ni connection strings.
 ```text
 DATABASE SECRETS CHECK - <motor>
 
-Krillin ya generó .env.example para <motor>.
+Banda ya generó .env.example para <motor>.
 Comparte ahora los valores reales de estas variables para tu .env local:
 - <VAR_1>
 - <VAR_2>
@@ -1305,16 +1306,16 @@ Bloqueo: no se ejecutarán conexión, migraciones ni validación MCP para <motor
 
 ---
 
-### 3.5.8 Cuándo se Ejecuta Krillin
+### 3.5.8 Cuándo se Ejecuta Banda
 
 | Fase | Acción |
 |------|--------|
 | FASE 2.3 | Después del `DATABASE MODEL GATE`: valida contratos en `pwa/.../data/` o propone el modelo por motor seleccionado |
-| FASE 2.4 | Diseña la persistencia real en `projects/api/rest_api_inversions_drfic/` → genera `.env.example` y solicita credenciales reales por cada motor activo |
-| FASE 3 | Implementación: ejecuta migrations en development solo si el `.env` por motor está completo → implementa services/controllers/routes → entrega a Goku contratos/endpoints para integrar en la PWA |
+| FASE 2.4 | Diseña la persistencia real en `projects/api/rest_api_inversions_team5/` → genera `.env.example` y solicita credenciales reales por cada motor activo |
+| FASE 3 | Implementación: ejecuta migrations en development solo si el `.env` por motor está completo → implementa services/controllers/routes → entrega a BERNA contratos/endpoints para integrar en la PWA |
 
 **Nota de control**:
-- Si Krillin recibe un modelo en estado `draft`, debe tratarlo como insumo temporal y abrir/actualizar ticket para madurez de modelo antes de migrar.
+- Si Banda recibe un modelo en estado `draft`, debe tratarlo como insumo temporal y abrir/actualizar ticket para madurez de modelo antes de migrar.
 
 ---
 
@@ -1372,8 +1373,8 @@ Cuando hayas revisado los artefactos relevantes, responde las preguntas del gate
 **Qué es MCP**: Protocolo que permite conectar el agente IA directamente a servicios externos (bases de datos, APIs) durante una sesión de chat, sin necesidad de implementar código intermedio.
 
 **Para qué se usa en esta metodología**:
-- Krillin puede consultar el schema real de Supabase o MongoDB durante diseño
-- Krillin puede ejecutar queries de validación sobre la BD real
+- Banda puede consultar el schema real de Supabase o MongoDB durante diseño
+- Banda puede ejecutar queries de validación sobre la BD real
 - Copilot/modelo IA tiene contexto directo del estado de la base de datos
 
 ### 3.6.1 Servidores MCP disponibles
@@ -1415,8 +1416,8 @@ El MCP es una capa de **herramienta de sesión**, no de metodología:
 
 ```
 Capa metodológica (permanente):
-  projects/api/rest_api_inversions_drfic/DATABASE_CONFIG.yaml
-  → fic_krillin_agent_db.md → skills/ → migrations/
+  projects/api/rest_api_inversions_team5/DATABASE_CONFIG.yaml
+  → team5_banda_agent_db.md → skills/ → migrations/
 
 Capa MCP (opcional, por sesión):
   .vscode/mcp.json → activa acceso directo del agente a la BD en la sesión actual
@@ -1512,8 +1513,8 @@ ai_skill_dev1/
    - ¿Qué entrega?
 
 3. **Asignar nombres** memorables:
-   - Ejemplo: Picoro (Analista), Goku (Dev1), Vegeta (Optimizador), Bulma (QA)
-   - Usar convención: `fic_<nombre>_agent_<rol>.md`
+   - Ejemplo: MEMO (Analista), BERNA (Dev1), OVER (Optimizador), MEPU (QA)
+   - Usar convención: `team5_<nombre>_agent_<rol>.md`
 
 **Plantilla de definición** (para cada agente):
 ```yaml
@@ -1539,10 +1540,10 @@ CUÁNDO: <En qué fase actúa>
 2. **Crear archivo** por agente:
    ```bash
    # Ejemplo
-   touch ai_global/agents/fic_picoro_agent_orchestrator.md
-   touch ai_global/agents/fic_goku_agent_dev1.md
-   touch ai_global/agents/fic_vegeta_agent_dev2.md
-   touch ai_global/agents/fic_bulma_agent_tester1.md
+   touch ai_global/agents/team5_memo_agent_orchestrator.md
+   touch ai_global/agents/team5_berna_agent_dev1.md
+   touch ai_global/agents/team5_over_agent_dev2.md
+   touch ai_global/agents/team5_mepu_agent_tester1.md
    ```
 
 3. **Completar metadata** en cada archivo:
@@ -1675,10 +1676,10 @@ Sistema de desarrollo asistido por IA usando metodología híbrida.
 
 ## Agentes Disponibles
 
-1. **Picoro** - Analista/Arquitecto (X skills)
-2. **Goku** - Desarrollador Senior (X skills)
-3. **Vegeta** - Optimizador/Seguridad (X skills)
-4. **Bulma** - QA/Testing (X skills)
+1. **MEMO** - Analista/Arquitecto (X skills)
+2. **BERNA** - Desarrollador Senior (X skills)
+3. **OVER** - Optimizador/Seguridad (X skills)
+4. **MEPU** - QA/Testing (X skills)
 
 Ver: [agents/README.md](agents/README.md)
 
@@ -1790,8 +1791,8 @@ version: "1.0"
 project: "base_workflow"
 
 agents:
-  - id: picoro
-    name: "Picoro (Analyst/Architect)"
+  - id: memo
+    name: "MEMO (Analyst/Architect)"
     role: orchestrator
     phase: ["2.3", "2.4"]
     skills:
@@ -1800,8 +1801,8 @@ agents:
       - requirement_validator
       - knowledge_synthesizer
 
-  - id: goku
-    name: "Goku (Senior Developer)"
+  - id: berna
+    name: "BERNA (Senior Developer)"
     role: developer
     phase: ["2.4", "3"]
     skills:
@@ -1809,8 +1810,8 @@ agents:
       - typescript_code_generator
       # ... (listar todas las skills)
 
-  - id: vegeta
-    name: "Vegeta (Optimizer/Security)"
+  - id: over
+    name: "OVER (Optimizer/Security)"
     role: optimizer
     phase: ["3"]
     skills:
@@ -1818,8 +1819,8 @@ agents:
       - performance_analyzer
       # ... (listar todas)
 
-  - id: bulma
-    name: "Bulma (QA/Tester)"
+  - id: mepu
+    name: "MEPU (QA/Tester)"
     role: tester
     phase: ["3"]
     skills:
@@ -1831,23 +1832,23 @@ workflow:
   phases:
     - id: "2.3"
       name: "Investigación"
-      agents: [picoro]
+      agents: [memo]
       output: "knowledge/*.md"
 
     - id: "2.4"
       name: "Diseño/Estructura"
-      agents: [picoro, goku]
+      agents: [memo, berna]
       input: "knowledge/*.md"
       output: "tickets/*.md, architecture.md"
 
     - id: "3"
       name: "Implementación"
-      agents: [goku, vegeta, bulma]
+      agents: [berna, over, mepu]
       input: "tickets/*.md"
       output: "código, tests, docs"
       parallel:
-        - goku
-        - [vegeta, bulma]  # Vegeta y Bulma actúan en paralelo después de Goku
+        - berna
+        - [over, mepu]  # OVER y MEPU actúan en paralelo después de BERNA
 ```
 
 **Nota**: Este archivo será copiado/adaptado por cada nuevo proyecto.
@@ -1874,14 +1875,14 @@ workflow:
 En el archivo de ticket (`TKT-XXX-###.md`), agregar metadata:
 
 ```yaml
-assigned_agent: goku
+assigned_agent: berna
 required_skills:
   - react_code_generator
   - typescript_code_generator
 priority: high
 ```
 
-El agente Goku usará las skills especificadas para resolver el ticket.
+El agente BERNA usará las skills especificadas para resolver el ticket.
 ```
 
 **Resultado**: Guía de uso del sistema documentada.
@@ -1896,7 +1897,7 @@ El agente Goku usará las skills especificadas para resolver el ticket.
    id: TKT-GLOBAL-001
    title: "Prueba del sistema de agentes"
    type: test
-   assigned_agent: goku
+   assigned_agent: berna
    required_skills:
      - react_code_generator
    description: |
@@ -1904,10 +1905,10 @@ El agente Goku usará las skills especificadas para resolver el ticket.
    ```
 
 2. **Simular workflow**:
-   - Picoro: Analiza el ticket (skill: ticket_analyzer)
-   - Goku: Implementa solución (skill: react_code_generator)
-   - Vegeta: Revisa código (skill: code_optimizer)
-   - Bulma: Valida (skill: quality_validator)
+   - MEMO: Analiza el ticket (skill: ticket_analyzer)
+   - BERNA: Implementa solución (skill: react_code_generator)
+   - OVER: Revisa código (skill: code_optimizer)
+   - MEPU: Valida (skill: quality_validator)
 
 3. **Documentar resultado** en el ticket
 
@@ -1931,7 +1932,7 @@ El agente Goku usará las skills especificadas para resolver el ticket.
 
 ## Estadísticas
 
-- **Agentes**: 4 (Picoro, Goku, Vegeta, Bulma)
+- **Agentes**: 4 (MEMO, BERNA, OVER, MEPU)
 - **Skills**: 20 skills globales
 - **Templates**: 8 templates disponibles
 - **Último Update**: YYYY-MM-DD
@@ -1971,17 +1972,17 @@ Para diferenciar claramente la capa metodológica de la capa técnica, se recomi
 - **Agentes técnicos (invocación)**: usar nombres base cortos para chat
 
 Nombres base sugeridos:
-- `@picoro`
-- `@goku`
-- `@vegeta`
-- `@bulma`
+- `@memo`
+- `@berna`
+- `@over`
+- `@mepu`
 
 #### 5.7.1.2 Relación 1:1 rol -> técnico
 
-- `fic_picoro_agent_orchestrator.md` -> `picoro.agent.md` (`@picoro`)
-- `fic_goku_agent_dev1.md` -> `goku.agent.md` (`@goku`)
-- `fic_vegeta_agent_dev2.md` -> `vegeta.agent.md` (`@vegeta`)
-- `fic_bulma_agent_tester1.md` -> `bulma.agent.md` (`@bulma`)
+- `team5_memo_agent_orchestrator.md` -> `memo.agent.md` (`@memo`)
+- `team5_berna_agent_dev1.md` -> `berna.agent.md` (`@berna`)
+- `team5_over_agent_dev2.md` -> `over.agent.md` (`@over`)
+- `team5_mepu_agent_tester1.md` -> `mepu.agent.md` (`@mepu`)
 
 #### 5.7.2 Decisión formal (con o sin agentes técnicos)
 
@@ -2047,7 +2048,7 @@ grep "✅ FASE 1" ai_global/README.md
 # NOTA: FASE 0 y FASE 1 ya completadas (setup único del sistema)
 
 # Paso 1: Crear estructura del proyecto
-ai_skill_dev1/projects/pwa/pwa_inversions_drfic/
+ai_skill_dev1/projects/pwa/pwa_inversions_team5/
 ├── README.md
 ├── config.yaml
 ├── data/
@@ -2077,7 +2078,7 @@ ai_skill_dev1/projects/pwa/pwa_inversions_drfic/
 ├── tests/
 └── docs/
 
-ai_skill_dev1/projects/api/rest_api_inversions_drfic/
+ai_skill_dev1/projects/api/rest_api_inversions_team5/
 ├── DATABASE_CONFIG.yaml
 ├── .env.example
 ├── src/
@@ -2092,7 +2093,7 @@ ai_skill_dev1/projects/api/rest_api_inversions_drfic/
 # Nota de ejecución:
 # En este paso se crea el esqueleto/directorio base del backend REST.
 # La implementación real de persistencia (models, migrations, services,
-# controllers y routes funcionales) la realiza Krillin en FASE 2.4.
+# controllers y routes funcionales) la realiza Banda en FASE 2.4.
 
 # Paso 2: DATABASE SELECTION GATE
 # Preguntar al usuario qué base(s) de datos usará el proyecto
@@ -2101,7 +2102,7 @@ ai_skill_dev1/projects/api/rest_api_inversions_drfic/
 # Editar config.yaml con metadata del proyecto de inversiones
 
 # Paso 4: Generar knowledge base inicial
-# Picoro investiga y genera knowledge/local y knowledge/remote
+# MEMO investiga y genera knowledge/local y knowledge/remote
 # con base en SPEC, bases seleccionadas, modelos y APIs requeridas
 
 # Paso 5: Asignar skills por proyecto
@@ -2112,7 +2113,7 @@ ai_skill_dev1/projects/api/rest_api_inversions_drfic/
 #  y despues agregarlos al workflow del proyecto)
 
 # Paso 6: Crear ticket inicial
-TKT-INVRFIC-001: Setup inicial + Broker Connector
+TKT-INVT5-001: Setup inicial + Broker Connector
 
 # Paso 7: Desarrollar
 # Implementar en features/ y services/
@@ -2129,23 +2130,23 @@ TKT-INVRFIC-001: Setup inicial + Broker Connector
 - [ ] Skills globales documentados en `ai_global/skills/`
 - [ ] Skills asignados en `ai_global/agents/*.md`
 - [ ] `ai_work_flow/development/workflow_agents.yaml` creado con tareas por agente
-- [ ] `projects/api/rest_api_inversions_drfic/` creado para persistencia real
+- [ ] `projects/api/rest_api_inversions_team5/` creado para persistencia real
 - [ ] `data/` creado en la PWA como contrato de referencia por base de datos
 - [ ] `features/` y `services/` definidos con sus `config.yaml`
 - [ ] Knowledge base inicial creada (`knowledge/local` y `knowledge/remote`)
   - [ ] Investigación de brokers documentada
   - [ ] Librerías de indicadores técnicos comparadas
   - [ ] Estrategias de opciones especificadas
-- [ ] Ticket inicial creado (`TKT-INVRFIC-001`)
+- [ ] Ticket inicial creado (`TKT-INVT5-001`)
 
 #### 6.1.1.1 Checkpoint de Continuidad (Anti-Interrupcion)
 
 Cuando la ejecucion cambia de prioridad en medio de FASE 2 (por ejemplo, pasar de Supabase a MongoDB antes de terminar), el agente debe aplicar este checkpoint obligatorio antes de avanzar:
 
 - [ ] Confirmar motores activos seleccionados en DATABASE SELECTION GATE
-- [ ] Verificar que cada motor activo tenga modelo y schema en `projects/pwa/pwa_inversions_drfic/data/<motor>/`
-- [ ] Verificar que cada motor activo tenga artefacto tecnico inicial en `projects/api/rest_api_inversions_drfic/src/models/`
-- [ ] Actualizar `projects/api/rest_api_inversions_drfic/DATABASE_CONFIG.yaml` con la estrategia final por motor (`generate_by_ai` o `provided_by_user`)
+- [ ] Verificar que cada motor activo tenga modelo y schema en `projects/pwa/pwa_inversions_team5/data/<motor>/`
+- [ ] Verificar que cada motor activo tenga artefacto tecnico inicial en `projects/api/rest_api_inversions_team5/src/models/`
+- [ ] Actualizar `projects/api/rest_api_inversions_team5/DATABASE_CONFIG.yaml` con la estrategia final por motor (`generate_by_ai` o `provided_by_user`)
 - [ ] Bloquear avance a FASE 2.4 si falta cualquier artefacto de algun motor activo
 
 Regla operativa:
@@ -2194,7 +2195,7 @@ Puedes elegir una o varias. Indícame exactamente cuáles usarás.
 {proyecto}/ai_work_flow/docs/specs/SPECIFICATION.md
 ```
 
-**Comportamiento requerido del agente @picoro:**
+**Comportamiento requerido del agente @memo:**
 
 | Situación | Acción del agente |
 |-----------|-------------------|
@@ -2220,14 +2221,14 @@ No continuaré ni buscaré la especificación en otras ubicaciones.
 
 #### 6.1.4 DATABASE MODEL GATE — Barrera obligatoria antes de diseño de persistencia
 
-> **Regla de oro**: Después de la selección de bases y antes de que Krillin construya el backend de persistencia, la IA debe preguntar si el modelo de datos será entregado por el usuario o propuesto por la IA.
+> **Regla de oro**: Después de la selección de bases y antes de que Banda construya el backend de persistencia, la IA debe preguntar si el modelo de datos será entregado por el usuario o propuesto por la IA.
 
 **Comportamiento requerido del agente**:
 
 | Situación | Acción del agente |
 |-----------|-------------------|
-| El usuario entregará modelos/schemas | ✅ Indicar rutas oficiales dentro de `projects/pwa/pwa_inversions_drfic/data/` |
-| El usuario quiere que la IA proponga modelos | ✅ Activar flujo `Picoro → Krillin` con aprobación posterior |
+| El usuario entregará modelos/schemas | ✅ Indicar rutas oficiales dentro de `projects/pwa/pwa_inversions_team5/data/` |
+| El usuario quiere que la IA proponga modelos | ✅ Activar flujo `MEMO → Banda` con aprobación posterior |
 | No se ha definido origen del modelo | ⛔ **STOP** — No continuar |
 
 **Mensaje de parada estándar**:
@@ -2239,9 +2240,9 @@ Indica cómo se definirá el modelo de datos para cada base seleccionada:
 2. Quiero que la IA proponga los modelos/schemas.
 
 Si eliges la opción 1, coloca los archivos en:
-projects/pwa/pwa_inversions_drfic/data/<alias_db>/models/
-projects/pwa/pwa_inversions_drfic/data/<alias_db>/schema/
-projects/pwa/pwa_inversions_drfic/data/<alias_db>/data/
+projects/pwa/pwa_inversions_team5/data/<alias_db>/models/
+projects/pwa/pwa_inversions_team5/data/<alias_db>/schema/
+projects/pwa/pwa_inversions_team5/data/<alias_db>/data/
 ```
 
 ---
@@ -2251,20 +2252,20 @@ projects/pwa/pwa_inversions_drfic/data/<alias_db>/data/
 **Regla de implementación**:
 
 ```text
-projects/pwa/pwa_inversions_drfic/data/*
+projects/pwa/pwa_inversions_team5/data/*
   = contrato documental y referencia de datos
 
-projects/api/rest_api_inversions_drfic/*
+projects/api/rest_api_inversions_team5/*
   = implementación real de base de datos, migraciones y endpoints REST
 ```
 
 **Decisión metodológica**:
 - La PWA no construye la base de datos real.
 - La REST API sí construye la base de datos real y su capa de acceso.
-- Goku consume endpoints o contratos expuestos por `rest_api_inversions_drfic`.
-- Krillin construye models, services, controllers y routes en el backend.
-- El directorio base de `rest_api_inversions_drfic` nace en FASE 2, Paso 1.
-- La construcción funcional del backend ocurre en FASE 2.4 por Krillin.
+- BERNA consume endpoints o contratos expuestos por `rest_api_inversions_team5`.
+- Banda construye models, services, controllers y routes en el backend.
+- El directorio base de `rest_api_inversions_team5` nace en FASE 2, Paso 1.
+- La construcción funcional del backend ocurre en FASE 2.4 por Banda.
 
 ---
 
@@ -2284,8 +2285,8 @@ projects/api/rest_api_inversions_drfic/*
 - **Base**: SPECIFICATION.md (original) o incremental/SPEC_00X.md (cambios grandes)
 
 **C. Tickets Internos de Desarrollo**:
-- **Origen**: Derivados del diseño de Picoro
-- **Formato**: `TKT-INVRFIC-###`
+- **Origen**: Derivados del diseño de MEMO
+- **Formato**: `TKT-INVT5-###`
 - **Quién los crea**: TÚ (basándote en workflow_agents.yaml)
 - **Qué contienen**: Tarea específica de implementación
 
@@ -2306,24 +2307,24 @@ TÚ creas: docs/specs/SPECIFICATION.md
     ↓
 DATABASE MODEL GATE
   ↓
-Picoro investiga → knowledge/local/*.md
+MEMO investiga → knowledge/local/*.md
   (brokers, indicadores, estrategias, feeds de datos)
-Picoro diseña → workflow_agents.yaml + config.yaml
+MEMO diseña → workflow_agents.yaml + config.yaml
   ↓
-Krillin crea persistencia real en `rest_api_inversions_drfic`
+Banda crea persistencia real en `rest_api_inversions_team5`
   (models, migrations, services, controllers, routes)
     ↓
 TÚ creas tickets internos:
-    - TKT-INVRFIC-001: Implementar broker_connector (IBKR)
-    - TKT-INVRFIC-002: Implementar market_data_feed
-    - TKT-INVRFIC-003: Implementar technical_indicators service
-    - TKT-INVRFIC-004: Implementar signal_detector engine
-    - TKT-INVRFIC-005: Implementar dashboard UI
-    - TKT-INVRFIC-006: Implementar options_chain viewer
-    - TKT-INVRFIC-007: Implementar alerts system
+    - TKT-INVT5-001: Implementar broker_connector (IBKR)
+    - TKT-INVT5-002: Implementar market_data_feed
+    - TKT-INVT5-003: Implementar technical_indicators service
+    - TKT-INVT5-004: Implementar signal_detector engine
+    - TKT-INVT5-005: Implementar dashboard UI
+    - TKT-INVT5-006: Implementar options_chain viewer
+    - TKT-INVT5-007: Implementar alerts system
     - ...
     ↓
-Por cada ticket: Picoro → Goku → Vegeta → Bulma
+Por cada ticket: MEMO → BERNA → OVER → MEPU
     ↓
 Cierras ticket externo REQ-INV-001
 ```
@@ -2336,10 +2337,10 @@ Ticket Externo: REQ-INV-015
     ↓
 TÚ creas DIRECTAMENTE ticket interno:
 
-tickets/TKT-INVRFIC-025.md
+tickets/TKT-INVT5-025.md
 ---
 Ticket Externo: REQ-INV-015
-Solicitante: Dr. FIC
+Solicitante: Equipo 5
 Tipo: Mejora
 
 Descripción: Agregar Average True Range (ATR) como indicador de volatilidad
@@ -2348,7 +2349,7 @@ Archivos Afectados:
 - src/services/indicators/atr.service.ts
 - src/features/market-scanner/components/ScannerRow.tsx
     ↓
-Picoro → Goku → Vegeta → Bulma
+MEMO → BERNA → OVER → MEPU
     ↓
 Cierras ticket externo REQ-INV-015
 ```
@@ -2370,17 +2371,17 @@ Nueva Funcionalidad: Motor de backtesting para Iron Condor, Straddle, Strangle
 Fuente de datos históricos: Polygon.io / CBOE
 ...
     ↓
-Picoro analiza spec incremental
-Picoro diseña → actualiza workflow_agents.yaml
+MEMO analiza spec incremental
+MEMO diseña → actualiza workflow_agents.yaml
     ↓
 TÚ creas nuevos tickets internos:
-    - TKT-INVRFIC-040: Integrar histórico de opciones (Polygon.io)
-    - TKT-INVRFIC-041: Motor de backtesting para estrategias
-    - TKT-INVRFIC-042: Dashboard de resultados de backtesting
-    - TKT-INVRFIC-043: Métricas de rendimiento (Sharpe, Max Drawdown)
+    - TKT-INVT5-040: Integrar histórico de opciones (Polygon.io)
+    - TKT-INVT5-041: Motor de backtesting para estrategias
+    - TKT-INVT5-042: Dashboard de resultados de backtesting
+    - TKT-INVT5-043: Métricas de rendimiento (Sharpe, Max Drawdown)
     - ...
     ↓
-Por cada ticket: Picoro → Goku → Vegeta → Bulma
+Por cada ticket: MEMO → BERNA → OVER → MEPU
     ↓
 Cierras ticket externo REQ-INV-030
 ```
@@ -2411,7 +2412,7 @@ Cierras ticket externo REQ-INV-030
 #### 6.2.4 Estructura de Ticket Interno (con referencia externa)
 
 ```markdown
-# TKT-INVRFIC-###: <Título>
+# TKT-INVT5-###: <Título>
 
 **Metadata**:
 - **Ticket Externo**: REQ-INV-XXXX (si aplica)
@@ -2444,21 +2445,21 @@ Cierras ticket externo REQ-INV-030
 
 ## Implementación
 
-### Picoro analiza:
+### MEMO analiza:
 - [ ] Ticket revisado
 - [ ] Impacto en lógica de señales identificado
 - [ ] Plan aprobado
 
-### Goku implementa:
+### BERNA implementa:
 - [ ] Código implementado (TypeScript/React)
 - [ ] Comentarios FIC en inglés/español
 - [ ] Integración con broker verificada (si aplica)
 
-### Vegeta optimiza:
+### OVER optimiza:
 - [ ] Latencia de feed de datos revisada (si aplica)
 - [ ] Seguridad de credenciales de broker auditada (si aplica)
 
-### Bulma valida:
+### MEPU valida:
 - [ ] Tests unitarios creados/actualizados
 - [ ] Cálculos de indicador validados vs. TradingView (si aplica)
 - [ ] Señales de trading verificadas con datos históricos
@@ -2477,7 +2478,7 @@ Cierras ticket externo REQ-INV-030
 ## Cierre
 
 **Fecha Cierre**: YYYY-MM-DD
-**Commit**: `tipo(scope): descripción (#TKT-INVRFIC-###)`
+**Commit**: `tipo(scope): descripción (#TKT-INVT5-###)`
 **Ticket Externo Cerrado**: REQ-INV-XXXX ✅
 ```
 
@@ -2487,19 +2488,19 @@ Cierras ticket externo REQ-INV-030
 
 ```mermaid
 graph LR
-    A[Crear Ticket Interno] --> B[Picoro Analiza]
-    B --> C[Goku Implementa]
-    C --> D[Vegeta Optimiza]
-    D --> E[Bulma Valida]
+    A[Crear Ticket Interno] --> B[MEMO Analiza]
+    B --> C[BERNA Implementa]
+    C --> D[OVER Optimiza]
+    D --> E[MEPU Valida]
     E --> F[Review]
     F --> G[Cerrar Ticket]
 ```
 
-1. **Crear Ticket Interno**: Basado en diseño de Picoro o necesidad del trader
-2. **Picoro Analiza**: Confirma plan técnico, identifica impacto en señales/estrategias
-3. **Goku Implementa**: Escribe código TypeScript/React, integra APIs financieras
-4. **Vegeta Optimiza**: Revisa latencia de datos de mercado, seguridad de API keys
-5. **Bulma Valida**: Crea tests, valida cálculos de indicadores, prueba señales
+1. **Crear Ticket Interno**: Basado en diseño de MEMO o necesidad del trader
+2. **MEMO Analiza**: Confirma plan técnico, identifica impacto en señales/estrategias
+3. **BERNA Implementa**: Escribe código TypeScript/React, integra APIs financieras
+4. **OVER Optimiza**: Revisa latencia de datos de mercado, seguridad de API keys
+5. **MEPU Valida**: Crea tests, valida cálculos de indicadores, prueba señales
 6. **Review**: Aprobación de código y lógica financiera
 7. **Cerrar**: Marcar ticket como completado con evidencia
 
@@ -2507,11 +2508,11 @@ graph LR
 
 - [ ] Ticket definido con alcance claro
 - [ ] Ticket externo referenciado (si aplica)
-- [ ] Picoro analiza y define plan técnico/financiero
+- [ ] MEMO analiza y define plan técnico/financiero
 - [ ] Skills necesarios confirmados o agregados
-- [ ] Goku implementa y documenta (comentarios FIC obligatorios)
-- [ ] Vegeta optimiza (latencia, seguridad, si aplica)
-- [ ] Bulma crea tests y valida cálculos financieros
+- [ ] BERNA implementa y documenta (comentarios Team 5 obligatorios)
+- [ ] OVER optimiza (latencia, seguridad, si aplica)
+- [ ] MEPU crea tests y valida cálculos financieros
 - [ ] Evidencia de pruebas adjunta (incluyendo validación vs. TradingView si aplica)
 - [ ] Ticket cerrado con aprobación
 - [ ] Ticket externo cerrado (si aplica)
@@ -2540,11 +2541,11 @@ graph LR
 
 | Elemento | Formato | Ejemplo |
 |----------|---------|---------|
-| Proyecto | `pwa_<nombre>_<autor>` | `pwa_inversions_drfic` |
-| API REST | `rest_api_<nombre>_<autor>` | `rest_api_inversions_drfic` |
-| Agente | `fic_<nombre>_agent` | `fic_goku_agent_dev1` |
+| Proyecto | `pwa_<nombre>_<autor>` | `pwa_inversions_team5` |
+| API REST | `rest_api_<nombre>_<autor>` | `rest_api_inversions_team5` |
+| Agente | `fic_<nombre>_agent` | `team5_berna_agent_dev1` |
 | Skill | `<dominio>_<acción>` | `broker_connector`, `signal_detector`, `options_analyzer` |
-| Ticket | `TKT-INVRFIC-###` | `TKT-INVRFIC-001` |
+| Ticket | `TKT-INVT5-###` | `TKT-INVT5-001` |
 | Knowledge | `<tipo>_<tema>.md` | `lesson_options_chain_latency.md`, `ref_ibkr_api.md` |
 
 ### 7.2 Archivos de Configuración
@@ -2552,7 +2553,7 @@ graph LR
 #### config.yaml (Proyecto - Nivel Raíz)
 ```yaml
 project:
-  code: pwa_inversions_drfic
+  code: pwa_inversions_team5
   name: Investment Platform AI
   version: 1.0.0
   category: pwa
@@ -2560,10 +2561,10 @@ project:
                análisis técnico y gestión de estrategias de opciones
 
 agents_involved:
-  - fic_picoro_agent_orchestrator    # FASE 2.3-2.4
-  - fic_goku_agent_dev1              # FASE 2.4-3
-  - fic_vegeta_agent_dev2            # FASE 3
-  - fic_bulma_agent_tester1          # FASE 3
+  - team5_memo_agent_orchestrator    # FASE 2.3-2.4
+  - team5_berna_agent_dev1              # FASE 2.4-3
+  - team5_over_agent_dev2            # FASE 3
+  - team5_mepu_agent_tester1          # FASE 3
 
 tech_stack:
   frontend: React + TypeScript + Vite
@@ -2577,7 +2578,7 @@ tech_stack:
   indicators_lib: technicalindicators (npm)
 
 metadata:
-  owner: Dr.FIC. Francisco Ibarra Carlos
+  owner: Equipo 5
   created: 2026-03-03
   last_updated: 2026-03-03
 ```
@@ -2586,65 +2587,65 @@ metadata:
 ```yaml
 # Define tareas ESPECÍFICAS para agentes en el proyecto de inversiones
 agents_tasks:
-  picoro:
-    - task_id: PICORO_001
+  memo:
+    - task_id: MEMO_001
       name: Analizar SPECIFICATION.md del proyecto de inversiones
       description: Investigación profunda de APIs financieras, estrategias y arquitectura
       inputs: SPECIFICATION.md, knowledge/
       outputs: Arquitectura diseñada, config.yaml, lista de servicios/features
 
-  goku:
-    - task_id: GOKU_001
+  berna:
+    - task_id: BERNA_001
       name: Implementar broker_connector service (IBKR)
       description: Conexión a Interactive Brokers TWS API
       inputs: config.yaml, knowledge/local/01_broker_api_research.md
       outputs: src/services/broker/ibkr.connector.ts
 
-    - task_id: GOKU_002
+    - task_id: BERNA_002
       name: Implementar technical_indicators service
       description: RSI, MACD, Bollinger Bands, ATR sobre datos OHLCV
       inputs: config.yaml, knowledge/local/03_technical_indicators_patterns.md
       outputs: src/services/indicators/*.service.ts
 
-    - task_id: GOKU_003
+    - task_id: BERNA_003
       name: Implementar signal_detector engine
       description: Motor de detección de señales de compra/venta
       inputs: Servicios de indicadores, knowledge/local/04_options_strategies_decisions.md
       outputs: src/services/signals/signal_detector.service.ts
 
-    - task_id: GOKU_004
+    - task_id: BERNA_004
       name: Implementar dashboard UI principal
       description: Vista principal con watchlist, señales y gráficas
       inputs: TradingView widgets, store global
       outputs: src/features/dashboard/
 
-  vegeta:
-    - task_id: VEGETA_001
+  over:
+    - task_id: OVER_001
       name: Optimizar latencia de market data feed
       description: Asegurar actualizaciones <100ms en señales críticas
-      inputs: Código final de Goku (servicios de datos)
+      inputs: Código final de BERNA (servicios de datos)
       outputs: Código optimizado con throttling/debouncing
 
-    - task_id: VEGETA_002
+    - task_id: OVER_002
       name: Auditar seguridad de API keys y credenciales de broker
       description: Verificar que ninguna credencial quede expuesta en cliente
       inputs: Código completo del proyecto
       outputs: Reporte de seguridad + código corregido
 
-  bulma:
-    - task_id: BULMA_001
+  mepu:
+    - task_id: MEPU_001
       name: Tests unitarios de indicadores técnicos
       description: Validar RSI, MACD, BB contra datos de referencia de TradingView
       inputs: src/services/indicators/*.service.ts
       outputs: tests/indicators/*.test.ts
 
-    - task_id: BULMA_002
+    - task_id: MEPU_002
       name: Tests del motor de señales
       description: Validar precisión de señales con datos históricos conocidos
       inputs: src/services/signals/signal_detector.service.ts
       outputs: tests/signals/*.test.ts
 
-execution_order: picoro → goku → (vegeta ∥ bulma) → final_review
+execution_order: memo → berna → (over ∥ mepu) → final_review
 ```
 
 #### features/`<feature>`/config.yaml
@@ -2706,8 +2707,8 @@ error_handling:
 ```typescript
 // En src/features/market-scanner/hooks/useMarketScanner.ts
 
-// FIC: Import trading services for market analysis (EN)
-// FIC: Importar servicios de trading para análisis de mercado (ES)
+// TEAM5: Import trading services for market analysis (EN)
+// TEAM5: Importar servicios de trading para análisis de mercado (ES)
 import { useBrokerConnection } from "@/services/broker/useBrokerConnection";
 import { useTechnicalIndicators } from "@/services/indicators/useTechnicalIndicators";
 import { useSignalDetector } from "@/services/signals/useSignalDetector";
@@ -2717,8 +2718,8 @@ export const useMarketScanner = (symbols: string[]) => {
   const { calculateIndicators } = useTechnicalIndicators();
   const { detectSignals } = useSignalDetector();
 
-  // FIC: Core scanning logic - combines data feed + indicators + signals (EN)
-  // FIC: Lógica principal del scanner - combina feed + indicadores + señales (ES)
+  // TEAM5: Core scanning logic - combines data feed + indicators + signals (EN)
+  // TEAM5: Lógica principal del scanner - combina feed + indicadores + señales (ES)
   const scanMarket = async () => {
     const data = await subscribeMarketData(symbols);
     const indicators = calculateIndicators(data);
@@ -2757,10 +2758,10 @@ export const useMarketScanner = (symbols: string[]) => {
 - [ ] 3. Explorar templates en `ai_global/templates/`
 - [ ] 4. Revisar proyecto ejemplo de referencia en `projects/pwa/`
 - [ ] 5. Identificar qué skills globales necesitas (broker, indicators, signals)
-- [ ] 6. Crear estructura de `pwa_inversions_drfic/`
+- [ ] 6. Crear estructura de `pwa_inversions_team5/`
 - [ ] 7. Configurar `config.yaml` del proyecto con tech stack de inversiones
 - [ ] 8. Generar knowledge base inicial (brokers, indicadores, estrategias)
-- [ ] 9. Crear ticket inicial `TKT-INVRFIC-001`
+- [ ] 9. Crear ticket inicial `TKT-INVT5-001`
 - [ ] 10. Comenzar desarrollo por módulo (broker → data → indicadores → señales → UI)
 - [ ] 11. Documentar aprendizajes de APIs financieras en `knowledge/local/`
 
@@ -2769,7 +2770,7 @@ export const useMarketScanner = (symbols: string[]) => {
 ## 10. Preguntas Frecuentes
 
 **P: ¿Cuándo crear un skill global vs. local?**  
-R: Global si es reutilizable en múltiples proyectos (ej. `broker_connector` podría usarse en otro proyecto de trading). Local si es muy específico de `pwa_inversions_drfic` (ej. una estrategia de señales propia).
+R: Global si es reutilizable en múltiples proyectos (ej. `broker_connector` podría usarse en otro proyecto de trading). Local si es muy específico de `pwa_inversions_team5` (ej. una estrategia de señales propia).
 
 **P: ¿Debo crear siempre agentes técnicos?**  
 R: No es obligatorio. Siempre debes mantener agentes documentados (roles) en `ai_global/agents/*.md`. Los agentes técnicos se crean solo si la decisión formal de la Sección 5.7.2 es "sí".
@@ -2787,7 +2788,7 @@ R: Usa SemVer en `config.yaml`. Major.Minor.Patch (ej. 2.1.3).
 R: Usa TradingView Pine Script como referencia. Ejecuta el mismo cálculo sobre los mismos datos históricos y compara resultados. Documenta la validación en el ticket de cierre.
 
 **P: ¿Cómo manejo las API keys de brokers de forma segura?**  
-R: Nunca en código fuente ni en archivos de conocimiento. Usar variables de entorno (`.env`) y documentar en `knowledge/local/` solo la estructura esperada (sin valores reales). Vegeta audita esto en cada módulo de broker.
+R: Nunca en código fuente ni en archivos de conocimiento. Usar variables de entorno (`.env`) y documentar en `knowledge/local/` solo la estructura esperada (sin valores reales). OVER audita esto en cada módulo de broker.
 
 ---
 
@@ -2818,8 +2819,8 @@ R: Nunca en código fuente ni en archivos de conocimiento. Usar variables de ent
 - ✅ Soporte explícito para una o más bases de datos por proyecto
 - ✅ `DATABASE SELECTION GATE` agregado antes de revisar la SPEC
 - ✅ `DATABASE MODEL GATE` agregado antes del diseño de persistencia real
-- ✅ Separación formal entre contrato de datos en PWA y persistencia real en `rest_api_inversions_drfic`
-- ✅ Ruta oficial para backend REST confirmada como `projects/api/rest_api_inversions_drfic/`
+- ✅ Separación formal entre contrato de datos en PWA y persistencia real en `rest_api_inversions_team5`
+- ✅ Ruta oficial para backend REST confirmada como `projects/api/rest_api_inversions_team5/`
 
 **Cambios v2.1**:
 - ✅ Sección 5.7 agregada: implementación técnica opcional de agentes por entorno
@@ -2838,15 +2839,15 @@ R: Nunca en código fuente ni en archivos de conocimiento. Usar variables de ent
 **Cambios v1.0 (respecto a versión RPA)**:
 - ✅ Estructura de proyecto adaptada a features de trading (scanner, signals, options, backtesting)
 - ✅ Ejemplos de agentes orientados a APIs de brokers e indicadores financieros
-- ✅ Skills de Goku extendidos con `tradingview_widgets_integrator` y `broker_api_integrator`
+- ✅ Skills de BERNA extendidos con `tradingview_widgets_integrator` y `broker_api_integrator`
 - ✅ Knowledge base con referencias a IBKR, TradingView, Polygon.io, etc.
 - ✅ Tickets ejemplificados con lógica de inversiones (indicadores, señales, opciones)
 - ✅ config.yaml con tech stack de la plataforma de inversiones
 - ✅ workflow_agents.yaml con tareas específicas de trading
-- ✅ Convención de nomenclatura `TKT-INVRFIC-###`
+- ✅ Convención de nomenclatura `TKT-INVT5-###`
 - ✅ FAQ ampliada con preguntas específicas de APIs financieras y seguridad de credenciales
 
 **Referencias actualizadas**:
 - Agentes: [ai_global/agents/README.md](ai_global/agents/README.md)
-- Nomenclatura: [_drfic_ai_skill_dev_teaching/NAMING_STANDARDS.md](_drfic_ai_skill_dev_teaching/NAMING_STANDARDS.md)
-- Guía rápida: [_drfic_ai_skill_dev_teaching/QUICK_START_GUIDE.md](_drfic_ai_skill_dev_teaching/QUICK_START_GUIDE.md)
+- Nomenclatura: [_team5_ai_skill_dev_teaching/NAMING_STANDARDS.md](_team5_ai_skill_dev_teaching/NAMING_STANDARDS.md)
+- Guía rápida: [_team5_ai_skill_dev_teaching/QUICK_START_GUIDE.md](_team5_ai_skill_dev_teaching/QUICK_START_GUIDE.md)
