@@ -1,0 +1,222 @@
+# Database Configuration - Proyecto: pwa_inversions_team5
+# Archivo: DATABASE_CONFIG.yaml
+# Propósito: Especificar las bases de datos, estrategia de modelado y relaciones entre PWA y REST API
+# Fecha: 2026-03-17
+
+# ============================================
+# INTEGRACIÓN DE PROYECTOS
+# ============================================
+project_integration:
+  frontend_project_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5"
+  rest_api_project_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5"
+  frontend_data_contracts_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data"
+  rest_api_source_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src"
+
+
+# ============================================
+# SELECCION DE BASES DE DATOS
+# ============================================
+database_selection:
+  # Motores seleccionados por usuario en FASE 2.1 - DATABASE SELECTION GATE
+  selected_engines:
+    - alias: "supabase"
+      engine: "supabase"
+      engine_label: "Supabase (PostgreSQL managed + Auth)"
+      enabled: true
+      role: "primary"
+    
+    - alias: "mongodb"
+      engine: "mongodb"
+      engine_label: "MongoDB (NoSQL)"
+      enabled: true
+      role: "secondary"
+
+
+# ============================================
+# CUENTAS Y ENTORNOS POR MOTOR
+# ============================================
+accounts:
+  supabase:
+    provider: "https://raglrzparatyjxosfuyl.supabase.co/"
+    owner_email: "jotanunezca@ittepic.edu.mx"
+    project_name: "Nuñez_Project"
+    project_ref: "raglrzparatyjxosfuyl"
+    region: "us-east-2"
+    environment: "development"
+    created_at: "2026-03-17"
+
+  mongodb:
+    provider: "mongodb.com/atlas"
+    owner_email: "xomadejesuses@ittepic.edu.mx"
+    project_name: "AlgoSignalPro"
+    cluster_name: "MARESCOBEDO"
+    region: "eastus2"
+    environment: "development"
+    created_at: "2026-03-17"
+
+
+# ============================================
+# ESTRATEGIA DE MODELOS DE DATOS
+# ============================================
+model_strategy:
+  # Gate: DATABASE MODEL GATE (FASE 2.1)
+  # Decisión: generate_by_ai (IA propone los modelos)
+  per_database:
+    supabase:
+      source_mode: "generate_by_ai"
+      specification_file: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/ai_work_flow/docs/specs/SPECIFICATION.md"
+      contract_paths:
+        models_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data/supabase/models"
+        schema_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data/supabase/schema"
+        seed_data_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data/supabase/data"
+      rest_api_paths:
+        models_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/models/supabase"
+        migrations_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/migrations/supabase"
+        services_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/services/supabase"
+
+    mongodb:
+      source_mode: "generate_by_ai"
+      specification_file: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/ai_work_flow/docs/specs/SPECIFICATION.md"
+      contract_paths:
+        models_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data/mongodb/models"
+        schema_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data/mongodb/schema"
+        seed_data_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data/mongodb/data"
+      rest_api_paths:
+        models_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/models/mongodb"
+        migrations_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/migrations/mongodb"
+        services_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/services/mongodb"
+
+  # Cliente/ORM recomendado por motor
+  clients:
+    supabase: "supabase-js"
+    mongodb: "mongoose"
+    postgresql: "prisma"
+    mysql: "prisma"
+    sqlite: "drizzle"
+    firebase: "firebase-admin"
+
+  # Tipos compartidos para PWA + API
+  shared_types_output_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/types/database.types.ts"
+
+
+# ============================================
+# MADUREZ DEL MODELO (OBLIGATORIO POR MOTOR)
+# ============================================
+model_maturity:
+  # Estados válidos: draft | candidate | approved
+  per_database:
+    supabase:
+      state: "draft"
+      decision_date: "2026-03-17"
+      requires:
+        - "knowledge_local_remote_ready"
+        - "spec_traceability_ready"
+        - "human_review_required"
+      migration_allowed: false
+      notes: "Modelo será generado por BANDA en FASE 2.3 basado en SPECIFICATION completado"
+
+    mongodb:
+      state: "draft"
+      decision_date: "2026-03-17"
+      requires:
+        - "knowledge_local_remote_ready"
+        - "spec_traceability_ready"
+        - "human_review_required"
+      migration_allowed: false
+      notes: "Modelo será generado por BANDA en FASE 2.3 basado en SPECIFICATION completado"
+
+  global_rules:
+    - "No migrations with state draft"
+    - "Candidate requires traceability and gaps documented"
+    - "Approved requires explicit human sign-off"
+    - "State changes documented with date + responsable"
+
+
+# ============================================
+# VARIABLES DE ENTORNO REQUERIDAS
+# (Solo nombres, los valores van en .env del REST API, nunca aqui)
+# ============================================
+env_variables:
+  supabase:
+    - SUPABASE_URL
+    - SUPABASE_ANON_KEY
+    - SUPABASE_SERVICE_ROLE_KEY
+    - SUPABASE_DB_PASSWORD
+
+  mongodb:
+    - MONGODB_URI
+    - MONGODB_DB_NAME
+    - MONGODB_USER
+    - MONGODB_PASSWORD
+
+  general:
+    - NODE_ENV
+    - PORT
+    - LOG_LEVEL
+
+
+# ============================================
+# CONFIGURACION MCP (Model Context Protocol)
+# ============================================
+mcp:
+  # Si se usa MCP para conectar agente IA directamente a BD real
+  enabled: true
+  servers:
+    - alias: "supabase"
+      engine: "supabase"
+      package: "@supabase/mcp-server-supabase"
+      enabled: true
+      requires_token: true
+      notes: "Requiere Personal Access Token de Supabase"
+
+    - alias: "mongodb"
+      engine: "mongodb"
+      package: "mongodb-mcp-server"
+      enabled: true
+      requires_api_key: true
+      notes: "Requiere API Key pública y privada de MongoDB Atlas"
+
+
+# ============================================
+# TICKETS DE BASE DE DATOS INICIALES
+# ============================================
+database_tickets:
+  # Se crearán en FASE 2.4 después de SPECIFICATION completado
+  pending:
+    - "TKT-BAND5-001: Diseñar schema Supabase (FASE 2.3)"
+    - "TKT-BAND5-002: Diseñar schema MongoDB (FASE 2.3)"
+    - "TKT-BAND5-003: Crear migraciones Supabase (FASE 3)"
+    - "TKT-BAND5-004: Crear migraciones MongoDB (FASE 3)"
+    - "TKT-BAND5-005: Implementar servicios Supabase (FASE 3)"
+    - "TKT-BAND5-006: Implementar servicios MongoDB (FASE 3)"
+    - "TKT-BAND5-007: Generar .env.example (FASE 2.4)"
+    - "TKT-BAND5-008: Validar endpoints REST (FASE 3)"
+
+
+# ============================================
+# HISTORIAL DE CAMBIOS
+# ============================================
+history:
+  - date: "2026-03-17"
+    time: "14:30"
+    event: "DATABASE_SELECTION_GATE completado"
+    detail: "Supabase + MongoDB seleccionados"
+    performed_by: "MEMO (gates)"
+
+  - date: "2026-03-17"
+    time: "14:35"
+    event: "DATABASE_MODEL_GATE completado"
+    detail: "Ambos motores: generate_by_ai"
+    performed_by: "MEMO (gates)"
+
+  - date: "2026-03-17"
+    time: "14:40"
+    event: "DATABASE CONNECTION METADATA registrado"
+    detail: "Supabase + MongoDB metadata capturada"
+    performed_by: "BANDA (metadata)"
+
+  - date: "2026-03-17"
+    time: "14:45"
+    event: "DATABASE_CONFIG.yaml creado"
+    detail: "Config inicial con estrategia de modelos"
+    performed_by: "BANDA (setup)"
