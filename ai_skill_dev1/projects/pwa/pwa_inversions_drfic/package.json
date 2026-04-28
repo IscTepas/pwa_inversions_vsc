@@ -1,0 +1,51 @@
+{
+  "name": "pwa-inversions-drfic",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Progressive Web App for Investment Analysis with AI",
+  "author": "Dr. Francisco Ibarra Carlos",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:e2e": "playwright test",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write src"
+  },
+  "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.2.0",
+    "tailwindcss": "^3.4.0",
+    "zustand": "^4.5.0",
+    "lightweight-charts": "^4.1.0",
+    "technicalindicators": "^3.1.0",
+    "@anthropic-ai/sdk": "^0.20.0",
+    "@stoqey/ib": "^2.0.0",
+    "@alpacahq/alpaca-trade-api": "^3.1.0",
+    "axios": "^1.6.0",
+    "zod": "^3.22.0",
+    "lucide-react": "^0.263.0",
+    "emailjs-com": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/node": "^20.11.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "vitest": "^1.4.0",
+    "@testing-library/react": "^14.2.0",
+    "@testing-library/jest-dom": "^6.1.0",
+    "playwright": "^1.43.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "prettier": "^3.2.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  }
+}

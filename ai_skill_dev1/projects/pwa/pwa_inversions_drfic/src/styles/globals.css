@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-dark-bg: #0f172a;
+  --color-dark-surface: #1e293b;
+  --color-dark-border: #334155;
+}
+
+* {
+  @apply transition-colors duration-200;
+}
+
+body {
+  @apply bg-[#0f172a] text-gray-100;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-surface;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-border rounded-lg;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Signal indicators */
+.signal-buy {
+  @apply text-green-400 font-semibold;
+}
+
+.signal-sell {
+  @apply text-red-400 font-semibold;
+}
+
+.signal-hold {
+  @apply text-gray-400 font-semibold;
+}
+
+/* Glassmorphism effect */
+.glass {
+  @apply bg-opacity-10 backdrop-blur-md border border-opacity-20;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
