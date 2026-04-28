@@ -1,219 +1,179 @@
-# 🎯 Skills de Desarrollo - Catálogo Global
+# 🎯 Skills - Catálogo Global
 
-> Catálogo centralizado de skills (habilidades) de IA reutilizables entre proyectos.
-
----
-
-## 📖 Propósito
-
-Los **skills** son capacidades especializadas que los agentes de IA aplican para completar tareas. Cada skill está documentado una sola vez en `ai_global/skills/` y puede ser reutilizado por múltiples agentes y proyectos.
-
-**Ventaja**: Evita reinventar la rueda; cada skill se define, prueba y optimiza una sola vez.
+Catálogo de habilidades reutilizables asignadas a agentes.
 
 ---
 
-## 📋 Catálogo de Skills (Estado: FASE 1)
+## 📋 Skills por Categoría
 
-### Estructura de Organización
+### 🔍 Análisis y Diseño (Picoro)
 
-Los skills se organizan por agente responsable y categoría:
+| Skill | Descripción | Agente |
+|-------|-------------|--------|
+| `ticket_analyzer` | Analizar tickets externos y crear especificaciones | Picoro |
+| `architecture_designer` | Diseñar arquitectura de componentes y flujos | Picoro |
+| `requirement_validator` | Validar requisitos vs especificación | Picoro |
+| `knowledge_synthesizer` | Generar investigación profunda y base de conocimiento | Picoro |
+| `spec_to_tickets_converter` | Convertir especificación en tickets internos | Picoro |
+
+---
+
+### 💻 Desarrollo React/TypeScript (Goku)
+
+| Skill | Descripción | Agente |
+|-------|-------------|--------|
+| `react_code_generator` | Generar componentes React funcionales | Goku |
+| `typescript_code_generator` | Escribir servicios en TypeScript | Goku |
+| `vite_code_generator` | Configurar y optimizar build con Vite | Goku |
+| `hook_creator` | Crear React hooks personalizados | Goku |
+| `state_management_designer` | Diseñar estado global (Zustand/Redux) | Goku |
+
+---
+
+### 🔌 Integración APIs (Goku)
+
+| Skill | Descripción | Agente |
+|-------|-------------|--------|
+| `broker_api_integrator` | Conectar con APIs de brokers (IBKR, Alpaca) | Goku |
+| `tradingview_widgets_integrator` | Integrar gráficas y widgets de TradingView | Goku |
+| `market_data_connector` | Conectar con feeds de datos (Polygon.io, CBOE) | Goku |
+| `news_api_integrator` | Integrar APIs de noticias financieras | Goku |
+
+---
+
+### 📊 Indicadores Técnicos (Goku)
+
+| Skill | Descripción | Agente |
+|-------|-------------|--------|
+| `technical_indicators_calculator` | Calcular RSI, MACD, Bollinger, EMA/SMA | Goku |
+| `options_chain_analyzer` | Analizar cadena de opciones | Goku |
+| `options_strategy_builder` | Construir estrategias de opciones (Iron Condor, etc.) | Goku |
+| `signal_detector_engine` | Generar señales BUY/SELL/HOLD | Goku |
+
+---
+
+### 📚 Documentación (Goku)
+
+| Skill | Descripción | Agente |
+|-------|-------------|--------|
+| `documentation_writer` | Crear comentarios FIC bilingüe (EN/ES) | Goku |
+| `readme_generator` | Generar READMEs informativos | Goku |
+| `api_documentation_generator` | Documentar endpoints y servicios | Goku |
+
+---
+
+### ⚡ Optimización y Seguridad (Vegeta)
+
+| Skill | Descripción | Agente |
+|-------|-------------|--------|
+| `code_optimizer` | Optimizar código para performance | Vegeta |
+| `performance_analyzer` | Analizar latencia, memory, CPU | Vegeta |
+| `security_auditor` | Auditar seguridad y credenciales | Vegeta |
+| `pattern_refactorer` | Refactorizar patrones de código | Vegeta |
+| `dependency_auditor` | Auditar dependencias (npm audit) | Vegeta |
+
+---
+
+### 🧪 Testing y Validación (Bulma)
+
+| Skill | Descripción | Agente |
+|-------|-------------|--------|
+| `test_case_generator` | Crear casos de test exhaustivos | Bulma |
+| `unit_test_creator` | Implementar tests unitarios | Bulma |
+| `integration_test_creator` | Crear tests de integración | Bulma |
+| `bug_detector` | Identificar bugs mediante testing | Bulma |
+| `quality_validator` | Validar criterios de calidad | Bulma |
+| `regression_tester` | Ejecutar tests de regresión | Bulma |
+| `trading_validator` | Validar cálculos de indicadores vs TradingView | Bulma |
+
+---
+
+### 🗄️ Base de Datos (Krillin)
+
+| Skill | Descripción | Agente |
+|-------|-------------|--------|
+| `database_schema_designer` | Diseñar esquemas para Supabase/MongoDB/PostgreSQL | Krillin |
+| `database_migrator` | Crear migraciones versionadas | Krillin |
+| `database_connector` | Implementar conectores a BD | Krillin |
+| `rest_api_builder` | Construir endpoints REST (GET/POST/PUT/DELETE) | Krillin |
+| `orm_odm_implementer` | Implementar modelos ORM/ODM | Krillin |
+
+---
+
+## 📊 Matriz de Asignación
+
+| Skill | Versión | Picoro | Goku | Vegeta | Bulma | Krillin |
+|-------|---------|--------|------|--------|-------|---------|
+| ticket_analyzer | 1.0.0 | ✅ | | | | |
+| architecture_designer | 1.0.0 | ✅ | | | | |
+| react_code_generator | 1.0.0 | | ✅ | | | |
+| typescript_code_generator | 1.0.0 | | ✅ | | | |
+| broker_api_integrator | 1.0.0 | | ✅ | | | |
+| code_optimizer | 1.0.0 | | | ✅ | | |
+| security_auditor | 1.0.0 | | | ✅ | | |
+| test_case_generator | 1.0.0 | | | | ✅ | |
+| trading_validator | 1.0.0 | | | | ✅ | |
+| database_schema_designer | 1.0.0 | | | | | ✅ |
+| rest_api_builder | 1.0.0 | | | | | ✅ |
+
+---
+
+## 🔄 Dependencias Entre Skills
 
 ```
-skills/
-├── README.md (este archivo)
-├── memo_skills/                    # Skills de MEMO
-│   ├── ticket_analyzer.md
-│   ├── architecture_designer.md
-│   ├── requirement_validator.md
-│   └── knowledge_synthesizer.md
-├── berna_skills/                   # Skills de BERNA
-│   ├── react_code_generator.md
-│   ├── typescript_code_generator.md
-│   ├── vite_code_generator.md
-│   ├── tradingview_widgets_integrator.md
-│   ├── broker_api_integrator.md
-│   ├── documentation_writer.md
-│   ├── dependency_manager.md
-│   └── code_structure_organizer.md
-├── over_skills/                    # Skills de OVER
-│   ├── code_optimizer.md
-│   ├── performance_analyzer.md
-│   ├── security_auditor.md
-│   └── pattern_refactorer.md
-├── mepu_skills/                    # Skills de MEPU
-│   ├── test_case_generator.md
-│   ├── bug_detector.md
-│   ├── quality_validator.md
-│   └── regression_tester.md
-├── banda_skills/                   # Skills de BANDA
-│   ├── database_schema_designer.md
-│   ├── database_migrator.md
-│   ├── database_connector.md
-│   ├── credential_manager.md
-│   └── api_service_generator.md
-└── shared_skills/                  # Skills compartidos entre agentes
-    └── [skills reutilizables por múltiples agentes]
+┌─ ticket_analyzer
+│  └─ architecture_designer
+│     └─ knowledge_synthesizer
+│        ├─ broker_api_integrator
+│        ├─ technical_indicators_calculator
+│        ├─ options_strategy_builder
+│        └─ signal_detector_engine
+│
+├─ database_schema_designer
+│  └─ database_migrator
+│     └─ rest_api_builder
+│
+├─ react_code_generator
+│  ├─ typescript_code_generator
+│  ├─ tradingview_widgets_integrator
+│  └─ hook_creator
+│
+├─ code_optimizer
+│  ├─ performance_analyzer
+│  └─ security_auditor
+│
+└─ test_case_generator
+   ├─ unit_test_creator
+   ├─ integration_test_creator
+   └─ trading_validator
 ```
 
 ---
 
-## 🎯 Skills por Agente
+## 📌 Convención de Nombres
 
-### MEMO Skills (Analista/Arquitecto)
+**Formato**: `<dominio>_<accion>_<tipo>`
 
-| Skill | Descripción | Estado |
-|-------|-------------|--------|
-| **ticket_analyzer** | Analiza tickets externos, los desglosa en componentes y requisitos claros | 📋 Pendiente |
-| **architecture_designer** | Diseña arquitectura de sistemas de trading: broker, market data, signals, portfolio | 📋 Pendiente |
-| **requirement_validator** | Valida que SPECIFICATION.md cumple criterios de completitud y viabilidad | 📋 Pendiente |
-| **knowledge_synthesizer** | Sintetiza investigación técnica en documentación de decisiones `knowledge/local/` | 📋 Pendiente |
-
----
-
-### BERNA Skills (Programador Senior)
-
-| Skill | Descripción | Estado |
-|-------|-------------|--------|
-| **react_code_generator** | Genera componentes React funcionales, hooks custom, gestión de estado | 📋 Pendiente |
-| **typescript_code_generator** | Implementa tipos, interfaces, servicios y lógica de negocio en TypeScript | 📋 Pendiente |
-| **vite_code_generator** | Configura proyecto Vite, optimiza builds, maneja importaciones | 📋 Pendiente |
-| **tradingview_widgets_integrator** | Integra gráficas TradingView Lightweight Charts, indicadores, temas | 📋 Pendiente |
-| **broker_api_integrator** | Conecta con IBKR, Alpaca; maneja órdenes y datos de mercado | 📋 Pendiente |
-| **documentation_writer** | Redacta comentarios inline con estándar TEAM5 (EN/ES), README, jsdoc | 📋 Pendiente |
-| **dependency_manager** | Maneja package.json, instalación de librerías, resolución de conflictos | 📋 Pendiente |
-| **code_structure_organizer** | Estructura directorios, archivos, sigue convenciones de layout src-first | 📋 Pendiente |
+**Ejemplos**:
+- `broker_api_integrator` (dominio: broker, acción: integrar, tipo: skill de integración)
+- `technical_indicators_calculator` (dominio: indicators, acción: calcular)
+- `database_schema_designer` (dominio: database, acción: diseñar schema)
+- `test_case_generator` (dominio: testing, acción: generar casos)
 
 ---
 
-### OVER Skills (Optimizador/Seguridad)
+## 🚀 Cómo Crear un Nuevo Skill
 
-| Skill | Descripción | Estado |
-|-------|-------------|--------|
-| **code_optimizer** | Optimiza algoritmos, reduce complexity, mejora performance | 📋 Pendiente |
-| **performance_analyzer** | Analiza latencia, profiling, identifica bottlenecks | 📋 Pendiente |
-| **security_auditor** | Audita credenciales, validación de entrada, autenticación | 📋 Pendiente |
-| **pattern_refactorer** | Refactoriza patrones comunes, aplica design patterns | 📋 Pendiente |
-
----
-
-### MEPU Skills (QA Tester)
-
-| Skill | Descripción | Estado |
-|-------|-------------|--------|
-| **test_case_generator** | Genera test cases (happy path, edge cases, error scenarios) | 📋 Pendiente |
-| **bug_detector** | Diseña pruebas para encontrar bugs, edge cases, off-by-one errors | 📋 Pendiente |
-| **quality_validator** | Valida que outputs cumplen criterios de aceptación y tolerancias | 📋 Pendiente |
-| **regression_tester** | Crea suite de regresión, ejecuta tests de cambios previos | 📋 Pendiente |
+1. **Detectar necesidad** → Picoro identifica durante análisis de SPEC
+2. **Registrar skill** → Crear `ai_global/skills/<skill_name>.md` usando template
+3. **Documentar** → Propósito, inputs, outputs, dependencias
+4. **Asignar a agente** → Agregar en `ai_global/agents/<agente>.md`
+5. **Registrar en proyecto** → Agregar en `workflow_agents.yaml` del proyecto
 
 ---
 
-### BANDA Skills (Especialista BD)
+## 📚 Referencias
 
-| Skill | Descripción | Estado |
-|-------|-------------|--------|
-| **database_schema_designer** | Diseña schemas SQL/NoSQL, entidades, relaciones, constraints, índices | 📋 Pendiente |
-| **database_migrator** | Crea migraciones versionadas, ejecuta en DEV, crea rollbacks | 📋 Pendiente |
-| **database_connector** | Configura conexión a BD real usando ORM/ODM (Prisma, Mongoose) | 📋 Pendiente |
-| **credential_manager** | Gestiona variables de entorno, `.env`, tokens de acceso | 📋 Pendiente |
-| **api_service_generator** | Genera servicios de datos (repositories, DAOs), endpoints REST | 📋 Pendiente |
-
----
-
-## 📊 Estado del Catálogo
-
-| Métrica | Valor |
-|---------|-------|
-| **Total de skills** | 21 |
-| **Skills documentados** | 0 |
-| **Skills implementados** | 0 |
-| **Fase actual** | FASE 1 (Setup) |
-| **Próxima actividad** | Crear archivos `.md` para cada skill en FASE 2 |
-
----
-
-## 🔄 Ciclo de Vida de un Skill
-
-### Estado Draft (📋)
-- Skill identificado por necesidad del proyecto
-- Definición pendiente en archivo `.md`
-- No está listo para uso
-
-### Estado Candidate (🟡)
-- Archivo `.md` creado con propósito, I/O, dependencias
-- Ejemplos básicos documentados
-- Listo para uso en desarrollo
-
-### Estado Approved (✅)
-- Skill probado en proyecto real
-- Documentación completa y validada
-- Puede ser asignado a múltiples agentes/proyectos
-
----
-
-## 📝 Cómo Registrar un Nuevo Skill
-
-**Regla de oro**: TODO skill nuevo se registra PRIMERO en `ai_global/skills/` antes de asignarse a agentes.
-
-### Pasos
-
-1. **Crear archivo `.md`** en la carpeta del agente:
-   - Ubicación: `ai_global/skills/<agente>_skills/<nombre_skill>.md`
-   - Template: Usar `templates/SKILL_TEMPLATE.md`
-
-2. **Documentar**:
-   - Propósito
-   - Inputs/outputs
-   - Dependencias
-   - Ejemplos de uso
-   - Agentes que lo utilizan
-
-3. **Actualizar este README.md**:
-   - Agregar skill a tabla correspondiente
-   - Marcar estado como `📋 Pendiente`
-
-4. **Asignar a agente**:
-   - En archivo del agente (ej. `team5_memo_agent_orchestrator.md`)
-   - Agregar al campo `skills_required` en metadata
-
-5. **Asignar a proyecto** (si aplica):
-   - En `workflow_agents.yaml` del proyecto
-   - Agregar constraint de skill necesario para ticket
-
----
-
-## 🎯 Próximos Pasos (FASE 2)
-
-En FASE 2 (Inicio del proyecto de inversiones), se procederá a:
-
-1. **Crear archivos `.md` para todos los 21 skills**
-   - Seguir template base
-   - Especializar para dominio de trading/inversiones
-
-2. **Registrar en este README**
-   - Cambiar estado de `📋 Pendiente` a `🟡 Candidate`
-
-3. **Validar con agentes**
-   - MEMO revisa skillset para investigación
-   - BERNA revisa skillset para implementación
-   - etc.
-
-4. **Asignar a tickets**
-   - Cada ticket referencia skills necesarios
-   - MEPU valida que agente tiene skills requeridos
-
----
-
-## 🔗 Referencias
-
-- **Metodología de skills**: [AI_SKILL_DEVELOPMENT_METHODOLOGY_TEAM5.md](../AI_SKILL_DEVELOPMENT_METHODOLOGY_TEAM5.md) sección 3.2
-- **Template de skill**: [SKILL_TEMPLATE.md](../templates/SKILL_TEMPLATE.md)
-- **Agentes que usan skills**: [agents/README.md](../agents/README.md)
-
----
-
-## 📌 Notas
-
-- **Reutilización**: Un skill puede ser usado por múltiples agentes
-- **Versionado**: Skills evolucionan; se versiona en metadata del `.md`
-- **Documentación**: Todo skill debe tener ejemplos prácticos
-- **Validación**: Skills se validan contra casos reales del proyecto
+- [Skill Template](../templates/SKILL_TEMPLATE.md)
+- [Agentes](./agents/README.md)
+- [Metodología](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
