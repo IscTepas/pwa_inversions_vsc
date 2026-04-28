@@ -1,0 +1,210 @@
+# Workflow de Agentes - Template
+
+## Metadata
+```yaml
+workflow:
+  name: workflow_agents_<project_code>
+  version: 1.0.0
+  project_code: <INVRFIC, OTRO, etc>
+  created: YYYY-MM-DD
+  last_updated: YYYY-MM-DD
+  description: Flujo de trabajo de agentes para este proyecto
+```
+
+---
+
+## Fases y Agentes
+
+### FASE 2.3: Investigación
+```yaml
+phase: 2.3
+agent: picoro
+role: analyst | architect
+skills:
+  - ticket_analyzer
+  - architecture_designer
+  - requirement_validator
+  - knowledge_synthesizer
+
+tasks:
+  - name: Analizar SPECIFICATION
+    input: projects/<project>/ai_work_flow/docs/specs/SPECIFICATION.md
+    output: knowledge/local/ + knowledge/remote/
+    description: Investigación profunda y base de conocimiento
+    
+  - name: Diseño Arquitectónico
+    input: SPECIFICATION + Knowledge
+    output: architecture_design.md
+    description: Propuesta de arquitectura técnica
+    
+  - name: Identificar Skills Nuevos
+    input: Arquitectura
+    output: new_skills_required.md
+    description: Skills que faltan en catálogo global
+    
+  - name: Crear Tickets
+    input: Arquitectura + Knowledge
+    output: tickets/TKT-<CODIGO>-###.md
+    description: Tickets informados para Goku, Vegeta, Bulma, Krillin
+```
+
+---
+
+### FASE 2.4: Diseño y Estructura
+```yaml
+phase: 2.4
+agents_paralelos:
+  
+  krillin:
+    role: database_specialist
+    skills:
+      - database_schema_designer
+      - database_migrator
+      - database_connector
+    tasks:
+      - name: Diseñar Schema
+        input: DATABASE MODEL GATE + SPECIFICATION
+        output: data/<motor>/schema/
+        
+      - name: Crear Migraciones
+        input: Schema
+        output: src/migrations/001_initial_schema.sql
+        
+      - name: REST API Base
+        input: Schema
+        output: src/routes/ + src/controllers/
+        
+  goku:
+    role: developer
+    skills:
+      - react_code_generator
+      - typescript_code_generator
+      - vite_code_generator
+      - dependency_manager
+    tasks:
+      - name: Estructura del Proyecto
+        input: Architecture Design + Krillin REST API
+        output: src/ carpetas y archivos base
+        
+      - name: Config Vite
+        input: Requisitos técnicos
+        output: vite.config.ts
+        
+  picoro:
+    role: orchestrator
+    skills:
+      - requirement_validator
+    tasks:
+      - name: Validar Diseño
+        input: Krillin schema + Goku structure
+        output: approved_design.md
+```
+
+---
+
+### FASE 3: Desarrollo Iterativo
+```yaml
+phase: 3
+cycle: "Por cada ticket TKT-<CODIGO>-### en backlog"
+
+workflow:
+  - agent: picoro
+    role: analyst
+    action: Analizar y aprobar ticket
+    input: TKT-<CODIGO>-###
+    output: ✅ Ticket aprobado
+    
+  - agent: goku
+    role: developer
+    action: Implementar código
+    input: Ticket + Knowledge
+    output: Pull request con código funcional
+    parallel: true
+    
+  - agent: krillin
+    role: database_specialist
+    action: Datos si aplica
+    input: Ticket + Schema
+    output: Modelos + Migraciones
+    parallel: true
+    
+  - agent: vegeta
+    role: optimizer
+    action: Optimizar código de Goku
+    input: PR de Goku
+    output: Código optimizado
+    after: goku
+    
+  - agent: bulma
+    role: tester
+    action: Validar y testear
+    input: PR de Vegeta
+    output: ✅ Ticket cerrado o 🐛 Bugs reportados
+    after: vegeta
+```
+
+---
+
+## Convenciones
+
+### Nombres de Tickets
+- Global: `TKT-GLOBAL-###`
+- Proyecto: `TKT-<CODIGO>-###` (ej: TKT-INVRFIC-001)
+
+### Estados
+- 🆕 Open
+- 🟡 In Progress
+- 🔵 In Review
+- 🚫 Blocked
+- ✅ Closed
+
+### Naming de Ramas (Git)
+```
+main                                    # Producción
+├─ develop                              # Integración
+│  ├─ feature/TKT-INVRFIC-001-picoro   # Picoro investiga
+│  ├─ feature/TKT-INVRFIC-001-goku     # Goku implementa
+│  ├─ feature/TKT-INVRFIC-001-vegeta   # Vegeta optimiza
+│  ├─ feature/TKT-INVRFIC-001-bulma    # Bulma testa
+│  └─ feature/TKT-INVRFIC-001-krillin  # Krillin base de datos
+└─ hotfix/bug-nombre                   # Fixes críticos
+```
+
+---
+
+## Protocolo de Visibilidad
+
+### Al Inicio de Tarea
+```
+---
+🧠 @picoro · Analista/Arquitecto · FASE 2.3
+🎯 skill: knowledge_synthesizer
+📋 tarea: Generar knowledge base desde SPEC
+---
+```
+
+### Al Completar Tarea
+```
+✅ @picoro completó · knowledge_synthesizer
+   output: knowledge/local/01_broker_api_research.md + knowledge/remote/
+   siguiente: @goku inicia FASE 2.4
+```
+
+### Transición Entre Agentes
+```
+---
+➡️ TRANSICIÓN DE AGENTE
+   @picoro ──→ @goku · FASE 2.4
+   Input: knowledge base + workflow_agents.yaml
+   Output esperado: Estructura base + PR
+---
+```
+
+---
+
+## Referencias
+
+- Metodología: [AI_SKILL_DEVELOPMENT_METHODOLOGY.md](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+- Agentes: [agents/README.md](../agents/README.md)
+- Skills: [skills/README.md](../skills/README.md)
+- Tickets: [templates/TICKET_TEMPLATE.md](./TICKET_TEMPLATE.md)

@@ -36,6 +36,9 @@ Configuración de proyectos (metadata, dependencias, entornos)
 ### 📄 DATABASE_CONFIG_TEMPLATE.yaml
 Configuración de bases de datos (motores, estrategia de modelos, credenciales)
 
+### 📄 WORKFLOW_AGENTS_TEMPLATE.yaml
+Flujo de trabajo de agentes para proyectos (fases, tareas, paralelos)
+
 ---
 
 ## 🎯 Cuándo Usar Cada Template
@@ -51,3 +54,4 @@ Configuración de bases de datos (motores, estrategia de modelos, credenciales)
 | Crear knowledge README | README_KNOWLEDGE_TEMPLATE.md |
 | Configurar proyecto | PROJECT_CONFIG_TEMPLATE.yaml |
 | Configurar bases de datos | DATABASE_CONFIG_TEMPLATE.yaml |
+| Flujo de agentes en proyecto | WORKFLOW_AGENTS_TEMPLATE.yaml |
