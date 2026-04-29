@@ -1,16 +1,16 @@
-# 📝 Prompts - Instrucciones por Fase
+﻿# ðŸ“ Prompts - Instrucciones por Fase
 
 Prompts de entrada para cada fase del desarrollo.
 
 ---
 
-## 📋 Fases de Desarrollo
+## ðŸ“‹ Fases de Desarrollo
 
-### FASE 0: Configuración Inicial del Sistema ⚙️
+### FASE 0: ConfiguraciÃ³n Inicial del Sistema âš™ï¸
 
 **Objetivo**: Crear infraestructura base reutilizable por todos los proyectos.
 
-**Entrada**: Metodología aprobada + Templates base
+**Entrada**: MetodologÃ­a aprobada + Templates base
 
 **Actividades**:
 - [ ] Crear estructura `ai_global/`
@@ -19,13 +19,13 @@ Prompts de entrada para cada fase del desarrollo.
 - [ ] Crear READMEs y templates
 - [ ] Validar sistema
 
-**Salida**: Sistema base listo ✅ FASE 0 COMPLETADA
+**Salida**: Sistema base listo âœ… FASE 0 COMPLETADA
 
 ---
 
-### FASE 1: Agentes y Skills Globales 🤖
+### FASE 1: Agentes y Skills Globales ðŸ¤–
 
-**Objetivo**: Validar y completar catálogo global de agentes y skills.
+**Objetivo**: Validar y completar catÃ¡logo global de agentes y skills.
 
 **Entrada**: FASE 0 completada
 
@@ -36,55 +36,55 @@ Prompts de entrada para cada fase del desarrollo.
 - [ ] Documentar convenciones de uso
 - [ ] Prueba con ticket dummy
 
-**Salida**: Sistema activo ✅ FASE 1 COMPLETADA
+**Salida**: Sistema activo âœ… FASE 1 COMPLETADA
 
 ---
 
-### FASE 2: Inicio de Nuevo Proyecto 🚀
+### FASE 2: Inicio de Nuevo Proyecto ðŸš€
 
-**Objetivo**: Preparar proyecto específico para implementación.
+**Objetivo**: Preparar proyecto especÃ­fico para implementaciÃ³n.
 
-#### FASE 2.1-2.2: Selección y Configuración
+#### FASE 2.1-2.2: SelecciÃ³n y ConfiguraciÃ³n
 - [ ] DATABASE SELECTION GATE
 - [ ] Crear estructura del proyecto
 - [ ] config.yaml del proyecto
 
-#### FASE 2.3: Investigación
+#### FASE 2.3: InvestigaciÃ³n
 - [ ] Picoro investiga SPECIFICATION
 - [ ] Picoro genera knowledge/local + knowledge/remote
 - [ ] Detectar skills nuevos requeridos
-- [ ] Diseño general
+- [ ] DiseÃ±o general
 
-#### FASE 2.4: Estructura y Diseño
-- [ ] Picoro diseña arquitectura
-- [ ] Krillin diseña persistencia
+#### FASE 2.4: Estructura y DiseÃ±o
+- [ ] Picoro diseÃ±a arquitectura
+- [ ] Krillin diseÃ±a persistencia
 - [ ] Goku prepara estructura base
 - [ ] Crear workflow_agents.yaml del proyecto
 - [ ] Generar tickets
 
-**Salida**: Proyecto estructurado ✅ FASE 2 COMPLETADA
+**Salida**: Proyecto estructurado âœ… FASE 2 COMPLETADA
 
 ---
 
-### FASE 3: Desarrollo Guiado por Tickets 💻
+### FASE 3: Desarrollo Guiado por Tickets ðŸ’»
 
-**Objetivo**: Implementación iterativa de funcionalidades.
+**Objetivo**: ImplementaciÃ³n iterativa de funcionalidades.
 
 #### Por cada ticket:
 
 ```
-Picoro → Goku → Vegeta ∥ Bulma/Krillin
-  ↓
-Validación
-  ↓
-✅ Ticket Completado
+Picoro â†’ Goku â†’ Vegeta âˆ¥ Bulma/Krillin
+  â†“
+ValidaciÃ³n
+  â†“
+âœ… Ticket Completado
 ```
 
-**Salida**: Proyecto implementado ✅ FASE 3 COMPLETADA
+**Salida**: Proyecto implementado âœ… FASE 3 COMPLETADA
 
 ---
 
-## 🎯 Entrada a Cada Fase
+## ðŸŽ¯ Entrada a Cada Fase
 
 ### Para iniciar FASE 1
 ```
@@ -119,23 +119,24 @@ Verificar:
 - [ ] FASE 2 completada
 - [ ] Tickets creados
 - [ ] Knowledge base generada
-- [ ] Arquitectura diseñada
+- [ ] Arquitectura diseÃ±ada
 
 Entonces: Procede con FASE 3
 ```
 
 ---
 
-## ✅ Checklist Global
+## âœ… Checklist Global
 
-- [ ] FASE 0: Sistema creado ✅
-- [ ] FASE 1: Sistema validado ✅
-- [ ] FASE 2: Proyecto preparado ✅
-- [ ] FASE 3: Proyecto implementado ✅
+- [ ] FASE 0: Sistema creado âœ…
+- [ ] FASE 1: Sistema validado âœ…
+- [ ] FASE 2: Proyecto preparado âœ…
+- [ ] FASE 3: Proyecto implementado âœ…
 
 ---
 
-## 📚 Referencias
+## ðŸ“š Referencias
 
-- [Metodología Completa](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+- [MetodologÃ­a Completa](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
 - [Prompts de Entrada](./README.md)
+

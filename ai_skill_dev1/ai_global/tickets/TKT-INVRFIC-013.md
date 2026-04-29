@@ -1,39 +1,39 @@
-# TKT-INVRFIC-013: Sistema de Alertas + Notificaciones
+﻿# TKT-INVRFIC-013: Sistema de Alertas + Notificaciones
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-INVRFIC-013 |
 | **Tipo** | Feature / Alerts |
-| **Prioridad** | 🟡 Alta |
-| **Estado** | 🆕 Abierto |
-| **Proyecto** | pwa_inversions_drfic (v1.0) |
+| **Prioridad** | ðŸŸ¡ Alta |
+| **Estado** | ðŸ†• Abierto |
+| **Proyecto** | pwa_inversions_team5 (v1.0) |
 | **Creado** | 2026-04-28 |
-| **Asignado a** | Ciclo: Picoro → Goku → Vegeta → Bulma |
-| **Bloqueador** | TKT-INVRFIC-009 + TKT-INVRFIC-012 ✅ Completados |
+| **Asignado a** | Ciclo: Picoro â†’ Goku â†’ Vegeta â†’ Bulma |
+| **Bloqueador** | TKT-INVRFIC-009 + TKT-INVRFIC-012 âœ… Completados |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-Usuario debe ser notificado cuando ocurren eventos críticos.
+Usuario debe ser notificado cuando ocurren eventos crÃ­ticos.
 
-### Propósito
+### PropÃ³sito
 Tipos de alerta:
-- 🔴 SIGNAL_HIGH_CONFIDENCE: señal ≥75% → popup + sonido + badge
-- 🟡 SIGNAL_MEDIUM: señal 50-74% → badge en UI + log
-- 📊 DAILY_OPPORTUNITY: ranking diario actualizado
-- ⚠️ EVENT_RISK: earnings o evento macro cercano
-- 📌 POSITION_STOP_LOSS: posición alcanzó stop → popup urgente
-- 📌 POSITION_TAKE_PROFIT: posición alcanzó target → popup
-- 🔌 CONNECTION_LOST: broker desconectado → banner
-- 🤖 AI_CONFIRMATION: IA validó señal → integrado en tarjeta
+- ðŸ”´ SIGNAL_HIGH_CONFIDENCE: seÃ±al â‰¥75% â†’ popup + sonido + badge
+- ðŸŸ¡ SIGNAL_MEDIUM: seÃ±al 50-74% â†’ badge en UI + log
+- ðŸ“Š DAILY_OPPORTUNITY: ranking diario actualizado
+- âš ï¸ EVENT_RISK: earnings o evento macro cercano
+- ðŸ“Œ POSITION_STOP_LOSS: posiciÃ³n alcanzÃ³ stop â†’ popup urgente
+- ðŸ“Œ POSITION_TAKE_PROFIT: posiciÃ³n alcanzÃ³ target â†’ popup
+- ðŸ”Œ CONNECTION_LOST: broker desconectado â†’ banner
+- ðŸ¤– AI_CONFIRMATION: IA validÃ³ seÃ±al â†’ integrado en tarjeta
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Crear**:
 - src/services/alerts/alerts.service.ts
@@ -44,14 +44,14 @@ Tipos de alerta:
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Goku implementa:
 - [ ] alertsService: maneja queue de alertas
-- [ ] UI: banner persistent (conexión), popup modales, badges
+- [ ] UI: banner persistent (conexiÃ³n), popup modales, badges
 - [ ] Audio: sonido configurable (on/off)
-- [ ] Email: integración con EmailJS o nodemailer
-- [ ] Persistencia: historial últimas 100 alertas
+- [ ] Email: integraciÃ³n con EmailJS o nodemailer
+- [ ] Persistencia: historial Ãºltimas 100 alertas
 
 ### Bulma valida:
 - [ ] Alertas aparecen sin retrasos
@@ -60,10 +60,11 @@ Tipos de alerta:
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
-1. ✅ Alerta alta confianza genera popup + sonido
-2. ✅ Banner conexión perdida persiste
-3. ✅ Email alerta se envía (si configurado)
-4. ✅ Historial de alertas guardado
+1. âœ… Alerta alta confianza genera popup + sonido
+2. âœ… Banner conexiÃ³n perdida persiste
+3. âœ… Email alerta se envÃ­a (si configurado)
+4. âœ… Historial de alertas guardado
+
 

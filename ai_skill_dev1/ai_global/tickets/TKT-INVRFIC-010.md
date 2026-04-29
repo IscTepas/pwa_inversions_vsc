@@ -1,34 +1,34 @@
-# TKT-INVRFIC-010: Dashboard UI + Tabla de Señales Detallada
+﻿# TKT-INVRFIC-010: Dashboard UI + Tabla de SeÃ±ales Detallada
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-INVRFIC-010 |
 | **Tipo** | Feature / UI/UX |
-| **Prioridad** | 🔴 Crítica |
-| **Estado** | 🆕 Abierto |
-| **Proyecto** | pwa_inversions_drfic (v1.0) |
+| **Prioridad** | ðŸ”´ CrÃ­tica |
+| **Estado** | ðŸ†• Abierto |
+| **Proyecto** | pwa_inversions_team5 (v1.0) |
 | **Creado** | 2026-04-28 |
-| **Asignado a** | Ciclo: Picoro → Goku → Vegeta → Bulma |
-| **Bloqueador** | TKT-INVRFIC-009 ✅ Completado |
+| **Asignado a** | Ciclo: Picoro â†’ Goku â†’ Vegeta â†’ Bulma |
+| **Bloqueador** | TKT-INVRFIC-009 âœ… Completado |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-UI es la interfaz usuario para todas las señales y cores.
+UI es la interfaz usuario para todas las seÃ±ales y cores.
 
-### Propósito
+### PropÃ³sito
 Crear:
 - Dashboard layout principal (dark theme)
 - Watchlist panel izq
-- Gráfica TradingView Lightweight Charts derecha
-- Tabla de señales detallada abajo (expandible)
-- Modal de señal con desglose completo
+- GrÃ¡fica TradingView Lightweight Charts derecha
+- Tabla de seÃ±ales detallada abajo (expandible)
+- Modal de seÃ±al con desglose completo
 
-### Solución Propuesta
+### SoluciÃ³n Propuesta
 
 **Componentes**:
 - src/features/dashboard/components/DashboardLayout.tsx
@@ -39,48 +39,49 @@ Crear:
 - src/features/signals/components/SignalDetailModal.tsx
 - src/features/signals/components/IndicatorBreakdown.tsx
 
-**Tabla de Señales**: Mostrará:
-- Symbol, Signal (🟢/🔴/⚪), Confidence%, Timeframe
-- Desglose por indicador: ✅/❌ con razón
-- Histórico del símbolo (últimas 5 señales + win rate)
+**Tabla de SeÃ±ales**: MostrarÃ¡:
+- Symbol, Signal (ðŸŸ¢/ðŸ”´/âšª), Confidence%, Timeframe
+- Desglose por indicador: âœ…/âŒ con razÃ³n
+- HistÃ³rico del sÃ­mbolo (Ãºltimas 5 seÃ±ales + win rate)
 - Botones: Expandir / Ejecutar / Descartar
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Crear**: 7+ componentes React
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Goku implementa:
 - [ ] DashboardLayout: grid 3-panel (watchlist, chart, signals)
 - [ ] TradingChart: integra TradingView Lightweight Charts
 - [ ] SignalsTable: tabla con filas expandibles
-- [ ] IndicatorBreakdown: muestra ✅/❌ por cada indicador
+- [ ] IndicatorBreakdown: muestra âœ…/âŒ por cada indicador
 - [ ] SignalDetailModal: modal completo con todos los datos
 - [ ] Dark theme: TailwindCSS + CSS vars
 
 ### Vegeta optimiza:
 - [ ] Performance: tabla no re-renders innecesariamente
-- [ ] Responsive design: funciona en mobile (básico)
+- [ ] Responsive design: funciona en mobile (bÃ¡sico)
 - [ ] Accesibilidad: colores contrastados, roles ARIA
 
 ### Bulma valida:
 - [ ] Dashboard carga sin errores
-- [ ] Tabla muestra señales correctamente
+- [ ] Tabla muestra seÃ±ales correctamente
 - [ ] Modal abre y cierra sin problemas
 - [ ] Dark theme visual validado
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
-1. ✅ Dashboard layout cargable sin errores
-2. ✅ Tabla de señales muestra mínimo 3 señales mock
-3. ✅ Modal de señal abre/cierra correctamente
-4. ✅ Dark theme aplicado globalmente
-5. ✅ Indicadores de color: 🟢🔴⚪ visibles
+1. âœ… Dashboard layout cargable sin errores
+2. âœ… Tabla de seÃ±ales muestra mÃ­nimo 3 seÃ±ales mock
+3. âœ… Modal de seÃ±al abre/cierra correctamente
+4. âœ… Dark theme aplicado globalmente
+5. âœ… Indicadores de color: ðŸŸ¢ðŸ”´âšª visibles
+
 

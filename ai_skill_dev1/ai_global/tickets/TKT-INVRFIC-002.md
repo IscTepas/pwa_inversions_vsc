@@ -1,35 +1,35 @@
-# TKT-INVRFIC-002: Integración Broker Connector (IBKR + Alpaca)
+﻿# TKT-INVRFIC-002: IntegraciÃ³n Broker Connector (IBKR + Alpaca)
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-INVRFIC-002 |
 | **Tipo** | Feature / Broker Integration |
-| **Prioridad** | 🔴 Crítica |
-| **Estado** | 🆕 Abierto |
-| **Proyecto** | pwa_inversions_drfic (v1.0) |
+| **Prioridad** | ðŸ”´ CrÃ­tica |
+| **Estado** | ðŸ†• Abierto |
+| **Proyecto** | pwa_inversions_team5 (v1.0) |
 | **Creado** | 2026-04-28 |
-| **Asignado a** | Ciclo: Picoro → Goku → Vegeta → Bulma |
-| **Bloqueador** | TKT-INVRFIC-001 ✅ Completado |
+| **Asignado a** | Ciclo: Picoro â†’ Goku â†’ Vegeta â†’ Bulma |
+| **Bloqueador** | TKT-INVRFIC-001 âœ… Completado |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-El proyecto necesita conexión dual a brokers para data histórica, datos de mercado en tiempo real y ejecución de órdenes.
+El proyecto necesita conexiÃ³n dual a brokers para data histÃ³rica, datos de mercado en tiempo real y ejecuciÃ³n de Ã³rdenes.
 
-### Propósito
+### PropÃ³sito
 Implementar servicio `broker_connector` que:
-- Detecta broker activo (IBKR o Alpaca según .env)
-- Establece conexión con reintentos automáticos
+- Detecta broker activo (IBKR o Alpaca segÃºn .env)
+- Establece conexiÃ³n con reintentos automÃ¡ticos
 - Obtiene datos de cuenta y posiciones
 - Mantiene heartbeat
 
-### Solución Propuesta
+### SoluciÃ³n Propuesta
 
-**Interfaz común `IBroker`**:
+**Interfaz comÃºn `IBroker`**:
 ```typescript
 interface IBroker {
   connect(): Promise<void>
@@ -58,7 +58,7 @@ interface IBroker {
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Crear**:
 - src/services/broker/broker.interface.ts
@@ -78,11 +78,11 @@ interface IBroker {
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Picoro analiza:
 - [ ] Apis de IBKR y Alpaca revisadas
-- [ ] Requisitos de autenticación documentados
+- [ ] Requisitos de autenticaciÃ³n documentados
 - [ ] Sin dependencias internas bloqueantes
 
 ### Goku implementa:
@@ -94,30 +94,30 @@ interface IBroker {
 - [ ] Manejo de errores: CONNECTION_LOST, INVALID_CREDENTIALS, etc.
 
 ### Vegeta optimiza:
-- [ ] Métodos de conexión reutilizan código
-- [ ] Gestión de suscripciones (sin memory leaks)
+- [ ] MÃ©todos de conexiÃ³n reutilizan cÃ³digo
+- [ ] GestiÃ³n de suscripciones (sin memory leaks)
 - [ ] Timeouts configurados razonablemente
 - [ ] Errores descriptivos para UI
 
 ### Bulma valida:
-- [ ] Conexión IBKR simulada/mockeada sin credenciales reales
-- [ ] Conexión Alpaca probada en paper trading
-- [ ] Reconexión automática funciona tras simular desconexión
+- [ ] ConexiÃ³n IBKR simulada/mockeada sin credenciales reales
+- [ ] ConexiÃ³n Alpaca probada en paper trading
+- [ ] ReconexiÃ³n automÃ¡tica funciona tras simular desconexiÃ³n
 - [ ] Account info se carga correctamente
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
-1. ✅ Conecta a Alpaca paper-api sin errores
-2. ✅ Obtiene account info correctamente
-3. ✅ Mantiene heartbeat activo (se ve en logs)
-4. ✅ Reconecta automáticamente tras error
-5. ✅ brokerStore actualiza state correctamente
+1. âœ… Conecta a Alpaca paper-api sin errores
+2. âœ… Obtiene account info correctamente
+3. âœ… Mantiene heartbeat activo (se ve en logs)
+4. âœ… Reconecta automÃ¡ticamente tras error
+5. âœ… brokerStore actualiza state correctamente
 
 ---
 
-## 🧾 Evidencia de Validación
+## ðŸ§¾ Evidencia de ValidaciÃ³n
 
 - [ ] Screenshot: Console log mostrando "Connected to Alpaca"
 - [ ] Screenshot: Dashboard mostrando Account Balance correcto
@@ -126,8 +126,9 @@ interface IBroker {
 
 ---
 
-## 📌 Notas
+## ðŸ“Œ Notas
 
 - No usar credenciales hardcodeadas
 - Variables en .env obligatorias
 - Mock de IBKR para desarrollo (sin TWS instalado)
+

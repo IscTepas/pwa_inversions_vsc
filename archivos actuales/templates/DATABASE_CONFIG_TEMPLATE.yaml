@@ -1,4 +1,4 @@
-# Database Configuration Template
+﻿# Database Configuration Template
 # Archivo: DATABASE_CONFIG.yaml
 # Proposito: Especificar una o mas bases de datos, su estrategia de modelado,
 #            y la relacion entre contratos de datos en la PWA y persistencia real en REST API
@@ -7,10 +7,10 @@
 # INTEGRACION DE PROYECTOS
 # ============================================
 project_integration:
-  frontend_project_path: "ai_skill_dev1/projects/pwa/pwa_inversions_drfic"
-  rest_api_project_path: "ai_skill_dev1/projects/api/rest_api_inversions_drfic"
-  frontend_data_contracts_path: "ai_skill_dev1/projects/pwa/pwa_inversions_drfic/data"
-  rest_api_source_path: "ai_skill_dev1/projects/api/rest_api_inversions_drfic/src"
+  frontend_project_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5"
+  rest_api_project_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5"
+  frontend_data_contracts_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data"
+  rest_api_source_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src"
 
 
 # ============================================
@@ -51,15 +51,15 @@ model_strategy:
   per_database:
     <engine_alias_1>:
       source_mode: "provided_by_user"  # provided_by_user | generate_by_ai
-      specification_file: "ai_skill_dev1/projects/pwa/pwa_inversions_drfic/ai_work_flow/docs/specs/SPECIFICATION.md"
+      specification_file: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/ai_work_flow/docs/specs/SPECIFICATION.md"
       contract_paths:
-        models_path: "ai_skill_dev1/projects/pwa/pwa_inversions_drfic/data/<engine_alias_1>/models"
-        schema_path: "ai_skill_dev1/projects/pwa/pwa_inversions_drfic/data/<engine_alias_1>/schema"
-        seed_data_path: "ai_skill_dev1/projects/pwa/pwa_inversions_drfic/data/<engine_alias_1>/data"
+        models_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data/<engine_alias_1>/models"
+        schema_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data/<engine_alias_1>/schema"
+        seed_data_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5/data/<engine_alias_1>/data"
       rest_api_paths:
-        models_path: "ai_skill_dev1/projects/api/rest_api_inversions_drfic/src/models/<engine_alias_1>"
-        migrations_path: "ai_skill_dev1/projects/api/rest_api_inversions_drfic/src/migrations/<engine_alias_1>"
-        services_path: "ai_skill_dev1/projects/api/rest_api_inversions_drfic/src/services/<engine_alias_1>"
+        models_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/models/<engine_alias_1>"
+        migrations_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/migrations/<engine_alias_1>"
+        services_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/services/<engine_alias_1>"
     # Repetir bloque por cada motor adicional seleccionado
 
   # Cliente/ORM por motor
@@ -72,7 +72,7 @@ model_strategy:
     firebase: "firebase-admin"
 
   # Tipos compartidos que luego puede consumir la PWA
-  shared_types_output_path: "ai_skill_dev1/projects/api/rest_api_inversions_drfic/src/types/database.types.ts"
+  shared_types_output_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5/src/types/database.types.ts"
 
 
 # ============================================
@@ -164,3 +164,4 @@ approvals:
   model_review_required: true
   destructive_migration_approval: true
   production_approval: true
+

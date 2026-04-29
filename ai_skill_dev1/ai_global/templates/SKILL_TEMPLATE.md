@@ -1,11 +1,11 @@
-# Skill Template
+﻿# Skill Template
 
 ## Metadata
 ```yaml
 skill:
   name: <skill_name>
   version: 1.0.0
-  description: Breve descripción de lo que hace este skill
+  description: Breve descripciÃ³n de lo que hace este skill
   category: data_processing | integration | validation | reporting | automation
   
 author:
@@ -35,29 +35,29 @@ outputs:
 
 performance:
   avg_execution_time: <tiempo promedio>
-  max_concurrent_instances: <número>
+  max_concurrent_instances: <nÃºmero>
 ```
 
 ---
 
-## 1. Descripción
+## 1. DescripciÃ³n
 
-### Propósito
-[Describe en 2-3 oraciones qué hace este skill y por qué existe]
+### PropÃ³sito
+[Describe en 2-3 oraciones quÃ© hace este skill y por quÃ© existe]
 
 ### Funcionalidad Principal
-- Función 1
-- Función 2
-- Función 3
+- FunciÃ³n 1
+- FunciÃ³n 2
+- FunciÃ³n 3
 
 ### Ventajas
-- ✅ Ventaja 1
-- ✅ Ventaja 2
-- ✅ Reutilizable en múltiples contextos
+- âœ… Ventaja 1
+- âœ… Ventaja 2
+- âœ… Reutilizable en mÃºltiples contextos
 
 ---
 
-## 2. Instalación
+## 2. InstalaciÃ³n
 
 ### Dependencias
 ```bash
@@ -69,20 +69,20 @@ pip install package2>=version
 ### Requisitos del Sistema
 - Python >= 3.8
 - Sistema operativo: Windows/Linux/Mac
-- Otros requisitos específicos
+- Otros requisitos especÃ­ficos
 
 ---
 
 ## 3. Uso
 
-### Ejemplo Básico
+### Ejemplo BÃ¡sico
 ```python
 from <path>.skill_core import <SkillName>
 
 # Crear instancia del skill
 skill = <SkillName>()
 
-# Ejecutar skill con parámetros mínimos
+# Ejecutar skill con parÃ¡metros mÃ­nimos
 result = skill.execute(
     input_param_1="value1",
     input_param_2="value2"
@@ -96,18 +96,18 @@ print(result)
 
 ## 4. API
 
-### Parámetros de Entrada
+### ParÃ¡metros de Entrada
 
-| Parámetro | Tipo | Requerido | Descripción |
+| ParÃ¡metro | Tipo | Requerido | DescripciÃ³n |
 |-----------|------|-----------|-------------|
-| `input_param_1` | str | Sí | Descripción del parámetro 1 |
-| `input_param_2` | int | Sí | Descripción del parámetro 2 |
+| `input_param_1` | str | SÃ­ | DescripciÃ³n del parÃ¡metro 1 |
+| `input_param_2` | int | SÃ­ | DescripciÃ³n del parÃ¡metro 2 |
 
 ### Salida
 
 ```python
 {
-    "output_1": "Descripción del output 1",
+    "output_1": "DescripciÃ³n del output 1",
     "output_2": 123,
     "status": "success",
     "metadata": {
@@ -116,3 +116,4 @@ print(result)
     }
 }
 ```
+

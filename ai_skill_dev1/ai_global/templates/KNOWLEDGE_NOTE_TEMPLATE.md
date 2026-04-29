@@ -1,54 +1,54 @@
-# [Título de la Nota de Conocimiento]
+﻿# [TÃ­tulo de la Nota de Conocimiento]
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **Tipo** | Lesson Learned / Best Practice / Solution / Pattern / Reference |
-| **Categoría** | Technical / Business / Process / Integration |
+| **CategorÃ­a** | Technical / Business / Process / Integration |
 | **Tags** | `tag1`, `tag2`, `tag3` |
 | **Creado** | YYYY-MM-DD |
 | **Autor** | <nombre> |
 | **Relacionado con** | TKT-XXX-###, Proyecto XYZ |
-| **Aplicable a** | General / Proyecto específico / Skill específico |
+| **Aplicable a** | General / Proyecto especÃ­fico / Skill especÃ­fico |
 
 ---
 
-## 🎯 Propósito
+## ðŸŽ¯ PropÃ³sito
 
-[Descripción breve en 1-2 oraciones de qué trata esta nota de conocimiento y por qué es importante]
+[DescripciÃ³n breve en 1-2 oraciones de quÃ© trata esta nota de conocimiento y por quÃ© es importante]
 
 ---
 
-## 📝 Contenido Principal
+## ðŸ“ Contenido Principal
 
 ### Contexto
-[Describe el contexto o situación que dio origen a este conocimiento]
+[Describe el contexto o situaciÃ³n que dio origen a este conocimiento]
 
-### [Sección Principal - Adaptar según el tipo]
+### [SecciÃ³n Principal - Adaptar segÃºn el tipo]
 
 #### Si es Lesson Learned:
-**Situación**: [Qué pasó]  
-**Problema**: [Qué salió mal o qué desafío enfrentamos]  
-**Solución**: [Cómo se resolvió]  
-**Lección**: [Qué aprendimos]
+**SituaciÃ³n**: [QuÃ© pasÃ³]  
+**Problema**: [QuÃ© saliÃ³ mal o quÃ© desafÃ­o enfrentamos]  
+**SoluciÃ³n**: [CÃ³mo se resolviÃ³]  
+**LecciÃ³n**: [QuÃ© aprendimos]
 
 #### Si es Best Practice:
-**Práctica**: [Describe la mejor práctica]  
-**Razón**: [Por qué es la mejor práctica]  
-**Implementación**: [Cómo implementarla]  
+**PrÃ¡ctica**: [Describe la mejor prÃ¡ctica]  
+**RazÃ³n**: [Por quÃ© es la mejor prÃ¡ctica]  
+**ImplementaciÃ³n**: [CÃ³mo implementarla]  
 
 #### Si es Solution:
-**Problema**: [Describe el problema técnico]  
-**Análisis**: [Diagnóstico del problema]  
-**Solución**: [Solución implementada]
+**Problema**: [Describe el problema tÃ©cnico]  
+**AnÃ¡lisis**: [DiagnÃ³stico del problema]  
+**SoluciÃ³n**: [SoluciÃ³n implementada]
 
 ---
 
-## 💻 Ejemplo de Código
+## ðŸ’» Ejemplo de CÃ³digo
 
 ```python
-# Código de ejemplo que ilustra el conocimiento
+# CÃ³digo de ejemplo que ilustra el conocimiento
 
 def ejemplo_funcion():
     """
@@ -59,16 +59,17 @@ def ejemplo_funcion():
 
 ---
 
-## 🎯 Aplicabilidad
+## ðŸŽ¯ Aplicabilidad
 
 ### Proyectos donde se Aplica
-- ✅ Proyecto A: [Cómo se usa]
-- ✅ Proyecto B: [Cómo se usa]
+- âœ… Proyecto A: [CÃ³mo se usa]
+- âœ… Proyecto B: [CÃ³mo se usa]
 
 ### Skills Relacionados
-- `skill_name_1`: [Relación]
-- `skill_name_2`: [Relación]
+- `skill_name_1`: [RelaciÃ³n]
+- `skill_name_2`: [RelaciÃ³n]
 
 ### Agentes Relacionados
-- `agent_name_1`: [Relación]
-- `agent_name_2`: [Relación]
+- `agent_name_1`: [RelaciÃ³n]
+- `agent_name_2`: [RelaciÃ³n]
+

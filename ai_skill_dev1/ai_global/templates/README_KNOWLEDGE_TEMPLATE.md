@@ -1,53 +1,53 @@
-# 📚 Knowledge - [Nombre del Proyecto]
+﻿# ðŸ“š Knowledge - [Nombre del Proyecto]
 
 > Template para README principal de knowledge de proyectos.
 
 ---
 
-## 📋 Estado Actual
+## ðŸ“‹ Estado Actual
 
-| Aspecto | Estado | Última Actualización |
+| Aspecto | Estado | Ãšltima ActualizaciÃ³n |
 |---------|--------|----------------------|
-| **Investigación Local** | 🚧 Pendiente / ✅ Generado | YYYY-MM-DD HH:MM |
-| **Referencias Externas** | 🚧 Pendiente / ✅ Generado | YYYY-MM-DD HH:MM |
-| **Tickets Generados** | ⏳ No iniciado / ✅ Completado | YYYY-MM-DD HH:MM |
+| **InvestigaciÃ³n Local** | ðŸš§ Pendiente / âœ… Generado | YYYY-MM-DD HH:MM |
+| **Referencias Externas** | ðŸš§ Pendiente / âœ… Generado | YYYY-MM-DD HH:MM |
+| **Tickets Generados** | â³ No iniciado / âœ… Completado | YYYY-MM-DD HH:MM |
 | **Fase del Proyecto** | FASE 1 / FASE 2 / FASE 3 | - |
 
 ---
 
-## 📖 Descripción del Proyecto
+## ðŸ“– DescripciÃ³n del Proyecto
 
-**Código**: `<project_code>`  
-**Categoría**: `<rpa|web|data|ai>`  
-**Descripción**: [Descripción breve de 1-2 líneas]
+**CÃ³digo**: `<project_code>`  
+**CategorÃ­a**: `<rpa|web|data|ai>`  
+**DescripciÃ³n**: [DescripciÃ³n breve de 1-2 lÃ­neas]
 
 ---
 
-## 🏗️ Estructura de Conocimiento
+## ðŸ—ï¸ Estructura de Conocimiento
 
 ```
 knowledge/
-├── README.md (este archivo)
-├── local/
-│   ├── README.md
-│   ├── 01_<topic>_research.md
-│   ├── 02_<topic>_patterns.md
-│   ├── 03_<topic>_decisions.md
-│   └── lesson_*.md
-└── remote/
-    ├── README.md
-    ├── <library>_documentation.md
-    ├── <api>_reference.md
-    └── notebooklm_*.md
+â”œâ”€â”€ README.md (este archivo)
+â”œâ”€â”€ local/
+â”‚   â”œâ”€â”€ README.md
+â”‚   â”œâ”€â”€ 01_<topic>_research.md
+â”‚   â”œâ”€â”€ 02_<topic>_patterns.md
+â”‚   â”œâ”€â”€ 03_<topic>_decisions.md
+â”‚   â””â”€â”€ lesson_*.md
+â””â”€â”€ remote/
+    â”œâ”€â”€ README.md
+    â”œâ”€â”€ <library>_documentation.md
+    â”œâ”€â”€ <api>_reference.md
+    â””â”€â”€ notebooklm_*.md
 ```
 
 ---
 
-## 📊 Métricas de Conocimiento
+## ðŸ“Š MÃ©tricas de Conocimiento
 
-| Métrica | Valor |
+| MÃ©trica | Valor |
 |---------|-------|
-| Archivos de investigación | 0 |
+| Archivos de investigaciÃ³n | 0 |
 | Lecciones aprendidas | 0 |
 | Referencias externas | 0 |
 | NotebookLM creados | 0 |
@@ -55,16 +55,17 @@ knowledge/
 
 ---
 
-## 📅 Historial de Estado
+## ðŸ“… Historial de Estado
 
 | Fecha | Estado Anterior | Estado Nuevo | Evento | Notas |
 |-------|-----------------|--------------|--------|-------|
-| YYYY-MM-DD | - | 🚧 Estructura creada | Setup inicial | Directorios knowledge/ creados |
+| YYYY-MM-DD | - | ðŸš§ Estructura creada | Setup inicial | Directorios knowledge/ creados |
 
 ---
 
-## 🔗 Enlaces Rápidos
+## ðŸ”— Enlaces RÃ¡pidos
 
-- [SPECIFICATION.md](../docs/specs/SPECIFICATION.md) - Especificación técnica
-- [README del Proyecto](../README.md) - Información general
-- [Tickets](../tickets/README.md) - Plan de implementación
+- [SPECIFICATION.md](../docs/specs/SPECIFICATION.md) - EspecificaciÃ³n tÃ©cnica
+- [README del Proyecto](../README.md) - InformaciÃ³n general
+- [Tickets](../tickets/README.md) - Plan de implementaciÃ³n
+

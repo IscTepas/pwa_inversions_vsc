@@ -1,35 +1,35 @@
-# TKT-<CODIGO>-###: [Título Corto y Descriptivo]
+﻿# TKT-<CODIGO>-###: [TÃ­tulo Corto y Descriptivo]
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-<CODIGO>-### |
 | **Ticket Externo** | REQ-XXXX-YYYY (si aplica) |
-| **Solicitante** | Nombre (Área) |
-| **Tipo** | Nuevo Proyecto / Feature / Bug / Refactor / Mejora / Corrección |
-| **Prioridad** | 🔴 Alta / 🟡 Media / 🟢 Baja |
-| **Estado** | 🆕 Abierto / 🟡 En Desarrollo / 🔵 En Revisión / 🚫 Bloqueado / ✅ Completado |
+| **Solicitante** | Nombre (Ãrea) |
+| **Tipo** | Nuevo Proyecto / Feature / Bug / Refactor / Mejora / CorrecciÃ³n |
+| **Prioridad** | ðŸ”´ Alta / ðŸŸ¡ Media / ðŸŸ¢ Baja |
+| **Estado** | ðŸ†• Abierto / ðŸŸ¡ En Desarrollo / ðŸ”µ En RevisiÃ³n / ðŸš« Bloqueado / âœ… Completado |
 | **Proyecto** | <nombre_proyecto> o GLOBAL |
-| **Categoría** | <categoria_del_proyecto> |
+| **CategorÃ­a** | <categoria_del_proyecto> |
 | **Creado** | YYYY-MM-DD |
 | **Actualizado** | YYYY-MM-DD |
 | **Asignado a** | <nombre> |
-| **Estimación** | X horas/días |
+| **EstimaciÃ³n** | X horas/dÃ­as |
 | **Sprint/Milestone** | Sprint ## / Milestone X |
 | **Relacionado con** | SPECIFICATION.md o incremental/SPEC_00X.md |
 
 ---
 
-## 🚦 Gate de Estado (Obligatorio)
+## ðŸš¦ Gate de Estado (Obligatorio)
 
-- ✅ **Completado**: solo si hay evidencia de ejecución y validación.
-- 🔵 **En Revisión**: código listo, pero pendiente de ejecutar/validar.
-- 🚫 **Bloqueado**: dependencia externa impide validar.
+- âœ… **Completado**: solo si hay evidencia de ejecuciÃ³n y validaciÃ³n.
+- ðŸ”µ **En RevisiÃ³n**: cÃ³digo listo, pero pendiente de ejecutar/validar.
+- ðŸš« **Bloqueado**: dependencia externa impide validar.
 
-**No permitido**: mover a ✅ Completado sin pruebas ejecutadas y registradas.
+**No permitido**: mover a âœ… Completado sin pruebas ejecutadas y registradas.
 
-## 🗄️ Gate de Modelo de Datos (Solo si aplica)
+## ðŸ—„ï¸ Gate de Modelo de Datos (Solo si aplica)
 
 Completar esta seccion cuando el ticket modifica esquema/modelo/persistencia:
 
@@ -42,33 +42,33 @@ Completar esta seccion cuando el ticket modifica esquema/modelo/persistencia:
 | **Aprobacion humana** | Nombre + fecha |
 
 Regla:
-- Un ticket de datos no puede cerrarse en ✅ Completado si el modelo queda en `draft`.
+- Un ticket de datos no puede cerrarse en âœ… Completado si el modelo queda en `draft`.
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-[Describe el contexto o situación que motiva este ticket]
+[Describe el contexto o situaciÃ³n que motiva este ticket]
 
-**Justificación**: [Por qué es necesario este cambio]
+**JustificaciÃ³n**: [Por quÃ© es necesario este cambio]
 
 ### Problema/Necesidad
 [Si es un bug, describe el problema. Si es feature, describe la necesidad]
 
-### Solución Propuesta
-[Describe cómo se resolverá o implementará]
+### SoluciÃ³n Propuesta
+[Describe cÃ³mo se resolverÃ¡ o implementarÃ¡]
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Modificar/Crear**:
 - `ruta/archivo1.py`
 - `ruta/archivo2.py`
 
 **Componentes Afectados**:
-- Módulo X
+- MÃ³dulo X
 - Servicio Y
 
 **Riesgos**:
@@ -76,20 +76,20 @@ Regla:
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Picoro analiza:
 - [ ] Ticket revisado y entendido
 - [ ] Impacto identificado
-- [ ] Plan de implementación definido
+- [ ] Plan de implementaciÃ³n definido
 - [ ] Skills necesarios confirmados
-- [ ] Aprobación para continuar
+- [ ] AprobaciÃ³n para continuar
 
 ### Goku implementa:
-- [ ] Código implementado
-- [ ] Documentación inline agregada con estándar `FIC` bilingüe (EN/ES)
+- [ ] CÃ³digo implementado
+- [ ] DocumentaciÃ³n inline agregada con estÃ¡ndar `FIC` bilingÃ¼e (EN/ES)
 - [ ] README actualizado (si aplica)
-- [ ] Listo para optimización
+- [ ] Listo para optimizaciÃ³n
 
 ### Vegeta optimiza (si aplica):
 - [ ] Performance revisado
@@ -99,33 +99,33 @@ Regla:
 
 ### Bulma valida:
 - [ ] Tests unitarios creados
-- [ ] Tests de integración creados (si aplica)
+- [ ] Tests de integraciÃ³n creados (si aplica)
 - [ ] Tests ejecutados exitosamente
 - [ ] Bugs detectados y reportados
-- [ ] Validación funcional completada
+- [ ] ValidaciÃ³n funcional completada
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
 1. **Criterio 1**
-   - Dada [condición inicial]
-   - Cuando [acción]
+   - Dada [condiciÃ³n inicial]
+   - Cuando [acciÃ³n]
    - Entonces [resultado esperado]
 
 2. **Criterio 2**
-   - Dada [condición inicial]
-   - Cuando [acción]
+   - Dada [condiciÃ³n inicial]
+   - Cuando [acciÃ³n]
    - Entonces [resultado esperado]
 
 3. **Criterio 3**
-   - Dada [condición inicial]
-   - Cuando [acción]
+   - Dada [condiciÃ³n inicial]
+   - Cuando [acciÃ³n]
    - Entonces [resultado esperado]
 
 ---
 
-## 🧪 Plan de Testing
+## ðŸ§ª Plan de Testing
 
 ### Unit Tests
 - [ ] Test para funcionalidad A
@@ -133,59 +133,59 @@ Regla:
 - [ ] Test para casos edge
 
 ### Integration Tests
-- [ ] Test de integración X
-- [ ] Test de integración Y
+- [ ] Test de integraciÃ³n X
+- [ ] Test de integraciÃ³n Y
 
 ### Manual Testing / UAT
-- [ ] Escenario 1: [Descripción]
-- [ ] Escenario 2: [Descripción]
+- [ ] Escenario 1: [DescripciÃ³n]
+- [ ] Escenario 2: [DescripciÃ³n]
 - [ ] Usuario valida (si aplica)
 
 ---
 
-## 🧾 Evidencia de Validación (Requerida para ✅ Completado)
+## ðŸ§¾ Evidencia de ValidaciÃ³n (Requerida para âœ… Completado)
 
-- [ ] Fecha de ejecución registrada
+- [ ] Fecha de ejecuciÃ³n registrada
 - [ ] Entorno registrado (DEV/QAS/PROD)
-- [ ] Responsable de validación registrado
+- [ ] Responsable de validaciÃ³n registrado
 - [ ] Resultado registrado (PASS/FAIL)
 - [ ] Comando(s) o pasos ejecutados documentados
 - [ ] Evidencia adjunta (output/log/captura o resumen verificable)
 
 ---
 
-## 📚 Documentación Requerida
+## ðŸ“š DocumentaciÃ³n Requerida
 
 - [ ] Actualizar README del proyecto
-- [ ] Actualizar documentación técnica
+- [ ] Actualizar documentaciÃ³n tÃ©cnica
 - [ ] Crear/actualizar knowledge note
-  - Ubicación: `knowledge/local/<nota>.md`
-- [ ] Actualizar comentarios en código
+  - UbicaciÃ³n: `knowledge/local/<nota>.md`
+- [ ] Actualizar comentarios en cÃ³digo
 - [ ] Actualizar CHANGELOG
 
-### Consideraciones Técnicas
-- Consideración 1
-- Consideración 2
-- Consideración 3
+### Consideraciones TÃ©cnicas
+- ConsideraciÃ³n 1
+- ConsideraciÃ³n 2
+- ConsideraciÃ³n 3
 
 ### Skills/Agentes Involucrados
 - **Skill**: `<skill_name>` (global/local)
-  - Cambios requeridos: [descripción]
+  - Cambios requeridos: [descripciÃ³n]
 - **Agente**: `<agent_name>` (global/local)
-  - Cambios requeridos: [descripción]
+  - Cambios requeridos: [descripciÃ³n]
 
 ---
 
-## ⚠️ Riesgos y Mitigación
+## âš ï¸ Riesgos y MitigaciÃ³n
 
-| Riesgo | Probabilidad | Impacto | Mitigación |
+| Riesgo | Probabilidad | Impacto | MitigaciÃ³n |
 |--------|--------------|---------|------------|
-| Riesgo 1 | Alta/Media/Baja | Alto/Medio/Bajo | Estrategia de mitigación |
-| Riesgo 2 | Alta/Media/Baja | Alto/Medio/Bajo | Estrategia de mitigación |
+| Riesgo 1 | Alta/Media/Baja | Alto/Medio/Bajo | Estrategia de mitigaciÃ³n |
+| Riesgo 2 | Alta/Media/Baja | Alto/Medio/Bajo | Estrategia de mitigaciÃ³n |
 
 ---
 
-## 🔍 Notas de Desarrollo
+## ðŸ” Notas de Desarrollo
 
 ### YYYY-MM-DD
 **Autor**: <nombre>  
@@ -193,40 +193,40 @@ Regla:
 
 ### YYYY-MM-DD
 **Autor**: <nombre>  
-[Más notas...]
+[MÃ¡s notas...]
 
 ---
 
-## 📊 Review Checklist
+## ðŸ“Š Review Checklist
 
-### Código
-- [ ] Código sigue estándares del proyecto
-- [ ] No hay código duplicado
+### CÃ³digo
+- [ ] CÃ³digo sigue estÃ¡ndares del proyecto
+- [ ] No hay cÃ³digo duplicado
 - [ ] Manejo apropiado de errores
 - [ ] Logging implementado correctamente
 - [ ] Sin warnings del linter
 
 ### Testing
 - [ ] Todos los tests pasan
-- [ ] Coverage mínimo alcanzado (X%)
+- [ ] Coverage mÃ­nimo alcanzado (X%)
 - [ ] Tests de casos edge incluidos
-- [ ] Tests de regresión considerados
+- [ ] Tests de regresiÃ³n considerados
 
-### Documentación
-- [ ] Código documentado (docstrings)
-- [ ] Comentarios `FIC` en inglés/español en bloques clave
+### DocumentaciÃ³n
+- [ ] CÃ³digo documentado (docstrings)
+- [ ] Comentarios `FIC` en inglÃ©s/espaÃ±ol en bloques clave
 - [ ] README actualizado
 - [ ] Knowledge notes creadas/actualizadas
 - [ ] Ejemplos de uso incluidos
 
 ### Performance
-- [ ] Sin degradación de performance
+- [ ] Sin degradaciÃ³n de performance
 - [ ] Optimizaciones implementadas (si aplica)
 - [ ] Recursos liberados apropiadamente
 
 ---
 
-## 🎉 Cierre
+## ðŸŽ‰ Cierre
 
 **Fecha Cierre**: YYYY-MM-DD  
 **Cerrado por**: [Nombre]
@@ -243,26 +243,26 @@ Regla:
 
 ### Commit
 ```bash
-git commit -m "tipo(scope): descripción (#TKT-XXX-###)"
+git commit -m "tipo(scope): descripciÃ³n (#TKT-XXX-###)"
 ```
 
 **Ejemplo**: `feat(zpp007f): add shift filter to report (#TKT-ZPP007F-008)`
 
 ### Ticket Externo Cerrado
-**REQ-XXXX-YYYY**: ✅ RESUELTO (si aplica)
+**REQ-XXXX-YYYY**: âœ… RESUELTO (si aplica)
 
-### Métricas
+### MÃ©tricas
 - Tiempo estimado: X horas
 - Tiempo real invertido: Y horas
 - Tests creados: # tests
 - Coverage: X%
-- Líneas de código: +X -Y
+- LÃ­neas de cÃ³digo: +X -Y
 
 ---
 
-## 📌 Referencias
+## ðŸ“Œ Referencias
 
-### Documentación
+### DocumentaciÃ³n
 - [Documento 1](link)
 - [Documento 2](link)
 
@@ -276,12 +276,13 @@ git commit -m "tipo(scope): descripción (#TKT-XXX-###)"
 
 ---
 
-## 🏷️ Tags
+## ðŸ·ï¸ Tags
 
 `<tag1>` `<tag2>` `<tag3>` `python` `rpa` `automation`
 
 ---
 
 **Estado Final**: [Closed/Rejected/Deferred]  
-**Razón de Cierre**: [Completado exitosamente / Duplicado / No relevante / Pospuesto]  
+**RazÃ³n de Cierre**: [Completado exitosamente / Duplicado / No relevante / Pospuesto]  
 **Fecha de Cierre**: YYYY-MM-DD
+

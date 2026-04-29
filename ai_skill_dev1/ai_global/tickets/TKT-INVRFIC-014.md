@@ -1,33 +1,33 @@
-# TKT-INVRFIC-014: Persistencia (localStorage + .env)
+﻿# TKT-INVRFIC-014: Persistencia (localStorage + .env)
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-INVRFIC-014 |
 | **Tipo** | Infrastructure / Persistence |
-| **Prioridad** | 🟡 Alta |
-| **Estado** | 🆕 Abierto |
-| **Proyecto** | pwa_inversions_drfic (v1.0) |
+| **Prioridad** | ðŸŸ¡ Alta |
+| **Estado** | ðŸ†• Abierto |
+| **Proyecto** | pwa_inversions_team5 (v1.0) |
 | **Creado** | 2026-04-28 |
-| **Asignado a** | Ciclo: Picoro → Goku → Vegeta → Bulma |
-| **Bloqueador** | TKT-INVRFIC-001 ✅ Completado |
+| **Asignado a** | Ciclo: Picoro â†’ Goku â†’ Vegeta â†’ Bulma |
+| **Bloqueador** | TKT-INVRFIC-001 âœ… Completado |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-Datos del usuario, historial, configuración y credenciales deben persistir.
+Datos del usuario, historial, configuraciÃ³n y credenciales deben persistir.
 
-### Propósito
+### PropÃ³sito
 **localStorage** (browser):
-- watchlist.json: símbolos activos
-- settings.json: parámetros indicadores + riesgo
-- strategies.json: estrategias personalizadas (20 máximo)
+- watchlist.json: sÃ­mbolos activos
+- settings.json: parÃ¡metros indicadores + riesgo
+- strategies.json: estrategias personalizadas (20 mÃ¡ximo)
 - active_strategy.json: ID de estrategia actual
-- trade_history.json: historial de trades (últimos 500)
-- signal_log.json: log de señales (últimas 500)
+- trade_history.json: historial de trades (Ãºltimos 500)
+- signal_log.json: log de seÃ±ales (Ãºltimas 500)
 
 **.env** (servidor):
 - IBKR_HOST, IBKR_PORT, IBKR_CLIENT_ID, IBKR_ACCOUNT_ID
@@ -38,7 +38,7 @@ Datos del usuario, historial, configuración y credenciales deben persistir.
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Crear**:
 - src/utils/localStorage.utils.ts (helpers)
@@ -47,25 +47,26 @@ Datos del usuario, historial, configuración y credenciales deben persistir.
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Goku implementa:
 - [ ] Helpers: saveToStorage, loadFromStorage, clearStorage
-- [ ] Sincronización: Zustand stores → localStorage
-- [ ] Validación: schemas con zod
+- [ ] SincronizaciÃ³n: Zustand stores â†’ localStorage
+- [ ] ValidaciÃ³n: schemas con zod
 - [ ] .env: plantilla completada
-- [ ] Migración: versionamiento de schema
+- [ ] MigraciÃ³n: versionamiento de schema
 
 ### Bulma valida:
 - [ ] localStorage persiste entre recargas
-- [ ] .env válido no causa errores
+- [ ] .env vÃ¡lido no causa errores
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
-1. ✅ Watchlist persiste tras reload
-2. ✅ Estrategia activa se restaura
-3. ✅ Historial de trades accesible
-4. ✅ .env válido carga sin errores
+1. âœ… Watchlist persiste tras reload
+2. âœ… Estrategia activa se restaura
+3. âœ… Historial de trades accesible
+4. âœ… .env vÃ¡lido carga sin errores
+
 

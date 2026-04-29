@@ -1,30 +1,30 @@
-# SPEC_###: [Título de la Funcionalidad Nueva]
+﻿# SPEC_###: [TÃ­tulo de la Funcionalidad Nueva]
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID Spec** | SPEC_### |
 | **Ticket Externo** | REQ-XXXX-YYYY |
-| **Solicitante** | Nombre (Área) |
+| **Solicitante** | Nombre (Ãrea) |
 | **Fecha Solicitud** | YYYY-MM-DD |
-| **Prioridad** | 🔴 Alta / 🟡 Media / 🟢 Baja |
-| **Estado** | 🟡 En Especificación / ✅ Aprobado / 🚧 En Desarrollo / ✅ Completado |
+| **Prioridad** | ðŸ”´ Alta / ðŸŸ¡ Media / ðŸŸ¢ Baja |
+| **Estado** | ðŸŸ¡ En EspecificaciÃ³n / âœ… Aprobado / ðŸš§ En Desarrollo / âœ… Completado |
 | **Relacionado con** | SPECIFICATION.md (original) |
 | **Proyecto** | <nombre_proyecto> |
 
 ---
 
-## 1. Visión General
+## 1. VisiÃ³n General
 
 ### Contexto
-[Describe el estado actual del proyecto y por qué se necesita esta funcionalidad]
+[Describe el estado actual del proyecto y por quÃ© se necesita esta funcionalidad]
 
 ### Objetivo
-[Qué se quiere lograr con esta nueva funcionalidad]
+[QuÃ© se quiere lograr con esta nueva funcionalidad]
 
-### Justificación de Negocio
-[Por qué es necesario este cambio]
+### JustificaciÃ³n de Negocio
+[Por quÃ© es necesario este cambio]
 
 **Beneficios Esperados**:
 - Beneficio 1
@@ -35,18 +35,18 @@
 
 ## 2. Alcance del Cambio
 
-### En Alcance ✅
+### En Alcance âœ…
 - Funcionalidad 1
 - Funcionalidad 2
 
-### Fuera de Alcance ❌
+### Fuera de Alcance âŒ
 - Lo que NO se va a hacer
 
 ### Impacto en Sistema Existente
 
 **Componentes Afectados**:
-- ⚠️ Módulo X: [Descripción del cambio]
-- ✅ Módulo Z: Sin cambios
+- âš ï¸ MÃ³dulo X: [DescripciÃ³n del cambio]
+- âœ… MÃ³dulo Z: Sin cambios
 
 ---
 
@@ -55,9 +55,9 @@
 ### Nuevos Componentes
 
 #### Componente 1: [Nombre]
-- **Propósito**: [Para qué sirve]
-- **Tecnología**: [Qué se usará]
-- **Ubicación**: `ruta/al/componente/`
+- **PropÃ³sito**: [Para quÃ© sirve]
+- **TecnologÃ­a**: [QuÃ© se usarÃ¡]
+- **UbicaciÃ³n**: `ruta/al/componente/`
 
 ---
 
@@ -68,7 +68,7 @@
 ```yaml
 nuevo_parametro_1:
   tipo: string
-  descripción: "Descripción del parámetro"
+  descripciÃ³n: "DescripciÃ³n del parÃ¡metro"
   requerido: true
 ```
 
@@ -77,7 +77,7 @@ nuevo_parametro_1:
 ```yaml
 nuevo_output_1:
   tipo: JSON
-  descripción: "Datos estructurados de resultado"
+  descripciÃ³n: "Datos estructurados de resultado"
 ```
 
 ---
@@ -86,10 +86,11 @@ nuevo_output_1:
 
 ### Flujo Actual (Antes)
 ```
-Paso A → Paso B → Paso C
+Paso A â†’ Paso B â†’ Paso C
 ```
 
-### Flujo Nuevo (Después)
+### Flujo Nuevo (DespuÃ©s)
 ```
-Paso A → [NUEVO: Paso B1] → [NUEVO: Paso B2] → Paso C
+Paso A â†’ [NUEVO: Paso B1] â†’ [NUEVO: Paso B2] â†’ Paso C
 ```
+

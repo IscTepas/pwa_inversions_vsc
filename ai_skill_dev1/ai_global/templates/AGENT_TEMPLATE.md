@@ -1,11 +1,11 @@
-# Agent Template
+﻿# Agent Template
 
 ## Metadata
 ```yaml
 agent:
   name: <agent_name>_agent
   version: 1.0.0
-  description: Breve descripción de lo que hace este agente
+  description: Breve descripciÃ³n de lo que hace este agente
   category: automation | data_processing | reporting | integration
   
 author:
@@ -22,15 +22,15 @@ configuration:
   max_retries: 3
   timeout: 300
   log_level: INFO
-  # Otros parámetros específicos
+  # Otros parÃ¡metros especÃ­ficos
 ```
 
 ---
 
-## 1. Descripción
+## 1. DescripciÃ³n
 
-### Propósito
-[Describe el propósito principal de este agente]
+### PropÃ³sito
+[Describe el propÃ³sito principal de este agente]
 
 ### Responsabilidades
 - Responsabilidad 1
@@ -38,33 +38,33 @@ configuration:
 - Responsabilidad 3
 
 ### Casos de Uso
-1. **Caso de uso 1**: Descripción
-2. **Caso de uso 2**: Descripción
+1. **Caso de uso 1**: DescripciÃ³n
+2. **Caso de uso 2**: DescripciÃ³n
 
 ---
 
 ## 2. Skills Requeridos
 
 ### Skill 1: <skill_name>
-- **Ubicación**: `ai_global/skills/<skill_name>` o `<project>/skills/<skill_name>`
-- **Versión mínima**: X.X.X
-- **Uso**: Descripción de cómo el agente usa este skill
+- **UbicaciÃ³n**: `ai_global/skills/<skill_name>` o `<project>/skills/<skill_name>`
+- **VersiÃ³n mÃ­nima**: X.X.X
+- **Uso**: DescripciÃ³n de cÃ³mo el agente usa este skill
 
 ### Skill 2: <skill_name>
-- **Ubicación**: `ai_global/skills/<skill_name>` o `<project>/skills/<skill_name>`
-- **Versión mínima**: X.X.X
-- **Uso**: Descripción de cómo el agente usa este skill
+- **UbicaciÃ³n**: `ai_global/skills/<skill_name>` o `<project>/skills/<skill_name>`
+- **VersiÃ³n mÃ­nima**: X.X.X
+- **Uso**: DescripciÃ³n de cÃ³mo el agente usa este skill
 
 ---
 
-## 3. Configuración
+## 3. ConfiguraciÃ³n
 
-### Parámetros de Entrada
+### ParÃ¡metros de Entrada
 ```python
 {
-    "param1": "value1",  # Descripción de param1
-    "param2": "value2",  # Descripción de param2
-    "param3": 123,       # Descripción de param3 (numérico)
+    "param1": "value1",  # DescripciÃ³n de param1
+    "param2": "value2",  # DescripciÃ³n de param2
+    "param3": 123,       # DescripciÃ³n de param3 (numÃ©rico)
 }
 ```
 
@@ -75,14 +75,15 @@ AGENT_VAR_1=value
 AGENT_VAR_2=value
 ```
 
-### Archivos de Configuración
-- `agent.yaml`: Configuración principal
-- `config/<env>.yaml`: Configuración por ambiente (dev, prod)
+### Archivos de ConfiguraciÃ³n
+- `agent.yaml`: ConfiguraciÃ³n principal
+- `config/<env>.yaml`: ConfiguraciÃ³n por ambiente (dev, prod)
 
 ---
 
-## 4. Flujo de Ejecución
+## 4. Flujo de EjecuciÃ³n
 
 ```
-Entrada → Validación → Procesamiento → Salida
+Entrada â†’ ValidaciÃ³n â†’ Procesamiento â†’ Salida
 ```
+

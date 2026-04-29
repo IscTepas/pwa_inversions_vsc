@@ -1,13 +1,13 @@
-# 🎫 Tickets - Sistema de Trazabilidad
+﻿# ðŸŽ« Tickets - Sistema de Trazabilidad
 
 Tickets de trabajo trazables para control de cambios.
 
 ---
 
-## 📋 Tipos de Tickets
+## ðŸ“‹ Tipos de Tickets
 
 ### 1. Tickets Globales (`TKT-GLOBAL-###`)
-Mejoras a la metodología, skills nuevos globales, cambios arquitectónicos generales.
+Mejoras a la metodologÃ­a, skills nuevos globales, cambios arquitectÃ³nicos generales.
 
 **Ejemplo**:
 ```
@@ -16,87 +16,87 @@ TKT-GLOBAL-002: Agregar soporte para Firebase
 ```
 
 ### 2. Tickets de Proyecto (`TKT-<CODIGO>-###`)
-Tareas de implementación dentro de un proyecto específico.
+Tareas de implementaciÃ³n dentro de un proyecto especÃ­fico.
 
 **Ejemplo**:
 ```
 TKT-INVRFIC-001: Implementar Broker Connector
 TKT-INVRFIC-002: Integrar TradingView Widgets
-TKT-INVRFIC-003: Implementar Indicadores Técnicos
+TKT-INVRFIC-003: Implementar Indicadores TÃ©cnicos
 ```
 
 ---
 
-## 🚦 Estados de un Ticket
+## ðŸš¦ Estados de un Ticket
 
-- 🆕 **Abierto** (Open): Recién creado, en backlog
-- 🟡 **En Desarrollo** (In Progress): Agente actualmente trabajando
-- 🔵 **En Revisión** (In Review): Código listo, pendiente validación
-- 🚫 **Bloqueado** (Blocked): Esperando dependencia externa
-- ✅ **Completado** (Closed): Validado y cerrado
+- ðŸ†• **Abierto** (Open): ReciÃ©n creado, en backlog
+- ðŸŸ¡ **En Desarrollo** (In Progress): Agente actualmente trabajando
+- ðŸ”µ **En RevisiÃ³n** (In Review): CÃ³digo listo, pendiente validaciÃ³n
+- ðŸš« **Bloqueado** (Blocked): Esperando dependencia externa
+- âœ… **Completado** (Closed): Validado y cerrado
 
-**⚠️ REGLA CRÍTICA**: No se permite marcar ✅ sin evidencia de ejecución/validación.
+**âš ï¸ REGLA CRÃTICA**: No se permite marcar âœ… sin evidencia de ejecuciÃ³n/validaciÃ³n.
 
 ---
 
-## 📋 Estructura Mínima
+## ðŸ“‹ Estructura MÃ­nima
 
 ```yaml
 ID: TKT-INVRFIC-001
-Título: Implementar Broker Connector
+TÃ­tulo: Implementar Broker Connector
 Tipo: Feature
-Prioridad: 🔴 Alta
-Estado: 🟡 En Desarrollo
+Prioridad: ðŸ”´ Alta
+Estado: ðŸŸ¡ En Desarrollo
 Asignado a: Goku
 Creado: 2026-02-10
 Relacionado: SPECIFICATION.md
 
-## Descripción
-Implementar conexión con Interactive Brokers usando @stoqey/ib
+## DescripciÃ³n
+Implementar conexiÃ³n con Interactive Brokers usando @stoqey/ib
 
-## Aceptación
-- [ ] Conexión exitosa a IBKR
+## AceptaciÃ³n
+- [ ] ConexiÃ³n exitosa a IBKR
 - [ ] Lectura de posiciones
 - [ ] Tests unitarios en verde
 
 ## Workflow de Agentes
-- Picoro: Analizar requisitos ✅
-- Goku: Implementar código 🟡
-- Vegeta: Optimizar seguridad ⏳
-- Bulma: Validar tests ⏳
+- Picoro: Analizar requisitos âœ…
+- Goku: Implementar cÃ³digo ðŸŸ¡
+- Vegeta: Optimizar seguridad â³
+- Bulma: Validar tests â³
 ```
 
 ---
 
-## 📊 Ciclo de Vida de un Ticket
+## ðŸ“Š Ciclo de Vida de un Ticket
 
 ```
-1. Creación (Picoro)
-   📝 Ticket detallado desde SPECIFICATION
+1. CreaciÃ³n (Picoro)
+   ðŸ“ Ticket detallado desde SPECIFICATION
    
 2. En Desarrollo (Goku)
-   👨‍💻 Implementación de código
+   ðŸ‘¨â€ðŸ’» ImplementaciÃ³n de cÃ³digo
    
-3. Optimización (Vegeta)
-   🥷 Performance + Seguridad
+3. OptimizaciÃ³n (Vegeta)
+   ðŸ¥· Performance + Seguridad
    
 4. Testing (Bulma)
-   🧪 Validación y cierre
+   ðŸ§ª ValidaciÃ³n y cierre
    
 5. Completado (Evidencia)
-   ✅ Evidencia registrada
+   âœ… Evidencia registrada
 ```
 
 ---
 
-## ✅ Criterios para Marcar ✅ Completado
+## âœ… Criterios para Marcar âœ… Completado
 
 **OBLIGATORIO tener**:
-- [ ] Código implementado y comprometido
+- [ ] CÃ³digo implementado y comprometido
 - [ ] Tests ejecutados exitosamente (GREEN)
-- [ ] Validación manual (si aplica)
-- [ ] Documentación completada
-- [ ] Fecha y responsable de validación
+- [ ] ValidaciÃ³n manual (si aplica)
+- [ ] DocumentaciÃ³n completada
+- [ ] Fecha y responsable de validaciÃ³n
 - [ ] Evidencia verificable
 
 **Formato de Evidencia**:
@@ -110,13 +110,14 @@ Output: [comando ejecutado + resultado]
 
 ---
 
-## 🔍 Template
+## ðŸ” Template
 
 Ver: [../templates/TICKET_TEMPLATE.md](../templates/TICKET_TEMPLATE.md)
 
 ---
 
-## 📚 Referencias
+## ðŸ“š Referencias
 
-- [Metodología de Tickets](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md#34--tickets)
+- [MetodologÃ­a de Tickets](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md#34--tickets)
 - [Workflow de Agentes](./agents/README.md)
+

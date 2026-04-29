@@ -153,7 +153,7 @@ npm run format
 
 ## File Structure
 ```
-pwa_inversions_drfic/
+pwa_inversions_team5/
 ├── src/
 │   ├── components/
 │   │   ├── Dashboard.tsx

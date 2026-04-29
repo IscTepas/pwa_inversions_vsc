@@ -1,26 +1,26 @@
-# ESPECIFICACIÓN TÉCNICA
+﻿# ESPECIFICACIÃ“N TÃ‰CNICA
 
 ## Proyecto: [Nombre Descriptivo del Proyecto]
 
-**Código del Proyecto**: `<project_code>`  
+**CÃ³digo del Proyecto**: `<project_code>`  
 **Ticket Externo**: REQ-XXXX-YYYY (si aplica)  
-**Solicitante**: [Nombre (Área)]  
-**Transacción SAP**: [Transacción] (si aplica)  
+**Solicitante**: [Nombre (Ãrea)]  
+**TransacciÃ³n SAP**: [TransacciÃ³n] (si aplica)  
 **Programa SAP**: [Programa] (si aplica)  
 **Fecha**: YYYY-MM-DD  
-**Estado**: 🟡 En Especificación / ✅ Aprobado / 🚧 En Desarrollo / ✅ Completado  
+**Estado**: ðŸŸ¡ En EspecificaciÃ³n / âœ… Aprobado / ðŸš§ En Desarrollo / âœ… Completado  
 
 ---
 
-## 1. Visión General
+## 1. VisiÃ³n General
 
 ### Contexto
-[Describe la situación actual y el problema que se quiere resolver]
+[Describe la situaciÃ³n actual y el problema que se quiere resolver]
 
 ### Objetivo
-[Qué se quiere lograr con este proyecto - debe ser claro y medible]
+[QuÃ© se quiere lograr con este proyecto - debe ser claro y medible]
 
-**Ejemplo**: Automatizar la extracción de datos del Reporte de Paros desde SAP ECC, exportarlos a Excel y transformarlos según plantilla estándar para su distribución.
+**Ejemplo**: Automatizar la extracciÃ³n de datos del Reporte de Paros desde SAP ECC, exportarlos a Excel y transformarlos segÃºn plantilla estÃ¡ndar para su distribuciÃ³n.
 
 ### Flujo Principal
 
@@ -28,20 +28,20 @@
 [Describe el flujo end-to-end con diagrama ASCII]
 
 Sistema Origen
-    ↓ [Acción 1]
+    â†“ [AcciÃ³n 1]
 Sistema/Archivo Intermedio
-    ↓ [Acción 2]
+    â†“ [AcciÃ³n 2]
 Sistema/Archivo Final
-    ↓ [Acción 3]
+    â†“ [AcciÃ³n 3]
 Resultado Final
 ```
 
 ### Resultado Esperado
 
-- **Input**: [Qué entra al sistema]
-- **Output**: [Qué sale del sistema]
+- **Input**: [QuÃ© entra al sistema]
+- **Output**: [QuÃ© sale del sistema]
 - **Frecuencia**: Manual (on-demand) / Programada (diaria, semanal, etc.)
-- **Usuarios**: [Quiénes usarán este sistema]
+- **Usuarios**: [QuiÃ©nes usarÃ¡n este sistema]
 
 ### Beneficios
 - Beneficio 1
@@ -52,35 +52,35 @@ Resultado Final
 
 ## 2. Entrada (Input)
 
-### 2.1 Parámetros de Ejecución
+### 2.1 ParÃ¡metros de EjecuciÃ³n
 
-**Parámetros Requeridos**:
+**ParÃ¡metros Requeridos**:
 ```yaml
 parametro_1:
   tipo: string
-  descripción: "Descripción del parámetro"
+  descripciÃ³n: "DescripciÃ³n del parÃ¡metro"
   valores_posibles: "A, B, C"
   requerido: true
   ejemplo: "valor_ejemplo"
 
 parametro_2:
   tipo: integer
-  descripción: "Descripción del parámetro"
+  descripciÃ³n: "DescripciÃ³n del parÃ¡metro"
   requerido: false
   default: 10
   ejemplo: 15
 ```
 
 **Preguntas para el Usuario**:
-- [ ] ¿Qué filtros/parámetros se deben usar?
-- [ ] ¿Estos parámetros son fijos o variables por ejecución?
-- [ ] ¿Quién proporciona estos valores?
-- [ ] ¿Hay validaciones específicas?
+- [ ] Â¿QuÃ© filtros/parÃ¡metros se deben usar?
+- [ ] Â¿Estos parÃ¡metros son fijos o variables por ejecuciÃ³n?
+- [ ] Â¿QuiÃ©n proporciona estos valores?
+- [ ] Â¿Hay validaciones especÃ­ficas?
 
 ### 2.2 Archivos de Entrada (si aplica)
 
 **Archivo 1**: [Nombre del archivo]
-- **Ubicación**: [Ruta]
+- **UbicaciÃ³n**: [Ruta]
 - **Formato**: Excel / CSV / JSON / XML
 - **Estructura**:
   - Columna 1: [Nombre y tipo]
@@ -88,48 +88,48 @@ parametro_2:
   - ...
 - **Validaciones**:
   - [ ] Archivo debe existir
-  - [ ] Formato debe ser válido
+  - [ ] Formato debe ser vÃ¡lido
   - [ ] Columnas requeridas presentes
-  - [ ] Datos no vacíos
+  - [ ] Datos no vacÃ­os
 
 **Plantillas** (si aplica):
-- [ ] ¿Dónde está la plantilla? (ruta)
-- [ ] ¿Tiene fórmulas o solo estructura?
-- [ ] ¿Qué campos mapean a qué columnas?
+- [ ] Â¿DÃ³nde estÃ¡ la plantilla? (ruta)
+- [ ] Â¿Tiene fÃ³rmulas o solo estructura?
+- [ ] Â¿QuÃ© campos mapean a quÃ© columnas?
 
 ### 2.3 Credenciales y Conexiones
 
 **Sistema 1**: [Nombre del sistema]
 - **Tipo**: SAP / API / Base de datos / Servicio web
-- **Credenciales**: [Dónde se obtienen]
+- **Credenciales**: [DÃ³nde se obtienen]
 - **Ambiente**: PRD / TEST / DEV
 - **Timeout**: [segundos]
 - **Permisos Requeridos**: [Listar permisos]
 
 ---
 
-## 3. Proceso (Lógica de Negocio)
+## 3. Proceso (LÃ³gica de Negocio)
 
 ### 3.1 Paso 1: [Nombre del Paso]
 
 ```python
-PASO 1: [Descripción breve]
-├─ Acción 1: [Detalle]
-├─ Acción 2: [Detalle]
-│  ├─ Sub-acción 2.1
-│  └─ Sub-acción 2.2
-├─ Validación: [Qué validar]
-└─ Error handling: [Qué hacer si falla]
+PASO 1: [DescripciÃ³n breve]
+â”œâ”€ AcciÃ³n 1: [Detalle]
+â”œâ”€ AcciÃ³n 2: [Detalle]
+â”‚  â”œâ”€ Sub-acciÃ³n 2.1
+â”‚  â””â”€ Sub-acciÃ³n 2.2
+â”œâ”€ ValidaciÃ³n: [QuÃ© validar]
+â””â”€ Error handling: [QuÃ© hacer si falla]
 ```
 
-**Detalles Técnicos**:
-- Input: [Qué recibe]
-- Proceso: [Qué hace]
-- Output: [Qué produce]
+**Detalles TÃ©cnicos**:
+- Input: [QuÃ© recibe]
+- Proceso: [QuÃ© hace]
+- Output: [QuÃ© produce]
 - Tiempo estimado: [segundos/minutos]
 
 **Casos Especiales**:
-- Si [condición], entonces [acción alternativa]
+- Si [condiciÃ³n], entonces [acciÃ³n alternativa]
 - Si [error], entonces [manejo]
 
 ---
@@ -148,23 +148,23 @@ PASO 1: [Descripción breve]
 
 ### 3.X Validaciones de Negocio
 
-**Validación 1**: [Nombre]
-- **Descripción**: [Qué se valida]
-- **Regla**: [Condición que debe cumplirse]
-- **Acción si falla**: [Qué hacer]
+**ValidaciÃ³n 1**: [Nombre]
+- **DescripciÃ³n**: [QuÃ© se valida]
+- **Regla**: [CondiciÃ³n que debe cumplirse]
+- **AcciÃ³n si falla**: [QuÃ© hacer]
 
-**Validación 2**: [Nombre]
+**ValidaciÃ³n 2**: [Nombre]
 - [Repetir estructura]
 
 ---
 
 ### 3.Y Manejo de Errores
 
-| Tipo de Error | Causa | Acción |
+| Tipo de Error | Causa | AcciÃ³n |
 |---------------|-------|--------|
-| Error Tipo 1 | [Causa] | [Acción correctiva] |
-| Error Tipo 2 | [Causa] | [Acción correctiva] |
-| Error Tipo 3 | [Causa] | [Acción correctiva] |
+| Error Tipo 1 | [Causa] | [AcciÃ³n correctiva] |
+| Error Tipo 2 | [Causa] | [AcciÃ³n correctiva] |
+| Error Tipo 3 | [Causa] | [AcciÃ³n correctiva] |
 
 ---
 
@@ -173,52 +173,52 @@ PASO 1: [Descripción breve]
 ### 4.1 Archivos Generados
 
 ```
-📁 data/raw/                    # Datos brutos sin procesar
-└─ archivo_bruto_YYYYMMDD_HHMMSS.xlsx
+ðŸ“ data/raw/                    # Datos brutos sin procesar
+â””â”€ archivo_bruto_YYYYMMDD_HHMMSS.xlsx
 
-📁 data/output/                 # Archivos finales procesados
-└─ archivo_final_YYYYMMDD_HHMMSS.xlsx
+ðŸ“ data/output/                 # Archivos finales procesados
+â””â”€ archivo_final_YYYYMMDD_HHMMSS.xlsx
 
-📁 logs/                        # Logs de ejecución
-├─ proceso_YYYYMMDD.log         # Log general
-└─ proceso_YYYYMMDD_errors.log  # Solo errores
+ðŸ“ logs/                        # Logs de ejecuciÃ³n
+â”œâ”€ proceso_YYYYMMDD.log         # Log general
+â””â”€ proceso_YYYYMMDD_errors.log  # Solo errores
 ```
 
 ### 4.2 Formato de Salida
 
 **Archivo Principal**: [Nombre]
 - **Formato**: Excel / CSV / PDF / JSON
-- **Ubicación**: [Ruta]
-- **Nombre**: [Patrón de nombre]
+- **UbicaciÃ³n**: [Ruta]
+- **Nombre**: [PatrÃ³n de nombre]
 - **Estructura**:
-  - Sheet/Sección 1: [Contenido]
-  - Sheet/Sección 2: [Contenido]
+  - Sheet/SecciÃ³n 1: [Contenido]
+  - Sheet/SecciÃ³n 2: [Contenido]
 
 **Columnas/Campos**:
-| Campo | Tipo | Descripción | Obligatorio |
+| Campo | Tipo | DescripciÃ³n | Obligatorio |
 |-------|------|-------------|-------------|
-| Campo1 | string | Descripción | Sí |
-| Campo2 | integer | Descripción | No |
-| Campo3 | date | Descripción | Sí |
+| Campo1 | string | DescripciÃ³n | SÃ­ |
+| Campo2 | integer | DescripciÃ³n | No |
+| Campo3 | date | DescripciÃ³n | SÃ­ |
 
 ### 4.3 Notificaciones (si aplica)
 
-- [ ] ¿Se envía email al completar?
+- [ ] Â¿Se envÃ­a email al completar?
   - Destinatarios: [emails]
   - Asunto: [template]
-  - Contenido: [qué incluir]
-- [ ] ¿Se actualiza algún sistema?
-- [ ] ¿Se genera algún reporte adicional?
+  - Contenido: [quÃ© incluir]
+- [ ] Â¿Se actualiza algÃºn sistema?
+- [ ] Â¿Se genera algÃºn reporte adicional?
 
 ---
 
-## 5. Requisitos Técnicos
+## 5. Requisitos TÃ©cnicos
 
-### 5.1 Tecnologías Requeridas
+### 5.1 TecnologÃ­as Requeridas
 
-**Lenguaje**: Python 3.x (especificar versión)
+**Lenguaje**: Python 3.x (especificar versiÃ³n)
 
-**Librerías Python**:
+**LibrerÃ­as Python**:
 ```txt
 # Requirements principales
 libreria1>=2.0.0
@@ -230,10 +230,10 @@ requests>=2.25.0 # Si consume APIs
 ```
 
 **Sistemas Externos**:
-- Sistema 1: [Nombre y versión]
-- Sistema 2: [Nombre y versión]
+- Sistema 1: [Nombre y versiÃ³n]
+- Sistema 2: [Nombre y versiÃ³n]
 
-### 5.2 Configuración
+### 5.2 ConfiguraciÃ³n
 
 **Variables de Entorno** (`.env`):
 ```bash
@@ -247,7 +247,7 @@ DIR_INPUT=C:\path\to\input
 DIR_OUTPUT=C:\path\to\output
 DIR_TEMPLATES=C:\path\to\templates
 
-# Configuración
+# ConfiguraciÃ³n
 MAX_RETRIES=3
 TIMEOUT_SECONDS=300
 DEBUG_MODE=false
@@ -255,16 +255,16 @@ DEBUG_MODE=false
 
 ### 5.3 Infraestructura
 
-**Servidor/Máquina**:
+**Servidor/MÃ¡quina**:
 - SO: Windows / Linux
-- RAM mínima: X GB
+- RAM mÃ­nima: X GB
 - Disco: Y GB disponible
 - Acceso a red: [requisitos]
 
 **Permisos Necesarios**:
 - [ ] Lectura en [ruta/sistema]
 - [ ] Escritura en [ruta/sistema]
-- [ ] Ejecución de [proceso]
+- [ ] EjecuciÃ³n de [proceso]
 - [ ] Acceso a [API/servicio]
 
 ---
@@ -276,8 +276,8 @@ DEBUG_MODE=false
 **Actor**: [Usuario tipo X]
 
 **Precondiciones**:
-- Condición 1 debe estar cumplida
-- Condición 2 debe estar cumplida
+- CondiciÃ³n 1 debe estar cumplida
+- CondiciÃ³n 2 debe estar cumplida
 
 **Flujo Principal**:
 1. Usuario hace X
@@ -287,20 +287,20 @@ DEBUG_MODE=false
 5. Sistema notifica resultado
 
 **Postcondiciones**:
-- Estado del sistema después
+- Estado del sistema despuÃ©s
 - Archivos generados
 - Notificaciones enviadas
 
 **Flujos Alternativos**:
-- **3a. Si validación falla**:
+- **3a. Si validaciÃ³n falla**:
   - Sistema muestra error
   - Sistema registra en log
-  - Sistema termina ejecución
+  - Sistema termina ejecuciÃ³n
 
-**Flujos de Excepción**:
-- **2e. Si conexión falla**:
+**Flujos de ExcepciÃ³n**:
+- **2e. Si conexiÃ³n falla**:
   - Sistema reintenta 3 veces
-  - Si falla después de 3 intentos, notifica error
+  - Si falla despuÃ©s de 3 intentos, notifica error
   - Se registra en log de errores
 
 ---
@@ -311,7 +311,7 @@ DEBUG_MODE=false
 
 ---
 
-## 7. Casos de Prueba (Criterios de Aceptación)
+## 7. Casos de Prueba (Criterios de AceptaciÃ³n)
 
 ### Test Case 1: [Escenario Normal - Happy Path]
 
@@ -320,31 +320,31 @@ DEBUG_MODE=false
 **Precondiciones**:
 - Sistema disponible
 - Datos de prueba preparados
-- Credenciales válidas
+- Credenciales vÃ¡lidas
 
 **Pasos**:
-1. Ejecutar script con parámetros válidos
-2. Verificar conexión exitosa
+1. Ejecutar script con parÃ¡metros vÃ¡lidos
+2. Verificar conexiÃ³n exitosa
 3. Validar procesamiento de datos
 4. Verificar archivo de salida generado
 5. Validar contenido del archivo
 
 **Resultado Esperado**:
 - Proceso completa sin errores
-- Archivo generado en ubicación correcta
+- Archivo generado en ubicaciÃ³n correcta
 - Datos en archivo son correctos
 - Log no contiene errores
 
-**Criterio de Aceptación**: ✅ Todos los pasos se completan exitosamente
+**Criterio de AceptaciÃ³n**: âœ… Todos los pasos se completan exitosamente
 
 ---
 
 ### Test Case 2: [Escenario con Error]
 
-**Objetivo**: Validar manejo de error cuando [condición]
+**Objetivo**: Validar manejo de error cuando [condiciÃ³n]
 
 **Pasos**:
-1. [Simular condición de error]
+1. [Simular condiciÃ³n de error]
 2. Ejecutar proceso
 3. Verificar que error se maneja correctamente
 
@@ -354,7 +354,7 @@ DEBUG_MODE=false
 - Sistema no genera archivo corrupto
 - Sistema notifica error (si aplica)
 
-**Criterio de Aceptación**: ✅ Error se maneja sin crashes
+**Criterio de AceptaciÃ³n**: âœ… Error se maneja sin crashes
 
 ---
 
@@ -369,91 +369,91 @@ DEBUG_MODE=false
 ### 8.1 Vista General
 
 ```
-┌─────────────────────────────────────────┐
-│         MÓDULO ORQUESTADOR              │
-│    (modules/main_processor/)            │
-└────────┬────────────────────┬───────────┘
-         │                    │
-    ┌────▼─────┐         ┌────▼─────┐
-    │ Servicio1│         │ Servicio2│
-    │ (connect)│         │ (extract)│
-    └────┬─────┘         └────┬─────┘
-         │                    │
-    ┌────▼────────────────────▼─────┐
-    │   Servicio3 (transform)       │
-    └────┬──────────────────────────┘
-         │
-    ┌────▼─────┐
-    │ Servicio4│
-    │ (output) │
-    └──────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚         MÃ“DULO ORQUESTADOR              â”‚
+â”‚    (modules/main_processor/)            â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+         â”‚                    â”‚
+    â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”         â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”
+    â”‚ Servicio1â”‚         â”‚ Servicio2â”‚
+    â”‚ (connect)â”‚         â”‚ (extract)â”‚
+    â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜         â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜
+         â”‚                    â”‚
+    â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”
+    â”‚   Servicio3 (transform)       â”‚
+    â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+         â”‚
+    â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”
+    â”‚ Servicio4â”‚
+    â”‚ (output) â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 8.2 Componentes Principales
 
-#### Módulo: [Nombre del Módulo]
-- **Ubicación**: `modules/<nombre>/`
-- **Responsabilidad**: [Qué hace]
+#### MÃ³dulo: [Nombre del MÃ³dulo]
+- **UbicaciÃ³n**: `modules/<nombre>/`
+- **Responsabilidad**: [QuÃ© hace]
 - **Servicios que usa**:
   - Servicio 1
   - Servicio 2
   - ...
 
 #### Servicio: [Nombre del Servicio]
-- **Ubicación**: `services/<nombre>/`
-- **Responsabilidad**: [Qué hace]
-- **Inputs**: [Qué recibe]
-- **Outputs**: [Qué produce]
-- **Dependencias**: [Librerías externas]
+- **UbicaciÃ³n**: `services/<nombre>/`
+- **Responsabilidad**: [QuÃ© hace]
+- **Inputs**: [QuÃ© recibe]
+- **Outputs**: [QuÃ© produce]
+- **Dependencias**: [LibrerÃ­as externas]
 
 ---
 
 ### 8.3 Skills de IA Necesarios
 
 **Skills del Proyecto** (a documentar en `ai_global/skills/` si no existen):
-- `<dominio>_<accion>_skill`: [Descripción]
-- `<dominio>_<accion>_skill`: [Descripción]
+- `<dominio>_<accion>_skill`: [DescripciÃ³n]
+- `<dominio>_<accion>_skill`: [DescripciÃ³n]
 - ...
 
-**Agentes que los usarán**:
-- Picoro: [skills para análisis/diseño]
-- Goku: [skills para implementación]
-- Vegeta: [skills para optimización]
+**Agentes que los usarÃ¡n**:
+- Picoro: [skills para anÃ¡lisis/diseÃ±o]
+- Goku: [skills para implementaciÃ³n]
+- Vegeta: [skills para optimizaciÃ³n]
 - Bulma: [skills para testing]
 
 ---
 
-## 9. Decisiones Técnicas Pendientes
+## 9. Decisiones TÃ©cnicas Pendientes
 
-### Decisión 1: [Tema a decidir]
+### DecisiÃ³n 1: [Tema a decidir]
 
 **Opciones**:
 
-**Opción A**: [Nombre]
+**OpciÃ³n A**: [Nombre]
 - **Pros**:
-  - ✅ Ventaja 1
-  - ✅ Ventaja 2
+  - âœ… Ventaja 1
+  - âœ… Ventaja 2
 - **Contras**:
-  - ❌ Desventaja 1
-  - ❌ Desventaja 2
+  - âŒ Desventaja 1
+  - âŒ Desventaja 2
 - **Esfuerzo**: Alto / Medio / Bajo
 
-**Opción B**: [Nombre]
+**OpciÃ³n B**: [Nombre]
 - **Pros**:
-  - ✅ Ventaja 1
-  - ✅ Ventaja 2
+  - âœ… Ventaja 1
+  - âœ… Ventaja 2
 - **Contras**:
-  - ❌ Desventaja 1
-  - ❌ Desventaja 2
+  - âŒ Desventaja 1
+  - âŒ Desventaja 2
 - **Esfuerzo**: Alto / Medio / Bajo
 
-**Recomendación Inicial**: [Opción X] por [razones]
+**RecomendaciÃ³n Inicial**: [OpciÃ³n X] por [razones]
 
-**Investigación Requerida**: [Qué necesita Picoro investigar]
+**InvestigaciÃ³n Requerida**: [QuÃ© necesita Picoro investigar]
 
 ---
 
-### Decisión 2: [Tema a decidir]
+### DecisiÃ³n 2: [Tema a decidir]
 
 [Repetir estructura]
 
@@ -467,16 +467,16 @@ DEBUG_MODE=false
   - API Y debe responder en < 5 segundos
   
 - **Archivos/Datos**:
-  - Archivo plantilla debe existir en [ubicación]
+  - Archivo plantilla debe existir en [ubicaciÃ³n]
   - Datos de entrada deben estar actualizados
   
 - **Otros Proyectos**:
   - [Si depende de otro proyecto, especificar]
 
 ### Restricciones
-- **Técnicas**:
+- **TÃ©cnicas**:
   - Debe ejecutarse en Windows (por SAP GUI)
-  - No puede usar más de X GB de RAM
+  - No puede usar mÃ¡s de X GB de RAM
   
 - **Negocio**:
   - Debe completarse en menos de Y minutos
@@ -484,61 +484,61 @@ DEBUG_MODE=false
   
 - **Seguridad**:
   - Credenciales deben estar en .env (no hardcoded)
-  - Logs no deben contener información sensible
+  - Logs no deben contener informaciÃ³n sensible
 
 ---
 
-## 11. Plan de Implementación
+## 11. Plan de ImplementaciÃ³n
 
-### Estimación de Esfuerzo
+### EstimaciÃ³n de Esfuerzo
 
-| Fase | Tareas | Estimación | Asignado |
+| Fase | Tareas | EstimaciÃ³n | Asignado |
 |------|--------|-----------|----------|
-| FASE 2.3 (Investigación) | Picoro investiga tecnologías | X horas | Picoro |
-| FASE 2.4 (Diseño) | Picoro diseña arquitectura | Y horas | Picoro |
-| FASE 3 (Implementación) | Goku implementa servicios | Z horas | Goku |
-| FASE 3 (Optimización) | Vegeta optimiza código | W horas | Vegeta |
+| FASE 2.3 (InvestigaciÃ³n) | Picoro investiga tecnologÃ­as | X horas | Picoro |
+| FASE 2.4 (DiseÃ±o) | Picoro diseÃ±a arquitectura | Y horas | Picoro |
+| FASE 3 (ImplementaciÃ³n) | Goku implementa servicios | Z horas | Goku |
+| FASE 3 (OptimizaciÃ³n) | Vegeta optimiza cÃ³digo | W horas | Vegeta |
 | FASE 3 (Testing) | Bulma crea tests | V horas | Bulma |
 | **TOTAL** | | **## horas** | |
 
 ### Tickets a Generar (Provisionales)
 
-Una vez que Picoro complete el diseño, se generarán aproximadamente:
+Una vez que Picoro complete el diseÃ±o, se generarÃ¡n aproximadamente:
 
 - TKT-<CODE>-001: Setup inicial del proyecto
 - TKT-<CODE>-002: Implementar servicio [nombre]
 - TKT-<CODE>-003: Implementar servicio [nombre]
 - TKT-<CODE>-004: Implementar servicio [nombre]
-- TKT-<CODE>-005: Implementar módulo orquestador
-- TKT-<CODE>-006: Crear tests de integración
-- TKT-<CODE>-007: Documentación y deployment
+- TKT-<CODE>-005: Implementar mÃ³dulo orquestador
+- TKT-<CODE>-006: Crear tests de integraciÃ³n
+- TKT-<CODE>-007: DocumentaciÃ³n y deployment
 
 ---
 
 ## 12. Riesgos
 
-| Riesgo | Probabilidad | Impacto | Mitigación |
+| Riesgo | Probabilidad | Impacto | MitigaciÃ³n |
 |--------|--------------|---------|------------|
 | Sistema externo no disponible | Media | Alto | Implementar retry logic + notificaciones |
-| Cambio en estructura de datos | Baja | Alto | Validación robusta de estructura + tests |
-| Performance insuficiente | Media | Medio | Optimización + procesamiento por lotes |
-| Credenciales inválidas | Baja | Alto | Validación previa + manejo de errores |
+| Cambio en estructura de datos | Baja | Alto | ValidaciÃ³n robusta de estructura + tests |
+| Performance insuficiente | Media | Medio | OptimizaciÃ³n + procesamiento por lotes |
+| Credenciales invÃ¡lidas | Baja | Alto | ValidaciÃ³n previa + manejo de errores |
 
 ---
 
-## 13. Documentación de Referencia
+## 13. DocumentaciÃ³n de Referencia
 
 ### Scripts Existentes (si aplica)
-- `docs/scripts/script_referencia.vbs`: [Descripción de qué hace]
-- [Otro script]: [Descripción]
+- `docs/scripts/script_referencia.vbs`: [DescripciÃ³n de quÃ© hace]
+- [Otro script]: [DescripciÃ³n]
 
-### Documentación Externa
-- [Sistema X API Docs](url): Documentación del API
-- [Librería Y Docs](url): Manual de uso
-- [SAP Transacción Z](url): Documentación SAP
+### DocumentaciÃ³n Externa
+- [Sistema X API Docs](url): DocumentaciÃ³n del API
+- [LibrerÃ­a Y Docs](url): Manual de uso
+- [SAP TransacciÃ³n Z](url): DocumentaciÃ³n SAP
 
 ### Knowledge Base (a generar por Picoro)
-Picoro deberá crear durante FASE 2.3:
+Picoro deberÃ¡ crear durante FASE 2.3:
 - `knowledge/local/01_<tema>_research.md`
 - `knowledge/local/02_<tema>_patterns.md`
 - `knowledge/local/03_<tema>_decisions.md`
@@ -551,58 +551,59 @@ Picoro deberá crear durante FASE 2.3:
 ### Desarrollador
 - **Nombre**: [Nombre]
 - **Fecha**: YYYY-MM-DD
-- **Comentarios**: [Comentarios técnicos]
-- **Aprobación**: ✅ / ⏳ Pendiente / ❌ Rechazado
+- **Comentarios**: [Comentarios tÃ©cnicos]
+- **AprobaciÃ³n**: âœ… / â³ Pendiente / âŒ Rechazado
 
 ### Tech Lead / Arquitecto
 - **Nombre**: [Nombre]
 - **Fecha**: YYYY-MM-DD
 - **Comentarios**: [Comentarios de arquitectura]
-- **Aprobación**: ✅ / ⏳ Pendiente / ❌ Rechazado
+- **AprobaciÃ³n**: âœ… / â³ Pendiente / âŒ Rechazado
 
 ### Usuario / Cliente / Product Owner
 - **Nombre**: [Nombre]
 - **Fecha**: YYYY-MM-DD
 - **Comentarios**: [Feedback de negocio]
-- **Aprobación**: ✅ / ⏳ Pendiente / ❌ Rechazado
+- **AprobaciÃ³n**: âœ… / â³ Pendiente / âŒ Rechazado
 
 ---
 
 ## 15. Control de Cambios
 
-| Versión | Fecha | Autor | Cambios |
+| VersiÃ³n | Fecha | Autor | Cambios |
 |---------|-------|-------|---------|
-| 1.0 | YYYY-MM-DD | [Nombre] | Creación inicial |
-| 1.1 | YYYY-MM-DD | [Nombre] | [Descripción de cambios] |
+| 1.0 | YYYY-MM-DD | [Nombre] | CreaciÃ³n inicial |
+| 1.1 | YYYY-MM-DD | [Nombre] | [DescripciÃ³n de cambios] |
 
 ---
 
 ## 16. Notas Adicionales
 
 ### Observaciones del Desarrollador
-[Cualquier observación técnica importante que no encaje en otras secciones]
+[Cualquier observaciÃ³n tÃ©cnica importante que no encaje en otras secciones]
 
 ### Preguntas Pendientes al Usuario
 - [ ] Pregunta 1
 - [ ] Pregunta 2
 - [ ] Pregunta 3
 
-### Decisiones Tomadas Durante Especificación
-- **[Fecha]**: Decidió usar X en lugar de Y porque [razón]
-- **[Fecha]**: Acordó con usuario que [decisión]
+### Decisiones Tomadas Durante EspecificaciÃ³n
+- **[Fecha]**: DecidiÃ³ usar X en lugar de Y porque [razÃ³n]
+- **[Fecha]**: AcordÃ³ con usuario que [decisiÃ³n]
 
 ---
 
-**Próximos Pasos**:
-1. ✅ Aprobar esta especificación
-2. ⏳ Picoro investiga y crea knowledge base (FASE 2.3)
-3. ⏳ Picoro diseña arquitectura y crea workflow_agents.yaml (FASE 2.4)
-4. ⏳ Crear tickets internos de desarrollo
-5. ⏳ Iniciar FASE 3 (Implementación)
+**PrÃ³ximos Pasos**:
+1. âœ… Aprobar esta especificaciÃ³n
+2. â³ Picoro investiga y crea knowledge base (FASE 2.3)
+3. â³ Picoro diseÃ±a arquitectura y crea workflow_agents.yaml (FASE 2.4)
+4. â³ Crear tickets internos de desarrollo
+5. â³ Iniciar FASE 3 (ImplementaciÃ³n)
 
 ---
 
 **Creado por**: [Nombre]  
 **Fecha**: YYYY-MM-DD  
-**Última actualización**: YYYY-MM-DD  
-**Versión**: 1.0
+**Ãšltima actualizaciÃ³n**: YYYY-MM-DD  
+**VersiÃ³n**: 1.0
+

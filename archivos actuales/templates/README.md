@@ -1,229 +1,229 @@
-# 📋 Templates
+﻿# ðŸ“‹ Templates
 
 Templates para crear agentes, skills, tickets, conocimiento y configuraciones de proyectos.
 
 ---
 
-## 📖 Propósito
+## ðŸ“– PropÃ³sito
 
 Los templates aseguran:
-- ✅ Consistencia en la documentación
-- ✅ Calidad estandarizada
-- ✅ Onboarding más rápido
-- ✅ Nada importante se olvida
-- ✅ Reutilización de mejores prácticas
+- âœ… Consistencia en la documentaciÃ³n
+- âœ… Calidad estandarizada
+- âœ… Onboarding mÃ¡s rÃ¡pido
+- âœ… Nada importante se olvida
+- âœ… ReutilizaciÃ³n de mejores prÃ¡cticas
 
 ---
 
-## 📂 Templates Disponibles
+## ðŸ“‚ Templates Disponibles
 
-### 📄 SPECIFICATION_TEMPLATE.md
-**Uso**: Crear la especificación técnica ORIGINAL de un proyecto nuevo
+### ðŸ“„ SPECIFICATION_TEMPLATE.md
+**Uso**: Crear la especificaciÃ³n tÃ©cnica ORIGINAL de un proyecto nuevo
 
 **Incluye**:
-- Metadata (código proyecto, ticket externo, solicitante, estado)
-- Visión general (contexto, objetivo, flujo, resultado esperado)
-- Entradas (parámetros, archivos, credenciales)
-- Proceso completo paso a paso (lógica de negocio)
+- Metadata (cÃ³digo proyecto, ticket externo, solicitante, estado)
+- VisiÃ³n general (contexto, objetivo, flujo, resultado esperado)
+- Entradas (parÃ¡metros, archivos, credenciales)
+- Proceso completo paso a paso (lÃ³gica de negocio)
 - Salidas (archivos generados, notificaciones)
-- Requisitos técnicos (tecnologías, configuración, infraestructura)
+- Requisitos tÃ©cnicos (tecnologÃ­as, configuraciÃ³n, infraestructura)
 - Casos de uso detallados
-- Casos de prueba (criterios de aceptación)
+- Casos de prueba (criterios de aceptaciÃ³n)
 - Arquitectura de componentes
 - Skills de IA necesarios
-- Decisiones técnicas pendientes
+- Decisiones tÃ©cnicas pendientes
 - Dependencias y restricciones
-- Plan de implementación
-- Riesgos y mitigación
+- Plan de implementaciÃ³n
+- Riesgos y mitigaciÃ³n
 - Aprobaciones y control de cambios
 
-**Cuándo usar**: 
+**CuÃ¡ndo usar**: 
 - Al iniciar un proyecto NUEVO desde cero
 - Cuando el usuario te da un ticket externo para un nuevo desarrollo
-- ANTES de que Picoro comience la investigación (FASE 2.1)
+- ANTES de que Picoro comience la investigaciÃ³n (FASE 2.1)
 
-**Ubicación**: [SPECIFICATION_TEMPLATE.md](./SPECIFICATION_TEMPLATE.md)
+**UbicaciÃ³n**: [SPECIFICATION_TEMPLATE.md](./SPECIFICATION_TEMPLATE.md)
 
-**Nota**: Este es el documento que TÚ (desarrollador) creas después de recibir el ticket externo del usuario
+**Nota**: Este es el documento que TÃš (desarrollador) creas despuÃ©s de recibir el ticket externo del usuario
 
 ---
 
-### 🤖 AGENT_TEMPLATE.md
+### ðŸ¤– AGENT_TEMPLATE.md
 **Uso**: Documentar agentes (globales o de proyecto)
 
 **Incluye**:
-- Metadata del agente (nombre, versión, skills requeridos)
-- Descripción y responsabilidades
-- Configuración
+- Metadata del agente (nombre, versiÃ³n, skills requeridos)
+- DescripciÃ³n y responsabilidades
+- ConfiguraciÃ³n
 - Ejemplos de uso
 - API del agente
 - Testing
 - Troubleshooting
 
-**Cuándo usar**: Al crear cualquier agente nuevo
+**CuÃ¡ndo usar**: Al crear cualquier agente nuevo
 
-**Ubicación**: [AGENT_TEMPLATE.md](./AGENT_TEMPLATE.md)
+**UbicaciÃ³n**: [AGENT_TEMPLATE.md](./AGENT_TEMPLATE.md)
 
 ---
 
-### 🎯 SKILL_TEMPLATE.md
+### ðŸŽ¯ SKILL_TEMPLATE.md
 **Uso**: Documentar skills (globales o de proyecto)
 
 **Incluye**:
-- Metadata del skill (versión, dependencias, I/O)
-- Propósito y funcionalidad
-- Instalación
-- Ejemplos básicos y avanzados
+- Metadata del skill (versiÃ³n, dependencias, I/O)
+- PropÃ³sito y funcionalidad
+- InstalaciÃ³n
+- Ejemplos bÃ¡sicos y avanzados
 - API completa
 - Testing y performance
 - Troubleshooting
 
-**Cuándo usar**: Al crear cualquier skill nuevo
+**CuÃ¡ndo usar**: Al crear cualquier skill nuevo
 
-**Ubicación**: [SKILL_TEMPLATE.md](./SKILL_TEMPLATE.md)
+**UbicaciÃ³n**: [SKILL_TEMPLATE.md](./SKILL_TEMPLATE.md)
 
 ---
 
-### 🎫 TICKET_TEMPLATE.md
+### ðŸŽ« TICKET_TEMPLATE.md
 **Uso**: Crear tickets internos de desarrollo
 
 **Incluye**:
 - Metadata (ID, ticket externo, solicitante, prioridad, estado)
-- Descripción y justificación
-- Análisis de impacto
-- Workflow de agentes (Picoro → Goku → Vegeta → Bulma)
-- Criterios de aceptación
+- DescripciÃ³n y justificaciÃ³n
+- AnÃ¡lisis de impacto
+- Workflow de agentes (Picoro â†’ Goku â†’ Vegeta â†’ Bulma)
+- Criterios de aceptaciÃ³n
 - Plan de testing
-- Documentación requerida
-- Sección de cierre con commit y ticket externo
+- DocumentaciÃ³n requerida
+- SecciÃ³n de cierre con commit y ticket externo
 
-**Cuándo usar**: 
-- Para cada tarea de implementación derivada del diseño de Picoro
+**CuÃ¡ndo usar**: 
+- Para cada tarea de implementaciÃ³n derivada del diseÃ±o de Picoro
 - Para cambios menores sobre proyectos existentes
 - Para correcciones de bugs
 
-**Ubicación**: [TICKET_TEMPLATE.md](./TICKET_TEMPLATE.md)
+**UbicaciÃ³n**: [TICKET_TEMPLATE.md](./TICKET_TEMPLATE.md)
 
 ---
 
-### 📄 SPEC_INCREMENTAL_TEMPLATE.md
+### ðŸ“„ SPEC_INCREMENTAL_TEMPLATE.md
 **Uso**: Crear especificaciones para cambios GRANDES sobre proyectos existentes
 
 **Incluye**:
-- Metadata (ticket externo, solicitante, relación con SPEC original)
-- Visión general y justificación
+- Metadata (ticket externo, solicitante, relaciÃ³n con SPEC original)
+- VisiÃ³n general y justificaciÃ³n
 - Alcance del cambio e impacto
 - Arquitectura (nuevos componentes, modificaciones)
 - Input/Output nuevos
 - Flujo de proceso modificado
-- Requisitos técnicos y dependencias
-- Investigación requerida
+- Requisitos tÃ©cnicos y dependencias
+- InvestigaciÃ³n requerida
 - Casos de uso y prueba
-- Estimación de esfuerzo y tickets a generar
-- Riesgos y mitigación
-- Criterios de aceptación
+- EstimaciÃ³n de esfuerzo y tickets a generar
+- Riesgos y mitigaciÃ³n
+- Criterios de aceptaciÃ³n
 - Aprobaciones
 
-**Cuándo usar**: 
-- Feature nueva que requiere nuevos servicios/módulos
+**CuÃ¡ndo usar**: 
+- Feature nueva que requiere nuevos servicios/mÃ³dulos
 - Cambios que afectan arquitectura existente
-- Estimación > 20 horas
-- Requiere investigación técnica nueva
+- EstimaciÃ³n > 20 horas
+- Requiere investigaciÃ³n tÃ©cnica nueva
 
-**Ubicación**: [SPEC_INCREMENTAL_TEMPLATE.md](./SPEC_INCREMENTAL_TEMPLATE.md)
+**UbicaciÃ³n**: [SPEC_INCREMENTAL_TEMPLATE.md](./SPEC_INCREMENTAL_TEMPLATE.md)
 
-**Nota**: Para cambios pequeños (bug fix, mejora menor), crear ticket directo sin nueva SPEC
-
----
-
-**Ubicación**: [SKILL_TEMPLATE.md](./SKILL_TEMPLATE.md)
+**Nota**: Para cambios pequeÃ±os (bug fix, mejora menor), crear ticket directo sin nueva SPEC
 
 ---
 
-### 🎫 TICKET_TEMPLATE.md
+**UbicaciÃ³n**: [SKILL_TEMPLATE.md](./SKILL_TEMPLATE.md)
+
+---
+
+### ðŸŽ« TICKET_TEMPLATE.md
 **Uso**: Crear tickets de control de cambios
 
 **Incluye**:
 - Metadata (tipo, prioridad, estado)
-- Descripción y contexto
+- DescripciÃ³n y contexto
 - Objetivos
 - Archivos afectados
 - Trazabilidad
-- Criterios de aceptación
+- Criterios de aceptaciÃ³n
 - Plan de testing
 - Notas de desarrollo
 - Review checklist
 
-**Cuándo usar**: Para trackear cualquier cambio o feature
+**CuÃ¡ndo usar**: Para trackear cualquier cambio o feature
 
-**Ubicación**: [TICKET_TEMPLATE.md](./TICKET_TEMPLATE.md)
+**UbicaciÃ³n**: [TICKET_TEMPLATE.md](./TICKET_TEMPLATE.md)
 
 ---
 
-### 📚 KNOWLEDGE_NOTE_TEMPLATE.md
+### ðŸ“š KNOWLEDGE_NOTE_TEMPLATE.md
 **Uso**: Documentar conocimiento (local o remoto)
 
 **Incluye**:
 - Metadata y tags
-- Propósito
+- PropÃ³sito
 - Contenido adaptable (lesson, solution, pattern, reference)
-- Ejemplos de código
+- Ejemplos de cÃ³digo
 - Aplicabilidad
 - Referencias
 - Historial de cambios
 
-**Cuándo usar**: Al documentar lecciones, soluciones, patrones o referencias
+**CuÃ¡ndo usar**: Al documentar lecciones, soluciones, patrones o referencias
 
-**Ubicación**: [KNOWLEDGE_NOTE_TEMPLATE.md](./KNOWLEDGE_NOTE_TEMPLATE.md)
+**UbicaciÃ³n**: [KNOWLEDGE_NOTE_TEMPLATE.md](./KNOWLEDGE_NOTE_TEMPLATE.md)
 
 ---
 
-### 📋 README_KNOWLEDGE_TEMPLATE.md
+### ðŸ“‹ README_KNOWLEDGE_TEMPLATE.md
 **Uso**: Crear README para directorios knowledge/ de proyectos
 
 **Incluye**:
-- Estado actual del conocimiento (para IA/metodología)
-- Métricas de contenido generado
+- Estado actual del conocimiento (para IA/metodologÃ­a)
+- MÃ©tricas de contenido generado
 - Historial de estado con trazabilidad temporal
 - Estructura de carpetas
-- Enlaces a documentación relacionada
-- Guía de próximos pasos
+- Enlaces a documentaciÃ³n relacionada
+- GuÃ­a de prÃ³ximos pasos
 
-**Cuándo usar**: Al crear estructura de knowledge/ en nuevo proyecto
+**CuÃ¡ndo usar**: Al crear estructura de knowledge/ en nuevo proyecto
 
-**Por qué es importante**:
-- ✅ IA/metodología saben en qué fase está el proyecto
-- ✅ Auditoría temporal de cuándo se generó conocimiento
-- ✅ Trazabilidad de decisiones arquitectónicas
-- ✅ Facilita onboarding de nuevos desarrolladores
+**Por quÃ© es importante**:
+- âœ… IA/metodologÃ­a saben en quÃ© fase estÃ¡ el proyecto
+- âœ… AuditorÃ­a temporal de cuÃ¡ndo se generÃ³ conocimiento
+- âœ… Trazabilidad de decisiones arquitectÃ³nicas
+- âœ… Facilita onboarding de nuevos desarrolladores
 
-**Ubicación**: [README_KNOWLEDGE_TEMPLATE.md](./README_KNOWLEDGE_TEMPLATE.md)
+**UbicaciÃ³n**: [README_KNOWLEDGE_TEMPLATE.md](./README_KNOWLEDGE_TEMPLATE.md)
 
 ---
 
-### ⚙️ PROJECT_CONFIG_TEMPLATE.yaml
+### âš™ï¸ PROJECT_CONFIG_TEMPLATE.yaml
 **Uso**: Configurar nuevos proyectos
 
 **Incluye**:
-- Información del proyecto
+- InformaciÃ³n del proyecto
 - Dependencias (skills, agentes, packages)
-- Configuración de entornos
-- Ejecución y notificaciones
+- ConfiguraciÃ³n de entornos
+- EjecuciÃ³n y notificaciones
 - Logging
 - Paths
 - Testing
 - Versionado
 - Integraciones
 
-**Cuándo usar**: Al iniciar cualquier proyecto nuevo
+**CuÃ¡ndo usar**: Al iniciar cualquier proyecto nuevo
 
-**Ubicación**: [PROJECT_CONFIG_TEMPLATE.yaml](./PROJECT_CONFIG_TEMPLATE.yaml)
+**UbicaciÃ³n**: [PROJECT_CONFIG_TEMPLATE.yaml](./PROJECT_CONFIG_TEMPLATE.yaml)
 
 ---
 
-## 🚀 Cómo Usar los Templates
+## ðŸš€ CÃ³mo Usar los Templates
 
-### Método 1: Copiar y Renombrar
+### MÃ©todo 1: Copiar y Renombrar
 
 ```bash
 # Para agente
@@ -245,63 +245,63 @@ cp ai_skill_dev1/ai_global/templates/README_KNOWLEDGE_TEMPLATE.md ./knowledge/RE
 cp ai_skill_dev1/ai_global/templates/PROJECT_CONFIG_TEMPLATE.yaml ./config.yaml
 ```
 
-### Método 2: Referencias Directas
+### MÃ©todo 2: Referencias Directas
 
-En tu editor, abre el template relevante y úsalo como guía mientras creas tu documento.
+En tu editor, abre el template relevante y Ãºsalo como guÃ­a mientras creas tu documento.
 
 ---
 
-## ✏️ Personalizar Templates
+## âœï¸ Personalizar Templates
 
-Los templates son **guías flexibles**, no camisas de fuerza:
+Los templates son **guÃ­as flexibles**, no camisas de fuerza:
 
-### ✅ Está bien:
-- Agregar secciones específicas a tu contexto
+### âœ… EstÃ¡ bien:
+- Agregar secciones especÃ­ficas a tu contexto
 - Reorganizar para mayor claridad
-- Omitir secciones no aplicables (marcándolas como "N/A")
+- Omitir secciones no aplicables (marcÃ¡ndolas como "N/A")
 - Adaptar ejemplos a tu caso de uso
 
-### ❌ Evita:
-- Eliminar metadata crítico (versión, tipo, fecha)
-- Omitir secciones importantes sin justificación
+### âŒ Evita:
+- Eliminar metadata crÃ­tico (versiÃ³n, tipo, fecha)
+- Omitir secciones importantes sin justificaciÃ³n
 - Cambiar formatos de manera inconsistente
-- No documentar decisiones de personalización
+- No documentar decisiones de personalizaciÃ³n
 
 ---
 
-## 🎯 Qué Template Usar
+## ðŸŽ¯ QuÃ© Template Usar
 
 ### Creando un Agente
-→ **AGENT_TEMPLATE.md**
+â†’ **AGENT_TEMPLATE.md**
 
 ### Creando un Skill
-→ **SKILL_TEMPLATE.md**
+â†’ **SKILL_TEMPLATE.md**
 
 ### Trackeando un Cambio
-→ **TICKET_TEMPLATE.md**
+â†’ **TICKET_TEMPLATE.md**
 
 ### Documentando Conocimiento Individual
-→ **KNOWLEDGE_NOTE_TEMPLATE.md** (lecciones, patrones, referencias)
+â†’ **KNOWLEDGE_NOTE_TEMPLATE.md** (lecciones, patrones, referencias)
 
 ### Creando Estructura de Knowledge
-→ **README_KNOWLEDGE_TEMPLATE.md** (README de proyecto con historial)
+â†’ **README_KNOWLEDGE_TEMPLATE.md** (README de proyecto con historial)
 
 ### Configurando un Proyecto
-→ **PROJECT_CONFIG_TEMPLATE.yaml**
+â†’ **PROJECT_CONFIG_TEMPLATE.yaml**
 
 ---
 
-## 📊 Secciones Clave por Template
+## ðŸ“Š Secciones Clave por Template
 
 ### AGENT_TEMPLATE.md
 ```
 1. Metadata (yaml)
-2. Descripción
-3. Skills Requeridos ⭐
-4. Configuración
+2. DescripciÃ³n
+3. Skills Requeridos â­
+4. ConfiguraciÃ³n
 5. Uso (ejemplos)
 6. Estructura de archivos
-7. Flujo de ejecución
+7. Flujo de ejecuciÃ³n
 8. Testing
 9. Troubleshooting
 ```
@@ -309,25 +309,25 @@ Los templates son **guías flexibles**, no camisas de fuerza:
 ### SKILL_TEMPLATE.md
 ```
 1. Metadata (yaml)
-2. Descripción
-3. Instalación
-4. Uso (básico y avanzado) ⭐
-5. API del skill ⭐
+2. DescripciÃ³n
+3. InstalaciÃ³n
+4. Uso (bÃ¡sico y avanzado) â­
+5. API del skill â­
 6. Testing
 7. Performance
-8. Integración
+8. IntegraciÃ³n
 9. Versionado
 ```
 
 ### TICKET_TEMPLATE.md
 ```
 1. Metadata
-2. Descripción
-3. Objetivos ⭐
+2. DescripciÃ³n
+3. Objetivos â­
 4. Archivos afectados
-5. Criterios de aceptación ⭐
+5. Criterios de aceptaciÃ³n â­
 6. Plan de testing
-7. Documentación requerida
+7. DocumentaciÃ³n requerida
 8. Notas de desarrollo
 9. Review checklist
 ```
@@ -335,40 +335,40 @@ Los templates son **guías flexibles**, no camisas de fuerza:
 ### KNOWLEDGE_NOTE_TEMPLATE.md
 ```
 1. Metadata y tags
-2. Propósito
-3. Contenido principal ⭐
-4. Ejemplos de código
-5. Aplicabilidad ⭐
+2. PropÃ³sito
+3. Contenido principal â­
+4. Ejemplos de cÃ³digo
+5. Aplicabilidad â­
 6. Referencias
 7. Casos de uso reales
 8. FAQ
 ```
 
-⭐ = Secciones más críticas
+â­ = Secciones mÃ¡s crÃ­ticas
 
 ---
 
-## 💡 Best Practices
+## ðŸ’¡ Best Practices
 
 ### Al Usar Templates
 
 1. **Lee primero todo el template** antes de empezar a llenar
-2. **Completa metadata desde el inicio** (versión, fecha, autor)
-3. **No dejes secciones vacías** - Usa "N/A" o "Pendiente"
-4. **Sé específico** en descripciones y ejemplos
-5. **Mantén consistencia** con otros documentos del mismo tipo
+2. **Completa metadata desde el inicio** (versiÃ³n, fecha, autor)
+3. **No dejes secciones vacÃ­as** - Usa "N/A" o "Pendiente"
+4. **SÃ© especÃ­fico** en descripciones y ejemplos
+5. **MantÃ©n consistencia** con otros documentos del mismo tipo
 
 ### Al Mantener Templates
 
-- ✅ Revisa templates cada trimestre
-- ✅ Incorpora mejoras de experiencia real
-- ✅ Documenta cambios importantes
-- ✅ Mantén versionado de templates
-- ✅ Comunica cambios al equipo
+- âœ… Revisa templates cada trimestre
+- âœ… Incorpora mejoras de experiencia real
+- âœ… Documenta cambios importantes
+- âœ… MantÃ©n versionado de templates
+- âœ… Comunica cambios al equipo
 
 ---
 
-## 🔄 Evolución de Templates
+## ðŸ”„ EvoluciÃ³n de Templates
 
 Los templates evolucionan. Cuando encuentres mejoras:
 
@@ -376,15 +376,15 @@ Los templates evolucionan. Cuando encuentres mejoras:
 ```markdown
 # TKT-GLOBAL-XXX: Mejorar template de [tipo]
 
-Propuesta de mejora: [descripción]
-Razón: [por qué es mejor]
-Impacto: [qué documentos se afectan]
+Propuesta de mejora: [descripciÃ³n]
+RazÃ³n: [por quÃ© es mejor]
+Impacto: [quÃ© documentos se afectan]
 ```
 
 ### Paso 2: Implementar
 - Actualiza el template
 - Documenta cambios en CHANGELOG
-- Incrementa versión si es significativo
+- Incrementa versiÃ³n si es significativo
 
 ### Paso 3: Comunicar
 - Notifica al equipo
@@ -393,9 +393,9 @@ Impacto: [qué documentos se afectan]
 
 ---
 
-## 📈 Métricas de Uso
+## ðŸ“ˆ MÃ©tricas de Uso
 
-| Template | Usos | Última Actualización |
+| Template | Usos | Ãšltima ActualizaciÃ³n |
 |----------|------|---------------------|
 | AGENT_TEMPLATE.md | 0 | 2026-02-10 |
 | SKILL_TEMPLATE.md | 0 | 2026-02-10 |
@@ -405,9 +405,9 @@ Impacto: [qué documentos se afectan]
 
 ---
 
-## 🔗 Ver También
+## ðŸ”— Ver TambiÃ©n
 
-- **Metodología**: [AI_SKILL_DEVELOPMENT_METHODOLOGY.md](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+- **MetodologÃ­a**: [AI_SKILL_DEVELOPMENT_METHODOLOGY.md](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
 - **Agentes**: [../agents/README.md](../agents/README.md)
 - **Skills**: [../skills/README.md](../skills/README.md)
 - **Knowledge**: [../knowledge/README.md](../knowledge/README.md)
@@ -415,10 +415,10 @@ Impacto: [qué documentos se afectan]
 
 ---
 
-## 📝 CHANGELOG
+## ðŸ“ CHANGELOG
 
 ### v1.0.0 (2026-02-10)
-- ✨ Templates iniciales creados
+- âœ¨ Templates iniciales creados
   - AGENT_TEMPLATE.md
   - SKILL_TEMPLATE.md
   - TICKET_TEMPLATE.md
@@ -427,6 +427,7 @@ Impacto: [qué documentos se afectan]
 
 ---
 
-**Versión actual**: 1.0.0  
-**Última actualización**: 2026-02-10  
+**VersiÃ³n actual**: 1.0.0  
+**Ãšltima actualizaciÃ³n**: 2026-02-10  
 **Mantenedor**: Dr. Francisco Ibarra Carlos
+

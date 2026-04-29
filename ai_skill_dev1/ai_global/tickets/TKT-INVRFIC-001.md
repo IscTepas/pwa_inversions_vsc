@@ -1,38 +1,38 @@
-# TKT-INVRFIC-001: Setup Base del Proyecto + Estructura SRC
+﻿# TKT-INVRFIC-001: Setup Base del Proyecto + Estructura SRC
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-INVRFIC-001 |
 | **Tipo** | Infrastructure / Setup |
-| **Prioridad** | 🔴 Crítica |
-| **Estado** | 🆕 Abierto |
-| **Proyecto** | pwa_inversions_drfic (v1.0) |
+| **Prioridad** | ðŸ”´ CrÃ­tica |
+| **Estado** | ðŸ†• Abierto |
+| **Proyecto** | pwa_inversions_team5 (v1.0) |
 | **Creado** | 2026-04-28 |
-| **Asignado a** | Ciclo: Picoro → Goku → Vegeta → Bulma |
+| **Asignado a** | Ciclo: Picoro â†’ Goku â†’ Vegeta â†’ Bulma |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
 Base del proyecto PWA de inversiones. Debe estar 100% operativo antes de implementar cualquier feature.
 
-### Propósito
-Crear estructura base completa: React 18 + TypeScript + Vite + TailwindCSS + Zustand, con directorios organizados según especificación.
+### PropÃ³sito
+Crear estructura base completa: React 18 + TypeScript + Vite + TailwindCSS + Zustand, con directorios organizados segÃºn especificaciÃ³n.
 
-### Solución Propuesta
-1. Crear directorio `/pwa_inversions_drfic` bajo `projects/pwa/`
-2. Inicializar `package.json` con dependencias específicadas en spec v1.0
+### SoluciÃ³n Propuesta
+1. Crear directorio `/pwa_inversions_team5` bajo `projects/pwa/`
+2. Inicializar `package.json` con dependencias especÃ­ficadas en spec v1.0
 3. Configurar `vite.config.ts`, `tsconfig.json`, `tailwind.config.ts`
-4. Crear estructura SRC según especificación (assets, components, features, services, store, types, utils, styles)
-5. Crear `index.html`, `main.tsx`, `App.tsx` básicos
+4. Crear estructura SRC segÃºn especificaciÃ³n (assets, components, features, services, store, types, utils, styles)
+5. Crear `index.html`, `main.tsx`, `App.tsx` bÃ¡sicos
 6. Crear `.env.example` con todas las variables necesarias
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Crear**:
 - package.json
@@ -48,7 +48,7 @@ Crear estructura base completa: React 18 + TypeScript + Vite + TailwindCSS + Zus
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Picoro analiza:
 - [ ] Ticket revisado y estructura especificada entendida
@@ -63,7 +63,7 @@ Crear estructura base completa: React 18 + TypeScript + Vite + TailwindCSS + Zus
 - [ ] .env.example completado
 
 ### Vegeta optimiza:
-- [ ] Configuración verificada contra spec
+- [ ] ConfiguraciÃ³n verificada contra spec
 - [ ] No hay imports circulares
 - [ ] TypeScript strict mode habilitado
 - [ ] Paths alias configurados (src/*)
@@ -71,21 +71,21 @@ Crear estructura base completa: React 18 + TypeScript + Vite + TailwindCSS + Zus
 ### Bulma valida:
 - [ ] `npm install` ejecuta sin errores
 - [ ] `npm run dev` lanza servidor Vite correctamente
-- [ ] Estructura de carpetas completa según spec
+- [ ] Estructura de carpetas completa segÃºn spec
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
-1. ✅ Proyecto corre sin errores: `npm install && npm run dev`
-2. ✅ Todos los directorios base existen según estructura SRC
-3. ✅ TypeScript compila sin errores en strict mode
-4. ✅ TailwindCSS funciona: clase `dark:` aplicable
-5. ✅ .env.example tiene todas las variables de spec
+1. âœ… Proyecto corre sin errores: `npm install && npm run dev`
+2. âœ… Todos los directorios base existen segÃºn estructura SRC
+3. âœ… TypeScript compila sin errores en strict mode
+4. âœ… TailwindCSS funciona: clase `dark:` aplicable
+5. âœ… .env.example tiene todas las variables de spec
 
 ---
 
-## 🧾 Evidencia de Validación (Requerida para ✅ Completado)
+## ðŸ§¾ Evidencia de ValidaciÃ³n (Requerida para âœ… Completado)
 
 - [ ] Screenshot: `npm run dev` servidor activo
 - [ ] Screenshot: navegador mostrando "Hello PWA Inversions v1.0"
@@ -94,9 +94,10 @@ Crear estructura base completa: React 18 + TypeScript + Vite + TailwindCSS + Zus
 
 ---
 
-## 📌 Notas
+## ðŸ“Œ Notas
 
-- Stack fijo: No cambiar React version, Vite, TypeScript sin aprobación
+- Stack fijo: No cambiar React version, Vite, TypeScript sin aprobaciÃ³n
 - Dark theme por defecto: CSS vars para colores
-- Compatible con metodología AI Skill Development
+- Compatible con metodologÃ­a AI Skill Development
+
 

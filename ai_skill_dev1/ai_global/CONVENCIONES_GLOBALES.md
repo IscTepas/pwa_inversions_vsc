@@ -1,8 +1,8 @@
-# 📋 Convenciones Globales
+﻿# ðŸ“‹ Convenciones Globales
 
-**Versión**: 1.0.0  
+**VersiÃ³n**: 1.0.0  
 **Fecha**: 28 Abril 2026  
-**Estado**: ✅ Aprobado
+**Estado**: âœ… Aprobado
 
 ---
 
@@ -14,8 +14,8 @@ pwa_<nombre>_<equipo>
 api_<nombre>_<equipo>
 
 Ejemplos:
-- pwa_inversions_drfic
-- api_inversions_drfic
+- pwa_inversions_team5
+- api_inversions_team5
 ```
 
 ### Agentes
@@ -47,7 +47,7 @@ Ejemplos:
 TKT-<CODIGO>-###
 
 Ejemplos:
-- TKT-GLOBAL-001 (global, mejoras metodología)
+- TKT-GLOBAL-001 (global, mejoras metodologÃ­a)
 - TKT-INVRFIC-001 (proyecto inversiones)
 - TKT-INVRFIC-002
 ```
@@ -81,22 +81,22 @@ Ejemplos de remote/:
 
 ---
 
-## 2. Estándar de Documentación Inline (FIC Bilingüe)
+## 2. EstÃ¡ndar de DocumentaciÃ³n Inline (FIC BilingÃ¼e)
 
 **Obligatorio para**:
-- Módulos principales (class, función top-level)
+- MÃ³dulos principales (class, funciÃ³n top-level)
 - Servicios de broker y market data
-- Lógica de indicadores técnicos
-- Bloques de lógica crítica (>5 líneas complejas)
+- LÃ³gica de indicadores tÃ©cnicos
+- Bloques de lÃ³gica crÃ­tica (>5 lÃ­neas complejas)
 - Hooks personalizados
 
 **Formato**:
 ```typescript
-// FIC: [Descripción en inglés] (EN)
-// FIC: [Descripción en español] (ES)
+// FIC: [DescripciÃ³n en inglÃ©s] (EN)
+// FIC: [DescripciÃ³n en espaÃ±ol] (ES)
 function nombreFuncion(param1: Type): ReturnType {
   // FIC: Implementation details (EN)
-  // FIC: Detalles de implementación (ES)
+  // FIC: Detalles de implementaciÃ³n (ES)
   
   return result;
 }
@@ -105,10 +105,10 @@ function nombreFuncion(param1: Type): ReturnType {
 **Ejemplo Real**:
 ```typescript
 // FIC: Calculates RSI (Relative Strength Index) with customizable period (EN)
-// FIC: Calcula RSI (Índice de Fuerza Relativa) con período personalizable (ES)
+// FIC: Calcula RSI (Ãndice de Fuerza Relativa) con perÃ­odo personalizable (ES)
 function calculateRSI(prices: number[], period: number = 14): number {
   // FIC: Calculate average gains and losses (EN)
-  // FIC: Calcula ganancias y pérdidas promedio (ES)
+  // FIC: Calcula ganancias y pÃ©rdidas promedio (ES)
   
   const gains: number[] = [];
   const losses: number[] = [];
@@ -138,15 +138,15 @@ function calculateRSI(prices: number[], period: number = 14): number {
 
 ## 3. Estados de Tickets
 
-| Estado | Emoji | Descripción |
+| Estado | Emoji | DescripciÃ³n |
 |--------|-------|-------------|
-| Open | 🆕 | Recién creado, en backlog |
-| In Progress | 🟡 | Agente actualmente trabajando |
-| In Review | 🔵 | Código listo, pendiente validación |
-| Blocked | 🚫 | Esperando dependencia externa |
-| Closed | ✅ | Validado y cerrado con evidencia |
+| Open | ðŸ†• | ReciÃ©n creado, en backlog |
+| In Progress | ðŸŸ¡ | Agente actualmente trabajando |
+| In Review | ðŸ”µ | CÃ³digo listo, pendiente validaciÃ³n |
+| Blocked | ðŸš« | Esperando dependencia externa |
+| Closed | âœ… | Validado y cerrado con evidencia |
 
-**Regla Crítica**: ✅ Solo con evidencia de validación/ejecución registrada
+**Regla CrÃ­tica**: âœ… Solo con evidencia de validaciÃ³n/ejecuciÃ³n registrada
 
 ---
 
@@ -154,47 +154,47 @@ function calculateRSI(prices: number[], period: number = 14): number {
 
 ### Picoro (Analista)
 ```
-✅ Ticket detallado y completo
-✅ Requisitos claramente definidos
-✅ Arquitectura documentada
-✅ Skills necesarios identificados
-✅ Dependencias mapeadas
+âœ… Ticket detallado y completo
+âœ… Requisitos claramente definidos
+âœ… Arquitectura documentada
+âœ… Skills necesarios identificados
+âœ… Dependencias mapeadas
 ```
 
 ### Goku (Developer)
 ```
-✅ Código compilable sin errores
-✅ Estándar FIC bilingüe en código crítico
-✅ Tests unitarios básicos incluidos
-✅ No hardcoded credentials (solo .env)
-✅ Documentación inline
+âœ… CÃ³digo compilable sin errores
+âœ… EstÃ¡ndar FIC bilingÃ¼e en cÃ³digo crÃ­tico
+âœ… Tests unitarios bÃ¡sicos incluidos
+âœ… No hardcoded credentials (solo .env)
+âœ… DocumentaciÃ³n inline
 ```
 
 ### Vegeta (Optimizer)
 ```
-✅ Performance metrics registrados
-✅ Latencia < umbral establecido
-✅ Security audit sin issues críticos
-✅ Código refactorizado sin cambio funcional
-✅ npm audit limpio
+âœ… Performance metrics registrados
+âœ… Latencia < umbral establecido
+âœ… Security audit sin issues crÃ­ticos
+âœ… CÃ³digo refactorizado sin cambio funcional
+âœ… npm audit limpio
 ```
 
 ### Bulma (Tester)
 ```
-✅ Tests 100% pasando
-✅ Indicadores vs TradingView validados (tolerance 0.5%)
-✅ Cero bugs bloqueantes
-✅ Criterios de aceptación cumplidos
-✅ Evidencia de ejecución registrada
+âœ… Tests 100% pasando
+âœ… Indicadores vs TradingView validados (tolerance 0.5%)
+âœ… Cero bugs bloqueantes
+âœ… Criterios de aceptaciÃ³n cumplidos
+âœ… Evidencia de ejecuciÃ³n registrada
 ```
 
 ### Krillin (Database)
 ```
-✅ Schema validado contra SPEC
-✅ Migraciones versionadas
-✅ Conectores testeados
-✅ REST API documentada
-✅ Credenciales en .env (jamás en código)
+âœ… Schema validado contra SPEC
+âœ… Migraciones versionadas
+âœ… Conectores testeados
+âœ… REST API documentada
+âœ… Credenciales en .env (jamÃ¡s en cÃ³digo)
 ```
 
 ---
@@ -202,9 +202,9 @@ function calculateRSI(prices: number[], period: number = 14): number {
 ## 5. Gates Obligatorios
 
 ### GATE 1: DATABASE SELECTION GATE
-**Cuándo**: Antes de revisar SPEC  
-**Quién**: Usuario  
-**Qué**: Selecciona motor(es) de BD  
+**CuÃ¡ndo**: Antes de revisar SPEC  
+**QuiÃ©n**: Usuario  
+**QuÃ©**: Selecciona motor(es) de BD  
 **Opciones**:
 - Supabase (PostgreSQL managed)
 - MongoDB (NoSQL)
@@ -214,28 +214,28 @@ function calculateRSI(prices: number[], period: number = 14): number {
 - Firebase Firestore
 
 ### GATE 2: SPECIFICATION GATE
-**Cuándo**: Antes de iniciar FASE 2.3  
-**Quién**: Sistema  
-**Qué**: Verifica que SPECIFICATION.md existe  
-**Ubicación oficial**:
+**CuÃ¡ndo**: Antes de iniciar FASE 2.3  
+**QuiÃ©n**: Sistema  
+**QuÃ©**: Verifica que SPECIFICATION.md existe  
+**UbicaciÃ³n oficial**:
 ```
 projects/<categoria>/<nombre>/ai_work_flow/docs/specs/SPECIFICATION.md
 ```
 
 ### GATE 3: DATABASE MODEL GATE
-**Cuándo**: Después de DATABASE SELECTION GATE  
-**Quién**: Usuario  
-**Qué**: Define si usuario entrega modelos o IA propone  
+**CuÃ¡ndo**: DespuÃ©s de DATABASE SELECTION GATE  
+**QuiÃ©n**: Usuario  
+**QuÃ©**: Define si usuario entrega modelos o IA propone  
 **Opciones**:
 - provided_by_user
 - generate_by_ai
 
 ### GATE 4: VALIDATION GATE (por ticket)
-**Cuándo**: Antes de marcar ticket ✅  
-**Quién**: Bulma  
-**Qué**: Verifica evidencia de validación  
+**CuÃ¡ndo**: Antes de marcar ticket âœ…  
+**QuiÃ©n**: Bulma  
+**QuÃ©**: Verifica evidencia de validaciÃ³n  
 **Evidencia Requerida**:
-- Fecha de ejecución
+- Fecha de ejecuciÃ³n
 - Entorno (DEV/QAS/PROD)
 - Responsable
 - Resultado (PASS/FAIL)
@@ -247,16 +247,16 @@ projects/<categoria>/<nombre>/ai_work_flow/docs/specs/SPECIFICATION.md
 
 ```
 ai_global/
-├── agents/              # 5 agentes documentados
-├── skills/              # 40+ skills catalogados
-├── knowledge/           # Base de conocimiento global
-│   ├── local/          # Investigaciones internas
-│   └── remote/         # Referencias externas
-├── templates/          # 11 templates
-├── tickets/            # TKT-GLOBAL-###
-├── prompts/            # Por fase
-├── README.md           # Maestro
-└── AI_SKILL_DEVELOPMENT_METHODOLOGY.md
+â”œâ”€â”€ agents/              # 5 agentes documentados
+â”œâ”€â”€ skills/              # 40+ skills catalogados
+â”œâ”€â”€ knowledge/           # Base de conocimiento global
+â”‚   â”œâ”€â”€ local/          # Investigaciones internas
+â”‚   â””â”€â”€ remote/         # Referencias externas
+â”œâ”€â”€ templates/          # 11 templates
+â”œâ”€â”€ tickets/            # TKT-GLOBAL-###
+â”œâ”€â”€ prompts/            # Por fase
+â”œâ”€â”€ README.md           # Maestro
+â””â”€â”€ AI_SKILL_DEVELOPMENT_METHODOLOGY.md
 ```
 
 ---
@@ -265,22 +265,22 @@ ai_global/
 
 ```
 ai_work_flow/
-├── development/        # Instrucciones para agentes
-│   ├── workflow_agents.yaml
-│   └── README.md
-├── docs/              # Documentación funcional/técnica
-│   ├── specs/
-│   │   ├── SPECIFICATION.md
-│   │   └── incremental/
-│   ├── templates/
-│   └── scripts/
-├── knowledge/         # Investigación del proyecto
-│   ├── local/
-│   └── remote/
-└── tickets/          # Tickets del proyecto
-    ├── TKT-INVRFIC-001.md
-    ├── TKT-INVRFIC-002.md
-    └── README.md
+â”œâ”€â”€ development/        # Instrucciones para agentes
+â”‚   â”œâ”€â”€ workflow_agents.yaml
+â”‚   â””â”€â”€ README.md
+â”œâ”€â”€ docs/              # DocumentaciÃ³n funcional/tÃ©cnica
+â”‚   â”œâ”€â”€ specs/
+â”‚   â”‚   â”œâ”€â”€ SPECIFICATION.md
+â”‚   â”‚   â””â”€â”€ incremental/
+â”‚   â”œâ”€â”€ templates/
+â”‚   â””â”€â”€ scripts/
+â”œâ”€â”€ knowledge/         # InvestigaciÃ³n del proyecto
+â”‚   â”œâ”€â”€ local/
+â”‚   â””â”€â”€ remote/
+â””â”€â”€ tickets/          # Tickets del proyecto
+    â”œâ”€â”€ TKT-INVRFIC-001.md
+    â”œâ”€â”€ TKT-INVRFIC-002.md
+    â””â”€â”€ README.md
 ```
 
 ---
@@ -290,24 +290,24 @@ ai_work_flow/
 ### Header de Inicio
 ```
 ---
-🧠 @picoro · Analista/Arquitecto · FASE 2.3
-🎯 skill: knowledge_synthesizer
-📋 tarea: Generar knowledge base desde SPECIFICATION.md
+ðŸ§  @picoro Â· Analista/Arquitecto Â· FASE 2.3
+ðŸŽ¯ skill: knowledge_synthesizer
+ðŸ“‹ tarea: Generar knowledge base desde SPECIFICATION.md
 ---
 ```
 
-### Línea de Completación
+### LÃ­nea de CompletaciÃ³n
 ```
-✅ @picoro completó · knowledge_synthesizer
+âœ… @picoro completÃ³ Â· knowledge_synthesizer
    output: knowledge/local/01_broker_api_research.md
    siguiente: @goku inicia FASE 2.4
 ```
 
-### Transición de Agente
+### TransiciÃ³n de Agente
 ```
 ---
-➡️ TRANSICIÓN DE AGENTE
-   @picoro ──→ @goku · FASE 2.4
+âž¡ï¸ TRANSICIÃ“N DE AGENTE
+   @picoro â”€â”€â†’ @goku Â· FASE 2.4
    Input: knowledge base + workflow_agents.yaml
    Output esperado: Estructura base + PR
 ---
@@ -317,15 +317,15 @@ ai_work_flow/
 
 ## 9. Credenciales y Seguridad
 
-### ❌ JAMÁS
+### âŒ JAMÃS
 ```
-- API keys en código
+- API keys en cÃ³digo
 - Database URLs en repositorio
 - Passwords en archivos
 - Secrets en commits
 ```
 
-### ✅ SIEMPRE
+### âœ… SIEMPRE
 ```
 - Variables de entorno (.env)
 - .env en .gitignore
@@ -356,7 +356,8 @@ CLAUDE_API_KEY=
 
 ## 10. Referencias
 
-- [Metodología](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+- [MetodologÃ­a](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
 - [Agentes](./agents/README.md)
 - [Skills](./skills/README.md)
 - [Templates](./templates/README.md)
+

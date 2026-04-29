@@ -1,34 +1,34 @@
-# TKT-INVRFIC-007: Core de Noticias y Eventos
+﻿# TKT-INVRFIC-007: Core de Noticias y Eventos
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-INVRFIC-007 |
 | **Tipo** | Feature / News & Events |
-| **Prioridad** | 🟡 Alta |
-| **Estado** | 🆕 Abierto |
-| **Proyecto** | pwa_inversions_drfic (v1.0) |
+| **Prioridad** | ðŸŸ¡ Alta |
+| **Estado** | ðŸ†• Abierto |
+| **Proyecto** | pwa_inversions_team5 (v1.0) |
 | **Creado** | 2026-04-28 |
-| **Asignado a** | Ciclo: Picoro → Goku → Vegeta → Bulma |
-| **Bloqueador** | TKT-INVRFIC-003 ✅ Completado |
+| **Asignado a** | Ciclo: Picoro â†’ Goku â†’ Vegeta â†’ Bulma |
+| **Bloqueador** | TKT-INVRFIC-003 âœ… Completado |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-Core #4 de análisis: Noticias, earnings, macro eventos y análisis de sentimiento.
+Core #4 de anÃ¡lisis: Noticias, earnings, macro eventos y anÃ¡lisis de sentimiento.
 
-### Propósito
+### PropÃ³sito
 Detectar:
 - Noticias en tiempo real del instrumento
-- Earnings próximos (días configurables: default 72h)
+- Earnings prÃ³ximos (dÃ­as configurables: default 72h)
 - Eventos macro (Fed, CPI, Jobs, etc.)
-- Análisis de sentimiento
+- AnÃ¡lisis de sentimiento
 - Riesgo de evento dentro de ventana configurada
 
-### Solución Propuesta
+### SoluciÃ³n Propuesta
 
 **Estructura**:
 - src/services/news/newsFeed.service.ts
@@ -36,32 +36,33 @@ Detectar:
 - src/services/news/newsEvents.service.ts (orquestador)
 - src/types/news.types.ts
 
-**Simplificación v1.0**: 
+**SimplificaciÃ³n v1.0**: 
 - Mock de datos para desarrollo
-- API placeholder (integración real en v1.1)
+- API placeholder (integraciÃ³n real en v1.1)
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Crear**: 4 archivos nuevos
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Goku implementa:
 - [ ] Feed de noticias mock con sentimiento (bullish/bearish/neutral)
-- [ ] Calendar de earnings: próximas 72h
-- [ ] Calendar de eventos macro: próximas 72h
+- [ ] Calendar de earnings: prÃ³ximas 72h
+- [ ] Calendar de eventos macro: prÃ³ximas 72h
 - [ ] Scoring: riesgo bajo/medio/alto
-- [ ] Salida estándar: { side, confidence, score, sentiment, nextRelevantEvents, reasons }
+- [ ] Salida estÃ¡ndar: { side, confidence, score, sentiment, nextRelevantEvents, reasons }
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
-1. ✅ Detecta earnings próximos correctamente
-2. ✅ Clasifica sentimiento de noticias
-3. ✅ Identifica riesgo de evento dentro de ventana
+1. âœ… Detecta earnings prÃ³ximos correctamente
+2. âœ… Clasifica sentimiento de noticias
+3. âœ… Identifica riesgo de evento dentro de ventana
+
 

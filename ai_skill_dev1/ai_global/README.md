@@ -1,73 +1,73 @@
-# AI SKILL DEVELOPMENT - Sistema Global
+﻿# AI SKILL DEVELOPMENT - Sistema Global
 
-**Versión**: 2.2  
+**VersiÃ³n**: 2.2  
 **Fecha**: 2026-02-10  
-**Estado**: ✅ FASE 0 y FASE 1 Completadas  
+**Estado**: âœ… FASE 0 y FASE 1 Completadas  
 
-Metodología híbrida para desarrollo asistido por IA con agentes, skills, conocimiento y tickets trazables.
+MetodologÃ­a hÃ­brida para desarrollo asistido por IA con agentes, skills, conocimiento y tickets trazables.
 
 ---
 
-## 🎯 Estado del Sistema
+## ðŸŽ¯ Estado del Sistema
 
-| Componente | Estado | Última Actualización |
+| Componente | Estado | Ãšltima ActualizaciÃ³n |
 |-----------|--------|----------------------|
-| **Estructura ai_global/** | ✅ Creada | 2026-02-10 |
-| **Agentes (5)** | ✅ Documentados | 2026-02-10 |
-| **Skills Globales** | ✅ Catálogo listo | 2026-02-10 |
-| **Templates (9)** | ✅ Completos | 2026-02-10 |
-| **Knowledge Management** | ✅ Estructura lista | 2026-02-10 |
-| **Tickets System** | ✅ Sistema implementado | 2026-02-10 |
-| **FASE 0** | ✅ Completada | 2026-02-10 |
-| **FASE 1** | ✅ Completada | 2026-02-10 |
+| **Estructura ai_global/** | âœ… Creada | 2026-02-10 |
+| **Agentes (5)** | âœ… Documentados | 2026-02-10 |
+| **Skills Globales** | âœ… CatÃ¡logo listo | 2026-02-10 |
+| **Templates (9)** | âœ… Completos | 2026-02-10 |
+| **Knowledge Management** | âœ… Estructura lista | 2026-02-10 |
+| **Tickets System** | âœ… Sistema implementado | 2026-02-10 |
+| **FASE 0** | âœ… Completada | 2026-02-10 |
+| **FASE 1** | âœ… Completada | 2026-02-10 |
 
 ---
 
-## 🤖 Equipo de Agentes (5)
+## ðŸ¤– Equipo de Agentes (5)
 
 | Agente | Rol | Fases | Entrada | Salida |
 |--------|-----|-------|---------|--------|
-| 🧠 **Picoro** | Analista/Arquitecto | 2.3, 2.4, 3 | Tickets, Specs | Knowledge, Arquitectura, Tickets |
-| 👨‍💻 **Goku** | Dev Senior | 2.4, 3 | Tickets, Knowledge | Código funcional |
-| 🥷 **Vegeta** | Optimizador/Seguridad | 3 | Código | Código optimizado |
-| 🧪 **Bulma** | QA/Tester | 3 | Código | Código validado |
-| 🗄️ **Krillin** | Especialista BD | 2.4, 3 | Specs, Models | Persistencia, REST API |
+| ðŸ§  **Picoro** | Analista/Arquitecto | 2.3, 2.4, 3 | Tickets, Specs | Knowledge, Arquitectura, Tickets |
+| ðŸ‘¨â€ðŸ’» **Goku** | Dev Senior | 2.4, 3 | Tickets, Knowledge | CÃ³digo funcional |
+| ðŸ¥· **Vegeta** | Optimizador/Seguridad | 3 | CÃ³digo | CÃ³digo optimizado |
+| ðŸ§ª **Bulma** | QA/Tester | 3 | CÃ³digo | CÃ³digo validado |
+| ðŸ—„ï¸ **Krillin** | Especialista BD | 2.4, 3 | Specs, Models | Persistencia, REST API |
 
 **Ver**: [agents/README.md](./agents/README.md)
 
 ---
 
-## 🎯 Skills Disponibles
+## ðŸŽ¯ Skills Disponibles
 
 **Total**: 40+ skills globales reutilizables
 
-**Categorías**:
-- 🔍 Análisis y Diseño (5 skills)
-- 💻 Desarrollo React/TypeScript (10 skills)
-- 🔌 Integración APIs (4 skills)
-- 📊 Indicadores Técnicos (4 skills)
-- 📚 Documentación (3 skills)
-- ⚡ Optimización y Seguridad (5 skills)
-- 🧪 Testing y Validación (7 skills)
-- 🗄️ Base de Datos (5 skills)
+**CategorÃ­as**:
+- ðŸ” AnÃ¡lisis y DiseÃ±o (5 skills)
+- ðŸ’» Desarrollo React/TypeScript (10 skills)
+- ðŸ”Œ IntegraciÃ³n APIs (4 skills)
+- ðŸ“Š Indicadores TÃ©cnicos (4 skills)
+- ðŸ“š DocumentaciÃ³n (3 skills)
+- âš¡ OptimizaciÃ³n y Seguridad (5 skills)
+- ðŸ§ª Testing y ValidaciÃ³n (7 skills)
+- ðŸ—„ï¸ Base de Datos (5 skills)
 
 **Ver**: [skills/README.md](./skills/README.md)
 
 ---
 
-## 📚 Knowledge Management
+## ðŸ“š Knowledge Management
 
-### 🔍 Local (`knowledge/local/`)
-Investigaciones internas generadas por Picoro ANTES de implementación.
+### ðŸ” Local (`knowledge/local/`)
+Investigaciones internas generadas por Picoro ANTES de implementaciÃ³n.
 
-### 🌐 Remote (`knowledge/remote/`)
-Referencias externas a documentación oficial, APIs, tutoriales.
+### ðŸŒ Remote (`knowledge/remote/`)
+Referencias externas a documentaciÃ³n oficial, APIs, tutoriales.
 
 **Ver**: [knowledge/README.md](./knowledge/README.md)
 
 ---
 
-## 📋 Templates Disponibles (9)
+## ðŸ“‹ Templates Disponibles (9)
 
 | Template | Uso |
 |----------|-----|
@@ -85,70 +85,70 @@ Referencias externas a documentación oficial, APIs, tutoriales.
 
 ---
 
-## 🎫 Sistema de Tickets
+## ðŸŽ« Sistema de Tickets
 
-- 🆕 **TKT-GLOBAL-###**: Tickets globales (metodología, skills)
-- 🎯 **TKT-<CODIGO>-###**: Tickets de proyecto (ej: TKT-INVRFIC-###)
+- ðŸ†• **TKT-GLOBAL-###**: Tickets globales (metodologÃ­a, skills)
+- ðŸŽ¯ **TKT-<CODIGO>-###**: Tickets de proyecto (ej: TKT-INVRFIC-###)
 
-**Estados**: Open → In Progress → In Review → Blocked → Closed ✅
+**Estados**: Open â†’ In Progress â†’ In Review â†’ Blocked â†’ Closed âœ…
 
-**Criterio para Cerrar**: Solo con evidencia de ejecución/validación
+**Criterio para Cerrar**: Solo con evidencia de ejecuciÃ³n/validaciÃ³n
 
 **Ver**: [tickets/README.md](./tickets/README.md)
 
 ---
 
-## 📊 Estructura del Directorio
+## ðŸ“Š Estructura del Directorio
 
 ```
 ai_skill_dev1/
-└── ai_global/
-    ├── AI_SKILL_DEVELOPMENT_METHODOLOGY.md  # Metodología completa
-    ├── README.md (este archivo)
-    │
-    ├── agents/                              # 🤖 Agentes
-    │   ├── README.md
-    │   ├── fic_picoro_agent_orchestrator.md
-    │   ├── fic_goku_agent_dev1.md
-    │   ├── fic_vegeta_agent_dev2.md
-    │   ├── fic_bulma_agent_tester1.md
-    │   └── fic_krillin_agent_db.md
-    │
-    ├── skills/                              # 🎯 Skills
-    │   └── README.md (catálogo de 40+ skills)
-    │
-    ├── knowledge/                           # 📚 Knowledge
-    │   ├── README.md
-    │   ├── local/
-    │   │   └── README.md (investigaciones)
-    │   └── remote/
-    │       └── README.md (referencias)
-    │
-    ├── tickets/                             # 🎫 Tickets
-    │   └── README.md
-    │
-    ├── templates/                           # 📋 Templates
-    │   ├── README.md
-    │   ├── SPECIFICATION_TEMPLATE.md
-    │   ├── SPEC_INCREMENTAL_TEMPLATE.md
-    │   ├── AGENT_TEMPLATE.md
-    │   ├── SKILL_TEMPLATE.md
-    │   ├── TICKET_TEMPLATE.md
-    │   ├── KNOWLEDGE_NOTE_TEMPLATE.md
-    │   ├── README_KNOWLEDGE_TEMPLATE.md
-    │   ├── PROJECT_CONFIG_TEMPLATE.yaml
-    │   └── DATABASE_CONFIG_TEMPLATE.yaml
-    │
-    ├── prompts/                             # 📝 Prompts
-    │   └── README.md
-    │
-    └── development/                         # 🚀 Base
-        └── workflow_agents.yaml (workflow base)
+â””â”€â”€ ai_global/
+    â”œâ”€â”€ AI_SKILL_DEVELOPMENT_METHODOLOGY.md  # MetodologÃ­a completa
+    â”œâ”€â”€ README.md (este archivo)
+    â”‚
+    â”œâ”€â”€ agents/                              # ðŸ¤– Agentes
+    â”‚   â”œâ”€â”€ README.md
+    â”‚   â”œâ”€â”€ fic_picoro_agent_orchestrator.md
+    â”‚   â”œâ”€â”€ fic_goku_agent_dev1.md
+    â”‚   â”œâ”€â”€ fic_vegeta_agent_dev2.md
+    â”‚   â”œâ”€â”€ fic_bulma_agent_tester1.md
+    â”‚   â””â”€â”€ fic_krillin_agent_db.md
+    â”‚
+    â”œâ”€â”€ skills/                              # ðŸŽ¯ Skills
+    â”‚   â””â”€â”€ README.md (catÃ¡logo de 40+ skills)
+    â”‚
+    â”œâ”€â”€ knowledge/                           # ðŸ“š Knowledge
+    â”‚   â”œâ”€â”€ README.md
+    â”‚   â”œâ”€â”€ local/
+    â”‚   â”‚   â””â”€â”€ README.md (investigaciones)
+    â”‚   â””â”€â”€ remote/
+    â”‚       â””â”€â”€ README.md (referencias)
+    â”‚
+    â”œâ”€â”€ tickets/                             # ðŸŽ« Tickets
+    â”‚   â””â”€â”€ README.md
+    â”‚
+    â”œâ”€â”€ templates/                           # ðŸ“‹ Templates
+    â”‚   â”œâ”€â”€ README.md
+    â”‚   â”œâ”€â”€ SPECIFICATION_TEMPLATE.md
+    â”‚   â”œâ”€â”€ SPEC_INCREMENTAL_TEMPLATE.md
+    â”‚   â”œâ”€â”€ AGENT_TEMPLATE.md
+    â”‚   â”œâ”€â”€ SKILL_TEMPLATE.md
+    â”‚   â”œâ”€â”€ TICKET_TEMPLATE.md
+    â”‚   â”œâ”€â”€ KNOWLEDGE_NOTE_TEMPLATE.md
+    â”‚   â”œâ”€â”€ README_KNOWLEDGE_TEMPLATE.md
+    â”‚   â”œâ”€â”€ PROJECT_CONFIG_TEMPLATE.yaml
+    â”‚   â””â”€â”€ DATABASE_CONFIG_TEMPLATE.yaml
+    â”‚
+    â”œâ”€â”€ prompts/                             # ðŸ“ Prompts
+    â”‚   â””â”€â”€ README.md
+    â”‚
+    â””â”€â”€ development/                         # ðŸš€ Base
+        â””â”€â”€ workflow_agents.yaml (workflow base)
 ```
 
 ---
 
-## 🚀 Cómo Usar el Sistema
+## ðŸš€ CÃ³mo Usar el Sistema
 
 ### Iniciar FASE 2 (Proyecto Nuevo)
 
@@ -179,21 +179,21 @@ ai_skill_dev1/
 
 ---
 
-## 📊 Estadísticas del Sistema
+## ðŸ“Š EstadÃ­sticas del Sistema
 
-| Métrica | Valor |
+| MÃ©trica | Valor |
 |---------|-------|
 | **Agentes Activos** | 5 |
 | **Skills Globales** | 40+ |
 | **Templates** | 9 |
 | **Fases de Desarrollo** | 4 (0, 1, 2, 3) |
 | **Sub-fases** | 10+ (2.1-2.4, 3.1-3.3) |
-| **Gates de Validación** | 8+ (DATABASE, SPEC, MODEL, etc.) |
+| **Gates de ValidaciÃ³n** | 8+ (DATABASE, SPEC, MODEL, etc.) |
 | **Protocolos de Visibilidad** | 3 (AGENT HEADER, COMPLETION, TRANSITION) |
 
 ---
 
-## ✅ Checklist de FASE 0/1
+## âœ… Checklist de FASE 0/1
 
 - [x] Estructura `ai_global/` creada
 - [x] 5 agentes documentados
@@ -203,24 +203,24 @@ ai_skill_dev1/
 - [x] Sistema de tickets implementado
 - [x] READMEs completados
 - [x] Workflow base definido
-- [x] FASE 0 completada ✅
-- [x] FASE 1 completada ✅
+- [x] FASE 0 completada âœ…
+- [x] FASE 1 completada âœ…
 
 ---
 
-## 📚 Documentación Completa
+## ðŸ“š DocumentaciÃ³n Completa
 
-- 📖 [Metodología Completa (v2.2)](./AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
-- 🤖 [Agentes](./agents/README.md)
-- 🎯 [Skills](./skills/README.md)
-- 📚 [Knowledge](./knowledge/README.md)
-- 🎫 [Tickets](./tickets/README.md)
-- 📋 [Templates](./templates/README.md)
-- 📝 [Prompts por Fase](./prompts/README.md)
+- ðŸ“– [MetodologÃ­a Completa (v2.2)](./AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+- ðŸ¤– [Agentes](./agents/README.md)
+- ðŸŽ¯ [Skills](./skills/README.md)
+- ðŸ“š [Knowledge](./knowledge/README.md)
+- ðŸŽ« [Tickets](./tickets/README.md)
+- ðŸ“‹ [Templates](./templates/README.md)
+- ðŸ“ [Prompts por Fase](./prompts/README.md)
 
 ---
 
-## 🎯 Próximos Pasos
+## ðŸŽ¯ PrÃ³ximos Pasos
 
 ### Para iniciar FASE 2 (Nuevo Proyecto)
 
@@ -229,12 +229,12 @@ ai_skill_dev1/
 2. Llenar: Con requisitos del nuevo proyecto
 3. Guardar: En projects/pwa/<proyecto>/ai_work_flow/docs/specs/SPECIFICATION.md
 4. Ejecutar: DATABASE SELECTION GATE + SPECIFICATION GATE
-5. Llamar: Picoro para FASE 2.3 (Investigación)
+5. Llamar: Picoro para FASE 2.3 (InvestigaciÃ³n)
 ```
 
 ---
 
-## 🔗 Enlaces Rápidos
+## ðŸ”— Enlaces RÃ¡pidos
 
 - [Agentes](./agents/)
 - [Skills](./skills/)
@@ -242,10 +242,11 @@ ai_skill_dev1/
 - [Tickets](./tickets/)
 - [Templates](./templates/)
 - [Prompts](./prompts/)
-- [Metodología](./AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+- [MetodologÃ­a](./AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
 
 ---
 
-**Versión**: 2.2  
-**Última actualización**: 2026-02-10  
-**Estado**: ✅ Operativo - FASE 0 y FASE 1 Completadas
+**VersiÃ³n**: 2.2  
+**Ãšltima actualizaciÃ³n**: 2026-02-10  
+**Estado**: âœ… Operativo - FASE 0 y FASE 1 Completadas
+

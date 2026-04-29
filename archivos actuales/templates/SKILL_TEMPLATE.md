@@ -1,11 +1,11 @@
-# Skill Template
+﻿# Skill Template
 
 ## Metadata
 ```yaml
 skill:
   name: <skill_name>
   version: 1.0.0
-  description: Breve descripción de lo que hace este skill
+  description: Breve descripciÃ³n de lo que hace este skill
   category: data_processing | integration | validation | reporting | automation
   
 author:
@@ -35,29 +35,29 @@ outputs:
 
 performance:
   avg_execution_time: <tiempo promedio>
-  max_concurrent_instances: <número>
+  max_concurrent_instances: <nÃºmero>
 ```
 
 ---
 
-## 1. Descripción
+## 1. DescripciÃ³n
 
-### Propósito
-[Describe en 2-3 oraciones qué hace este skill y por qué existe]
+### PropÃ³sito
+[Describe en 2-3 oraciones quÃ© hace este skill y por quÃ© existe]
 
 ### Funcionalidad Principal
-- Función 1
-- Función 2
-- Función 3
+- FunciÃ³n 1
+- FunciÃ³n 2
+- FunciÃ³n 3
 
 ### Ventajas
-- ✅ Ventaja 1
-- ✅ Ventaja 2
-- ✅ Reutilizable en múltiples contextos
+- âœ… Ventaja 1
+- âœ… Ventaja 2
+- âœ… Reutilizable en mÃºltiples contextos
 
 ---
 
-## 2. Instalación
+## 2. InstalaciÃ³n
 
 ### Dependencias
 ```bash
@@ -69,20 +69,20 @@ pip install package2>=version
 ### Requisitos del Sistema
 - Python >= 3.8
 - Sistema operativo: Windows/Linux/Mac
-- Otros requisitos específicos
+- Otros requisitos especÃ­ficos
 
 ---
 
 ## 3. Uso
 
-### Ejemplo Básico
+### Ejemplo BÃ¡sico
 ```python
 from <path>.skill_core import <SkillName>
 
 # Crear instancia del skill
 skill = <SkillName>()
 
-# Ejecutar skill con parámetros mínimos
+# Ejecutar skill con parÃ¡metros mÃ­nimos
 result = skill.execute(
     input_param_1="value1",
     input_param_2="value2"
@@ -96,7 +96,7 @@ print(result)
 ```python
 from <path>.skill_core import <SkillName>
 
-# Configuración avanzada
+# ConfiguraciÃ³n avanzada
 config = {
     "timeout": 300,
     "retries": 3,
@@ -105,7 +105,7 @@ config = {
 
 skill = <SkillName>(config=config)
 
-# Ejecutar con parámetros opcionales
+# Ejecutar con parÃ¡metros opcionales
 result = skill.execute(
     input_param_1="value1",
     input_param_2="value2",
@@ -115,22 +115,22 @@ result = skill.execute(
 
 # Validar resultado
 if skill.validate_output(result):
-    print("Resultado válido")
+    print("Resultado vÃ¡lido")
 ```
 
-### Parámetros de Entrada
+### ParÃ¡metros de Entrada
 
-| Parámetro | Tipo | Requerido | Default | Descripción |
+| ParÃ¡metro | Tipo | Requerido | Default | DescripciÃ³n |
 |-----------|------|-----------|---------|-------------|
-| `input_param_1` | str | Sí | - | Descripción del parámetro 1 |
-| `input_param_2` | int | Sí | - | Descripción del parámetro 2 |
-| `optional_param_1` | bool | No | False | Descripción del parámetro opcional |
+| `input_param_1` | str | SÃ­ | - | DescripciÃ³n del parÃ¡metro 1 |
+| `input_param_2` | int | SÃ­ | - | DescripciÃ³n del parÃ¡metro 2 |
+| `optional_param_1` | bool | No | False | DescripciÃ³n del parÃ¡metro opcional |
 
 ### Salida
 
 ```python
 {
-    "output_1": "Descripción del output 1",
+    "output_1": "DescripciÃ³n del output 1",
     "output_2": 123,
     "status": "success",
     "metadata": {
@@ -146,19 +146,19 @@ if skill.validate_output(result):
 
 ```
 <skill_name>/
-├── README.md              # Este archivo
-├── skill.yaml             # Metadata y configuración
-├── __init__.py
-├── skill_core.py          # Implementación principal
-├── validators.py          # Validadores (opcional)
-├── utils.py               # Utilidades (opcional)
-├── config/
-│   └── default.yaml       # Configuración por defecto
-├── tests/
-│   ├── test_skill_core.py
-│   ├── test_validators.py
-│   └── fixtures/          # Datos de prueba
-└── requirements.txt       # Dependencias específicas
+â”œâ”€â”€ README.md              # Este archivo
+â”œâ”€â”€ skill.yaml             # Metadata y configuraciÃ³n
+â”œâ”€â”€ __init__.py
+â”œâ”€â”€ skill_core.py          # ImplementaciÃ³n principal
+â”œâ”€â”€ validators.py          # Validadores (opcional)
+â”œâ”€â”€ utils.py               # Utilidades (opcional)
+â”œâ”€â”€ config/
+â”‚   â””â”€â”€ default.yaml       # ConfiguraciÃ³n por defecto
+â”œâ”€â”€ tests/
+â”‚   â”œâ”€â”€ test_skill_core.py
+â”‚   â”œâ”€â”€ test_validators.py
+â”‚   â””â”€â”€ fixtures/          # Datos de prueba
+â””â”€â”€ requirements.txt       # Dependencias especÃ­ficas
 ```
 
 ---
@@ -174,11 +174,11 @@ def __init__(self, config: dict = None):
     Inicializa el skill.
     
     Args:
-        config (dict): Configuración opcional
+        config (dict): ConfiguraciÃ³n opcional
     """
 ```
 
-#### Método Principal: `execute()`
+#### MÃ©todo Principal: `execute()`
 ```python
 def execute(self, 
             input_param_1: str,
@@ -188,25 +188,25 @@ def execute(self,
     Ejecuta la funcionalidad principal del skill.
     
     Args:
-        input_param_1: Descripción
-        input_param_2: Descripción
-        **kwargs: Parámetros opcionales
+        input_param_1: DescripciÃ³n
+        input_param_2: DescripciÃ³n
+        **kwargs: ParÃ¡metros opcionales
         
     Returns:
-        dict: Resultado de la ejecución
+        dict: Resultado de la ejecuciÃ³n
         
     Raises:
         SkillException: Si ocurre un error
     """
 ```
 
-#### Métodos Auxiliares
+#### MÃ©todos Auxiliares
 ```python
 def validate_input(self, **inputs) -> bool:
-    """Valida los parámetros de entrada."""
+    """Valida los parÃ¡metros de entrada."""
     
 def validate_output(self, output: dict) -> bool:
-    """Valida el resultado de la ejecución."""
+    """Valida el resultado de la ejecuciÃ³n."""
     
 def cleanup(self):
     """Limpieza de recursos."""
@@ -214,7 +214,7 @@ def cleanup(self):
 
 ---
 
-## 6. Configuración
+## 6. ConfiguraciÃ³n
 
 ### Archivo skill.yaml
 ```yaml
@@ -249,7 +249,7 @@ SKILL_<NAME>_PARAM2=value
 # Ejecutar todos los tests
 pytest tests/ -v
 
-# Test específico
+# Test especÃ­fico
 pytest tests/test_skill_core.py::test_execute_basic -v
 ```
 
@@ -260,48 +260,48 @@ pytest --cov=<skill_name> --cov-report=html tests/
 
 ### Casos de Prueba
 
-1. **Test Básico**: Ejecución exitosa con inputs mínimos
-2. **Test Validación**: Inputs inválidos deben fallar
+1. **Test BÃ¡sico**: EjecuciÃ³n exitosa con inputs mÃ­nimos
+2. **Test ValidaciÃ³n**: Inputs invÃ¡lidos deben fallar
 3. **Test Timeout**: Manejo de timeout
 4. **Test Retry**: Reintentos ante falla temporal
-5. **Test Edge Cases**: Casos límite
+5. **Test Edge Cases**: Casos lÃ­mite
 
 ---
 
 ## 8. Performance
 
 ### Benchmarks
-- **Promedio de ejecución**: X segundos
+- **Promedio de ejecuciÃ³n**: X segundos
 - **Casos simples**: Y segundos
 - **Casos complejos**: Z segundos
 
 ### Optimizaciones
-- Optimización 1 implementada
-- Optimización 2 implementada
+- OptimizaciÃ³n 1 implementada
+- OptimizaciÃ³n 2 implementada
 
 ### Limitaciones
-- Limitación 1: Descripción y workaround
-- Limitación 2: Descripción y workaround
+- LimitaciÃ³n 1: DescripciÃ³n y workaround
+- LimitaciÃ³n 2: DescripciÃ³n y workaround
 
 ---
 
 ## 9. Troubleshooting
 
 ### Error: "Input validation failed"
-**Causa**: Parámetros de entrada no cumplen validación  
-**Solución**: Verificar que los inputs cumplan con el schema esperado
+**Causa**: ParÃ¡metros de entrada no cumplen validaciÃ³n  
+**SoluciÃ³n**: Verificar que los inputs cumplan con el schema esperado
 
 ### Error: "Timeout exceeded"
-**Causa**: La operación tomó más tiempo del configurado  
-**Solución**: Incrementar el valor de `timeout` en la configuración
+**Causa**: La operaciÃ³n tomÃ³ mÃ¡s tiempo del configurado  
+**SoluciÃ³n**: Incrementar el valor de `timeout` en la configuraciÃ³n
 
 ### Error: "Dependency not found"
 **Causa**: Falta instalar una dependencia  
-**Solución**: `pip install -r requirements.txt`
+**SoluciÃ³n**: `pip install -r requirements.txt`
 
 ---
 
-## 10. Integración
+## 10. IntegraciÃ³n
 
 ### Uso en Agentes
 ```python
@@ -319,7 +319,7 @@ class MyAgent:
 
 ### Uso en Otros Skills
 ```python
-# Composición de skills
+# ComposiciÃ³n de skills
 from general.skills.<skill_name>.skill_core import <SkillName>
 
 class CompositeSkill:
@@ -334,27 +334,27 @@ class CompositeSkill:
 ### Changelog
 
 #### v1.0.0 (YYYY-MM-DD)
-- ✨ Funcionalidad inicial
-- ✅ Tests básicos implementados
+- âœ¨ Funcionalidad inicial
+- âœ… Tests bÃ¡sicos implementados
 
 #### v1.1.0 (YYYY-MM-DD)
-- ✨ Nueva característica X
-- 🐛 Fix: Corrección de bug Y
-- 📚 Documentación mejorada
+- âœ¨ Nueva caracterÃ­stica X
+- ðŸ› Fix: CorrecciÃ³n de bug Y
+- ðŸ“š DocumentaciÃ³n mejorada
 
 ### Breaking Changes
-Ninguno en la versión actual.
+Ninguno en la versiÃ³n actual.
 
 ---
 
 ## 12. Referencias
 
 ### Knowledge Relacionado
-- [Documento técnico 1](../../knowledge/local/doc1.md)
+- [Documento tÃ©cnico 1](../../knowledge/local/doc1.md)
 - [API Reference externa](../../knowledge/remote/api_ref.md)
 
 ### Tickets
-- [TKT-GLOBAL-001](../../tickets/TKT-GLOBAL-001.md): Creación del skill
+- [TKT-GLOBAL-001](../../tickets/TKT-GLOBAL-001.md): CreaciÃ³n del skill
 - [TKT-GLOBAL-005](../../tickets/TKT-GLOBAL-005.md): Mejoras de performance
 
 ### Proyectos que Usan este Skill
@@ -364,5 +364,6 @@ Ninguno en la versión actual.
 ---
 
 **Mantenedor**: <Nombre>  
-**Última actualización**: YYYY-MM-DD  
-**Próxima revisión**: YYYY-MM-DD
+**Ãšltima actualizaciÃ³n**: YYYY-MM-DD  
+**PrÃ³xima revisiÃ³n**: YYYY-MM-DD
+

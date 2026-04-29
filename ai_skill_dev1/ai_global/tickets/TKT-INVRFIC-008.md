@@ -1,31 +1,31 @@
-# TKT-INVRFIC-008: Core de Fundamentales + Ranking Diario
+﻿# TKT-INVRFIC-008: Core de Fundamentales + Ranking Diario
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-INVRFIC-008 |
 | **Tipo** | Feature / Fundamentals |
-| **Prioridad** | 🟡 Alta |
-| **Estado** | 🆕 Abierto |
-| **Proyecto** | pwa_inversions_drfic (v1.0) |
+| **Prioridad** | ðŸŸ¡ Alta |
+| **Estado** | ðŸ†• Abierto |
+| **Proyecto** | pwa_inversions_team5 (v1.0) |
 | **Creado** | 2026-04-28 |
-| **Asignado a** | Ciclo: Picoro → Goku → Vegeta → Bulma |
-| **Bloqueador** | TKT-INVRFIC-003 ✅ Completado |
+| **Asignado a** | Ciclo: Picoro â†’ Goku â†’ Vegeta â†’ Bulma |
+| **Bloqueador** | TKT-INVRFIC-003 âœ… Completado |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-Core #5 de análisis: Estado fundamental de la empresa + ranking diario de oportunidades.
+Core #5 de anÃ¡lisis: Estado fundamental de la empresa + ranking diario de oportunidades.
 
-### Propósito
+### PropÃ³sito
 **Fundamentales**:
-- Revenue growth, EPS, márgenes
+- Revenue growth, EPS, mÃ¡rgenes
 - Guidance revisiones
 - Earnings surprise
-- Valuación multiples
+- ValuaciÃ³n multiples
 
 **Ranking Diario**:
 - Evaluar universo del usuario (watchlist, sectores, etc.)
@@ -33,7 +33,7 @@ Core #5 de análisis: Estado fundamental de la empresa + ranking diario de oport
 - Clasificar: BUY/SELL/WATCH/AVOID
 - Top N candidates diarios (default 25)
 
-### Solución Propuesta
+### SoluciÃ³n Propuesta
 
 **Estructura**:
 - src/services/fundamentals/earnings.service.ts
@@ -42,11 +42,11 @@ Core #5 de análisis: Estado fundamental de la empresa + ranking diario de oport
 - src/services/opportunities/opportunityRanking.service.ts
 - src/types/fundamentals.types.ts
 
-**Simplificación v1.0**: Mock de datos financieros
+**SimplificaciÃ³n v1.0**: Mock de datos financieros
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Crear**: 5 archivos nuevos
 
@@ -54,10 +54,10 @@ Core #5 de análisis: Estado fundamental de la empresa + ranking diario de oport
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Goku implementa:
-- [ ] Snapshot financiero: revenue, EPS, márgenes
+- [ ] Snapshot financiero: revenue, EPS, mÃ¡rgenes
 - [ ] Earnings historical vs actual
 - [ ] Ranking algoritmo: score = f(growth, valuation, momentum, sentiment)
 - [ ] Refresh cada 5 minutos (configurable)
@@ -71,9 +71,10 @@ Core #5 de análisis: Estado fundamental de la empresa + ranking diario de oport
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
-1. ✅ Ranking se actualiza cada 5 minutos
-2. ✅ Top 25 oportunidades con razones claras
-3. ✅ Scores entre 0.0 y 1.0
+1. âœ… Ranking se actualiza cada 5 minutos
+2. âœ… Top 25 oportunidades con razones claras
+3. âœ… Scores entre 0.0 y 1.0
+
 

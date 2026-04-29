@@ -1,53 +1,53 @@
-# 🌐 Knowledge Remote
+﻿# ðŸŒ Knowledge Remote
 
-Referencias externas a documentación oficial, APIs, y herramientas.
-
----
-
-## 🎯 Propósito
-
-Mantener referencias organizadas a documentación oficial, APIs externas, y recursos de aprendizaje que sustentan las decisiones del proyecto.
+Referencias externas a documentaciÃ³n oficial, APIs, y herramientas.
 
 ---
 
-## 📋 Tipos de Referencias
+## ðŸŽ¯ PropÃ³sito
 
-### 1. Documentación Oficial de APIs
+Mantener referencias organizadas a documentaciÃ³n oficial, APIs externas, y recursos de aprendizaje que sustentan las decisiones del proyecto.
+
+---
+
+## ðŸ“‹ Tipos de Referencias
+
+### 1. DocumentaciÃ³n Oficial de APIs
 
 **Ejemplo**:
 ```markdown
 # ibkr_api_reference.md
 
-**Tipo**: Documentación Oficial
+**Tipo**: DocumentaciÃ³n Oficial
 **URL**: https://interactivebrokers.github.io/tws-api/
-**Acceso**: Público
-**Última actualización**: 2026-03-03
+**Acceso**: PÃºblico
+**Ãšltima actualizaciÃ³n**: 2026-03-03
 
 ## Puntos Clave
 - reqMktData(): Suscribirse a precios reales
-- placeOrder(): Enviar órdenes
+- placeOrder(): Enviar Ã³rdenes
 - reqOptionChain(): Obtener cadena de opciones
-- Rate limits: 50 solicitudes simultáneas
+- Rate limits: 50 solicitudes simultÃ¡neas
 ```
 
-### 2. Código Interno Referencial
+### 2. CÃ³digo Interno Referencial
 
 **Ejemplo**:
 ```markdown
 # internal_reference_trading_strategy.md
 
-**Tipo**: Código Interno (de proyecto anterior similar)
-**Ubicación**: (si existe en repositorio)
-**Relevancia**: Patrón de gestión de riesgo reutilizable
+**Tipo**: CÃ³digo Interno (de proyecto anterior similar)
+**UbicaciÃ³n**: (si existe en repositorio)
+**Relevancia**: PatrÃ³n de gestiÃ³n de riesgo reutilizable
 
-## Patrón
+## PatrÃ³n
 ```typescript
 function manageTradingRisk(position, stop_loss, take_profit) {
-  // Lógica de riesgo comprobada
+  // LÃ³gica de riesgo comprobada
 }
 ```
 
-### 3. NotebookLM (Análisis Profundo)
+### 3. NotebookLM (AnÃ¡lisis Profundo)
 
 **Ejemplo**:
 ```markdown
@@ -58,27 +58,27 @@ function manageTradingRisk(position, stop_loss, take_profit) {
 **Acceso**: Requiere cuenta de Google
 
 ## Preguntas Respondidas
-1. ¿Qué indicadores combinar para máxima confianza?
-2. ¿Cómo detectar posicionamiento institucional?
-3. ¿Cuál es la mejor frecuencia de escaneo?
+1. Â¿QuÃ© indicadores combinar para mÃ¡xima confianza?
+2. Â¿CÃ³mo detectar posicionamiento institucional?
+3. Â¿CuÃ¡l es la mejor frecuencia de escaneo?
 
 ## Hallazgos Clave
-- RSI(14) + MACD + Bollinger como triple confirmación
+- RSI(14) + MACD + Bollinger como triple confirmaciÃ³n
 - Analizar Open Interest + Volume en opciones
 - Escaneo cada 1 minuto para intraday
 ```
 
-### 4. Tutoriales y Guías
+### 4. Tutoriales y GuÃ­as
 
 **Ejemplo**:
 ```markdown
 # tradingview_widgets_setup_guide.md
 
-**Tipo**: Tutorial / Guía Oficial
+**Tipo**: Tutorial / GuÃ­a Oficial
 **URL**: https://tradingview.github.io/lightweight-charts/
 **Fecha**: 2026-02-20
 
-## Instalación
+## InstalaciÃ³n
 ```bash
 npm install lightweight-charts
 ```
@@ -91,53 +91,54 @@ npm install lightweight-charts
 
 ---
 
-## 📝 Estructura de Archivo Remote
+## ðŸ“ Estructura de Archivo Remote
 
 **Template obligatorio**:
 ```markdown
 # <nombre>_reference.md
 
-**Tipo**: [Documentación Oficial | Tutorial | NotebookLM | API Reference | Código Interno]
+**Tipo**: [DocumentaciÃ³n Oficial | Tutorial | NotebookLM | API Reference | CÃ³digo Interno]
 **URL**: [enlace directo]
-**Acceso**: [Público | Requiere cuenta | API Key]
-**Fecha creación**: YYYY-MM-DD
-**Última verificación**: YYYY-MM-DD
+**Acceso**: [PÃºblico | Requiere cuenta | API Key]
+**Fecha creaciÃ³n**: YYYY-MM-DD
+**Ãšltima verificaciÃ³n**: YYYY-MM-DD
 
 ## Resumen
-[Breve descripción y relevancia para proyecto]
+[Breve descripciÃ³n y relevancia para proyecto]
 
 ## Puntos Clave
 - Punto 1
 - Punto 2
 - Punto 3
 
-## Aplicación en Proyecto
-[Cómo se usa en pwa_inversions_drfic]
+## AplicaciÃ³n en Proyecto
+[CÃ³mo se usa en pwa_inversions_team5]
 
 ## Relacionado con
 - Knowledge local: 01_*.md
 - Tickets: TKT-INVRFIC-###
-- Especificación: SPECIFICATION.md
+- EspecificaciÃ³n: SPECIFICATION.md
 ```
 
 ---
 
-## 🔗 Convención de Referencias
+## ðŸ”— ConvenciÃ³n de Referencias
 
 Se referencia en:
 - **Tickets**: `knowledge/remote/ibkr_api_reference.md`
-- **Código**: Comentarios `FIC` pueden citar documentación
-- **Especificación**: Secciones de Arquitectura citan referencias
+- **CÃ³digo**: Comentarios `FIC` pueden citar documentaciÃ³n
+- **EspecificaciÃ³n**: Secciones de Arquitectura citan referencias
 
 ---
 
-## ✅ Checklist de Contenido
+## âœ… Checklist de Contenido
 
 Cuando Picoro completa FASE 2.3, debe tener:
 
 - [ ] URLs oficiales de todas las APIs a usar
 - [ ] Notas clave de cada API
-- [ ] Aplicación documentada
+- [ ] AplicaciÃ³n documentada
 - [ ] NotebookLM creado (si aplica) y URL incluida
-- [ ] Código interno referencial incluido (si existe)
+- [ ] CÃ³digo interno referencial incluido (si existe)
 - [ ] Todos los archivos completos sin pendientes
+

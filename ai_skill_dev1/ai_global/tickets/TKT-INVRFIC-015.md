@@ -1,26 +1,26 @@
-# TKT-INVRFIC-015: Testing (Unit + E2E) + Cierre de Fase 1
+﻿# TKT-INVRFIC-015: Testing (Unit + E2E) + Cierre de Fase 1
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-INVRFIC-015 |
 | **Tipo** | QA / Testing |
-| **Prioridad** | 🔴 Crítica |
-| **Estado** | 🆕 Abierto |
-| **Proyecto** | pwa_inversions_drfic (v1.0) |
+| **Prioridad** | ðŸ”´ CrÃ­tica |
+| **Estado** | ðŸ†• Abierto |
+| **Proyecto** | pwa_inversions_team5 (v1.0) |
 | **Creado** | 2026-04-28 |
-| **Asignado a** | Ciclo: Picoro → Goku → Vegeta → Bulma |
-| **Bloqueador** | Todos los tickets 001-014 ✅ Completados |
+| **Asignado a** | Ciclo: Picoro â†’ Goku â†’ Vegeta â†’ Bulma |
+| **Bloqueador** | Todos los tickets 001-014 âœ… Completados |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-Validación final de toda la Fase 1 antes de cierre.
+ValidaciÃ³n final de toda la Fase 1 antes de cierre.
 
-### Propósito
+### PropÃ³sito
 **Unit Tests**:
 - Indicadores: RSI vs TradingView (< 0.1% error)
 - MACD vs TradingView (< 0.1% error)
@@ -29,20 +29,20 @@ Validación final de toda la Fase 1 antes de cierre.
 - Risk validation
 
 **E2E Tests**:
-- Flujo completo: conexión → data → signal → orden
-- Tabla de señales muestra datos correctamente
-- Modal de señal abre/cierra
+- Flujo completo: conexiÃ³n â†’ data â†’ signal â†’ orden
+- Tabla de seÃ±ales muestra datos correctamente
+- Modal de seÃ±al abre/cierra
 - Cambiar estrategia recalcula
 
 **Manual Validation**:
 - Dashboard visualmente correcto (dark theme)
-- Señales de prueba conocidas generan scores esperados
+- SeÃ±ales de prueba conocidas generan scores esperados
 - Sin console errors
-- Performance: señal generada < 2 segundos
+- Performance: seÃ±al generada < 2 segundos
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Crear**:
 - tests/unit/indicators/*.test.ts
@@ -52,16 +52,16 @@ Validación final de toda la Fase 1 antes de cierre.
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Goku implementa:
 - [ ] Unit tests: indicadores vs TradingView dataset
 - [ ] Unit tests: confluencia y IA advisor
 - [ ] E2E: flujo completo dashboard
-- [ ] Fixtures: datos históricos para testing
+- [ ] Fixtures: datos histÃ³ricos para testing
 
 ### Vegeta optimiza:
-- [ ] Coverage: mínimo 70%
+- [ ] Coverage: mÃ­nimo 70%
 - [ ] Performance benchmarks
 
 ### Bulma valida:
@@ -72,42 +72,43 @@ Validación final de toda la Fase 1 antes de cierre.
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
-1. ✅ Unit tests: RSI precision < 0.1% vs TradingView
-2. ✅ Unit tests: MACD precision < 0.1%
-3. ✅ Unit tests: Bollinger Bands precision < 0.1%
-4. ✅ E2E: flujo completo sin errores
-5. ✅ Coverage >= 70%
-6. ✅ No console errors
+1. âœ… Unit tests: RSI precision < 0.1% vs TradingView
+2. âœ… Unit tests: MACD precision < 0.1%
+3. âœ… Unit tests: Bollinger Bands precision < 0.1%
+4. âœ… E2E: flujo completo sin errores
+5. âœ… Coverage >= 70%
+6. âœ… No console errors
 
 ---
 
-## 🧾 Evidencia de Validación
+## ðŸ§¾ Evidencia de ValidaciÃ³n
 
 - [ ] Screenshot: `npm run test` output: ALL TESTS PASS
 - [ ] Screenshot: `npm run test:e2e` output: ALL PASS
 - [ ] Screenshot: Coverage report >= 70%
 - [ ] Screenshot: Dashboard sin console errors
-- [ ] Video o GIF: Flujo completo de señal
+- [ ] Video o GIF: Flujo completo de seÃ±al
 
 ---
 
-## 📌 CIERRE DE FASE 1
+## ðŸ“Œ CIERRE DE FASE 1
 
-Cuando este ticket sea ✅ Completado:
-1. Todos los tickets TKT-INVRFIC-001 a 015 estarán cerrados
-2. Especificación v1.0 será considerada implementada
-3. Proyecto estará listo para Fase 2 (expansiones y nuevos cores)
-4. Estado: 🟢 **FASE 1 COMPLETA**
+Cuando este ticket sea âœ… Completado:
+1. Todos los tickets TKT-INVRFIC-001 a 015 estarÃ¡n cerrados
+2. EspecificaciÃ³n v1.0 serÃ¡ considerada implementada
+3. Proyecto estarÃ¡ listo para Fase 2 (expansiones y nuevos cores)
+4. Estado: ðŸŸ¢ **FASE 1 COMPLETA**
 
 ---
 
-## 🚀 Próximos Pasos (Fase 2, fuera de alcance v1.0)
+## ðŸš€ PrÃ³ximos Pasos (Fase 2, fuera de alcance v1.0)
 
-- [ ] Integración real con brokers (credenciales reales)
+- [ ] IntegraciÃ³n real con brokers (credenciales reales)
 - [ ] Datos reales de mercado (sin mock)
-- [ ] Core de opciones más sofisticado
-- [ ] Machine learning para predicción
+- [ ] Core de opciones mÃ¡s sofisticado
+- [ ] Machine learning para predicciÃ³n
 - [ ] Mobile app (React Native)
+
 

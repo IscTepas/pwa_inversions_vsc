@@ -1,88 +1,88 @@
-# [Título de la Nota de Conocimiento]
+﻿# [TÃ­tulo de la Nota de Conocimiento]
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **Tipo** | Lesson Learned / Best Practice / Solution / Pattern / Reference |
-| **Categoría** | Technical / Business / Process / Integration |
+| **CategorÃ­a** | Technical / Business / Process / Integration |
 | **Tags** | `tag1`, `tag2`, `tag3` |
 | **Creado** | YYYY-MM-DD |
 | **Actualizado** | YYYY-MM-DD |
 | **Autor** | <nombre> |
 | **Relacionado con** | TKT-XXX-###, Proyecto XYZ |
-| **Aplicable a** | General / Proyecto específico / Skill específico |
+| **Aplicable a** | General / Proyecto especÃ­fico / Skill especÃ­fico |
 
 ---
 
-## 🎯 Propósito
+## ðŸŽ¯ PropÃ³sito
 
-[Descripción breve en 1-2 oraciones de qué trata esta nota de conocimiento y por qué es importante]
+[DescripciÃ³n breve en 1-2 oraciones de quÃ© trata esta nota de conocimiento y por quÃ© es importante]
 
 ---
 
-## 📝 Contenido Principal
+## ðŸ“ Contenido Principal
 
 ### Contexto
-[Describe el contexto o situación que dio origen a este conocimiento]
+[Describe el contexto o situaciÃ³n que dio origen a este conocimiento]
 
-### [Sección Principal - Adaptar según el tipo]
+### [SecciÃ³n Principal - Adaptar segÃºn el tipo]
 
 #### Si es Lesson Learned:
-**Situación**: [Qué pasó]  
-**Problema**: [Qué salió mal o qué desafío enfrentamos]  
-**Solución**: [Cómo se resolvió]  
-**Lección**: [Qué aprendimos]
+**SituaciÃ³n**: [QuÃ© pasÃ³]  
+**Problema**: [QuÃ© saliÃ³ mal o quÃ© desafÃ­o enfrentamos]  
+**SoluciÃ³n**: [CÃ³mo se resolviÃ³]  
+**LecciÃ³n**: [QuÃ© aprendimos]
 
 #### Si es Best Practice:
-**Práctica**: [Describe la mejor práctica]  
-**Razón**: [Por qué es la mejor práctica]  
-**Implementación**: [Cómo implementarla]  
-**Beneficios**: [Qué beneficios trae]
+**PrÃ¡ctica**: [Describe la mejor prÃ¡ctica]  
+**RazÃ³n**: [Por quÃ© es la mejor prÃ¡ctica]  
+**ImplementaciÃ³n**: [CÃ³mo implementarla]  
+**Beneficios**: [QuÃ© beneficios trae]
 
 #### Si es Solution:
-**Problema**: [Describe el problema técnico]  
-**Análisis**: [Diagnóstico del problema]  
-**Solución**: [Solución implementada]  
+**Problema**: [Describe el problema tÃ©cnico]  
+**AnÃ¡lisis**: [DiagnÃ³stico del problema]  
+**SoluciÃ³n**: [SoluciÃ³n implementada]  
 **Alternativas**: [Otras opciones consideradas]
 
 #### Si es Pattern:
-**Nombre del Patrón**: [Nombre descriptivo]  
-**Problema que resuelve**: [Qué problema soluciona]  
-**Solución**: [Cómo funciona el patrón]  
-**Cuándo usar**: [En qué situaciones aplicarlo]
+**Nombre del PatrÃ³n**: [Nombre descriptivo]  
+**Problema que resuelve**: [QuÃ© problema soluciona]  
+**SoluciÃ³n**: [CÃ³mo funciona el patrÃ³n]  
+**CuÃ¡ndo usar**: [En quÃ© situaciones aplicarlo]
 
 #### Si es Reference:
 **Fuente**: [URL o referencia]  
 **Resumen**: [Resumen del contenido]  
 **Puntos Clave**: [Puntos importantes]  
-**Aplicación**: [Cómo se aplica en nuestro contexto]
+**AplicaciÃ³n**: [CÃ³mo se aplica en nuestro contexto]
 
 ---
 
-## 💻 Ejemplo de Código
+## ðŸ’» Ejemplo de CÃ³digo
 
 ```python
-# Código de ejemplo que ilustra el conocimiento
+# CÃ³digo de ejemplo que ilustra el conocimiento
 
 def ejemplo_funcion():
     """
     Docstring explicando el ejemplo
     """
-    # Implementación
+    # ImplementaciÃ³n
     pass
 ```
 
-**Explicación**:
-- Punto 1: Explicación
-- Punto 2: Explicación
-- Punto 3: Explicación
+**ExplicaciÃ³n**:
+- Punto 1: ExplicaciÃ³n
+- Punto 2: ExplicaciÃ³n
+- Punto 3: ExplicaciÃ³n
 
 ---
 
-## ✅ Checklist de Aplicación
+## âœ… Checklist de AplicaciÃ³n
 
-Si estás implementando este conocimiento, verifica:
+Si estÃ¡s implementando este conocimiento, verifica:
 
 - [ ] Entiendes el contexto original
 - [ ] Es aplicable a tu caso de uso
@@ -92,118 +92,118 @@ Si estás implementando este conocimiento, verifica:
 
 ---
 
-## 🔍 Detalles Técnicos
+## ðŸ” Detalles TÃ©cnicos
 
 ### Dependencias
-- Dependencia 1: versión X
-- Dependencia 2: versión Y
+- Dependencia 1: versiÃ³n X
+- Dependencia 2: versiÃ³n Y
 
 ### Requisitos
-- Requisito técnico 1
-- Requisito técnico 2
+- Requisito tÃ©cnico 1
+- Requisito tÃ©cnico 2
 
-### Configuración
+### ConfiguraciÃ³n
 ```yaml
-# Configuración necesaria
+# ConfiguraciÃ³n necesaria
 param1: value1
 param2: value2
 ```
 
 ---
 
-## ⚠️ Advertencias y Limitaciones
+## âš ï¸ Advertencias y Limitaciones
 
 ### Limitaciones
-- Limitación 1: [Descripción]
-- Limitación 2: [Descripción]
+- LimitaciÃ³n 1: [DescripciÃ³n]
+- LimitaciÃ³n 2: [DescripciÃ³n]
 
 ### Consideraciones
-- Consideración 1: [Descripción]
-- Consideración 2: [Descripción]
+- ConsideraciÃ³n 1: [DescripciÃ³n]
+- ConsideraciÃ³n 2: [DescripciÃ³n]
 
 ### No Usar Cuando
-- Situación 1: [Por qué no]
-- Situación 2: [Por qué no]
+- SituaciÃ³n 1: [Por quÃ© no]
+- SituaciÃ³n 2: [Por quÃ© no]
 
 ---
 
-## 🎯 Aplicabilidad
+## ðŸŽ¯ Aplicabilidad
 
 ### Proyectos donde se Aplica
-- ✅ Proyecto A: [Cómo se usa]
-- ✅ Proyecto B: [Cómo se usa]
-- ⚠️ Proyecto C: [Aplica parcialmente porque...]
+- âœ… Proyecto A: [CÃ³mo se usa]
+- âœ… Proyecto B: [CÃ³mo se usa]
+- âš ï¸ Proyecto C: [Aplica parcialmente porque...]
 
 ### Skills Relacionados
-- `skill_name_1`: [Relación]
-- `skill_name_2`: [Relación]
+- `skill_name_1`: [RelaciÃ³n]
+- `skill_name_2`: [RelaciÃ³n]
 
 ### Agentes Relacionados
-- `agent_name_1`: [Relación]
-- `agent_name_2`: [Relación]
+- `agent_name_1`: [RelaciÃ³n]
+- `agent_name_2`: [RelaciÃ³n]
 
 ---
 
-## 📊 Impacto
+## ðŸ“Š Impacto
 
 ### Mejoras Medibles
-- Métrica 1: Reducción de X% en tiempo de ejecución
-- Métrica 2: Incremento de Y% en reliability
-- Métrica 3: Reducción de Z errores por semana
+- MÃ©trica 1: ReducciÃ³n de X% en tiempo de ejecuciÃ³n
+- MÃ©trica 2: Incremento de Y% en reliability
+- MÃ©trica 3: ReducciÃ³n de Z errores por semana
 
 ### ROI
-[Si aplica, describe el retorno de inversión de implementar este conocimiento]
+[Si aplica, describe el retorno de inversiÃ³n de implementar este conocimiento]
 
 ---
 
-## 🔗 Referencias
+## ðŸ”— Referencias
 
 ### Internas
 - [Ticket relacionado 1](../../tickets/TKT-XXX-001.md)
 - [Otro knowledge note](../local/otra_nota.md)
-- [Documentación del proyecto](../../../projects/rpa/proyecto/docs/doc.md)
+- [DocumentaciÃ³n del proyecto](../../../projects/rpa/proyecto/docs/doc.md)
 
 ### Externas
-- [Documentación oficial](https://url-externa.com)
+- [DocumentaciÃ³n oficial](https://url-externa.com)
 - [Stack Overflow](https://stackoverflow.com/questions/...)
 - [Blog post](https://blog.com/article)
 - [GitHub issue/PR](https://github.com/repo/issues/123)
 
 ### Libros/Papers
-- Título del libro/paper, Autor, Año
+- TÃ­tulo del libro/paper, Autor, AÃ±o
 
 ---
 
-## 📝 Historial de Cambios
+## ðŸ“ Historial de Cambios
 
 ### YYYY-MM-DD - v1.1
 **Autor**: <nombre>  
 **Cambios**: 
-- Actualización 1
-- Actualización 2
+- ActualizaciÃ³n 1
+- ActualizaciÃ³n 2
 
 ### YYYY-MM-DD - v1.0
 **Autor**: <nombre>  
 **Cambios**: 
-- Creación inicial del documento
+- CreaciÃ³n inicial del documento
 
 ---
 
-## 💡 Casos de Uso Reales
+## ðŸ’¡ Casos de Uso Reales
 
-### Caso 1: [Nombre del proyecto/situación]
-**Contexto**: [Contexto específico]  
-**Implementación**: [Cómo se implementó]  
+### Caso 1: [Nombre del proyecto/situaciÃ³n]
+**Contexto**: [Contexto especÃ­fico]  
+**ImplementaciÃ³n**: [CÃ³mo se implementÃ³]  
 **Resultado**: [Resultado obtenido]
 
-### Caso 2: [Nombre del proyecto/situación]
-**Contexto**: [Contexto específico]  
-**Implementación**: [Cómo se implementó]  
+### Caso 2: [Nombre del proyecto/situaciÃ³n]
+**Contexto**: [Contexto especÃ­fico]  
+**ImplementaciÃ³n**: [CÃ³mo se implementÃ³]  
 **Resultado**: [Resultado obtenido]
 
 ---
 
-## ❓ FAQ
+## â“ FAQ
 
 **P: Pregunta frecuente 1?**  
 R: Respuesta detallada
@@ -216,49 +216,49 @@ R: Respuesta detallada
 
 ---
 
-## 🤝 Contribuidores
+## ðŸ¤ Contribuidores
 
-- <Nombre 1>: Aportación inicial
-- <Nombre 2>: Validación y mejoras
+- <Nombre 1>: AportaciÃ³n inicial
+- <Nombre 2>: ValidaciÃ³n y mejoras
 - <Nombre 3>: Casos de uso adicionales
 
 ---
 
-## 📌 Próximos Pasos
+## ðŸ“Œ PrÃ³ximos Pasos
 
 - [ ] Validar en proyecto X
 - [ ] Crear skill reutilizable basado en este conocimiento
 - [ ] Documentar casos edge adicionales
-- [ ] Revisar en 3 meses para actualización
+- [ ] Revisar en 3 meses para actualizaciÃ³n
 
 ---
 
-**Versión**: 1.0  
-**Próxima Revisión**: YYYY-MM-DD  
-**Estado**: ✅ Validado / ⚠️ En Revisión / 🚧 Borrador
-
----
----
-
-# TEMPLATES ADICIONALES - CONOCIMIENTO HÍBRIDO
-
-Los siguientes templates son específicos para el sistema híbrido de gestión de conocimiento (local + remote + NotebookLM).
+**VersiÃ³n**: 1.0  
+**PrÃ³xima RevisiÃ³n**: YYYY-MM-DD  
+**Estado**: âœ… Validado / âš ï¸ En RevisiÃ³n / ðŸš§ Borrador
 
 ---
 ---
 
-## 📝 TEMPLATE 2: INVESTIGACIÓN LOCAL (Research)
+# TEMPLATES ADICIONALES - CONOCIMIENTO HÃBRIDO
 
-**Usar para**: Investigación técnica profunda realizada por IA antes de generar tickets.
+Los siguientes templates son especÃ­ficos para el sistema hÃ­brido de gestiÃ³n de conocimiento (local + remote + NotebookLM).
 
-**Ubicación**: `knowledge/local/##_<topic>_research.md`
+---
+---
+
+## ðŸ“ TEMPLATE 2: INVESTIGACIÃ“N LOCAL (Research)
+
+**Usar para**: InvestigaciÃ³n tÃ©cnica profunda realizada por IA antes de generar tickets.
+
+**UbicaciÃ³n**: `knowledge/local/##_<topic>_research.md`
 
 ```markdown
 # ##_<Topic>_Research
 
-## 🔍 Investigación: [Título Descriptivo]
+## ðŸ” InvestigaciÃ³n: [TÃ­tulo Descriptivo]
 
-### 📋 Metadata
+### ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
@@ -266,45 +266,45 @@ Los siguientes templates son específicos para el sistema híbrido de gestión d
 | **Proyecto** | <project_code> |
 | **Fecha** | YYYY-MM-DD |
 | **Investigador** | GitHub Copilot / Claude / ChatGPT |
-| **Estado** | ✅ Completo / 🚧 En Progreso |
+| **Estado** | âœ… Completo / ðŸš§ En Progreso |
 
 ---
 
-## 🎯 Objetivo de la Investigación
+## ðŸŽ¯ Objetivo de la InvestigaciÃ³n
 
-[Explica qué necesitas determinar o decidir. Ejemplo:]
+[Explica quÃ© necesitas determinar o decidir. Ejemplo:]
 
-Determinar el mejor método para automatizar conexión SAP GUI desde Python
+Determinar el mejor mÃ©todo para automatizar conexiÃ³n SAP GUI desde Python
 considerando: confiabilidad, mantenibilidad, y facilidad de uso.
 
 ---
 
-## 📊 Opciones Investigadas
+## ðŸ“Š Opciones Investigadas
 
-### Opción 1: [Nombre de la Opción]
+### OpciÃ³n 1: [Nombre de la OpciÃ³n]
 
-**Descripción**:  
-[Breve descripción de qué es y cómo funciona]
+**DescripciÃ³n**:  
+[Breve descripciÃ³n de quÃ© es y cÃ³mo funciona]
 
 **Pros**:
-- ✅ Pro 1
-- ✅ Pro 2
-- ✅ Pro 3
+- âœ… Pro 1
+- âœ… Pro 2
+- âœ… Pro 3
 
 **Contras**:
-- ❌ Contra 1
-- ❌ Contra 2
-- ❌ Contra 3
+- âŒ Contra 1
+- âŒ Contra 2
+- âŒ Contra 3
 
-**Complejidad**: 🟢 Baja / 🟡 Media / 🔴 Alta
+**Complejidad**: ðŸŸ¢ Baja / ðŸŸ¡ Media / ðŸ”´ Alta
 
-**Madurez**: 🟢 Estable / 🟡 Beta / 🔴 Experimental
+**Madurez**: ðŸŸ¢ Estable / ðŸŸ¡ Beta / ðŸ”´ Experimental
 
-**Comunidad**: 🟢 Activa / 🟡 Moderada / 🔴 Limitada
+**Comunidad**: ðŸŸ¢ Activa / ðŸŸ¡ Moderada / ðŸ”´ Limitada
 
-**Ejemplo de Código**:
+**Ejemplo de CÃ³digo**:
 ```python
-# Código de ejemplo mostrando uso básico
+# CÃ³digo de ejemplo mostrando uso bÃ¡sico
 import library
 
 def example():
@@ -313,396 +313,396 @@ def example():
 ```
 
 **Referencias**:
-- [Documentación Oficial](URL)
+- [DocumentaciÃ³n Oficial](URL)
 - [Tutorial relevante](URL)
 
 ---
 
-### Opción 2: [Nombre de la Opción]
+### OpciÃ³n 2: [Nombre de la OpciÃ³n]
 
-[Repetir estructura anterior para cada opción investigada]
+[Repetir estructura anterior para cada opciÃ³n investigada]
 
 ---
 
-### Opción 3: [Nombre de la Opción]
+### OpciÃ³n 3: [Nombre de la OpciÃ³n]
 
 [Repetir estructura anterior]
 
 ---
 
-## 📈 Comparación
+## ðŸ“ˆ ComparaciÃ³n
 
-| Criterio | Opción 1 | Opción 2 | Opción 3 |
+| Criterio | OpciÃ³n 1 | OpciÃ³n 2 | OpciÃ³n 3 |
 |----------|----------|----------|----------|
-| Confiabilidad | 🟢 Alta | 🟡 Media | 🔴 Baja |
-| Facilidad de uso | 🟢 Fácil | 🟡 Moderado | 🔴 Complejo |
-| Performance | 🟢 Rápido | 🟢 Rápido | 🟡 Medio |
-| Mantenibilidad | 🟢 Alta | 🟡 Media | 🔴 Baja |
-| Costo | 💰 Gratis | 💰💰 Medio | 💰💰💰 Alto |
-| Documentación | 🟢 Excelente | 🟡 Buena | 🔴 Limitada |
+| Confiabilidad | ðŸŸ¢ Alta | ðŸŸ¡ Media | ðŸ”´ Baja |
+| Facilidad de uso | ðŸŸ¢ FÃ¡cil | ðŸŸ¡ Moderado | ðŸ”´ Complejo |
+| Performance | ðŸŸ¢ RÃ¡pido | ðŸŸ¢ RÃ¡pido | ðŸŸ¡ Medio |
+| Mantenibilidad | ðŸŸ¢ Alta | ðŸŸ¡ Media | ðŸ”´ Baja |
+| Costo | ðŸ’° Gratis | ðŸ’°ðŸ’° Medio | ðŸ’°ðŸ’°ðŸ’° Alto |
+| DocumentaciÃ³n | ðŸŸ¢ Excelente | ðŸŸ¡ Buena | ðŸ”´ Limitada |
 
 ---
 
-## ✅ Decisión Final
+## âœ… DecisiÃ³n Final
 
-**Selección**: [Opción seleccionada]
+**SelecciÃ³n**: [OpciÃ³n seleccionada]
 
 **Razones**:
-1. Razón principal 1 (con peso específico)
-2. Razón principal 2
-3. Razón principal 3
+1. RazÃ³n principal 1 (con peso especÃ­fico)
+2. RazÃ³n principal 2
+3. RazÃ³n principal 3
 
 **Trade-offs Aceptados**:
-- Trade-off 1: [Lo que sacrificamos y por qué está OK]
+- Trade-off 1: [Lo que sacrificamos y por quÃ© estÃ¡ OK]
 - Trade-off 2: [...]
 
 **Alternativa de Respaldo**:
-Si la opción seleccionada falla, usar [Opción X] porque [razón].
+Si la opciÃ³n seleccionada falla, usar [OpciÃ³n X] porque [razÃ³n].
 
 ---
 
-## 💻 Implementación Recomendada
+## ðŸ’» ImplementaciÃ³n Recomendada
 
 ### Setup
 ```bash
-# Comandos de instalación/configuración
+# Comandos de instalaciÃ³n/configuraciÃ³n
 pip install <library>
 ```
 
-### Código Base
+### CÃ³digo Base
 ```python
-# Patrón recomendado para implementación
+# PatrÃ³n recomendado para implementaciÃ³n
 
 def recommended_pattern():
     """
-    Implementación sugerida basada en investigación
+    ImplementaciÃ³n sugerida basada en investigaciÃ³n
     """
-    # Código ejemplo
+    # CÃ³digo ejemplo
     pass
 ```
 
 ### Consideraciones
-- ⚠️ Cuidado con [aspecto X]
-- 💡 Tip: [consejo útil]
-- 🔒 Seguridad: [consideración de seguridad]
+- âš ï¸ Cuidado con [aspecto X]
+- ðŸ’¡ Tip: [consejo Ãºtil]
+- ðŸ”’ Seguridad: [consideraciÃ³n de seguridad]
 
 ---
 
-## 🎫 Aplicación en Tickets
+## ðŸŽ« AplicaciÃ³n en Tickets
 
 Este conocimiento se aplica en:
-- TKT-001: [Descripción]
-- TKT-003: [Descripción]
-- TKT-007: [Descripción]
+- TKT-001: [DescripciÃ³n]
+- TKT-003: [DescripciÃ³n]
+- TKT-007: [DescripciÃ³n]
 
 ---
 
-## 📚 Referencias Adicionales
+## ðŸ“š Referencias Adicionales
 
-- 📖 [Recurso 1](knowledge/remote/xxx.md)
-- 📖 [Recurso 2](knowledge/remote/yyy.md)
-- 🌐 [Artículo relevante](URL externa)
+- ðŸ“– [Recurso 1](knowledge/remote/xxx.md)
+- ðŸ“– [Recurso 2](knowledge/remote/yyy.md)
+- ðŸŒ [ArtÃ­culo relevante](URL externa)
 
 ---
 
 **Investigado por**: GitHub Copilot  
 **Validado por**: [Nombre del desarrollador]  
-**Última actualización**: YYYY-MM-DD
+**Ãšltima actualizaciÃ³n**: YYYY-MM-DD
 ```
 
 ---
 ---
 
-## 🔗 TEMPLATE 3: REFERENCIA REMOTA (External Reference)
+## ðŸ”— TEMPLATE 3: REFERENCIA REMOTA (External Reference)
 
-**Usar para**: Documentar enlaces a recursos externos, documentación oficial, APIs.
+**Usar para**: Documentar enlaces a recursos externos, documentaciÃ³n oficial, APIs.
 
-**Ubicación**: `knowledge/remote/<topic>_reference.md`
+**UbicaciÃ³n**: `knowledge/remote/<topic>_reference.md`
 
 ```markdown
 # <Topic>_Reference
 
-## 🔗 Referencia Externa: [Título del Recurso]
+## ðŸ”— Referencia Externa: [TÃ­tulo del Recurso]
 
-### 📋 Metadata
+### ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
-| **Tipo** | Documentación Oficial / Tutorial / API Reference / Video / Otro |
+| **Tipo** | DocumentaciÃ³n Oficial / Tutorial / API Reference / Video / Otro |
 | **URL** | <URL directa> |
-| **Fuente** | <Organización/Autor> |
-| **Idioma** | Español / Inglés / Otro |
-| **Fecha creación** | YYYY-MM-DD |
-| **Última verificación** | YYYY-MM-DD |
-| **Acceso** | 🌐 Público / 🔐 Requiere cuenta / 🔒 Requiere VPN |
+| **Fuente** | <OrganizaciÃ³n/Autor> |
+| **Idioma** | EspaÃ±ol / InglÃ©s / Otro |
+| **Fecha creaciÃ³n** | YYYY-MM-DD |
+| **Ãšltima verificaciÃ³n** | YYYY-MM-DD |
+| **Acceso** | ðŸŒ PÃºblico / ðŸ” Requiere cuenta / ðŸ”’ Requiere VPN |
 | **Proyecto relacionado** | <project_code> |
 
 ---
 
-## 📝 Resumen
+## ðŸ“ Resumen
 
-[Descripción breve (2-3 párrafos) del contenido y por qué es relevante para el proyecto]
+[DescripciÃ³n breve (2-3 pÃ¡rrafos) del contenido y por quÃ© es relevante para el proyecto]
 
 ---
 
-## 🎯 Puntos Clave
+## ðŸŽ¯ Puntos Clave
 
-### Sección 1: [Nombre de Sección Relevante]
+### SecciÃ³n 1: [Nombre de SecciÃ³n Relevante]
 - Punto importante 1
 - Punto importante 2
 - Punto importante 3
 
-### Sección 2: [Nombre de Sección Relevante]
+### SecciÃ³n 2: [Nombre de SecciÃ³n Relevante]
 - Punto importante 1
 - Punto importante 2
 
-### Sección 3: [Nombre de Sección Relevante]
+### SecciÃ³n 3: [Nombre de SecciÃ³n Relevante]
 - Punto importante 1
 - Punto importante 2
 
 ---
 
-## 💡 Aplicación en Nuestro Proyecto
+## ðŸ’¡ AplicaciÃ³n en Nuestro Proyecto
 
-### Cómo lo usamos:
-[Explica cómo se aplica este recurso específicamente en tu contexto]
+### CÃ³mo lo usamos:
+[Explica cÃ³mo se aplica este recurso especÃ­ficamente en tu contexto]
 
-### Ejemplos Prácticos:
+### Ejemplos PrÃ¡cticos:
 ```python
-# Código adaptado del recurso externo para nuestro caso
+# CÃ³digo adaptado del recurso externo para nuestro caso
 
 def our_implementation():
     """
-    Basado en documentación de [recurso]
+    Basado en documentaciÃ³n de [recurso]
     """
     # ...
     pass
 ```
 
 ### Diferencias con el Original:
-- Adaptación 1: [Qué cambiamos y por qué]
-- Adaptación 2: [...]
+- AdaptaciÃ³n 1: [QuÃ© cambiamos y por quÃ©]
+- AdaptaciÃ³n 2: [...]
 
 ---
 
-## ⚠️ Limitaciones / Advertencias
+## âš ï¸ Limitaciones / Advertencias
 
-- ⚠️ Limitación 1: [Qué no cubre o qué no funciona]
-- ⚠️ Limitación 2: [...]
-- 💡 Solución alternativa: [Cómo manejamos la limitación]
+- âš ï¸ LimitaciÃ³n 1: [QuÃ© no cubre o quÃ© no funciona]
+- âš ï¸ LimitaciÃ³n 2: [...]
+- ðŸ’¡ SoluciÃ³n alternativa: [CÃ³mo manejamos la limitaciÃ³n]
 
 ---
 
-## 🔍 Secciones Relevantes del Recurso
+## ðŸ” Secciones Relevantes del Recurso
 
-| Sección | Página/Enlace | Relevancia |
+| SecciÃ³n | PÃ¡gina/Enlace | Relevancia |
 |---------|---------------|------------|
-| Getting Started | [URL#section1] | 🟢 Alta - Setup inicial |
-| API Reference | [URL#api] | 🟢 Alta - Desarrollo |
-| Examples | [URL#examples] | 🟡 Media - Referencia |
-| Advanced Topics | [URL#advanced] | 🟡 Media - Optimización futura |
+| Getting Started | [URL#section1] | ðŸŸ¢ Alta - Setup inicial |
+| API Reference | [URL#api] | ðŸŸ¢ Alta - Desarrollo |
+| Examples | [URL#examples] | ðŸŸ¡ Media - Referencia |
+| Advanced Topics | [URL#advanced] | ðŸŸ¡ Media - OptimizaciÃ³n futura |
 
 ---
 
-## 🎫 Relacionado con
+## ðŸŽ« Relacionado con
 
 **Tickets**:
-- TKT-001: [Descripción]
-- TKT-005: [Descripción]
+- TKT-001: [DescripciÃ³n]
+- TKT-005: [DescripciÃ³n]
 
 **Knowledge Local**:
 - [01_topic_research.md](../local/01_topic_research.md)
 - [03_topic_decisions.md](../local/03_topic_decisions.md)
 
 **Skills/Agentes**:
-- skill_name: [Uso específico]
-- agent_name: [Uso específico]
+- skill_name: [Uso especÃ­fico]
+- agent_name: [Uso especÃ­fico]
 
 ---
 
-## 📅 Historial de Actualizaciones
+## ðŸ“… Historial de Actualizaciones
 
-| Fecha | Cambio | Razón |
+| Fecha | Cambio | RazÃ³n |
 |-------|--------|-------|
-| YYYY-MM-DD | Creación inicial | Setup del proyecto |
-| YYYY-MM-DD | Actualización sección X | Nueva versión del recurso |
+| YYYY-MM-DD | CreaciÃ³n inicial | Setup del proyecto |
+| YYYY-MM-DD | ActualizaciÃ³n secciÃ³n X | Nueva versiÃ³n del recurso |
 
 ---
 
-## 🔄 Próxima Revisión
+## ðŸ”„ PrÃ³xima RevisiÃ³n
 
 **Fecha**: YYYY-MM-DD  
-**Razón**: Verificar actualizaciones del recurso oficial  
+**RazÃ³n**: Verificar actualizaciones del recurso oficial  
 **Responsable**: [Nombre]
 
 ```
 
 ---
 
-### VARIANTE 3B: REFERENCIA INTERNA (Código Propio)
+### VARIANTE 3B: REFERENCIA INTERNA (CÃ³digo Propio)
 
 **Usar para**: Documentar programas internos existentes como referencia para nuevos proyectos.
 
-**Ubicación**: `knowledge/remote/internal_reference_<programa>.md`
+**UbicaciÃ³n**: `knowledge/remote/internal_reference_<programa>.md`
 
-**IMPORTANTE**: ❌ NO copiar/mover código original | ✅ SOLO referenciar + snippets clave
+**IMPORTANTE**: âŒ NO copiar/mover cÃ³digo original | âœ… SOLO referenciar + snippets clave
 
 ```markdown
 # Internal Reference: <Nombre del Programa>
 
-## 🏠 Referencia Interna: <Título Descriptivo>
+## ðŸ  Referencia Interna: <TÃ­tulo Descriptivo>
 
-### 📋 Metadata
+### ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **Tipo** | Programa RPA / Script Utilitario / POC / Otro |
-| **Ubicación** | `ruta/relativa/al/archivo.py` |
-| **Estado** | ✅ Producción / 🟡 Desarrollo / 🔵 Archivado |
-| **Fecha creación original** | YYYY-MM-DD |
-| **Fecha análisis** | YYYY-MM-DD |
-| **Líneas de código** | ~XXX |
+| **UbicaciÃ³n** | `ruta/relativa/al/archivo.py` |
+| **Estado** | âœ… ProducciÃ³n / ðŸŸ¡ Desarrollo / ðŸ”µ Archivado |
+| **Fecha creaciÃ³n original** | YYYY-MM-DD |
+| **Fecha anÃ¡lisis** | YYYY-MM-DD |
+| **LÃ­neas de cÃ³digo** | ~XXX |
 | **Lenguaje** | Python / VBS / PowerShell / Otro |
-| **Proyecto origen** | <código_proyecto> |
+| **Proyecto origen** | <cÃ³digo_proyecto> |
 | **Mantenido por** | <nombre/equipo> |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
-[Descripción clara de qué hace el programa, su propósito y contexto]
+[DescripciÃ³n clara de quÃ© hace el programa, su propÃ³sito y contexto]
 
 **Flujo principal**:
 1. Paso 1
 2. Paso 2
 3. Paso 3
 
-**Tecnologías usadas**:
-- Librería 1
-- Librería 2
+**TecnologÃ­as usadas**:
+- LibrerÃ­a 1
+- LibrerÃ­a 2
 - Herramienta externa (SAP, Excel, etc.)
 
 ---
 
-## 🎯 Patrones Reutilizables
+## ðŸŽ¯ Patrones Reutilizables
 
-### Patrón 1: [Nombre del Patrón]
+### PatrÃ³n 1: [Nombre del PatrÃ³n]
 **Aplicable a**: [Tipo de proyectos]
-**Ubicación en código**: Líneas XXX-YYY
+**UbicaciÃ³n en cÃ³digo**: LÃ­neas XXX-YYY
 
 ```python
-# Snippet clave (10-30 líneas)
+# Snippet clave (10-30 lÃ­neas)
 def funcion_reutilizable():
-    # Código relevante
+    # CÃ³digo relevante
     pass
 ```
 
-**Por qué funciona**:
-- Razón 1
-- Razón 2
+**Por quÃ© funciona**:
+- RazÃ³n 1
+- RazÃ³n 2
 
 **Consideraciones**:
-- Limitación 1
+- LimitaciÃ³n 1
 - Requisito 1
 
 ---
 
-### Patrón 2: [Nombre del Patrón]
+### PatrÃ³n 2: [Nombre del PatrÃ³n]
 **Aplicable a**: [Tipo de proyectos]
-**Ubicación en código**: Líneas XXX-YYY
+**UbicaciÃ³n en cÃ³digo**: LÃ­neas XXX-YYY
 
 [... repetir estructura ...]
 
 ---
 
-## 💡 Aplicación en Este Proyecto
+## ðŸ’¡ AplicaciÃ³n en Este Proyecto
 
 **Tickets que pueden beneficiarse**:
-- TKT-XXX: [Usar patrón 1 para...]
-- TKT-YYY: [Adaptar patrón 2 para...]
+- TKT-XXX: [Usar patrÃ³n 1 para...]
+- TKT-YYY: [Adaptar patrÃ³n 2 para...]
 
 **Adaptaciones necesarias**:
 1. Cambio 1 requerido
 2. Cambio 2 requerido
 
 **Skills relacionados**:
-- skill_name: [Cómo se beneficia]
+- skill_name: [CÃ³mo se beneficia]
 
 ---
 
-## ⚠️ Limitaciones y Diferencias
+## âš ï¸ Limitaciones y Diferencias
 
 **Contexto diferente**:
 - Este programa usa [X], nosotros usaremos [Y]
 - Entorno: [diferencias de entorno]
 
 **No reutilizable directamente**:
-- Aspecto 1 del código original
-- Aspecto 2 del código original
+- Aspecto 1 del cÃ³digo original
+- Aspecto 2 del cÃ³digo original
 
-**Requiere adaptación**:
-- [ ] Cambiar configuración de conexión
+**Requiere adaptaciÃ³n**:
+- [ ] Cambiar configuraciÃ³n de conexiÃ³n
 - [ ] Actualizar paths de archivos
-- [ ] Modificar lógica de negocio específica
+- [ ] Modificar lÃ³gica de negocio especÃ­fica
 
 ---
 
-## 🔗 Relacionado con
+## ðŸ”— Relacionado con
 
 **Knowledge Local**:
-- [01_topic_research.md](../local/01_topic_research.md) - Análisis que usó este código
+- [01_topic_research.md](../local/01_topic_research.md) - AnÃ¡lisis que usÃ³ este cÃ³digo
 - [02_topic_patterns.md](../local/02_topic_patterns.md) - Patrones derivados
 
-**Código Original**:
-- Archivo: `[path al código]`
-- Repositorio: [si está en otro repo]
-- Documentación: [README del código original si existe]
+**CÃ³digo Original**:
+- Archivo: `[path al cÃ³digo]`
+- Repositorio: [si estÃ¡ en otro repo]
+- DocumentaciÃ³n: [README del cÃ³digo original si existe]
 
 **Tickets**:
-- TKT-XXX: Implementa patrón 1
-- TKT-YYY: Adapta patrón 2
+- TKT-XXX: Implementa patrÃ³n 1
+- TKT-YYY: Adapta patrÃ³n 2
 
 ---
 
-## 📊 Métricas de Reutilización
+## ðŸ“Š MÃ©tricas de ReutilizaciÃ³n
 
-| Métrica | Valor |
+| MÃ©trica | Valor |
 |---------|-------|
 | Proyectos que lo usan como referencia | X |
-| Patrones extraídos | Y |
-| Líneas de código reutilizadas (~) | Z |
+| Patrones extraÃ­dos | Y |
+| LÃ­neas de cÃ³digo reutilizadas (~) | Z |
 
 ---
 
-## 📅 Historial de Análisis
+## ðŸ“… Historial de AnÃ¡lisis
 
 | Fecha | Analista | Hallazgos |
 |-------|----------|----------|
-| YYYY-MM-DD | [Nombre] | Análisis inicial |
-| YYYY-MM-DD | [Nombre] | Actualizado con patrón nuevo |
+| YYYY-MM-DD | [Nombre] | AnÃ¡lisis inicial |
+| YYYY-MM-DD | [Nombre] | Actualizado con patrÃ³n nuevo |
 
 ---
 
-**Última actualización**: YYYY-MM-DD  
-**Próxima revisión**: YYYY-MM-DD (si el código original cambia significativamente)
+**Ãšltima actualizaciÃ³n**: YYYY-MM-DD  
+**PrÃ³xima revisiÃ³n**: YYYY-MM-DD (si el cÃ³digo original cambia significativamente)
 
 ```
 
 ---
 ---
 
-## ☁️ TEMPLATE 4: REFERENCIA NOTEBOOKLM (NotebookLM Reference)
+## â˜ï¸ TEMPLATE 4: REFERENCIA NOTEBOOKLM (NotebookLM Reference)
 
-**Usar para**: Documentar notebooks de NotebookLM creados para análisis profundo del proyecto.
+**Usar para**: Documentar notebooks de NotebookLM creados para anÃ¡lisis profundo del proyecto.
 
-**Ubicación**: `knowledge/remote/notebooklm_<topic>.md`
+**UbicaciÃ³n**: `knowledge/remote/notebooklm_<topic>.md`
 
 ```markdown
 # notebooklm_<topic>
 
-## ☁️ NotebookLM: [Nombre Descriptivo del Notebook]
+## â˜ï¸ NotebookLM: [Nombre Descriptivo del Notebook]
 
-### 📋 Metadata
+### ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
@@ -710,90 +710,90 @@ def funcion_reutilizable():
 | **URL** | https://notebooklm.google.com/notebook/[ID] |
 | **Acceso** | Requiere cuenta de Google: [email] |
 | **Proyecto** | <project_code> |
-| **Fecha creación** | YYYY-MM-DD |
-| **Última actualización** | YYYY-MM-DD |
-| **Estado** | 🟢 Activo / 🟡 En construcción / 🔴 Archivado |
+| **Fecha creaciÃ³n** | YYYY-MM-DD |
+| **Ãšltima actualizaciÃ³n** | YYYY-MM-DD |
+| **Estado** | ðŸŸ¢ Activo / ðŸŸ¡ En construcciÃ³n / ðŸ”´ Archivado |
 
 ---
 
-## 🎯 Propósito del Notebook
+## ðŸŽ¯ PropÃ³sito del Notebook
 
-[Explica para qué se creó este notebook de NotebookLM y qué tipo de análisis contiene]
+[Explica para quÃ© se creÃ³ este notebook de NotebookLM y quÃ© tipo de anÃ¡lisis contiene]
 
 ---
 
-## 📚 Fuentes Subidas
+## ðŸ“š Fuentes Subidas
 
 ### Documentos del Proyecto
-- ✅ SPECIFICATION.md (496 líneas)
-- ✅ Script VBS de referencia (ZScript_xxx.vbs)
-- ✅ Plantilla Excel corporativa
-- ✅ README del proyecto
+- âœ… SPECIFICATION.md (496 lÃ­neas)
+- âœ… Script VBS de referencia (ZScript_xxx.vbs)
+- âœ… Plantilla Excel corporativa
+- âœ… README del proyecto
 
 ### Knowledge Generado
-- ✅ knowledge/local/01_topic_research.md
-- ✅ knowledge/local/02_topic_patterns.md
-- ✅ knowledge/local/03_topic_decisions.md
-- ✅ knowledge/local/04_topic_strategy.md
+- âœ… knowledge/local/01_topic_research.md
+- âœ… knowledge/local/02_topic_patterns.md
+- âœ… knowledge/local/03_topic_decisions.md
+- âœ… knowledge/local/04_topic_strategy.md
 
 ### Referencias Externas
-- ✅ Documentación oficial SAP
-- ✅ Guías de mejores prácticas
+- âœ… DocumentaciÃ³n oficial SAP
+- âœ… GuÃ­as de mejores prÃ¡cticas
 
-**Total fuentes**: [número]  
-**Última sincronización**: YYYY-MM-DD
+**Total fuentes**: [nÃºmero]  
+**Ãšltima sincronizaciÃ³n**: YYYY-MM-DD
 
 ---
 
-## 💬 Capacidades de Este Notebook
+## ðŸ’¬ Capacidades de Este Notebook
 
 ### Lo que puede hacer:
-- 💬 Responder preguntas específicas sobre el proyecto
-- 📊 Generar resúmenes ejecutivos
-- 🔍 Encontrar contradicciones entre documentos
-- 💡 Sugerir mejoras basadas en todas las fuentes
-- 📋 Crear guías paso a paso personalizadas
-- 🔗 Identificar relaciones entre conceptos
+- ðŸ’¬ Responder preguntas especÃ­ficas sobre el proyecto
+- ðŸ“Š Generar resÃºmenes ejecutivos
+- ðŸ” Encontrar contradicciones entre documentos
+- ðŸ’¡ Sugerir mejoras basadas en todas las fuentes
+- ðŸ“‹ Crear guÃ­as paso a paso personalizadas
+- ðŸ”— Identificar relaciones entre conceptos
 
-### Ejemplos de preguntas útiles:
+### Ejemplos de preguntas Ãºtiles:
 ```
-1. "¿Cuál es la secuencia completa del proceso de extracción SAP?"
-2. "¿Qué validaciones críticas debo implementar?"
-3. "Lista todos los campos del mapeo ALV → Excel"
-4. "¿Hay alguna contradicción entre SPEC y el script VBS?"
+1. "Â¿CuÃ¡l es la secuencia completa del proceso de extracciÃ³n SAP?"
+2. "Â¿QuÃ© validaciones crÃ­ticas debo implementar?"
+3. "Lista todos los campos del mapeo ALV â†’ Excel"
+4. "Â¿Hay alguna contradicciÃ³n entre SPEC y el script VBS?"
 5. "Dame un plan detallado para implementar TKT-003"
 ```
 
 ---
 
-## 🔑 Preguntas Clave Ya Respondidas
+## ðŸ”‘ Preguntas Clave Ya Respondidas
 
-### 1. ¿Cuál es la mejor estrategia para exportar ALV?
+### 1. Â¿CuÃ¡l es la mejor estrategia para exportar ALV?
 
 **Respuesta (resumen)**:
-[Copia aquí la respuesta clave de NotebookLM]
+[Copia aquÃ­ la respuesta clave de NotebookLM]
 
 **Archivo relacionado**: knowledge/local/02_alv_export_patterns.md
 
 ---
 
-### 2. ¿Qué validaciones de datos son críticas?
+### 2. Â¿QuÃ© validaciones de datos son crÃ­ticas?
 
 **Respuesta (resumen)**:
-[Copia aquí la respuesta clave de NotebookLM]
+[Copia aquÃ­ la respuesta clave de NotebookLM]
 
-**Aplicación**: Implementar en TKT-004 (Validación de datos)
+**AplicaciÃ³n**: Implementar en TKT-004 (ValidaciÃ³n de datos)
 
 ---
 
-### 3. ¿Cómo manejar archivos temporales de manera robusta?
+### 3. Â¿CÃ³mo manejar archivos temporales de manera robusta?
 
 **Respuesta (resumen)**:
-[Copia aquí la respuesta clave de NotebookLM]
+[Copia aquÃ­ la respuesta clave de NotebookLM]
 
-**Patrón recomendado**:
+**PatrÃ³n recomendado**:
 ```python
-# Basado en análisis de NotebookLM
+# Basado en anÃ¡lisis de NotebookLM
 try:
     # proceso
 finally:
@@ -802,95 +802,95 @@ finally:
 
 ---
 
-[Agregar más preguntas según sea necesario]
+[Agregar mÃ¡s preguntas segÃºn sea necesario]
 
 ---
 
-## 💎 Hallazgos Adicionales del Análisis IA
+## ðŸ’Ž Hallazgos Adicionales del AnÃ¡lisis IA
 
-### Insight 1: [Título]
-[Descripción del hallazgo que NotebookLM descubrió al analizar todas las fuentes juntas]
+### Insight 1: [TÃ­tulo]
+[DescripciÃ³n del hallazgo que NotebookLM descubriÃ³ al analizar todas las fuentes juntas]
 
 **Impacto**: Alto / Medio / Bajo  
-**Acción**: [Qué hacer con este hallazgo]
+**AcciÃ³n**: [QuÃ© hacer con este hallazgo]
 
-### Insight 2: [Título]
+### Insight 2: [TÃ­tulo]
 [...]
 
-### Insight 3: [Título]
+### Insight 3: [TÃ­tulo]
 [...]
 
 ---
 
-## 🎫 Uso Durante Desarrollo
+## ðŸŽ« Uso Durante Desarrollo
 
 ### Por Fase:
 
-**FASE 2 (Planificación)**:
-- ✅ Validar decisiones arquitectónicas
-- ✅ Confirmar secuencia de tickets
-- ✅ Identificar dependencias ocultas
+**FASE 2 (PlanificaciÃ³n)**:
+- âœ… Validar decisiones arquitectÃ³nicas
+- âœ… Confirmar secuencia de tickets
+- âœ… Identificar dependencias ocultas
 
 **FASE 3 (Desarrollo)**:
-- 📋 Consultar antes de implementar cada ticket
-- 💡 Pedir ejemplos de código específicos
-- ⚠️ Validar edge cases
+- ðŸ“‹ Consultar antes de implementar cada ticket
+- ðŸ’¡ Pedir ejemplos de cÃ³digo especÃ­ficos
+- âš ï¸ Validar edge cases
 
 **FASE 4 (Testing)**:
-- 🧪 Generar casos de prueba
-- 🔍 Verificar cobertura de requisitos
+- ðŸ§ª Generar casos de prueba
+- ðŸ” Verificar cobertura de requisitos
 
 ---
 
-## 📖 Cómo Usar Este Notebook
+## ðŸ“– CÃ³mo Usar Este Notebook
 
 ### Paso 1: Acceder
 1. Ir a: https://notebooklm.google.com/notebook/[ID]
 2. Login con: [email autorizado]
-3. Verificar que todas las fuentes están cargadas
+3. Verificar que todas las fuentes estÃ¡n cargadas
 
 ### Paso 2: Hacer Preguntas Efectivas
 ```
-❌ Mal: "Dame info sobre SAP"
-✅ Bien: "¿Cómo manejo timeouts en conexión SAP según SPECIFICATION y script VBS?"
+âŒ Mal: "Dame info sobre SAP"
+âœ… Bien: "Â¿CÃ³mo manejo timeouts en conexiÃ³n SAP segÃºn SPECIFICATION y script VBS?"
 
-❌ Mal: "Explica todo"
-✅ Bien: "Lista paso a paso cómo transformar datos ALV a plantilla Excel"
+âŒ Mal: "Explica todo"
+âœ… Bien: "Lista paso a paso cÃ³mo transformar datos ALV a plantilla Excel"
 ```
 
 ### Paso 3: Documentar Hallazgos
-- Si encuentras algo importante → agregar a esta sección
-- Si afecta decisión → actualizar knowledge/local/
-- Si aparece bug → crear lesson_learned_*.md
+- Si encuentras algo importante â†’ agregar a esta secciÃ³n
+- Si afecta decisiÃ³n â†’ actualizar knowledge/local/
+- Si aparece bug â†’ crear lesson_learned_*.md
 
 ---
 
-## 🔄 Mantenimiento del Notebook
+## ðŸ”„ Mantenimiento del Notebook
 
-### Cuándo Actualizar Fuentes:
-- ✅ Cuando SPECIFICATION.md cambie
-- ✅ Cuando se descubran nuevos patrones (lessons learned)
-- ✅ Al completar milestone importante
-- ✅ Cada 2 semanas (revisión periódica)
+### CuÃ¡ndo Actualizar Fuentes:
+- âœ… Cuando SPECIFICATION.md cambie
+- âœ… Cuando se descubran nuevos patrones (lessons learned)
+- âœ… Al completar milestone importante
+- âœ… Cada 2 semanas (revisiÃ³n periÃ³dica)
 
-### Proceso de Actualización:
+### Proceso de ActualizaciÃ³n:
 1. Ir a Sources en NotebookLM
 2. Subir archivo actualizado o nuevo
-3. Esperar re-indexación (1-2 minutos)
-4. Hacer pregunta de validación
+3. Esperar re-indexaciÃ³n (1-2 minutos)
+4. Hacer pregunta de validaciÃ³n
 5. Actualizar fecha en este documento
 
-**Última actualización de fuentes**: YYYY-MM-DD
+**Ãšltima actualizaciÃ³n de fuentes**: YYYY-MM-DD
 
 ---
 
-## 🔗 Relacionado con
+## ðŸ”— Relacionado con
 
 **Knowledge Local**:
-- [Todos los archivos de investigación](../local/)
+- [Todos los archivos de investigaciÃ³n](../local/)
 
 **Knowledge Remote**:
-- [Documentación oficial](./sap_official_docs.md)
+- [DocumentaciÃ³n oficial](./sap_official_docs.md)
 - [API References](./api_references.md)
 
 **Proyecto**:
@@ -899,9 +899,9 @@ finally:
 
 ---
 
-## 📊 Métricas de Uso
+## ðŸ“Š MÃ©tricas de Uso
 
-| Métrica | Valor |
+| MÃ©trica | Valor |
 |---------|-------|
 | Preguntas realizadas | ~XX |
 | Decisiones informadas | ~XX |
@@ -910,59 +910,60 @@ finally:
 
 ---
 
-## 👥 Acceso del Equipo
+## ðŸ‘¥ Acceso del Equipo
 
 | Miembro | Email | Rol | Acceso |
 |---------|-------|-----|--------|
-| [Nombre 1] | email@domain.com | Desarrollador | ✅ Compartido |
-| [Nombre 2] | email@domain.com | QA | ✅ Compartido |
-| [Nombre 3] | email@domain.com | PM | ✅ Compartido |
+| [Nombre 1] | email@domain.com | Desarrollador | âœ… Compartido |
+| [Nombre 2] | email@domain.com | QA | âœ… Compartido |
+| [Nombre 3] | email@domain.com | PM | âœ… Compartido |
 
-**Para compartir**: Usar botón "Share" en NotebookLM → Agregar email
+**Para compartir**: Usar botÃ³n "Share" en NotebookLM â†’ Agregar email
 
 ---
 
-## 📌 Notas Importantes
+## ðŸ“Œ Notas Importantes
 
-- ⚠️ Este notebook contiene conocimiento sensible del proyecto
-- ⚠️ No compartir URL públicamente
-- ⚠️ Google puede usar queries para mejorar su servicio
-- ⚠️ Datos no salen de NotebookLM (según política de Google)
-- 💡 Hacer backup periódico de hallazgos importantes en knowledge/local/
+- âš ï¸ Este notebook contiene conocimiento sensible del proyecto
+- âš ï¸ No compartir URL pÃºblicamente
+- âš ï¸ Google puede usar queries para mejorar su servicio
+- âš ï¸ Datos no salen de NotebookLM (segÃºn polÃ­tica de Google)
+- ðŸ’¡ Hacer backup periÃ³dico de hallazgos importantes en knowledge/local/
 
 ---
 
 **Creado por**: [Nombre]  
 **Mantenido por**: [Nombre]  
-**Próxima revisión**: YYYY-MM-DD
+**PrÃ³xima revisiÃ³n**: YYYY-MM-DD
 
 ```
 
 ---
 ---
 
-## 📚 Fin de Templates
+## ðŸ“š Fin de Templates
 
 **Resumen de Templates Disponibles**:
 
-1. **KNOWLEDGE_NOTE_TEMPLATE** (original): Genérico para cualquier tipo de conocimiento
-2. **INVESTIGACIÓN LOCAL**: Para research profundo técnico realizado por IA
+1. **KNOWLEDGE_NOTE_TEMPLATE** (original): GenÃ©rico para cualquier tipo de conocimiento
+2. **INVESTIGACIÃ“N LOCAL**: Para research profundo tÃ©cnico realizado por IA
 3. **REFERENCIA REMOTA**: Para documentar enlaces externos y recursos
-4. **NOTEBOOKLM**: Para documentar notebooks de análisis con IA cloud
+4. **NOTEBOOKLM**: Para documentar notebooks de anÃ¡lisis con IA cloud
 
 **Uso recomendado por tipo de conocimiento**:
 
-| Tipo de Conocimiento | Template a Usar | Ubicación |
+| Tipo de Conocimiento | Template a Usar | UbicaciÃ³n |
 |---------------------|-----------------|-----------|
-| Investigación técnica IA | Template 2 | knowledge/local/ |
-| Lección aprendida | Template 1 | knowledge/local/ |
-| Patrón descubierto | Template 1 | knowledge/local/ |
-| Documentación oficial | Template 3 | knowledge/remote/ |
+| InvestigaciÃ³n tÃ©cnica IA | Template 2 | knowledge/local/ |
+| LecciÃ³n aprendida | Template 1 | knowledge/local/ |
+| PatrÃ³n descubierto | Template 1 | knowledge/local/ |
+| DocumentaciÃ³n oficial | Template 3 | knowledge/remote/ |
 | Tutorial externo | Template 3 | knowledge/remote/ |
 | NotebookLM | Template 4 | knowledge/remote/ |
 
 ---
 
-**Versión de Templates**: 2.0 (Híbrido)  
-**Última actualización**: 2026-02-22  
+**VersiÃ³n de Templates**: 2.0 (HÃ­brido)  
+**Ãšltima actualizaciÃ³n**: 2026-02-22  
 **Autor**: Dr.FIC. Francisco Ibarra Carlos
+

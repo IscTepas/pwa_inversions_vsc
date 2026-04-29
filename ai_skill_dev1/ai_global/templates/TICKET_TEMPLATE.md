@@ -1,15 +1,15 @@
-# TKT-<CODIGO>-###: [Título Corto y Descriptivo]
+﻿# TKT-<CODIGO>-###: [TÃ­tulo Corto y Descriptivo]
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-<CODIGO>-### |
 | **Ticket Externo** | REQ-XXXX-YYYY (si aplica) |
-| **Solicitante** | Nombre (Área) |
-| **Tipo** | Nuevo Proyecto / Feature / Bug / Refactor / Mejora / Corrección |
-| **Prioridad** | 🔴 Alta / 🟡 Media / 🟢 Baja |
-| **Estado** | 🆕 Abierto / 🟡 En Desarrollo / 🔵 En Revisión / 🚫 Bloqueado / ✅ Completado |
+| **Solicitante** | Nombre (Ãrea) |
+| **Tipo** | Nuevo Proyecto / Feature / Bug / Refactor / Mejora / CorrecciÃ³n |
+| **Prioridad** | ðŸ”´ Alta / ðŸŸ¡ Media / ðŸŸ¢ Baja |
+| **Estado** | ðŸ†• Abierto / ðŸŸ¡ En Desarrollo / ðŸ”µ En RevisiÃ³n / ðŸš« Bloqueado / âœ… Completado |
 | **Proyecto** | <nombre_proyecto> o GLOBAL |
 | **Creado** | YYYY-MM-DD |
 | **Actualizado** | YYYY-MM-DD |
@@ -17,44 +17,44 @@
 
 ---
 
-## 🚦 Gate de Estado (Obligatorio)
+## ðŸš¦ Gate de Estado (Obligatorio)
 
-- ✅ **Completado**: solo si hay evidencia de ejecución y validación.
-- 🔵 **En Revisión**: código listo, pero pendiente de ejecutar/validar.
-- 🚫 **Bloqueado**: dependencia externa impide validar.
+- âœ… **Completado**: solo si hay evidencia de ejecuciÃ³n y validaciÃ³n.
+- ðŸ”µ **En RevisiÃ³n**: cÃ³digo listo, pero pendiente de ejecutar/validar.
+- ðŸš« **Bloqueado**: dependencia externa impide validar.
 
-**No permitido**: mover a ✅ Completado sin pruebas ejecutadas y registradas.
+**No permitido**: mover a âœ… Completado sin pruebas ejecutadas y registradas.
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-[Describe el contexto o situación que motiva este ticket]
+[Describe el contexto o situaciÃ³n que motiva este ticket]
 
-**Justificación**: [Por qué es necesario este cambio]
+**JustificaciÃ³n**: [Por quÃ© es necesario este cambio]
 
 ### Problema/Necesidad
 [Si es un bug, describe el problema. Si es feature, describe la necesidad]
 
-### Solución Propuesta
-[Describe cómo se resolverá o implementará]
+### SoluciÃ³n Propuesta
+[Describe cÃ³mo se resolverÃ¡ o implementarÃ¡]
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Modificar/Crear**:
 - `ruta/archivo1.py`
 - `ruta/archivo2.py`
 
 **Componentes Afectados**:
-- Módulo X
+- MÃ³dulo X
 - Servicio Y
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Picoro analiza:
 - [ ] Ticket revisado y entendido
@@ -62,8 +62,8 @@
 - [ ] Skills necesarios confirmados
 
 ### Goku implementa:
-- [ ] Código implementado
-- [ ] Documentación inline agregada (estándar `FIC` bilingüe)
+- [ ] CÃ³digo implementado
+- [ ] DocumentaciÃ³n inline agregada (estÃ¡ndar `FIC` bilingÃ¼e)
 
 ### Vegeta optimiza (si aplica):
 - [ ] Performance revisado
@@ -71,22 +71,23 @@
 
 ### Bulma valida:
 - [ ] Tests ejecutados exitosamente
-- [ ] Validación funcional completada
+- [ ] ValidaciÃ³n funcional completada
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
 1. **Criterio 1**
-   - Dada [condición inicial]
-   - Cuando [acción]
+   - Dada [condiciÃ³n inicial]
+   - Cuando [acciÃ³n]
    - Entonces [resultado esperado]
 
 ---
 
-## 🧾 Evidencia de Validación (Requerida para ✅ Completado)
+## ðŸ§¾ Evidencia de ValidaciÃ³n (Requerida para âœ… Completado)
 
-- [ ] Fecha de ejecución registrada
+- [ ] Fecha de ejecuciÃ³n registrada
 - [ ] Entorno registrado (DEV/QAS/PROD)
-- [ ] Responsable de validación registrado
+- [ ] Responsable de validaciÃ³n registrado
 - [ ] Resultado registrado (PASS/FAIL)
+

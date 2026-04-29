@@ -1,15 +1,15 @@
-# Project Configuration
+﻿# Project Configuration
 
 ```yaml
 # ============================================
-# INFORMACIÓN DEL PROYECTO
+# INFORMACIÃ“N DEL PROYECTO
 # ============================================
 project:
   code: "<project_code>"
   name: "<Project Name>"
   version: "1.0.0"
   category: "rpa"  # rpa | automation | integration | reporting | other
-  description: "Descripción corta del propósito del proyecto"
+  description: "DescripciÃ³n corta del propÃ³sito del proyecto"
   status: "development"  # development | testing | production
   metadata:
     owner: "<Nombre del owner>"
@@ -39,7 +39,7 @@ dependencies:
     - "Windows 10+ o Linux"
 
 # ============================================
-# CONFIGURACIÓN DE ENTORNOS
+# CONFIGURACIÃ“N DE ENTORNOS
 # ============================================
 environments:
   development:
@@ -56,7 +56,7 @@ environments:
     debug_mode: false
 
 # ============================================
-# CONFIGURACIÓN DE EJECUCIÓN
+# CONFIGURACIÃ“N DE EJECUCIÃ“N
 # ============================================
 execution:
   timeout: 300
@@ -66,3 +66,4 @@ execution:
     enabled: false
     max_workers: 4
 ```
+

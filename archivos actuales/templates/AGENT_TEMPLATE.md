@@ -1,11 +1,11 @@
-# Agent Template
+﻿# Agent Template
 
 ## Metadata
 ```yaml
 agent:
   name: <agent_name>_agent
   version: 1.0.0
-  description: Breve descripción de lo que hace este agente
+  description: Breve descripciÃ³n de lo que hace este agente
   category: automation | data_processing | reporting | integration
   
 author:
@@ -22,15 +22,15 @@ configuration:
   max_retries: 3
   timeout: 300
   log_level: INFO
-  # Otros parámetros específicos
+  # Otros parÃ¡metros especÃ­ficos
 ```
 
 ---
 
-## 1. Descripción
+## 1. DescripciÃ³n
 
-### Propósito
-[Describe el propósito principal de este agente]
+### PropÃ³sito
+[Describe el propÃ³sito principal de este agente]
 
 ### Responsabilidades
 - Responsabilidad 1
@@ -38,33 +38,33 @@ configuration:
 - Responsabilidad 3
 
 ### Casos de Uso
-1. **Caso de uso 1**: Descripción
-2. **Caso de uso 2**: Descripción
+1. **Caso de uso 1**: DescripciÃ³n
+2. **Caso de uso 2**: DescripciÃ³n
 
 ---
 
 ## 2. Skills Requeridos
 
 ### Skill 1: <skill_name>
-- **Ubicación**: `ai_global/skills/<skill_name>` o `<project>/skills/<skill_name>`
-- **Versión mínima**: X.X.X
-- **Uso**: Descripción de cómo el agente usa este skill
+- **UbicaciÃ³n**: `ai_global/skills/<skill_name>` o `<project>/skills/<skill_name>`
+- **VersiÃ³n mÃ­nima**: X.X.X
+- **Uso**: DescripciÃ³n de cÃ³mo el agente usa este skill
 
 ### Skill 2: <skill_name>
-- **Ubicación**: `ai_global/skills/<skill_name>` o `<project>/skills/<skill_name>`
-- **Versión mínima**: X.X.X
-- **Uso**: Descripción de cómo el agente usa este skill
+- **UbicaciÃ³n**: `ai_global/skills/<skill_name>` o `<project>/skills/<skill_name>`
+- **VersiÃ³n mÃ­nima**: X.X.X
+- **Uso**: DescripciÃ³n de cÃ³mo el agente usa este skill
 
 ---
 
-## 3. Configuración
+## 3. ConfiguraciÃ³n
 
-### Parámetros de Entrada
+### ParÃ¡metros de Entrada
 ```python
 {
-    "param1": "value1",  # Descripción de param1
-    "param2": "value2",  # Descripción de param2
-    "param3": 123,       # Descripción de param3 (numérico)
+    "param1": "value1",  # DescripciÃ³n de param1
+    "param2": "value2",  # DescripciÃ³n de param2
+    "param3": 123,       # DescripciÃ³n de param3 (numÃ©rico)
 }
 ```
 
@@ -75,21 +75,21 @@ AGENT_VAR_1=value
 AGENT_VAR_2=value
 ```
 
-### Archivos de Configuración
-- `agent.yaml`: Configuración principal
-- `config/<env>.yaml`: Configuración por ambiente (dev, prod)
+### Archivos de ConfiguraciÃ³n
+- `agent.yaml`: ConfiguraciÃ³n principal
+- `config/<env>.yaml`: ConfiguraciÃ³n por ambiente (dev, prod)
 
 ---
 
 ## 4. Uso
 
-### Instalación
+### InstalaciÃ³n
 ```bash
-# Si tiene dependencias específicas
+# Si tiene dependencias especÃ­ficas
 pip install -r requirements.txt
 ```
 
-### Ejemplo Básico
+### Ejemplo BÃ¡sico
 ```python
 from <path>.agent_core import <AgentName>Agent
 
@@ -108,7 +108,7 @@ print(result)
 
 ### Ejemplo Avanzado
 ```python
-# Configuración avanzada
+# ConfiguraciÃ³n avanzada
 config = {
     "param1": "value1",
     "max_retries": 5,
@@ -133,34 +133,34 @@ result = agent.execute(
 
 ```
 <agent_name>/
-├── README.md              # Este archivo
-├── agent.yaml             # Configuración del agente
-├── __init__.py
-├── agent_core.py          # Lógica principal del agente
-├── utils.py               # Utilidades (opcional)
-├── config/
-│   ├── dev.yaml
-│   └── prod.yaml
-├── tests/
-│   ├── test_agent_core.py
-│   └── test_integration.py
-└── requirements.txt       # Dependencias específicas (si las hay)
+â”œâ”€â”€ README.md              # Este archivo
+â”œâ”€â”€ agent.yaml             # ConfiguraciÃ³n del agente
+â”œâ”€â”€ __init__.py
+â”œâ”€â”€ agent_core.py          # LÃ³gica principal del agente
+â”œâ”€â”€ utils.py               # Utilidades (opcional)
+â”œâ”€â”€ config/
+â”‚   â”œâ”€â”€ dev.yaml
+â”‚   â””â”€â”€ prod.yaml
+â”œâ”€â”€ tests/
+â”‚   â”œâ”€â”€ test_agent_core.py
+â”‚   â””â”€â”€ test_integration.py
+â””â”€â”€ requirements.txt       # Dependencias especÃ­ficas (si las hay)
 ```
 
 ---
 
-## 6. Flujo de Ejecución
+## 6. Flujo de EjecuciÃ³n
 
 ```mermaid
 graph TD
-    A[Inicializar Agente] --> B[Validar Configuración]
+    A[Inicializar Agente] --> B[Validar ConfiguraciÃ³n]
     B --> C[Cargar Skills]
     C --> D[Ejecutar Tarea Principal]
-    D --> E{¿Éxito?}
-    E -->|Sí| F[Procesar Resultado]
+    D --> E{Â¿Ã‰xito?}
+    E -->|SÃ­| F[Procesar Resultado]
     E -->|No| G[Manejo de Error]
-    G --> H{¿Reintentar?}
-    H -->|Sí| D
+    G --> H{Â¿Reintentar?}
+    H -->|SÃ­| D
     H -->|No| I[Registrar Fallo]
     F --> J[Retornar Resultado]
     I --> J
@@ -170,20 +170,20 @@ graph TD
 
 ## 7. Logs y Monitoreo
 
-### Ubicación de Logs
+### UbicaciÃ³n de Logs
 ```
 logs/<agent_name>/
-├── agent_YYYYMMDD.log
-└── errors_YYYYMMDD.log
+â”œâ”€â”€ agent_YYYYMMDD.log
+â””â”€â”€ errors_YYYYMMDD.log
 ```
 
 ### Eventos Registrados
-- ✅ Inicialización del agente
-- ✅ Carga de skills
-- ✅ Inicio de ejecución
-- ✅ Resultados parciales
-- ✅ Errores y excepciones
-- ✅ Resultado final
+- âœ… InicializaciÃ³n del agente
+- âœ… Carga de skills
+- âœ… Inicio de ejecuciÃ³n
+- âœ… Resultados parciales
+- âœ… Errores y excepciones
+- âœ… Resultado final
 
 ---
 
@@ -208,23 +208,23 @@ pytest --cov=<agent_name> tests/
 
 ## 9. Troubleshooting
 
-### Error Común 1
-**Síntoma**: Descripción del error  
-**Causa**: Por qué ocurre  
-**Solución**: Cómo resolverlo
+### Error ComÃºn 1
+**SÃ­ntoma**: DescripciÃ³n del error  
+**Causa**: Por quÃ© ocurre  
+**SoluciÃ³n**: CÃ³mo resolverlo
 
-### Error Común 2
-**Síntoma**: Descripción del error  
-**Causa**: Por qué ocurre  
-**Solución**: Cómo resolverlo
+### Error ComÃºn 2
+**SÃ­ntoma**: DescripciÃ³n del error  
+**Causa**: Por quÃ© ocurre  
+**SoluciÃ³n**: CÃ³mo resolverlo
 
 ---
 
 ## 10. Changelog
 
 ### v1.0.0 (YYYY-MM-DD)
-- Versión inicial
-- Implementación de funcionalidad básica
+- VersiÃ³n inicial
+- ImplementaciÃ³n de funcionalidad bÃ¡sica
 
 ---
 
@@ -241,4 +241,5 @@ pytest --cov=<agent_name> tests/
 ---
 
 **Mantenedor**: <Nombre>  
-**Última actualización**: YYYY-MM-DD
+**Ãšltima actualizaciÃ³n**: YYYY-MM-DD
+

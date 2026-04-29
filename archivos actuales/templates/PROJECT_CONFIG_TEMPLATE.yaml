@@ -1,24 +1,24 @@
-# Project Configuration Template
+﻿# Project Configuration Template
 # Archivo: config.yaml
 
 # ============================================
-# INFORMACIÓN DEL PROYECTO
+# INFORMACIÃ“N DEL PROYECTO
 # ============================================
 project:
-  # Código único del proyecto (usado en tickets, logs, etc.)
+  # CÃ³digo Ãºnico del proyecto (usado en tickets, logs, etc.)
   code: "<project_code>"
   
   # Nombre descriptivo del proyecto
   name: "<Project Name>"
   
-  # Versión del proyecto (SemVer: major.minor.patch)
+  # VersiÃ³n del proyecto (SemVer: major.minor.patch)
   version: "1.0.0"
   
-  # Categoría del proyecto
+  # CategorÃ­a del proyecto
   category: "rpa"  # rpa | automation | integration | reporting | other
   
-  # Descripción breve
-  description: "Descripción corta del propósito del proyecto"
+  # DescripciÃ³n breve
+  description: "DescripciÃ³n corta del propÃ³sito del proyecto"
   
   # Estado del proyecto
   status: "development"  # development | testing | production
@@ -31,7 +31,7 @@ project:
     last_updated: "YYYY-MM-DD"
     repository: "<URL del repo si aplica>"
 
-  # Convención de layout de código del proyecto
+  # ConvenciÃ³n de layout de cÃ³digo del proyecto
   #code_layout:
   #  mode: "src-first"         # src-first (recomendado)
   #  component_docs: "optional" # optional | required
@@ -74,7 +74,7 @@ dependencies:
 
 
 # ============================================
-# CONFIGURACIÓN DE ENTORNOS
+# CONFIGURACIÃ“N DE ENTORNOS
 # ============================================
 environments:
   # Desarrollo
@@ -93,7 +93,7 @@ environments:
     data_path: "./data/test/"
     output_path: "./output/test/"
     
-  # Producción
+  # ProducciÃ³n
   production:
     enabled: true
     log_level: "WARNING"
@@ -103,19 +103,19 @@ environments:
 
 
 # ============================================
-# CONFIGURACIÓN DE EJECUCIÓN
+# CONFIGURACIÃ“N DE EJECUCIÃ“N
 # ============================================
 execution:
   # Timeout general (segundos)
   timeout: 300
   
-  # Número máximo de reintentos
+  # NÃºmero mÃ¡ximo de reintentos
   max_retries: 3
   
   # Tiempo entre reintentos (segundos)
   retry_delay: 5
   
-  # Ejecución en paralelo
+  # EjecuciÃ³n en paralelo
   parallel_execution:
     enabled: false
     max_workers: 4
@@ -139,13 +139,13 @@ logging:
   # Formato del log
   format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
   
-  # Ubicación de archivos de log
+  # UbicaciÃ³n de archivos de log
   file_path: "./logs/"
   
   # Nombre del archivo de log
   file_name: "<project_code>_{date}.log"
   
-  # Rotación de logs
+  # RotaciÃ³n de logs
   rotation:
     enabled: true
     max_bytes: 10485760  # 10MB
@@ -161,13 +161,13 @@ logging:
 # PATHS Y DIRECTORIOS
 # ============================================
 paths:
-  # Directorio raíz del proyecto
+  # Directorio raÃ­z del proyecto
   root: "./"
   
-  # Código fuente
+  # CÃ³digo fuente
   source: "./src/"
 
-  # Convención recomendada para nuevos proyectos
+  # ConvenciÃ³n recomendada para nuevos proyectos
   source_modules: "./src/modules/"
   source_services: "./src/services/"
   
@@ -188,18 +188,18 @@ paths:
 
 
 # ============================================
-# CONFIGURACIÓN ESPECÍFICA DEL PROYECTO
+# CONFIGURACIÃ“N ESPECÃFICA DEL PROYECTO
 # ============================================
-# Aquí van configuraciones específicas de tu proyecto
+# AquÃ­ van configuraciones especÃ­ficas de tu proyecto
 custom:
-  # Ejemplo: Configuración SAP
+  # Ejemplo: ConfiguraciÃ³n SAP
   sap:
     system_id: "PRD"
     client: "100"
     language: "EN"
     connection_timeout: 60
   
-  # Ejemplo: Configuración Excel
+  # Ejemplo: ConfiguraciÃ³n Excel
   excel:
     default_sheet: "Sheet1"
     skip_rows: 0
@@ -221,7 +221,7 @@ testing:
   # Framework de testing
   framework: "pytest"
   
-  # Cobertura mínima requerida
+  # Cobertura mÃ­nima requerida
   min_coverage: 80
   
   # Directorio de tests
@@ -237,10 +237,10 @@ testing:
 
 
 # ============================================
-# DOCUMENTACIÓN
+# DOCUMENTACIÃ“N
 # ============================================
 documentation:
-  # Directorio de documentación
+  # Directorio de documentaciÃ³n
   docs_directory: "./docs/"
   
   # Archivos obligatorios
@@ -248,7 +248,7 @@ documentation:
     - "README.md"
     - "architecture.md"
   
-  # Generar docs automáticamente
+  # Generar docs automÃ¡ticamente
   auto_generate:
     enabled: false
     format: "markdown"  # markdown | html | pdf
@@ -264,7 +264,7 @@ versioning:
   # Prefijo para tickets
   ticket_prefix: "TKT-<PROJECT_CODE>-"
   
-  # Próximo número de ticket
+  # PrÃ³ximo nÃºmero de ticket
   next_ticket_number: 1
   
   # Directorio de tickets
@@ -272,7 +272,7 @@ versioning:
 
 
 # ============================================
-# PERFORMANCE Y OPTIMIZACIÓN
+# PERFORMANCE Y OPTIMIZACIÃ“N
 # ============================================
 performance:
   # Cache
@@ -302,12 +302,12 @@ security:
   # Archivo de secrets
   secrets_file: ".env"
   
-  # Encriptación
+  # EncriptaciÃ³n
   encryption:
     enabled: false
     algorithm: "AES-256"
   
-  # Variables sensibles (NO poner valores aquí)
+  # Variables sensibles (NO poner valores aquÃ­)
   sensitive_vars:
     - "SAP_PASSWORD"
     - "API_KEY"
@@ -345,7 +345,7 @@ integrations:
 # MANTENIMIENTO
 # ============================================
 maintenance:
-  # Limpieza automática de archivos temporales
+  # Limpieza automÃ¡tica de archivos temporales
   auto_cleanup:
     enabled: true
     retention_days: 7
@@ -355,7 +355,7 @@ maintenance:
     enabled: true
     archive_after_days: 30
   
-  # Backup de configuración
+  # Backup de configuraciÃ³n
   config_backup:
     enabled: true
     backup_frequency: "weekly"
@@ -369,3 +369,4 @@ notes: |
   - Nota 1
   - Nota 2
   - Consideraciones especiales
+

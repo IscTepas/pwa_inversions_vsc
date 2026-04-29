@@ -1,5 +1,5 @@
-Estamos iniciando un proyecto de desarrollo asistido por IA. Las metodologias que estamos usando son: 
-AI Skills Development y Spec Driven Assistance AI. Con esta metodologia hibrida queremos desarrollar una aplicacion de inversiones enfocada a señales de compra y venta en la bolsa de EU.
+﻿Estamos iniciando un proyecto de desarrollo asistido por IA. Las metodologias que estamos usando son: 
+AI Skills Development y Spec Driven Assistance AI. Con esta metodologia hibrida queremos desarrollar una aplicacion de inversiones enfocada a seÃ±ales de compra y venta en la bolsa de EU.
 
 Quiero que por favor hagas solo 2 cosas:
 1. Revisa, analiza, comprende y verifica  la metodologia que ya tenemos configurada y autorizada en: ai_skill_dev1\ai_global\AI_SKILL_DEVELOPMENT_METHODOLOGY.md,

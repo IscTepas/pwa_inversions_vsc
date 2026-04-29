@@ -1,31 +1,31 @@
-# SPEC_###: [Título de la Funcionalidad Nueva]
+﻿# SPEC_###: [TÃ­tulo de la Funcionalidad Nueva]
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID Spec** | SPEC_### |
 | **Ticket Externo** | REQ-XXXX-YYYY |
-| **Solicitante** | Nombre (Área) |
+| **Solicitante** | Nombre (Ãrea) |
 | **Fecha Solicitud** | YYYY-MM-DD |
-| **Prioridad** | 🔴 Alta / 🟡 Media / 🟢 Baja |
-| **Estado** | 🟡 En Especificación / ✅ Aprobado / 🚧 En Desarrollo / ✅ Completado |
+| **Prioridad** | ðŸ”´ Alta / ðŸŸ¡ Media / ðŸŸ¢ Baja |
+| **Estado** | ðŸŸ¡ En EspecificaciÃ³n / âœ… Aprobado / ðŸš§ En Desarrollo / âœ… Completado |
 | **Relacionado con** | SPECIFICATION.md (original) |
 | **Proyecto** | <nombre_proyecto> |
-| **Categoría** | Feature Nueva / Integración / Ampliación |
+| **CategorÃ­a** | Feature Nueva / IntegraciÃ³n / AmpliaciÃ³n |
 
 ---
 
-## 1. Visión General
+## 1. VisiÃ³n General
 
 ### Contexto
-[Describe el estado actual del proyecto y por qué se necesita esta funcionalidad]
+[Describe el estado actual del proyecto y por quÃ© se necesita esta funcionalidad]
 
 ### Objetivo
-[Qué se quiere lograr con esta nueva funcionalidad]
+[QuÃ© se quiere lograr con esta nueva funcionalidad]
 
-### Justificación de Negocio
-[Por qué es necesario este cambio]
+### JustificaciÃ³n de Negocio
+[Por quÃ© es necesario este cambio]
 
 **Beneficios Esperados**:
 - Beneficio 1
@@ -36,22 +36,22 @@
 
 ## 2. Alcance del Cambio
 
-### En Alcance ✅
+### En Alcance âœ…
 - Funcionalidad 1
 - Funcionalidad 2
 - Funcionalidad 3
 
-### Fuera de Alcance ❌
+### Fuera de Alcance âŒ
 - Lo que NO se va a hacer
-- Razón por la cual no está incluido
+- RazÃ³n por la cual no estÃ¡ incluido
 
 ### Impacto en Sistema Existente
-[Qué componentes actuales se ven afectados]
+[QuÃ© componentes actuales se ven afectados]
 
 **Componentes Afectados**:
-- ⚠️ Módulo X: [Descripción del cambio]
-- ⚠️ Servicio Y: [Descripción del cambio]
-- ✅ Módulo Z: Sin cambios
+- âš ï¸ MÃ³dulo X: [DescripciÃ³n del cambio]
+- âš ï¸ Servicio Y: [DescripciÃ³n del cambio]
+- âœ… MÃ³dulo Z: Sin cambios
 
 ---
 
@@ -60,34 +60,34 @@
 ### Diagrama de Arquitectura
 
 ```
-[Diagrama ASCII o Mermaid mostrando cómo se integra la nueva funcionalidad]
+[Diagrama ASCII o Mermaid mostrando cÃ³mo se integra la nueva funcionalidad]
 
 Sistema Actual
-    ↓
+    â†“
 [Nuevo Componente A]
-    ↓
+    â†“
 [Nuevo Componente B]
-    ↓
+    â†“
 Sistema Actual
 ```
 
 ### Nuevos Componentes
 
 #### Componente 1: [Nombre]
-- **Propósito**: [Para qué sirve]
-- **Tecnología**: [Qué se usará]
-- **Ubicación**: `ruta/al/componente/`
+- **PropÃ³sito**: [Para quÃ© sirve]
+- **TecnologÃ­a**: [QuÃ© se usarÃ¡]
+- **UbicaciÃ³n**: `ruta/al/componente/`
 
 #### Componente 2: [Nombre]
-- **Propósito**: [Para qué sirve]
-- **Tecnología**: [Qué se usará]
-- **Ubicación**: `ruta/al/componente/`
+- **PropÃ³sito**: [Para quÃ© sirve]
+- **TecnologÃ­a**: [QuÃ© se usarÃ¡]
+- **UbicaciÃ³n**: `ruta/al/componente/`
 
 ### Componentes Modificados
 
 #### Componente Existente: [Nombre]
-- **Cambios Necesarios**: [Qué hay que modificar]
-- **Razón**: [Por qué hay que modificarlo]
+- **Cambios Necesarios**: [QuÃ© hay que modificar]
+- **RazÃ³n**: [Por quÃ© hay que modificarlo]
 
 ---
 
@@ -98,13 +98,13 @@ Sistema Actual
 ```yaml
 nuevo_parametro_1:
   tipo: string
-  descripción: "Descripción del parámetro"
+  descripciÃ³n: "DescripciÃ³n del parÃ¡metro"
   requerido: true
   valores_posibles: "A, B, C"
 
 nuevo_parametro_2:
   tipo: integer
-  descripción: "Descripción del parámetro"
+  descripciÃ³n: "DescripciÃ³n del parÃ¡metro"
   requerido: false
   default: 10
 ```
@@ -114,7 +114,7 @@ nuevo_parametro_2:
 ```yaml
 nuevo_output_1:
   tipo: JSON
-  descripción: "Datos estructurados de resultado"
+  descripciÃ³n: "Datos estructurados de resultado"
   formato: |
     {
       "campo1": "valor",
@@ -123,7 +123,7 @@ nuevo_output_1:
 
 nuevo_output_2:
   tipo: archivo
-  descripción: "Reporte generado"
+  descripciÃ³n: "Reporte generado"
   formato: "Excel (.xlsx)"
 ```
 
@@ -133,31 +133,31 @@ nuevo_output_2:
 
 ### Flujo Actual (Antes)
 ```
-Paso A → Paso B → Paso C
+Paso A â†’ Paso B â†’ Paso C
 ```
 
-### Flujo Nuevo (Después)
+### Flujo Nuevo (DespuÃ©s)
 ```
-Paso A → [NUEVO: Paso B1] → [NUEVO: Paso B2] → Paso C
+Paso A â†’ [NUEVO: Paso B1] â†’ [NUEVO: Paso B2] â†’ Paso C
 ```
 
-### Descripción Detallada
+### DescripciÃ³n Detallada
 
 **1. [NUEVO] Paso B1: [Nombre]**
-- Input: [Qué recibe]
-- Proceso: [Qué hace]
-- Output: [Qué produce]
-- Error handling: [Cómo maneja errores]
+- Input: [QuÃ© recibe]
+- Proceso: [QuÃ© hace]
+- Output: [QuÃ© produce]
+- Error handling: [CÃ³mo maneja errores]
 
 **2. [NUEVO] Paso B2: [Nombre]**
-- Input: [Qué recibe]
-- Proceso: [Qué hace]
-- Output: [Qué produce]
-- Error handling: [Cómo maneja errores]
+- Input: [QuÃ© recibe]
+- Proceso: [QuÃ© hace]
+- Output: [QuÃ© produce]
+- Error handling: [CÃ³mo maneja errores]
 
 ---
 
-## 6. Requisitos Técnicos
+## 6. Requisitos TÃ©cnicos
 
 ### 6.1 Nuevas Dependencias
 
@@ -167,7 +167,7 @@ nueva-libreria>=2.0.0
 otra-dependencia>=1.5.0
 ```
 
-### 6.2 Configuración Nueva
+### 6.2 ConfiguraciÃ³n Nueva
 
 ```yaml
 # Nuevas variables de entorno
@@ -185,19 +185,19 @@ API_KEY_SERVICIO: "secreto"
 
 ---
 
-## 7. Investigación Requerida
+## 7. InvestigaciÃ³n Requerida
 
-### Decisiones Técnicas Pendientes
+### Decisiones TÃ©cnicas Pendientes
 
-1. **Decisión 1**: [Qué hay que investigar]
-   - Opción A: [Descripción]
-   - Opción B: [Descripción]
-   - **Recomendación**: [Cuál parece mejor y por qué]
+1. **DecisiÃ³n 1**: [QuÃ© hay que investigar]
+   - OpciÃ³n A: [DescripciÃ³n]
+   - OpciÃ³n B: [DescripciÃ³n]
+   - **RecomendaciÃ³n**: [CuÃ¡l parece mejor y por quÃ©]
 
-2. **Decisión 2**: [Qué hay que investigar]
-   - Opción A: [Descripción]
-   - Opción B: [Descripción]
-   - **Recomendación**: [Cuál parece mejor y por qué]
+2. **DecisiÃ³n 2**: [QuÃ© hay que investigar]
+   - OpciÃ³n A: [DescripciÃ³n]
+   - OpciÃ³n B: [DescripciÃ³n]
+   - **RecomendaciÃ³n**: [CuÃ¡l parece mejor y por quÃ©]
 
 ### Knowledge Base a Generar
 
@@ -214,8 +214,8 @@ API_KEY_SERVICIO: "secreto"
 **Actor**: Usuario tipo X
 
 **Precondiciones**:
-- Condición 1
-- Condición 2
+- CondiciÃ³n 1
+- CondiciÃ³n 2
 
 **Flujo Principal**:
 1. Usuario hace X
@@ -241,16 +241,16 @@ API_KEY_SERVICIO: "secreto"
 
 ### Test Case 1: [Nombre]
 
-**Objetivo**: Validar [qué]
+**Objetivo**: Validar [quÃ©]
 
 **Pasos**:
 1. Paso 1
 2. Paso 2
 3. Paso 3
 
-**Resultado Esperado**: [Qué debería pasar]
+**Resultado Esperado**: [QuÃ© deberÃ­a pasar]
 
-**Criterio de Aceptación**: [Cómo saber que funciona]
+**Criterio de AceptaciÃ³n**: [CÃ³mo saber que funciona]
 
 ---
 
@@ -260,46 +260,46 @@ API_KEY_SERVICIO: "secreto"
 
 ---
 
-## 10. Estimación y Plan
+## 10. EstimaciÃ³n y Plan
 
-### Estimación de Esfuerzo
+### EstimaciÃ³n de Esfuerzo
 
-| Tarea | Estimación | Asignado |
+| Tarea | EstimaciÃ³n | Asignado |
 |-------|-----------|----------|
-| Investigación (Picoro) | X horas | Picoro |
-| Diseño (Picoro) | Y horas | Picoro |
-| Implementación Componente A (Goku) | Z horas | Goku |
-| Implementación Componente B (Goku) | W horas | Goku |
-| Optimización (Vegeta) | V horas | Vegeta |
+| InvestigaciÃ³n (Picoro) | X horas | Picoro |
+| DiseÃ±o (Picoro) | Y horas | Picoro |
+| ImplementaciÃ³n Componente A (Goku) | Z horas | Goku |
+| ImplementaciÃ³n Componente B (Goku) | W horas | Goku |
+| OptimizaciÃ³n (Vegeta) | V horas | Vegeta |
 | Testing (Bulma) | U horas | Bulma |
 | **TOTAL** | **## horas** | |
 
 ### Tickets a Generar
 
-Una vez aprobada esta spec, se generarán los siguientes tickets:
+Una vez aprobada esta spec, se generarÃ¡n los siguientes tickets:
 
-- TKT-<CODE>-###: [Descripción del ticket 1]
-- TKT-<CODE>-###: [Descripción del ticket 2]
-- TKT-<CODE>-###: [Descripción del ticket 3]
+- TKT-<CODE>-###: [DescripciÃ³n del ticket 1]
+- TKT-<CODE>-###: [DescripciÃ³n del ticket 2]
+- TKT-<CODE>-###: [DescripciÃ³n del ticket 3]
 
 ---
 
-## 11. Riesgos y Mitigación
+## 11. Riesgos y MitigaciÃ³n
 
-| Riesgo | Probabilidad | Impacto | Mitigación |
+| Riesgo | Probabilidad | Impacto | MitigaciÃ³n |
 |--------|--------------|---------|------------|
-| Riesgo 1 | Alta/Media/Baja | Alto/Medio/Bajo | Estrategia de mitigación |
-| Riesgo 2 | Alta/Media/Baja | Alto/Medio/Bajo | Estrategia de mitigación |
+| Riesgo 1 | Alta/Media/Baja | Alto/Medio/Bajo | Estrategia de mitigaciÃ³n |
+| Riesgo 2 | Alta/Media/Baja | Alto/Medio/Bajo | Estrategia de mitigaciÃ³n |
 
 ---
 
-## 12. Criterios de Aceptación (Global)
+## 12. Criterios de AceptaciÃ³n (Global)
 
 - [ ] Todos los casos de uso funcionan correctamente
 - [ ] Todos los casos de prueba pasan
 - [ ] Performance no se degrada
 - [ ] Sistema existente sigue funcionando sin problemas
-- [ ] Documentación actualizada
+- [ ] DocumentaciÃ³n actualizada
 - [ ] Usuario/Cliente aprueba en UAT
 
 ---
@@ -309,23 +309,23 @@ Una vez aprobada esta spec, se generarán los siguientes tickets:
 ### Desarrollador
 - **Nombre**: [Nombre]
 - **Fecha**: YYYY-MM-DD
-- **Firma/Aprobación**: ✅
+- **Firma/AprobaciÃ³n**: âœ…
 
 ### Tech Lead / Arquitecto
 - **Nombre**: [Nombre]
 - **Fecha**: YYYY-MM-DD
-- **Firma/Aprobación**: ✅
+- **Firma/AprobaciÃ³n**: âœ…
 
 ### Usuario / Cliente
 - **Nombre**: [Nombre]
 - **Fecha**: YYYY-MM-DD
-- **Firma/Aprobación**: ✅
+- **Firma/AprobaciÃ³n**: âœ…
 
 ---
 
 ## 14. Referencias
 
-### Documentación Relacionada
+### DocumentaciÃ³n Relacionada
 - [SPECIFICATION.md original](../SPECIFICATION.md)
 - [Ticket Externo REQ-XXXX-YYYY](link)
 
@@ -333,25 +333,26 @@ Una vez aprobada esta spec, se generarán los siguientes tickets:
 - [Knowledge note relevante](../../knowledge/local/nota.md)
 
 ### Enlaces Externos
-- [Documentación de API](url)
-- [Referencia técnica](url)
+- [DocumentaciÃ³n de API](url)
+- [Referencia tÃ©cnica](url)
 
 ---
 
 ## 15. Notas y Comentarios
 
 ### Comentarios del Desarrollador
-[Observaciones técnicas importantes]
+[Observaciones tÃ©cnicas importantes]
 
 ### Comentarios del Usuario
 [Feedback o aclaraciones del usuario]
 
 ### Decisiones Tomadas
-[Registro de decisiones importantes durante la especificación]
+[Registro de decisiones importantes durante la especificaciÃ³n]
 
 ---
 
 **Creado por**: [Nombre]  
 **Fecha**: YYYY-MM-DD  
-**Versión**: 1.0  
-**Última actualización**: YYYY-MM-DD
+**VersiÃ³n**: 1.0  
+**Ãšltima actualizaciÃ³n**: YYYY-MM-DD
+

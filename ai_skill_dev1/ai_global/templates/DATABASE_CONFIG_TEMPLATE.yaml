@@ -1,12 +1,12 @@
-# Database Configuration Template
+﻿# Database Configuration Template
 
 ```yaml
 # ============================================
 # INTEGRACION DE PROYECTOS
 # ============================================
 project_integration:
-  frontend_project_path: "ai_skill_dev1/projects/pwa/pwa_inversions_drfic"
-  rest_api_project_path: "ai_skill_dev1/projects/api/rest_api_inversions_drfic"
+  frontend_project_path: "ai_skill_dev1/projects/pwa/pwa_inversions_team5"
+  rest_api_project_path: "ai_skill_dev1/projects/api/rest_api_inversions_team5"
 
 # ============================================
 # SELECCION DE BASES DE DATOS
@@ -51,3 +51,4 @@ env_variables:
     - MONGODB_URI
     - MONGODB_DB_NAME
 ```
+

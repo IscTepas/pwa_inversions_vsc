@@ -1,130 +1,130 @@
-# 📚 Knowledge - [Nombre del Proyecto]
+﻿# ðŸ“š Knowledge - [Nombre del Proyecto]
 
 > Template para README principal de knowledge de proyectos.  
-> Ubicación: `ai_skill_dev1/projects/<category>/<project_code>/knowledge/README.md`
+> UbicaciÃ³n: `ai_skill_dev1/projects/<category>/<project_code>/knowledge/README.md`
 
 ---
 
-## 📋 Estado Actual
+## ðŸ“‹ Estado Actual
 
-| Aspecto | Estado | Última Actualización |
+| Aspecto | Estado | Ãšltima ActualizaciÃ³n |
 |---------|--------|----------------------|
-| **Investigación Local** | 🚧 Pendiente / ✅ Generado | YYYY-MM-DD HH:MM |
-| **Referencias Externas** | 🚧 Pendiente / ✅ Generado | YYYY-MM-DD HH:MM |
-| **Tickets Generados** | ⏳ No iniciado / ✅ Completado | YYYY-MM-DD HH:MM |
+| **InvestigaciÃ³n Local** | ðŸš§ Pendiente / âœ… Generado | YYYY-MM-DD HH:MM |
+| **Referencias Externas** | ðŸš§ Pendiente / âœ… Generado | YYYY-MM-DD HH:MM |
+| **Tickets Generados** | â³ No iniciado / âœ… Completado | YYYY-MM-DD HH:MM |
 | **Fase del Proyecto** | FASE 1 / FASE 2 / FASE 3 | - |
 
-**Propósito**: El estado actual permite a IA y desarrolladores saber rápidamente en qué fase está el proyecto.
+**PropÃ³sito**: El estado actual permite a IA y desarrolladores saber rÃ¡pidamente en quÃ© fase estÃ¡ el proyecto.
 
 ---
 
-## 📖 Descripción del Proyecto
+## ðŸ“– DescripciÃ³n del Proyecto
 
-**Código**: `<project_code>`  
-**Categoría**: `<rpa|web|data|ai>`  
-**Descripción**: [Descripción breve de 1-2 líneas]
+**CÃ³digo**: `<project_code>`  
+**CategorÃ­a**: `<rpa|web|data|ai>`  
+**DescripciÃ³n**: [DescripciÃ³n breve de 1-2 lÃ­neas]
 
-**Objetivo del Knowledge**: Documentar decisiones técnicas, patrones, investigaciones y referencias que informan la implementación del proyecto.
+**Objetivo del Knowledge**: Documentar decisiones tÃ©cnicas, patrones, investigaciones y referencias que informan la implementaciÃ³n del proyecto.
 
 ---
 
-## 🏗️ Estructura de Conocimiento
+## ðŸ—ï¸ Estructura de Conocimiento
 
 ```
 knowledge/
-├── README.md (este archivo)
-├── local/
-│   ├── README.md
-│   ├── 01_<topic>_research.md
-│   ├── 02_<topic>_patterns.md
-│   ├── 03_<topic>_decisions.md
-│   ├── 04_<topic>_strategy.md
-│   ├── 05_<topic>_approach.md
-│   └── lesson_*.md (durante desarrollo)
-└── remote/
-    ├── README.md
-    ├── internal_reference_*.md
-    ├── <library>_documentation.md
-    ├── <api>_reference.md
-    └── notebooklm_*.md (opcional)
+â”œâ”€â”€ README.md (este archivo)
+â”œâ”€â”€ local/
+â”‚   â”œâ”€â”€ README.md
+â”‚   â”œâ”€â”€ 01_<topic>_research.md
+â”‚   â”œâ”€â”€ 02_<topic>_patterns.md
+â”‚   â”œâ”€â”€ 03_<topic>_decisions.md
+â”‚   â”œâ”€â”€ 04_<topic>_strategy.md
+â”‚   â”œâ”€â”€ 05_<topic>_approach.md
+â”‚   â””â”€â”€ lesson_*.md (durante desarrollo)
+â””â”€â”€ remote/
+    â”œâ”€â”€ README.md
+    â”œâ”€â”€ internal_reference_*.md
+    â”œâ”€â”€ <library>_documentation.md
+    â”œâ”€â”€ <api>_reference.md
+    â””â”€â”€ notebooklm_*.md (opcional)
 ```
 
 ---
 
-## 📊 Métricas de Conocimiento
+## ðŸ“Š MÃ©tricas de Conocimiento
 
-| Métrica | Valor |
+| MÃ©trica | Valor |
 |---------|-------|
-| Archivos de investigación | 0 |
+| Archivos de investigaciÃ³n | 0 |
 | Lecciones aprendidas | 0 |
 | Referencias externas | 0 |
 | NotebookLM creados | 0 |
 | Tickets informados | 0 |
 
-**Actualizar**: Después de cada generación de conocimiento
+**Actualizar**: DespuÃ©s de cada generaciÃ³n de conocimiento
 
 ---
 
-## 📅 Historial de Estado
+## ðŸ“… Historial de Estado
 
 | Fecha | Hora | Estado Anterior | Estado Nuevo | Evento | Notas |
 |-------|------|-----------------|--------------|--------|-------|
-| YYYY-MM-DD | HH:MM | - | 🚧 Estructura creada | Setup inicial | Directorios knowledge/ creados |
-| YYYY-MM-DD | HH:MM | 🚧 Estructura | ✅ Knowledge generado | Investigación completada | X archivos local/ + Y archivos remote/ |
-| YYYY-MM-DD | HH:MM | ✅ Knowledge | ⏳ Tickets generados | Planificación completada | Z tickets creados informados por knowledge |
+| YYYY-MM-DD | HH:MM | - | ðŸš§ Estructura creada | Setup inicial | Directorios knowledge/ creados |
+| YYYY-MM-DD | HH:MM | ðŸš§ Estructura | âœ… Knowledge generado | InvestigaciÃ³n completada | X archivos local/ + Y archivos remote/ |
+| YYYY-MM-DD | HH:MM | âœ… Knowledge | â³ Tickets generados | PlanificaciÃ³n completada | Z tickets creados informados por knowledge |
 
-**Cómo interpretar**:
-- **Estado Actual** (arriba): Para que IA/metodología sepan fase actual del proyecto
-- **Historial**: Auditoría completa de cambios con contexto temporal
-- **Eventos importantes**: Setup, generación de knowledge, tickets, inicio desarrollo
+**CÃ³mo interpretar**:
+- **Estado Actual** (arriba): Para que IA/metodologÃ­a sepan fase actual del proyecto
+- **Historial**: AuditorÃ­a completa de cambios con contexto temporal
+- **Eventos importantes**: Setup, generaciÃ³n de knowledge, tickets, inicio desarrollo
 
 **Convenciones**:
-- 🚧 Pendiente: Trabajo no iniciado o en progreso
-- ✅ Generado/Completado: Trabajo finalizado y validado
-- ⏳ En proceso: Trabajo activo en este momento
-- ❌ Bloqueado: Trabajo detenido por dependencias
+- ðŸš§ Pendiente: Trabajo no iniciado o en progreso
+- âœ… Generado/Completado: Trabajo finalizado y validado
+- â³ En proceso: Trabajo activo en este momento
+- âŒ Bloqueado: Trabajo detenido por dependencias
 
 ---
 
-## 📁 Contenido del Conocimiento
+## ðŸ“ Contenido del Conocimiento
 
-### 🔍 Knowledge Local (Investigaciones)
+### ðŸ” Knowledge Local (Investigaciones)
 
 Ver: [knowledge/local/README.md](./local/README.md)
 
-**Propósito**: Investigación profunda generada por IA **ANTES** de implementación
+**PropÃ³sito**: InvestigaciÃ³n profunda generada por IA **ANTES** de implementaciÃ³n
 
 **Archivos Generados**:
-- [ ] `01_<topic>_research.md` - Investigación técnica de opciones
-- [ ] `02_<topic>_patterns.md` - Patrones y mejores prácticas
-- [ ] `03_<topic>_decisions.md` - Decisiones arquitectónicas justificadas
-- [ ] `04_<topic>_strategy.md` - Estrategia de implementación
-- [ ] `05_<topic>_approach.md` - Enfoque técnico recomendado
+- [ ] `01_<topic>_research.md` - InvestigaciÃ³n tÃ©cnica de opciones
+- [ ] `02_<topic>_patterns.md` - Patrones y mejores prÃ¡cticas
+- [ ] `03_<topic>_decisions.md` - Decisiones arquitectÃ³nicas justificadas
+- [ ] `04_<topic>_strategy.md` - Estrategia de implementaciÃ³n
+- [ ] `05_<topic>_approach.md` - Enfoque tÃ©cnico recomendado
 
-**Estado**: 🚧 Pendiente de generación / ✅ X archivos generados
+**Estado**: ðŸš§ Pendiente de generaciÃ³n / âœ… X archivos generados
 
 ---
 
-### 🌐 Knowledge Remote (Referencias)
+### ðŸŒ Knowledge Remote (Referencias)
 
 Ver: [knowledge/remote/README.md](./remote/README.md)
 
-**Propósito**: Referencias externas + código interno que sustenta decisiones
+**PropÃ³sito**: Referencias externas + cÃ³digo interno que sustenta decisiones
 
 **Tipos de Referencias**:
-- 📘 Documentación oficial (APIs, librerías)
-- 📄 Código interno reutilizable (internal_reference_*.md)
-- 🧠 NotebookLM (análisis profundo opcional)
+- ðŸ“˜ DocumentaciÃ³n oficial (APIs, librerÃ­as)
+- ðŸ“„ CÃ³digo interno reutilizable (internal_reference_*.md)
+- ðŸ§  NotebookLM (anÃ¡lisis profundo opcional)
 
-**Estado**: 🚧 Pendiente / ✅ Y archivos generados
+**Estado**: ðŸš§ Pendiente / âœ… Y archivos generados
 
 ---
 
-## 🎯 Aplicación del Conocimiento
+## ðŸŽ¯ AplicaciÃ³n del Conocimiento
 
 ### Principio: Knowledge Before Implementation
 
-El conocimiento generado en este directorio **informa** la creación de tickets:
+El conocimiento generado en este directorio **informa** la creaciÃ³n de tickets:
 
 1. **IA analiza** SPECIFICATION.md
 2. **IA genera** investigaciones profundas (knowledge/local/)
@@ -133,52 +133,52 @@ El conocimiento generado en este directorio **informa** la creación de tickets:
 5. **Equipo implementa** siguiendo decisiones documentadas
 
 **Beneficios**:
-- ✅ Evita re-investigar durante desarrollo
-- ✅ Decisiones técnicas pre-justificadas
-- ✅ Tickets con contexto completo
-- ✅ Onboarding rápido de nuevos desarrolladores
-- ✅ Trazabilidad de decisiones arquitectónicas
+- âœ… Evita re-investigar durante desarrollo
+- âœ… Decisiones tÃ©cnicas pre-justificadas
+- âœ… Tickets con contexto completo
+- âœ… Onboarding rÃ¡pido de nuevos desarrolladores
+- âœ… Trazabilidad de decisiones arquitectÃ³nicas
 
 ---
 
-## 🔗 Enlaces Rápidos
+## ðŸ”— Enlaces RÃ¡pidos
 
-### Documentación del Proyecto
-- [SPECIFICATION.md](../docs/specs/SPECIFICATION.md) - Especificación técnica completa
-- [README del Proyecto](../README.md) - Información general
-- [Tickets](../tickets/README.md) - Plan de implementación
+### DocumentaciÃ³n del Proyecto
+- [SPECIFICATION.md](../docs/specs/SPECIFICATION.md) - EspecificaciÃ³n tÃ©cnica completa
+- [README del Proyecto](../README.md) - InformaciÃ³n general
+- [Tickets](../tickets/README.md) - Plan de implementaciÃ³n
 
 ### Knowledge
 - [Local Knowledge](./local/README.md) - Investigaciones internas
 - [Remote Knowledge](./remote/README.md) - Referencias externas
 
-### Metodología
-- [AI Skill Development](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md) - Metodología completa
-- [Master Guide](../../../_drfic_ai_skill_dev_teaching/MASTER_GUIDE.md) - Guía de uso
+### MetodologÃ­a
+- [AI Skill Development](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md) - MetodologÃ­a completa
+- [Master Guide](../../../_team5_ai_skill_dev_teaching/MASTER_GUIDE.md) - GuÃ­a de uso
 
 ---
 
-## 🚀 Próximos Pasos
+## ðŸš€ PrÃ³ximos Pasos
 
-### Si Knowledge NO está generado (🚧)
-**Acción**: Ejecutar investigación profunda con IA
+### Si Knowledge NO estÃ¡ generado (ðŸš§)
+**AcciÃ³n**: Ejecutar investigaciÃ³n profunda con IA
 
 **Prompt sugerido**:
 ```
 Lee SPECIFICATION.md del proyecto <project_code> y genera:
 1. Investigaciones profundas en knowledge/local/
 2. Referencias externas en knowledge/remote/
-3. Actualiza este README con métricas y historial
+3. Actualiza este README con mÃ©tricas y historial
 
 Usa templates de KNOWLEDGE_NOTE_TEMPLATE.md
 ```
 
-**Ver**: [MASTER_GUIDE.md - Paso 4.2.5](../../_drfic_ai_skill_dev_teaching/MASTER_GUIDE.md)
+**Ver**: [MASTER_GUIDE.md - Paso 4.2.5](../../_team5_ai_skill_dev_teaching/MASTER_GUIDE.md)
 
 ---
 
-### Si Knowledge está generado (✅)
-**Acción**: Generar tickets informados por el conocimiento
+### Si Knowledge estÃ¡ generado (âœ…)
+**AcciÃ³n**: Generar tickets informados por el conocimiento
 
 **Prompt sugerido**:
 ```
@@ -188,25 +188,25 @@ en tickets/ informados por las investigaciones.
 Cada ticket debe referenciar:
 - Archivos de knowledge/local/ relevantes
 - Referencias de knowledge/remote/ aplicables
-- Decisiones técnicas ya tomadas
+- Decisiones tÃ©cnicas ya tomadas
 ```
 
 ---
 
-## 📝 Notas de Mantenimiento
+## ðŸ“ Notas de Mantenimiento
 
-### Cuándo Actualizar este README
+### CuÃ¡ndo Actualizar este README
 
 **Obligatorio**:
-- ✅ Después de generar archivos de investigación
-- ✅ Al completar referencias externas
-- ✅ Cuando se generan tickets del proyecto
-- ✅ Al cambiar de FASE (1 → 2 → 3)
+- âœ… DespuÃ©s de generar archivos de investigaciÃ³n
+- âœ… Al completar referencias externas
+- âœ… Cuando se generan tickets del proyecto
+- âœ… Al cambiar de FASE (1 â†’ 2 â†’ 3)
 
 **Opcional**:
 - Durante desarrollo si surgen insights importantes
 - Al agregar NotebookLM
-- Para documentar decisiones arquitectónicas mayores
+- Para documentar decisiones arquitectÃ³nicas mayores
 
 ### Formato del Historial
 
@@ -214,26 +214,27 @@ Cada ticket debe referenciar:
 ```
 | Fecha      | Hora  | Anterior     | Nuevo        | Evento         | Notas                    |
 |------------|-------|--------------|--------------|----------------|--------------------------|
-| 2026-02-23 | 15:20 | 🚧 Pendiente | ✅ Generado  | Investigación  | 6 local + 9 remote       |
+| 2026-02-23 | 15:20 | ðŸš§ Pendiente | âœ… Generado  | InvestigaciÃ³n  | 6 local + 9 remote       |
 ```
 
-**Campo "Evento"**: Describe QUÉ pasó (Setup, Investigación, Tickets, etc.)  
+**Campo "Evento"**: Describe QUÃ‰ pasÃ³ (Setup, InvestigaciÃ³n, Tickets, etc.)  
 **Campo "Notas"**: Contexto adicional relevante (cantidad archivos, decisiones tomadas, etc.)
 
 ---
 
-## 🤝 Contribución
+## ðŸ¤ ContribuciÃ³n
 
 Este knowledge es colaborativo:
-- **IA**: Genera investigación inicial automatizada
+- **IA**: Genera investigaciÃ³n inicial automatizada
 - **Equipo**: Agrega lecciones durante desarrollo
 - **Ambos**: Mantienen referencias actualizadas
 
-**Principio**: Documentar **mientras** se trabaja, no después.
+**Principio**: Documentar **mientras** se trabaja, no despuÃ©s.
 
 ---
 
 **Proyecto**: `<project_code>`  
-**Última actualización**: `YYYY-MM-DD HH:MM`  
+**Ãšltima actualizaciÃ³n**: `YYYY-MM-DD HH:MM`  
 **Mantenido por**: [Nombre del responsable]  
 **Template version**: 1.0.0
+

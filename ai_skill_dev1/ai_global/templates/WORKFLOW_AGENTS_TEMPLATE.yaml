@@ -1,4 +1,4 @@
-# Workflow de Agentes - Template
+﻿# Workflow de Agentes - Template
 
 ## Metadata
 ```yaml
@@ -15,7 +15,7 @@ workflow:
 
 ## Fases y Agentes
 
-### FASE 2.3: Investigación
+### FASE 2.3: InvestigaciÃ³n
 ```yaml
 phase: 2.3
 agent: picoro
@@ -30,17 +30,17 @@ tasks:
   - name: Analizar SPECIFICATION
     input: projects/<project>/ai_work_flow/docs/specs/SPECIFICATION.md
     output: knowledge/local/ + knowledge/remote/
-    description: Investigación profunda y base de conocimiento
+    description: InvestigaciÃ³n profunda y base de conocimiento
     
-  - name: Diseño Arquitectónico
+  - name: DiseÃ±o ArquitectÃ³nico
     input: SPECIFICATION + Knowledge
     output: architecture_design.md
-    description: Propuesta de arquitectura técnica
+    description: Propuesta de arquitectura tÃ©cnica
     
   - name: Identificar Skills Nuevos
     input: Arquitectura
     output: new_skills_required.md
-    description: Skills que faltan en catálogo global
+    description: Skills que faltan en catÃ¡logo global
     
   - name: Crear Tickets
     input: Arquitectura + Knowledge
@@ -50,7 +50,7 @@ tasks:
 
 ---
 
-### FASE 2.4: Diseño y Estructura
+### FASE 2.4: DiseÃ±o y Estructura
 ```yaml
 phase: 2.4
 agents_paralelos:
@@ -62,7 +62,7 @@ agents_paralelos:
       - database_migrator
       - database_connector
     tasks:
-      - name: Diseñar Schema
+      - name: DiseÃ±ar Schema
         input: DATABASE MODEL GATE + SPECIFICATION
         output: data/<motor>/schema/
         
@@ -87,7 +87,7 @@ agents_paralelos:
         output: src/ carpetas y archivos base
         
       - name: Config Vite
-        input: Requisitos técnicos
+        input: Requisitos tÃ©cnicos
         output: vite.config.ts
         
   picoro:
@@ -95,7 +95,7 @@ agents_paralelos:
     skills:
       - requirement_validator
     tasks:
-      - name: Validar Diseño
+      - name: Validar DiseÃ±o
         input: Krillin schema + Goku structure
         output: approved_design.md
 ```
@@ -112,13 +112,13 @@ workflow:
     role: analyst
     action: Analizar y aprobar ticket
     input: TKT-<CODIGO>-###
-    output: ✅ Ticket aprobado
+    output: âœ… Ticket aprobado
     
   - agent: goku
     role: developer
-    action: Implementar código
+    action: Implementar cÃ³digo
     input: Ticket + Knowledge
-    output: Pull request con código funcional
+    output: Pull request con cÃ³digo funcional
     parallel: true
     
   - agent: krillin
@@ -130,16 +130,16 @@ workflow:
     
   - agent: vegeta
     role: optimizer
-    action: Optimizar código de Goku
+    action: Optimizar cÃ³digo de Goku
     input: PR de Goku
-    output: Código optimizado
+    output: CÃ³digo optimizado
     after: goku
     
   - agent: bulma
     role: tester
     action: Validar y testear
     input: PR de Vegeta
-    output: ✅ Ticket cerrado o 🐛 Bugs reportados
+    output: âœ… Ticket cerrado o ðŸ› Bugs reportados
     after: vegeta
 ```
 
@@ -152,22 +152,22 @@ workflow:
 - Proyecto: `TKT-<CODIGO>-###` (ej: TKT-INVRFIC-001)
 
 ### Estados
-- 🆕 Open
-- 🟡 In Progress
-- 🔵 In Review
-- 🚫 Blocked
-- ✅ Closed
+- ðŸ†• Open
+- ðŸŸ¡ In Progress
+- ðŸ”µ In Review
+- ðŸš« Blocked
+- âœ… Closed
 
 ### Naming de Ramas (Git)
 ```
-main                                    # Producción
-├─ develop                              # Integración
-│  ├─ feature/TKT-INVRFIC-001-picoro   # Picoro investiga
-│  ├─ feature/TKT-INVRFIC-001-goku     # Goku implementa
-│  ├─ feature/TKT-INVRFIC-001-vegeta   # Vegeta optimiza
-│  ├─ feature/TKT-INVRFIC-001-bulma    # Bulma testa
-│  └─ feature/TKT-INVRFIC-001-krillin  # Krillin base de datos
-└─ hotfix/bug-nombre                   # Fixes críticos
+main                                    # ProducciÃ³n
+â”œâ”€ develop                              # IntegraciÃ³n
+â”‚  â”œâ”€ feature/TKT-INVRFIC-001-picoro   # Picoro investiga
+â”‚  â”œâ”€ feature/TKT-INVRFIC-001-goku     # Goku implementa
+â”‚  â”œâ”€ feature/TKT-INVRFIC-001-vegeta   # Vegeta optimiza
+â”‚  â”œâ”€ feature/TKT-INVRFIC-001-bulma    # Bulma testa
+â”‚  â””â”€ feature/TKT-INVRFIC-001-krillin  # Krillin base de datos
+â””â”€ hotfix/bug-nombre                   # Fixes crÃ­ticos
 ```
 
 ---
@@ -177,24 +177,24 @@ main                                    # Producción
 ### Al Inicio de Tarea
 ```
 ---
-🧠 @picoro · Analista/Arquitecto · FASE 2.3
-🎯 skill: knowledge_synthesizer
-📋 tarea: Generar knowledge base desde SPEC
+ðŸ§  @picoro Â· Analista/Arquitecto Â· FASE 2.3
+ðŸŽ¯ skill: knowledge_synthesizer
+ðŸ“‹ tarea: Generar knowledge base desde SPEC
 ---
 ```
 
 ### Al Completar Tarea
 ```
-✅ @picoro completó · knowledge_synthesizer
+âœ… @picoro completÃ³ Â· knowledge_synthesizer
    output: knowledge/local/01_broker_api_research.md + knowledge/remote/
    siguiente: @goku inicia FASE 2.4
 ```
 
-### Transición Entre Agentes
+### TransiciÃ³n Entre Agentes
 ```
 ---
-➡️ TRANSICIÓN DE AGENTE
-   @picoro ──→ @goku · FASE 2.4
+âž¡ï¸ TRANSICIÃ“N DE AGENTE
+   @picoro â”€â”€â†’ @goku Â· FASE 2.4
    Input: knowledge base + workflow_agents.yaml
    Output esperado: Estructura base + PR
 ---
@@ -204,7 +204,8 @@ main                                    # Producción
 
 ## Referencias
 
-- Metodología: [AI_SKILL_DEVELOPMENT_METHODOLOGY.md](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+- MetodologÃ­a: [AI_SKILL_DEVELOPMENT_METHODOLOGY.md](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
 - Agentes: [agents/README.md](../agents/README.md)
 - Skills: [skills/README.md](../skills/README.md)
 - Tickets: [templates/TICKET_TEMPLATE.md](./TICKET_TEMPLATE.md)
+

@@ -1,52 +1,52 @@
-# 📚 Knowledge - Base de Conocimiento Global
+﻿# ðŸ“š Knowledge - Base de Conocimiento Global
 
-Sistema híbrido de gestión de conocimiento que combina investigación local e referencias remotas.
+Sistema hÃ­brido de gestiÃ³n de conocimiento que combina investigaciÃ³n local e referencias remotas.
 
 ---
 
-## 📋 Estado Actual
+## ðŸ“‹ Estado Actual
 
 | Aspecto | Estado |
 |---------|--------|
-| **Investigación Local** | 🚧 Estructura lista para usar |
-| **Referencias Externas** | 🚧 Estructura lista para usar |
-| **Fase del Sistema** | ✅ FASE 0/1 completada |
+| **InvestigaciÃ³n Local** | ðŸš§ Estructura lista para usar |
+| **Referencias Externas** | ðŸš§ Estructura lista para usar |
+| **Fase del Sistema** | âœ… FASE 0/1 completada |
 
 ---
 
-## 🏗️ Estructura
+## ðŸ—ï¸ Estructura
 
 ```
 knowledge/
-├── README.md (este archivo)
-├── local/
-│   └── README.md (Investigaciones internas)
-└── remote/
-    └── README.md (Referencias externas)
+â”œâ”€â”€ README.md (este archivo)
+â”œâ”€â”€ local/
+â”‚   â””â”€â”€ README.md (Investigaciones internas)
+â””â”€â”€ remote/
+    â””â”€â”€ README.md (Referencias externas)
 ```
 
 ---
 
-## 🔍 Knowledge Local (`local/`)
+## ðŸ” Knowledge Local (`local/`)
 
-**Propósito**: Investigación profunda realizada por Picoro ANTES de implementación.
+**PropÃ³sito**: InvestigaciÃ³n profunda realizada por Picoro ANTES de implementaciÃ³n.
 
-**Cuándo se genera**: FASE 2.3 (Investigación)
+**CuÃ¡ndo se genera**: FASE 2.3 (InvestigaciÃ³n)
 
 **Tipos de contenido**:
-- 📊 Investigación técnica de APIs y frameworks
-- 📈 Patrones de implementación
-- 💡 Decisiones arquitectónicas justificadas
-- 📝 Lecciones aprendidas durante desarrollo
-- 🧪 Comparativas de tecnologías
+- ðŸ“Š InvestigaciÃ³n tÃ©cnica de APIs y frameworks
+- ðŸ“ˆ Patrones de implementaciÃ³n
+- ðŸ’¡ Decisiones arquitectÃ³nicas justificadas
+- ðŸ“ Lecciones aprendidas durante desarrollo
+- ðŸ§ª Comparativas de tecnologÃ­as
 
-**Convención de nombres**:
+**ConvenciÃ³n de nombres**:
 ```
-01_<topic>_research.md        # Investigación inicial
-02_<topic>_patterns.md        # Patrones y mejores prácticas
-03_<topic>_decisions.md       # Decisiones técnicas
-04_<topic>_strategy.md        # Estrategia de implementación
-05_<topic>_approach.md        # Enfoque técnico
+01_<topic>_research.md        # InvestigaciÃ³n inicial
+02_<topic>_patterns.md        # Patrones y mejores prÃ¡cticas
+03_<topic>_decisions.md       # Decisiones tÃ©cnicas
+04_<topic>_strategy.md        # Estrategia de implementaciÃ³n
+05_<topic>_approach.md        # Enfoque tÃ©cnico
 lesson_<description>.md       # Lecciones aprendidas (durante FASE 3)
 ```
 
@@ -61,20 +61,20 @@ lesson_market_data_latency.md
 
 ---
 
-## 🌐 Knowledge Remote (`remote/`)
+## ðŸŒ Knowledge Remote (`remote/`)
 
-**Propósito**: Referencias externas a documentación oficial, APIs, tutoriales, y herramientas de IA.
+**PropÃ³sito**: Referencias externas a documentaciÃ³n oficial, APIs, tutoriales, y herramientas de IA.
 
-**Cuándo se genera**: FASE 2.3 (paralelo a local)
+**CuÃ¡ndo se genera**: FASE 2.3 (paralelo a local)
 
 **Tipos de referencias**:
-- 📘 Documentación oficial de APIs
-- 📄 Código interno referencial
-- 🧠 NotebookLM (análisis profundo)
-- 📊 Reportes y recursos educativos
-- 🔗 URLs a documentación online
+- ðŸ“˜ DocumentaciÃ³n oficial de APIs
+- ðŸ“„ CÃ³digo interno referencial
+- ðŸ§  NotebookLM (anÃ¡lisis profundo)
+- ðŸ“Š Reportes y recursos educativos
+- ðŸ”— URLs a documentaciÃ³n online
 
-**Convención de nombres**:
+**ConvenciÃ³n de nombres**:
 ```
 <fuente>_<categoria>_reference.md
 <api_name>_documentation.md
@@ -94,38 +94,39 @@ notebooklm_trading_strategies.md
 
 ---
 
-## 🔄 Flujo de Generación
+## ðŸ”„ Flujo de GeneraciÃ³n
 
 ```
 FASE 2.3: Picoro analiza SPEC
-    ↓
-Picoro genera knowledge/local/ (investigación profunda)
-    ↓
+    â†“
+Picoro genera knowledge/local/ (investigaciÃ³n profunda)
+    â†“
 Picoro genera knowledge/remote/ (referencias externas)
-    ↓
+    â†“
 Picoro crea tickets informados por knowledge
-    ↓
+    â†“
 FASE 3: Goku/Vegeta/Bulma/Krillin usan knowledge mientras implementan
-    ↓
-Si se descubren nuevos patrones → lesson_*.md en knowledge/local/
+    â†“
+Si se descubren nuevos patrones â†’ lesson_*.md en knowledge/local/
 ```
 
 ---
 
-## 📊 Beneficios
+## ðŸ“Š Beneficios
 
-- ✅ Evita re-investigación durante desarrollo
-- ✅ Decisiones técnicas pre-justificadas
-- ✅ Tickets con contexto completo
-- ✅ Onboarding rápido de nuevos desarrolladores
-- ✅ Trazabilidad de decisiones arquitectónicas
-- ✅ Lecciones aprendidas documentadas
+- âœ… Evita re-investigaciÃ³n durante desarrollo
+- âœ… Decisiones tÃ©cnicas pre-justificadas
+- âœ… Tickets con contexto completo
+- âœ… Onboarding rÃ¡pido de nuevos desarrolladores
+- âœ… Trazabilidad de decisiones arquitectÃ³nicas
+- âœ… Lecciones aprendidas documentadas
 
 ---
 
-## 📚 Referencias
+## ðŸ“š Referencias
 
 - [Knowledge Local - Template](./local/README.md)
 - [Knowledge Remote - Template](./remote/README.md)
 - [Ticket con Knowledge Relacionado](../tickets/README.md)
-- [Metodología Completa](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+- [MetodologÃ­a Completa](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+

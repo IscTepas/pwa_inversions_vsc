@@ -164,7 +164,7 @@ All operations logged for debugging
 
 ### Start Development
 ```bash
-cd ai_skill_dev1/projects/pwa/pwa_inversions_drfic
+cd ai_skill_dev1/projects/pwa/pwa_inversions_team5
 npm install
 npm run dev
 ```

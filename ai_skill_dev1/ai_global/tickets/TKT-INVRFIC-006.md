@@ -1,32 +1,32 @@
-# TKT-INVRFIC-006: Core de Flujo Institucional (Unusual Options)
+﻿# TKT-INVRFIC-006: Core de Flujo Institucional (Unusual Options)
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-INVRFIC-006 |
 | **Tipo** | Feature / Institutional Flow |
-| **Prioridad** | 🔴 Crítica |
-| **Estado** | 🆕 Abierto |
-| **Proyecto** | pwa_inversions_drfic (v1.0) |
+| **Prioridad** | ðŸ”´ CrÃ­tica |
+| **Estado** | ðŸ†• Abierto |
+| **Proyecto** | pwa_inversions_team5 (v1.0) |
 | **Creado** | 2026-04-28 |
-| **Asignado a** | Ciclo: Picoro → Goku → Vegeta → Bulma |
-| **Bloqueador** | TKT-INVRFIC-003 ✅ Completado |
+| **Asignado a** | Ciclo: Picoro â†’ Goku â†’ Vegeta â†’ Bulma |
+| **Bloqueador** | TKT-INVRFIC-003 âœ… Completado |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-Core #3 de análisis: Detecta actividad institucional que precede movimientos de precios.
+Core #3 de anÃ¡lisis: Detecta actividad institucional que precede movimientos de precios.
 
-### Propósito
+### PropÃ³sito
 Detectar:
-- Unusual options activity (volumen anormalmente alto en strikes específicos)
+- Unusual options activity (volumen anormalmente alto en strikes especÃ­ficos)
 - Cambios abruptos en open interest
-- Relación actividad ↔ precio/volumen/expiraciones
+- RelaciÃ³n actividad â†” precio/volumen/expiraciones
 
-### Solución Propuesta
+### SoluciÃ³n Propuesta
 
 **Estructura**:
 - src/services/institutional/unusualOptions.service.ts
@@ -34,35 +34,36 @@ Detectar:
 - src/services/institutional/institutionalFlow.service.ts (orquestador)
 - src/types/institutional.types.ts
 
-**Simplificación v1.0**: 
+**SimplificaciÃ³n v1.0**: 
 - Usar Alpaca unusual activity si disponible
 - Mock de datos para desarrollo
-- Base para expansión futura
+- Base para expansiÃ³n futura
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Crear**: 4 archivos nuevos
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Goku implementa:
-- [ ] Servicio unusualOptions: detecta vol > 2σ en strikes
+- [ ] Servicio unusualOptions: detecta vol > 2Ïƒ en strikes
 - [ ] Servicio openInterest: detecta cambios significativos
 - [ ] Orquestador: score de actividad institucional
-- [ ] Salida estándar: { side, confidence, score, institutionalEvents, reasons }
+- [ ] Salida estÃ¡ndar: { side, confidence, score, institutionalEvents, reasons }
 
 ### Bulma valida:
-- [ ] Genera señales sin falsos positivos (testing con datos mock)
+- [ ] Genera seÃ±ales sin falsos positivos (testing con datos mock)
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
-1. ✅ Detecta unusual options activity en strikes ATM
-2. ✅ Identifica cambios significativos en open interest
-3. ✅ Genera señales correlacionadas con movimientos posteriores
+1. âœ… Detecta unusual options activity en strikes ATM
+2. âœ… Identifica cambios significativos en open interest
+3. âœ… Genera seÃ±ales correlacionadas con movimientos posteriores
+
 

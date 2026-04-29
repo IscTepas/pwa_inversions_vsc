@@ -1,98 +1,98 @@
-# 🎯 Skills - Catálogo Global
+﻿# ðŸŽ¯ Skills - CatÃ¡logo Global
 
-Catálogo de habilidades reutilizables asignadas a agentes.
+CatÃ¡logo de habilidades reutilizables asignadas a agentes.
 
 ---
 
-## 📋 Skills por Categoría
+## ðŸ“‹ Skills por CategorÃ­a
 
-### 🔍 Análisis y Diseño (Picoro)
+### ðŸ” AnÃ¡lisis y DiseÃ±o (Picoro)
 
-| Skill | Descripción | Agente |
+| Skill | DescripciÃ³n | Agente |
 |-------|-------------|--------|
 | `ticket_analyzer` | Analizar tickets externos y crear especificaciones | Picoro |
-| `architecture_designer` | Diseñar arquitectura de componentes y flujos | Picoro |
-| `requirement_validator` | Validar requisitos vs especificación | Picoro |
-| `knowledge_synthesizer` | Generar investigación profunda y base de conocimiento | Picoro |
-| `spec_to_tickets_converter` | Convertir especificación en tickets internos | Picoro |
+| `architecture_designer` | DiseÃ±ar arquitectura de componentes y flujos | Picoro |
+| `requirement_validator` | Validar requisitos vs especificaciÃ³n | Picoro |
+| `knowledge_synthesizer` | Generar investigaciÃ³n profunda y base de conocimiento | Picoro |
+| `spec_to_tickets_converter` | Convertir especificaciÃ³n en tickets internos | Picoro |
 
 ---
 
-### 💻 Desarrollo React/TypeScript (Goku)
+### ðŸ’» Desarrollo React/TypeScript (Goku)
 
-| Skill | Descripción | Agente |
+| Skill | DescripciÃ³n | Agente |
 |-------|-------------|--------|
 | `react_code_generator` | Generar componentes React funcionales | Goku |
 | `typescript_code_generator` | Escribir servicios en TypeScript | Goku |
 | `vite_code_generator` | Configurar y optimizar build con Vite | Goku |
 | `hook_creator` | Crear React hooks personalizados | Goku |
-| `state_management_designer` | Diseñar estado global (Zustand/Redux) | Goku |
+| `state_management_designer` | DiseÃ±ar estado global (Zustand/Redux) | Goku |
 
 ---
 
-### 🔌 Integración APIs (Goku)
+### ðŸ”Œ IntegraciÃ³n APIs (Goku)
 
-| Skill | Descripción | Agente |
+| Skill | DescripciÃ³n | Agente |
 |-------|-------------|--------|
 | `broker_api_integrator` | Conectar con APIs de brokers (IBKR, Alpaca) | Goku |
-| `tradingview_widgets_integrator` | Integrar gráficas y widgets de TradingView | Goku |
+| `tradingview_widgets_integrator` | Integrar grÃ¡ficas y widgets de TradingView | Goku |
 | `market_data_connector` | Conectar con feeds de datos (Polygon.io, CBOE) | Goku |
 | `news_api_integrator` | Integrar APIs de noticias financieras | Goku |
 
 ---
 
-### 📊 Indicadores Técnicos (Goku)
+### ðŸ“Š Indicadores TÃ©cnicos (Goku)
 
-| Skill | Descripción | Agente |
+| Skill | DescripciÃ³n | Agente |
 |-------|-------------|--------|
 | `technical_indicators_calculator` | Calcular RSI, MACD, Bollinger, EMA/SMA | Goku |
 | `options_chain_analyzer` | Analizar cadena de opciones | Goku |
 | `options_strategy_builder` | Construir estrategias de opciones (Iron Condor, etc.) | Goku |
-| `signal_detector_engine` | Generar señales BUY/SELL/HOLD | Goku |
+| `signal_detector_engine` | Generar seÃ±ales BUY/SELL/HOLD | Goku |
 
 ---
 
-### 📚 Documentación (Goku)
+### ðŸ“š DocumentaciÃ³n (Goku)
 
-| Skill | Descripción | Agente |
+| Skill | DescripciÃ³n | Agente |
 |-------|-------------|--------|
-| `documentation_writer` | Crear comentarios FIC bilingüe (EN/ES) | Goku |
+| `documentation_writer` | Crear comentarios FIC bilingÃ¼e (EN/ES) | Goku |
 | `readme_generator` | Generar READMEs informativos | Goku |
 | `api_documentation_generator` | Documentar endpoints y servicios | Goku |
 
 ---
 
-### ⚡ Optimización y Seguridad (Vegeta)
+### âš¡ OptimizaciÃ³n y Seguridad (Vegeta)
 
-| Skill | Descripción | Agente |
+| Skill | DescripciÃ³n | Agente |
 |-------|-------------|--------|
-| `code_optimizer` | Optimizar código para performance | Vegeta |
+| `code_optimizer` | Optimizar cÃ³digo para performance | Vegeta |
 | `performance_analyzer` | Analizar latencia, memory, CPU | Vegeta |
 | `security_auditor` | Auditar seguridad y credenciales | Vegeta |
-| `pattern_refactorer` | Refactorizar patrones de código | Vegeta |
+| `pattern_refactorer` | Refactorizar patrones de cÃ³digo | Vegeta |
 | `dependency_auditor` | Auditar dependencias (npm audit) | Vegeta |
 
 ---
 
-### 🧪 Testing y Validación (Bulma)
+### ðŸ§ª Testing y ValidaciÃ³n (Bulma)
 
-| Skill | Descripción | Agente |
+| Skill | DescripciÃ³n | Agente |
 |-------|-------------|--------|
 | `test_case_generator` | Crear casos de test exhaustivos | Bulma |
 | `unit_test_creator` | Implementar tests unitarios | Bulma |
-| `integration_test_creator` | Crear tests de integración | Bulma |
+| `integration_test_creator` | Crear tests de integraciÃ³n | Bulma |
 | `bug_detector` | Identificar bugs mediante testing | Bulma |
 | `quality_validator` | Validar criterios de calidad | Bulma |
-| `regression_tester` | Ejecutar tests de regresión | Bulma |
-| `trading_validator` | Validar cálculos de indicadores vs TradingView | Bulma |
+| `regression_tester` | Ejecutar tests de regresiÃ³n | Bulma |
+| `trading_validator` | Validar cÃ¡lculos de indicadores vs TradingView | Bulma |
 
 ---
 
-### 🗄️ Base de Datos (Krillin)
+### ðŸ—„ï¸ Base de Datos (Krillin)
 
-| Skill | Descripción | Agente |
+| Skill | DescripciÃ³n | Agente |
 |-------|-------------|--------|
-| `database_schema_designer` | Diseñar esquemas para Supabase/MongoDB/PostgreSQL | Krillin |
+| `database_schema_designer` | DiseÃ±ar esquemas para Supabase/MongoDB/PostgreSQL | Krillin |
 | `database_migrator` | Crear migraciones versionadas | Krillin |
 | `database_connector` | Implementar conectores a BD | Krillin |
 | `rest_api_builder` | Construir endpoints REST (GET/POST/PUT/DELETE) | Krillin |
@@ -100,80 +100,81 @@ Catálogo de habilidades reutilizables asignadas a agentes.
 
 ---
 
-## 📊 Matriz de Asignación
+## ðŸ“Š Matriz de AsignaciÃ³n
 
-| Skill | Versión | Picoro | Goku | Vegeta | Bulma | Krillin |
+| Skill | VersiÃ³n | Picoro | Goku | Vegeta | Bulma | Krillin |
 |-------|---------|--------|------|--------|-------|---------|
-| ticket_analyzer | 1.0.0 | ✅ | | | | |
-| architecture_designer | 1.0.0 | ✅ | | | | |
-| react_code_generator | 1.0.0 | | ✅ | | | |
-| typescript_code_generator | 1.0.0 | | ✅ | | | |
-| broker_api_integrator | 1.0.0 | | ✅ | | | |
-| code_optimizer | 1.0.0 | | | ✅ | | |
-| security_auditor | 1.0.0 | | | ✅ | | |
-| test_case_generator | 1.0.0 | | | | ✅ | |
-| trading_validator | 1.0.0 | | | | ✅ | |
-| database_schema_designer | 1.0.0 | | | | | ✅ |
-| rest_api_builder | 1.0.0 | | | | | ✅ |
+| ticket_analyzer | 1.0.0 | âœ… | | | | |
+| architecture_designer | 1.0.0 | âœ… | | | | |
+| react_code_generator | 1.0.0 | | âœ… | | | |
+| typescript_code_generator | 1.0.0 | | âœ… | | | |
+| broker_api_integrator | 1.0.0 | | âœ… | | | |
+| code_optimizer | 1.0.0 | | | âœ… | | |
+| security_auditor | 1.0.0 | | | âœ… | | |
+| test_case_generator | 1.0.0 | | | | âœ… | |
+| trading_validator | 1.0.0 | | | | âœ… | |
+| database_schema_designer | 1.0.0 | | | | | âœ… |
+| rest_api_builder | 1.0.0 | | | | | âœ… |
 
 ---
 
-## 🔄 Dependencias Entre Skills
+## ðŸ”„ Dependencias Entre Skills
 
 ```
-┌─ ticket_analyzer
-│  └─ architecture_designer
-│     └─ knowledge_synthesizer
-│        ├─ broker_api_integrator
-│        ├─ technical_indicators_calculator
-│        ├─ options_strategy_builder
-│        └─ signal_detector_engine
-│
-├─ database_schema_designer
-│  └─ database_migrator
-│     └─ rest_api_builder
-│
-├─ react_code_generator
-│  ├─ typescript_code_generator
-│  ├─ tradingview_widgets_integrator
-│  └─ hook_creator
-│
-├─ code_optimizer
-│  ├─ performance_analyzer
-│  └─ security_auditor
-│
-└─ test_case_generator
-   ├─ unit_test_creator
-   ├─ integration_test_creator
-   └─ trading_validator
+â”Œâ”€ ticket_analyzer
+â”‚  â””â”€ architecture_designer
+â”‚     â””â”€ knowledge_synthesizer
+â”‚        â”œâ”€ broker_api_integrator
+â”‚        â”œâ”€ technical_indicators_calculator
+â”‚        â”œâ”€ options_strategy_builder
+â”‚        â””â”€ signal_detector_engine
+â”‚
+â”œâ”€ database_schema_designer
+â”‚  â””â”€ database_migrator
+â”‚     â””â”€ rest_api_builder
+â”‚
+â”œâ”€ react_code_generator
+â”‚  â”œâ”€ typescript_code_generator
+â”‚  â”œâ”€ tradingview_widgets_integrator
+â”‚  â””â”€ hook_creator
+â”‚
+â”œâ”€ code_optimizer
+â”‚  â”œâ”€ performance_analyzer
+â”‚  â””â”€ security_auditor
+â”‚
+â””â”€ test_case_generator
+   â”œâ”€ unit_test_creator
+   â”œâ”€ integration_test_creator
+   â””â”€ trading_validator
 ```
 
 ---
 
-## 📌 Convención de Nombres
+## ðŸ“Œ ConvenciÃ³n de Nombres
 
 **Formato**: `<dominio>_<accion>_<tipo>`
 
 **Ejemplos**:
-- `broker_api_integrator` (dominio: broker, acción: integrar, tipo: skill de integración)
-- `technical_indicators_calculator` (dominio: indicators, acción: calcular)
-- `database_schema_designer` (dominio: database, acción: diseñar schema)
-- `test_case_generator` (dominio: testing, acción: generar casos)
+- `broker_api_integrator` (dominio: broker, acciÃ³n: integrar, tipo: skill de integraciÃ³n)
+- `technical_indicators_calculator` (dominio: indicators, acciÃ³n: calcular)
+- `database_schema_designer` (dominio: database, acciÃ³n: diseÃ±ar schema)
+- `test_case_generator` (dominio: testing, acciÃ³n: generar casos)
 
 ---
 
-## 🚀 Cómo Crear un Nuevo Skill
+## ðŸš€ CÃ³mo Crear un Nuevo Skill
 
-1. **Detectar necesidad** → Picoro identifica durante análisis de SPEC
-2. **Registrar skill** → Crear `ai_global/skills/<skill_name>.md` usando template
-3. **Documentar** → Propósito, inputs, outputs, dependencias
-4. **Asignar a agente** → Agregar en `ai_global/agents/<agente>.md`
-5. **Registrar en proyecto** → Agregar en `workflow_agents.yaml` del proyecto
+1. **Detectar necesidad** â†’ Picoro identifica durante anÃ¡lisis de SPEC
+2. **Registrar skill** â†’ Crear `ai_global/skills/<skill_name>.md` usando template
+3. **Documentar** â†’ PropÃ³sito, inputs, outputs, dependencias
+4. **Asignar a agente** â†’ Agregar en `ai_global/agents/<agente>.md`
+5. **Registrar en proyecto** â†’ Agregar en `workflow_agents.yaml` del proyecto
 
 ---
 
-## 📚 Referencias
+## ðŸ“š Referencias
 
 - [Skill Template](../templates/SKILL_TEMPLATE.md)
 - [Agentes](./agents/README.md)
-- [Metodología](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+- [MetodologÃ­a](../AI_SKILL_DEVELOPMENT_METHODOLOGY.md)
+

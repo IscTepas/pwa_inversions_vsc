@@ -1,40 +1,40 @@
-# TKT-INVRFIC-009: Motor de Confluencia + IA (Claude API)
+﻿# TKT-INVRFIC-009: Motor de Confluencia + IA (Claude API)
 
-## 📋 Metadata
+## ðŸ“‹ Metadata
 
 | Campo | Valor |
 |-------|-------|
 | **ID** | TKT-INVRFIC-009 |
 | **Tipo** | Feature / Signal Generation |
-| **Prioridad** | 🔴 Crítica |
-| **Estado** | 🆕 Abierto |
-| **Proyecto** | pwa_inversions_drfic (v1.0) |
+| **Prioridad** | ðŸ”´ CrÃ­tica |
+| **Estado** | ðŸ†• Abierto |
+| **Proyecto** | pwa_inversions_team5 (v1.0) |
 | **Creado** | 2026-04-28 |
-| **Asignado a** | Ciclo: Picoro → Goku → Vegeta → Bulma |
-| **Bloqueador** | TKT-INVRFIC-004 + TKT-INVRFIC-008 ✅ Completados |
+| **Asignado a** | Ciclo: Picoro â†’ Goku â†’ Vegeta â†’ Bulma |
+| **Bloqueador** | TKT-INVRFIC-004 + TKT-INVRFIC-008 âœ… Completados |
 
 ---
 
-## 📝 Descripción
+## ðŸ“ DescripciÃ³n
 
 ### Contexto
-Motor central: combina 6 cores en señal única. Confirmación IA como core adicional.
+Motor central: combina 6 cores en seÃ±al Ãºnica. ConfirmaciÃ³n IA como core adicional.
 
-### Propósito
+### PropÃ³sito
 **Confluencia**:
 - Toma outputs de cores seleccionados por estrategia
 - Calcula scores parciales por core
 - Combina por pesos configurados
 - Detecta coincidencias y conflictos
-- Genera señal BUY/SELL/HOLD con confidence final
+- Genera seÃ±al BUY/SELL/HOLD con confidence final
 
 **IA**:
-- Claude API valida/ajusta señal
+- Claude API valida/ajusta seÃ±al
 - Propone entry/stop/target
 - Advierte riesgos
 - Ajusta confidence score
 
-### Solución Propuesta
+### SoluciÃ³n Propuesta
 
 **Estructura**:
 - src/services/confluence/confluenceEngine.service.ts
@@ -42,22 +42,22 @@ Motor central: combina 6 cores en señal única. Confirmación IA como core adic
 - src/types/signal.types.ts
 
 **Reglas de confluencia**:
-- ≥2 cores alineados en BUY → BUY candidate
-- ≥2 cores alineados en SELL → SELL candidate
-- Conflicto fuerte → HOLD o WATCH
+- â‰¥2 cores alineados en BUY â†’ BUY candidate
+- â‰¥2 cores alineados en SELL â†’ SELL candidate
+- Conflicto fuerte â†’ HOLD o WATCH
 - Min confidence threshold: configurable (default 50%)
 
 ---
 
-## 🔍 Análisis de Impacto
+## ðŸ” AnÃ¡lisis de Impacto
 
 **Archivos a Crear**: 2 archivos principales
 
-**Componentes Afectados**: Todo el sistema de señales
+**Componentes Afectados**: Todo el sistema de seÃ±ales
 
 ---
 
-## 🤖 Workflow de Agentes
+## ðŸ¤– Workflow de Agentes
 
 ### Goku implementa:
 - [ ] confluenceEngine: orquesta cores, calcula scores, aplica pesos
@@ -67,16 +67,17 @@ Motor central: combina 6 cores en señal única. Confirmación IA como core adic
 - [ ] Salida: { signal, confidence, score, selectedCores, reasons, aiReasoning, suggestedEntry, suggestedStop, suggestedTarget }
 
 ### Bulma valida:
-- [ ] 5 cores BUY → señal BUY 90%+
-- [ ] 3 cores BUY + 2 SELL → HOLD
+- [ ] 5 cores BUY â†’ seÃ±al BUY 90%+
+- [ ] 3 cores BUY + 2 SELL â†’ HOLD
 - [ ] Claude API funciona sin errores
 
 ---
 
-## ✅ Criterios de Aceptación
+## âœ… Criterios de AceptaciÃ³n
 
-1. ✅ Confluencia 5/6 cores BUY = BUY signal 90%+
-2. ✅ Confluencia 2/6 cores alineados = confidence ≥50%
-3. ✅ Claude API valida y ajusta correctamente
-4. ✅ Suggested entry/stop/target recomendados
+1. âœ… Confluencia 5/6 cores BUY = BUY signal 90%+
+2. âœ… Confluencia 2/6 cores alineados = confidence â‰¥50%
+3. âœ… Claude API valida y ajusta correctamente
+4. âœ… Suggested entry/stop/target recomendados
+
 
