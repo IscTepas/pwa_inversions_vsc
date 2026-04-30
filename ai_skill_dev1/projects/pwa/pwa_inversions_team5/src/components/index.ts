@@ -1,4 +1,11 @@
-export { Dashboard } from './Dashboard';
-export { WatchlistPanel } from './WatchlistPanel';
-export { SignalsTable } from './SignalsTable';
-export { StrategyManager } from './StrategyManager';
+export { Dashboard } from './Dashboard'
+export { SignalsTable } from './SignalsTable'
+export { StrategyManager } from './StrategyManager'
+export { WatchlistPanel } from './WatchlistPanel'
+export { Modal } from './ui/Modal'
+export { WatchlistManager } from './WatchlistManager'
+export { SignalConfiguration } from './SignalConfiguration'
+export { RiskManagement } from './RiskManagement'
+export { StrategyBuilder } from './StrategyBuilder'
+export { OptionsChainViewer } from './OptionsChainViewer'
+export { OrderBuilder } from './OrderBuilder'

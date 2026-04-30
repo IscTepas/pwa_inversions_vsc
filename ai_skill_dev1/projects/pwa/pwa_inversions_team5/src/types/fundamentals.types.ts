@@ -27,15 +27,16 @@ export interface ValuationData {
   peg: number
   priceToSales: number
   roe: number
-  roe: number
 }
 
 export interface FundamentalsCoreResult {
   symbol: string
+  timeframe?: string
   side: 'BUY' | 'SELL' | 'HOLD'
   confidence: number
   score: number
   reasons: string[]
+  risks?: string[]
   fundamentals: {
     earnings?: EarningsData
     valuation?: ValuationData
